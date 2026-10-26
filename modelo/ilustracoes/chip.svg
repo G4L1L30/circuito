@@ -1,0 +1,23 @@
+<svg class="arte" viewBox="0 0 300 170" role="img" aria-label="Ilustração: processador visto de cima, com o quadradinho do silício da tabela periódica">
+  <circle cx="150" cy="85" r="82" fill="url(#ht-blue)"/>
+  <g class="f-none s-ink" stroke-width="2.5">
+    <path d="M81 55 H50 V35 H24"/><path d="M219 115 H250 V140 H276"/>
+    <path d="M81 115 H44 V138 H22"/><path d="M219 55 H258 V30 H280"/>
+  </g>
+  <g class="f-paper s-ink" stroke-width="2">
+    <circle cx="24" cy="35" r="4"/><circle cx="276" cy="140" r="4"/>
+    <circle cx="22" cy="138" r="4"/><circle cx="280" cy="30" r="4"/>
+  </g>
+  <g class="s-ink" stroke-width="4">
+    <path d="M105 30 V16 M120 30 V16 M135 30 V16 M150 30 V16 M165 30 V16 M180 30 V16 M195 30 V16"/>
+    <path d="M105 140 V154 M120 140 V154 M135 140 V154 M150 140 V154 M165 140 V154 M180 140 V154 M195 140 V154"/>
+    <path d="M95 40 H81 M95 55 H81 M95 70 H81 M95 85 H81 M95 100 H81 M95 115 H81 M95 130 H81"/>
+    <path d="M205 40 H219 M205 55 H219 M205 70 H219 M205 85 H219 M205 100 H219 M205 115 H219 M205 130 H219"/>
+  </g>
+  <rect x="100" y="35" width="110" height="110" rx="6" class="f-red" opacity=".9"/>
+  <rect x="95" y="30" width="110" height="110" rx="6" class="f-ink"/>
+  <rect x="117" y="52" width="66" height="66" class="f-mus s-paper" stroke-width="2"/>
+  <text x="122" y="65" class="t-data f-ink" font-size="12">14</text>
+  <text x="150" y="100" text-anchor="middle" class="t-slab f-ink" font-size="30">Si</text>
+  <text x="150" y="112" text-anchor="middle" class="t-label f-ink" font-size="6.5" letter-spacing="1.2">SILÍCIO</text>
+</svg>

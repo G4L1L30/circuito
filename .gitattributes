@@ -1,0 +1,4 @@
+# O robô roda em Linux na nuvem e o desenvolvimento é no Windows: fim de linha sempre LF no repositório.
+* text=auto eol=lf
+*.png binary
+*.jpg binary

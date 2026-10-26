@@ -1,0 +1,30 @@
+<svg class="arte" viewBox="0 0 300 130" role="img" aria-label="Ilustração: placa de vídeo com duas ventoinhas">
+  <rect x="31" y="27" width="252" height="80" rx="6" class="f-red" opacity=".85"/>
+  <rect x="6" y="14" width="14" height="98" class="f-shade s-ink" stroke-width="2.5"/>
+  <rect x="26" y="22" width="252" height="80" rx="6" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="26" y="22" width="252" height="80" rx="6" fill="url(#ht-fino)" opacity=".7"/>
+  <g transform="translate(96 62)">
+    <circle r="33" class="f-ink"/>
+    <g class="f-paper">
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(72)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(144)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(216)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(288)"/>
+    </g>
+    <circle r="7" class="f-mus s-ink" stroke-width="2"/>
+  </g>
+  <g transform="translate(206 62) rotate(30)">
+    <circle r="33" class="f-ink"/>
+    <g class="f-paper">
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(72)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(144)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(216)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(288)"/>
+    </g>
+    <circle r="7" class="f-mus s-ink" stroke-width="2"/>
+  </g>
+  <rect x="72" y="102" width="118" height="12" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="74" y="104" width="114" height="8" fill="url(#dentes)"/>
+</svg>

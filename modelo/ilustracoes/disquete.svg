@@ -1,0 +1,10 @@
+<svg class="arte" viewBox="0 0 100 100" role="img" aria-label="Ilustração: disquete">
+  <path d="M12 10 H80 L90 20 V90 H12 Z" class="f-ink"/>
+  <rect x="30" y="10" width="38" height="28" class="f-shade"/>
+  <rect x="30" y="10" width="38" height="28" fill="url(#ht-fino)"/>
+  <rect x="52" y="15" width="9" height="18" class="f-ink"/>
+  <rect x="22" y="52" width="58" height="34" class="f-paper"/>
+  <line x1="27" y1="62" x2="75" y2="62" class="s-red" stroke-width="2"/>
+  <line x1="27" y1="70" x2="75" y2="70" class="s-ink" stroke-width="1"/>
+  <line x1="27" y1="78" x2="75" y2="78" class="s-ink" stroke-width="1"/>
+</svg>

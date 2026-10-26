@@ -1,0 +1,29 @@
+# ambiente Python local
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# escrita atômica interrompida
+.*.tmp
+
+# coleta bruta e prévias: geradas a cada execução, não vão para o repositório
+coleta/
+previa/
+
+# arquivos separados para o dono decidir se apaga (regra local: nada é apagado direto)
+excluir/
+
+# segredos e configurações locais: nunca sobem
+.env
+.env.*
+*.key
+*.pem
+.claude/settings.local.json
+
+# sistema operacional e editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/

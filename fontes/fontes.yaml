@@ -1,0 +1,193 @@
+# Fontes da Circuito.
+# Ao incluir uma fonte nova: rode `python coletor/coletar.py --dominios` e cadastre os
+# domínios novos no ambiente da nuvem (docs/rede-nuvem.md).
+#
+# tipo:     rss | hackernews | tabnews | youtube | html_links | coingecko | medo_ganancia
+# secao:    ia | bigtech | hardware | cripto | brasil | comunidade | geral  (dica para o editor, não é regra)
+# max_itens: teto de itens por coleta (padrão 25)
+
+fontes:
+  # ---------- agregadores ----------
+  - id: techmeme
+    nome: Techmeme
+    tipo: rss
+    url: https://www.techmeme.com/feed.xml
+    secao: geral
+  - id: hackernews
+    nome: Hacker News
+    tipo: hackernews
+    url: https://hacker-news.firebaseio.com/v0/topstories.json
+    secao: geral
+    max_itens: 30
+    pontuacao_minima: 150
+  - id: tabnews
+    nome: TabNews
+    tipo: tabnews
+    url: https://www.tabnews.com.br/api/v1/contents?page=1&per_page=30&strategy=relevant
+    secao: comunidade
+
+  # ---------- IA e Big Techs (fonte oficial) ----------
+  - id: anthropic
+    nome: Anthropic
+    tipo: html_links
+    url: https://www.anthropic.com/news
+    base: https://www.anthropic.com
+    padrao: ^/(news|engineering|research)/[a-z0-9-]+$
+    excluir: [/news/announcements, /news/product, /news/policy, /news/societal-impacts]
+    secao: ia
+    max_itens: 10
+  - id: openai
+    nome: OpenAI
+    tipo: rss
+    url: https://openai.com/news/rss.xml
+    secao: ia
+  - id: google_blog
+    nome: Google
+    tipo: rss
+    url: https://blog.google/rss/
+    secao: bigtech
+  - id: deepmind
+    nome: Google DeepMind
+    tipo: rss
+    url: https://deepmind.google/blog/rss.xml
+    secao: ia
+  - id: nvidia
+    nome: Nvidia
+    tipo: rss
+    url: https://blogs.nvidia.com/feed/
+    secao: hardware
+
+  # ---------- imprensa ----------
+  - id: theverge
+    nome: The Verge
+    tipo: rss
+    url: https://www.theverge.com/rss/index.xml
+    secao: bigtech
+  - id: arstechnica
+    nome: Ars Technica
+    tipo: rss
+    url: https://feeds.arstechnica.com/arstechnica/index
+    secao: geral
+  - id: techcrunch
+    nome: TechCrunch
+    tipo: rss
+    url: https://techcrunch.com/feed/
+    secao: geral
+
+  # ---------- hardware ----------
+  - id: tomshardware
+    nome: Tom's Hardware
+    tipo: rss
+    url: https://www.tomshardware.com/feeds/all
+    secao: hardware
+
+  # ---------- newsletters e blogs ----------
+  - id: importai
+    nome: Import AI (Jack Clark)
+    tipo: rss
+    url: https://importai.substack.com/feed
+    secao: comunidade
+  - id: simonwillison
+    nome: Simon Willison
+    tipo: rss
+    url: https://simonwillison.net/atom/everything/
+    secao: comunidade
+    max_itens: 15
+  - id: akita_blog
+    nome: Fabio Akita (blog)
+    tipo: rss
+    url: https://akitaonrails.com/index.xml
+    secao: comunidade
+    max_itens: 10
+
+  # ---------- Brasil ----------
+  - id: tecnoblog
+    nome: Tecnoblog
+    tipo: rss
+    url: https://tecnoblog.net/feed/
+    secao: brasil
+
+  # ---------- cripto ----------
+  - id: coindesk
+    nome: CoinDesk
+    tipo: rss
+    url: https://www.coindesk.com/arc/outboundfeeds/rss/
+    secao: cripto
+  - id: livecoins
+    nome: Livecoins
+    tipo: rss
+    url: https://livecoins.com.br/feed/
+    secao: cripto
+  - id: cotacoes
+    nome: CoinGecko
+    tipo: coingecko
+    url: https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd,brl&include_24hr_change=true&include_last_updated_at=true
+    secao: cripto
+  - id: medo_ganancia
+    nome: Índice Medo & Ganância (alternative.me)
+    tipo: medo_ganancia
+    url: https://api.alternative.me/fng/
+    secao: cripto
+
+  # ---------- YouTube (sem data na listagem: o "novo" vem de estado/vistos.json) ----------
+  - id: yt_lucasmontano
+    nome: Lucas Montano (YouTube)
+    tipo: youtube
+    url: https://www.youtube.com/@LucasMontano/videos
+    secao: comunidade
+    max_itens: 3
+    idioma: pt
+  - id: yt_attekita
+    nome: Attekita Dev (YouTube)
+    tipo: youtube
+    url: https://www.youtube.com/@attekitadev/videos
+    secao: comunidade
+    max_itens: 3
+    idioma: pt
+  - id: yt_akitando
+    nome: Fabio Akita (YouTube)
+    tipo: youtube
+    url: https://www.youtube.com/@Akitando/videos
+    secao: comunidade
+    max_itens: 3
+    idioma: pt
+  - id: yt_filipedeschamps
+    nome: Filipe Deschamps (YouTube)
+    tipo: youtube
+    url: https://www.youtube.com/@FilipeDeschamps/videos
+    secao: comunidade
+    max_itens: 3
+    idioma: pt
+  - id: yt_codigofonte
+    nome: Código Fonte TV (YouTube)
+    tipo: youtube
+    url: https://www.youtube.com/@CodigoFonteTV/videos
+    secao: comunidade
+    max_itens: 3
+    idioma: pt
+  - id: yt_fireship
+    nome: Fireship (YouTube)
+    tipo: youtube
+    url: https://www.youtube.com/@Fireship/videos
+    secao: comunidade
+    max_itens: 3
+    idioma: en
+  - id: yt_twominutepapers
+    nome: Two Minute Papers (YouTube)
+    tipo: youtube
+    url: https://www.youtube.com/@TwoMinutePapers/videos
+    secao: ia
+    max_itens: 3
+    idioma: en
+  - id: yt_pewdiepie
+    nome: PewDiePie (YouTube)
+    tipo: youtube
+    url: https://www.youtube.com/@PewDiePie/videos
+    secao: comunidade
+    max_itens: 3
+    idioma: en
+
+# Fora por enquanto:
+# - VideoCardz: bloqueia robôs (403).
+# - Augusto Galego: falta o @ do canal.
+# - X (Twitter): depende de API paga.

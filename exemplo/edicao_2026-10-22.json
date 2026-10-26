@@ -1,0 +1,305 @@
+{
+  "capa": {
+    "manchete": "O dia em que o PHP caiu",
+    "subtitulo": "Duas falhas de 20 anos, achadas com IA, tiraram sites do ar pelo mundo.",
+    "elemento": {
+      "numero": "8.x",
+      "simbolo": "PHP",
+      "nome": "PHP2Shell",
+      "detalhe": "CVSS 9,2"
+    },
+    "chamadas": [
+      {
+        "rotulo": "Anthropic",
+        "texto": "Claude Duet, o agente que trabalha sozinho"
+      },
+      {
+        "rotulo": "Meta",
+        "texto": "Ações sem voto para bancar a IA"
+      },
+      {
+        "rotulo": "Memória",
+        "texto": "Greve na Micron ameaça fábrica de DRAM"
+      },
+      {
+        "rotulo": "Cripto",
+        "texto": "Ripio desliga o Pix no Brasil"
+      }
+    ]
+  },
+  "editorial": {
+    "titulo": "Atualize antes do café",
+    "paragrafos": [
+      "A quarta-feira (21) foi de bombeiro na internet: duas falhas antigas no PHP, achadas com ajuda de IA, viraram ataque antes que muita gente conseguisse atualizar.",
+      "Se você tem site, blog ou loja em PHP, a dica da edição cabe numa linha: atualize hoje. O resto dá para ler com calma."
+    ]
+  },
+  "paginas": [
+    {
+      "tipo": "reportagem",
+      "secao": "IA",
+      "assunto": "Agentes",
+      "tarja": "Lançamento",
+      "titulo": "O Claude que trabalha enquanto você sai",
+      "ilustracao": "robo",
+      "paragrafos": [
+        "A Anthropic abriu na quarta (21) uma prévia do Claude Duet, um app de agente proativo para iOS, Android e web. Toda manhã ele manda um resumo do que importa nos seus apps, avisa quando algo precisa de você e segue trabalhando quando você sai.",
+        "A prévia faz parte dos planos Pro e Max, com lista de espera, começando pelos EUA. Segundo a empresa, um classificador novo bloqueia o envio de dados como número de cartão e documentos."
+      ],
+      "refs": [
+        {
+          "rotulo": "Anúncio oficial",
+          "url": "https://claude.com/resources/articles/claude-duet"
+        }
+      ]
+    },
+    {
+      "tipo": "materia",
+      "secao": "Segurança",
+      "assunto": "Internet",
+      "titulo": "Quando o PHP parou a internet",
+      "olho": "Duas falhas escondidas no PHP havia cerca de 20 anos, achadas com IA, viraram ataque real na quarta (21). Wikipedia, 4chan e sites de governo saíram do ar.",
+      "ilustracao": "lupa",
+      "legenda": "A falha estava lá havia duas décadas. A IA achou antes dos atacantes, segundo a OpenAI.",
+      "paragrafos": [
+        "O PHP roda 69,3% dos sites cuja linguagem de servidor é conhecida, segundo a W3Techs, WordPress incluído. As duas falhas deixam um invasor rodar código no servidor sem precisar de senha. Órgãos de governo da Holanda e da Finlândia tiraram sites do ar por precaução.",
+        "Explorar o defeito exigia uma cadeia de passos no limite do que pesquisadores humanos conseguem, segundo a Wiz. A Calif achou uma das falhas usando o GPT-5.6 Sol, da OpenAI, e a Wiz, do Google, achou as duas por conta própria.",
+        "Um vazamento apressou tudo: a correção saiu na quarta, um dia antes do previsto."
+      ],
+      "quadros": [
+        {
+          "titulo": "O que fazer",
+          "texto": "Tem site em PHP? Instale hoje a atualização da sua versão 8.x. Se não der, a agência de segurança dos EUA recomenda tirar o sistema do ar até conseguir."
+        },
+        {
+          "titulo": "As duas falhas",
+          "texto": "Uma corrompe dados quando falta memória; a outra reaproveita um estado que já devia ter sido apagado. A nota de gravidade é 9,2 de 10."
+        },
+        {
+          "titulo": "IA dos dois lados",
+          "texto": "A OpenAI diz que a IA achou as falhas antes dos atacantes, mas admite que a mesma capacidade ajuda a criar ataques mais rápido."
+        }
+      ],
+      "refs": [
+        {
+          "rotulo": "The Verge",
+          "url": "https://www.theverge.com/tech/1015906/php2shell-vulnerability-october-2026"
+        },
+        {
+          "rotulo": "OpenAI",
+          "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+        },
+        {
+          "rotulo": "PHP Foundation",
+          "url": "https://simonwillison.net/2026/Oct/21/php-security-release/"
+        },
+        {
+          "rotulo": "Tecnoblog",
+          "url": "https://tecnoblog.net/noticias/falha-grave-no-php-pode-tirar-sites-e-servicos-publicos-do-ar/"
+        }
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Segurança",
+      "assunto": "No mesmo dia",
+      "tarja": "Plantão",
+      "titulo": "Não foi só o PHP",
+      "estilo": "lista",
+      "notas": [
+        {
+          "rotulo": "GitLab",
+          "texto": "Corrigiu uma falha crítica que deixa rodar código em servidores próprios sem login. Afeta todas as versões desde a 7.0, de 2014.",
+          "url": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html"
+        },
+        {
+          "rotulo": "Certificados",
+          "texto": "Vazaram as chaves privadas de oito certificados intermediários da eMudhra. Navegadores e sistemas precisam atualizar a lista de certificados confiáveis.",
+          "url": "https://simonwillison.net/2026/Oct/20/emudhra-certificates/"
+        },
+        {
+          "rotulo": "LiteLLM",
+          "texto": "A versão 1.107.0 publicada no PyPI vinha com um ladrão de credenciais e uma porta dos fundos.",
+          "url": "https://safedep.io/litellm-pypi-compromise-credential-stealer-backdoor/"
+        }
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Placas & Memórias",
+      "assunto": "Hardware",
+      "tarja": "Hardware",
+      "titulo": "Memória sob pressão",
+      "ilustracao": "memoria",
+      "estilo": "lista",
+      "notas": [
+        {
+          "rotulo": "Vera Rubin na nuvem",
+          "texto": "Google Cloud e Nvidia anunciaram as máquinas A5X, com a nova Vera Rubin NVL72. A disponibilidade geral começa no mês que vem.",
+          "url": "https://blogs.nvidia.com/blog/google-cloud-vera-rubin-infrastructure/"
+        },
+        {
+          "rotulo": "Greve na Micron",
+          "texto": "O sindicato da fábrica de DRAM de Taoyuan, em Taiwan, marcou uma greve de um dia nesta semana. Pede bônus e regras claras.",
+          "url": "https://www.tomshardware.com/pc-components/dram/microns-taiwan-union-will-launch-a-one-day-strike-this-week-threatening-round-the-clock-fab-operations-workers-demand-concrete-terms-for-2026-bonus-and-clearer-profit-sharing-arrangements"
+        },
+        {
+          "rotulo": "Acidente na TSMC",
+          "texto": "Quatro operários terceirizados morreram após uma queda na obra da Fab 22, de 2 nm, em Kaohsiung.",
+          "url": "https://www.tomshardware.com/tech-industry/semiconductors/three-workers-killed-one-in-intensive-care-after-fall-at-tsmcs-2nm-fab-construction-site-in-kaohsiung-broken-bolt-on-a-steel-connection-plate-suspected-as-cause-behind-tragic-accident"
+        }
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Giro das Big Techs",
+      "assunto": "Notas",
+      "titulo": "Giro das Big Techs",
+      "estilo": "colunas",
+      "notas": [
+        {
+          "rotulo": "DeepSeek",
+          "texto": "A chinesa levantou cerca de US$ 15 bilhões, uma das maiores rodadas da história do país, segundo a Bloomberg. CATL e Tencent estão entre os maiores investidores.",
+          "url": "https://www.bloomberg.com/news/articles/2026-10-22/deepseek-raises-15-billion-in-challenge-to-leading-us-labs"
+        },
+        {
+          "rotulo": "OpenAI",
+          "texto": "Os modelos GPT 6.1 Astra, Sol e Luna chegam ao Google Cloud e ao Antigravity nas próximas semanas.",
+          "url": "https://arstechnica.com/ai/2026/10/openais-latest-ai-models-are-coming-to-google-cloud-and-antigravity/"
+        },
+        {
+          "rotulo": "DeepMind",
+          "texto": "Demis Hassabis encurtou a previsão: agora diz que a AGI, a IA capaz de quase tudo que uma pessoa faz, chega em até três anos.",
+          "url": "https://tecnoblog.net/noticias/chefe-do-google-deepmind-diz-que-agi-chegara-em-ate-3-anos/"
+        },
+        {
+          "rotulo": "Meta",
+          "texto": "Vai lançar ações sem direito a voto para bancar a IA, aquisições e salários, com negociação a partir de 2027.",
+          "url": "https://www.theverge.com/tech/1015799/meta-shares-class-ai-q3-2026-earnings"
+        },
+        {
+          "rotulo": "Tesla",
+          "texto": "O lucro caiu 43% no 3º trimestre, com receita parada e gastos em alta. Mesmo assim, começou a produzir o robô Optimus na Califórnia.",
+          "url": "https://techcrunch.com/2026/10/21/tesla-stars-optimus-robot-production-in-california-as-profit-falls-43/"
+        },
+        {
+          "rotulo": "Xbox",
+          "texto": "A Microsoft quer cobrar de 24 a 40 centavos de dólar por hora para você jogar na nuvem os jogos que já comprou.",
+          "url": "https://arstechnica.com/gaming/2026/10/xbox-wants-you-to-pay-24-to-40-cents-per-hour-to-stream-games-you-already-bought/"
+        }
+      ]
+    },
+    {
+      "tipo": "cripto",
+      "titulo": "Bitcoin passa dos US$ 84 mil",
+      "notas": [
+        {
+          "rotulo": "Alta",
+          "texto": "O bitcoin passou de US$ 84.500 na quarta (21), embalado pela alta das ações de tecnologia nos EUA.",
+          "url": "https://livecoins.com.br/bitcoin-supera-os-us-84-500-acompanhando-alta-nas-acoes-de-tecnologia-dos-eua/"
+        },
+        {
+          "rotulo": "Ripio",
+          "texto": "A corretora desliga o Pix e encerra as negociações no Brasil no dia 29, mas diz que segue no país.",
+          "url": "https://livecoins.com.br/corretora-ripio-anuncia-fim-do-suporte-ao-pix-e-vai-encerrar-negociacoes-de-clientes-dia-29-de-outubro-mas-ceo-indica-que-exchange-segue-firme-no-brasil/"
+        }
+      ]
+    },
+    {
+      "tipo": "comunidade",
+      "titulo": "O que a turma anda falando",
+      "vozes": [
+        {
+          "nome": "Attekita Dev",
+          "onde": "YouTube",
+          "texto": "Testou o REA para descobrir até onde vai a engenharia reversa feita com IA.",
+          "links": [
+            {
+              "rotulo": "Assistir",
+              "url": "https://www.youtube.com/watch?v=n3sjcSxUg1o"
+            }
+          ]
+        },
+        {
+          "nome": "Código Fonte TV",
+          "onde": "YouTube",
+          "texto": "Fala da nova onda de clones de software e de como o REA funciona.",
+          "links": [
+            {
+              "rotulo": "Assistir",
+              "url": "https://www.youtube.com/watch?v=-soAkLdbNfY"
+            }
+          ]
+        },
+        {
+          "nome": "Fireship",
+          "onde": "YouTube",
+          "texto": "Decreta que a guerra dos runtimes, os motores que rodam JavaScript fora do navegador, acabou. E o Node venceu.",
+          "links": [
+            {
+              "rotulo": "Assistir",
+              "url": "https://www.youtube.com/watch?v=l3L_lETiSzc"
+            }
+          ]
+        },
+        {
+          "nome": "TabNews",
+          "onde": "em alta",
+          "texto": "Um professor de história aprendeu a programar e fez um jogo no Godot para os alunos. Outro dev abriu o tarcsweb, interface de código aberto para o Claude Code e o Codex.",
+          "links": [
+            {
+              "rotulo": "Jogo no Godot",
+              "url": "https://www.tabnews.com.br/zoenix/professor-de-historia-aprendendo-a-programar-fiz-meu-primeiro-jogo-no-godot-para-meus-alunos"
+            },
+            {
+              "rotulo": "tarcsweb",
+              "url": "https://www.tabnews.com.br/tlucas97/tarcsweb-uma-interface-open-source-pro-claude-code-e-o-codex"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "contracapa",
+      "leituras": [
+        {
+          "titulo": "Patch the Planet: como a OpenAI coordenou a resposta às falhas do PHP",
+          "onde": "OpenAI · em inglês",
+          "url": "https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/"
+        },
+        {
+          "titulo": "O que deu errado na divulgação, contado pela PHP Foundation",
+          "onde": "Simon Willison · em inglês",
+          "url": "https://simonwillison.net/2026/Oct/21/php-security-release/"
+        },
+        {
+          "titulo": "PHP: as três letras que derrubaram sites pela internet",
+          "onde": "The Verge · em inglês",
+          "url": "https://www.theverge.com/tech/1015906/php2shell-vulnerability-october-2026"
+        },
+        {
+          "titulo": "Claude Duet, explicado pela própria Anthropic",
+          "onde": "Anthropic · em inglês",
+          "url": "https://claude.com/resources/articles/claude-duet"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "PHP",
+      "categoria": "Linguagem",
+      "definicao": "Linguagem que roda no servidor e monta boa parte das páginas da web, do WordPress à Wikipedia."
+    },
+    {
+      "termo": "CVE",
+      "categoria": "Segurança",
+      "definicao": "Número de registro de uma falha de segurança conhecida, usado no mundo todo para falar da mesma falha."
+    },
+    {
+      "termo": "Agente",
+      "categoria": "IA",
+      "definicao": "IA que não só responde: executa tarefas sozinha, como agendar reuniões ou montar planilhas, e pede confirmação antes de agir."
+    }
+  ]
+}

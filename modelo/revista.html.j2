@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Circuito nº {{ ed.numero_fmt }} · {{ ed.data_curta }}</title>
+<meta name="description" content="{{ ed.capa.manchete }}. {{ ed.capa.subtitulo }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=VT323&display=swap">
+<style>
+{{ css }}
+</style>
+</head>
+<body>
+{{ defs }}
+
+{#- ================================================================ peças -#}
+{% macro runner(p) -%}
+<div class="runner"><span>{{ p.runner[0] }}</span><span>{{ p.runner[1] }}</span></div>
+{%- endmacro %}
+
+{% macro folio(p) -%}
+<div class="folio">{% if p.num is even %}<b>{{ p.num }}</b><span>{{ p.folio }}</span>{% else %}<span>{{ p.folio }}</span><b>{{ p.num }}</b>{% endif %}</div>
+{%- endmacro %}
+
+{% macro refs(lista) -%}
+{% if lista %}<div class="ref">{% for r in lista %}<a href="{{ r.url }}">→ {{ r.rotulo }}</a>{% endfor %}</div>{% endif %}
+{%- endmacro %}
+
+{% macro texto(paragrafos, capitular=true) -%}
+<div class="txt">{% for t in paragrafos %}<p{% if capitular and loop.first %} class="capitular"{% endif %}>{{ t }}</p>{% endfor %}</div>
+{%- endmacro %}
+
+{% macro quadro(q) -%}
+<div class="quadro">
+  <h3>{{ q.titulo }}</h3>
+  {% if q.tabela %}
+  <table class="tabela">
+    <thead><tr>{% for c in q.tabela.colunas %}<th scope="col">{{ c }}</th>{% endfor %}</tr></thead>
+    <tbody>{% for linha in q.tabela.linhas %}<tr>{% for v in linha %}<td>{{ v }}</td>{% endfor %}</tr>{% endfor %}</tbody>
+  </table>
+  {% endif %}
+  {% if q.texto %}<p>{{ q.texto }}</p>{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro grafico(g) -%}
+<div class="quadro">
+  <h3>{{ g.titulo }}</h3>
+  <svg class="arte" viewBox="0 0 300 {{ g.altura }}" role="img" aria-label="Gráfico de barras: {{ g.descricao }}">
+    {% for b in g.barras %}
+    <text x="0" y="{{ b.y + 13 }}" class="t-label f-ink" font-size="11" letter-spacing="1">{{ b.rotulo }}</text>
+    {% if b.destaque %}
+    <rect x="58" y="{{ b.y }}" width="{{ b.largura }}" height="17" fill="url(#ht-red)" class="s-red" stroke-width="1.5"/>
+    {% else %}
+    <rect x="58" y="{{ b.y }}" width="{{ b.largura }}" height="17" class="f-ink"/>
+    {% endif %}
+    <text x="{{ 58 + b.largura + 6 }}" y="{{ b.y + 14 }}" class="t-data {{ 'f-red' if b.destaque else 'f-ink' }}" font-size="17">{{ b.texto }}</text>
+    {% endfor %}
+  </svg>
+  {% if g.nota %}<p>{{ g.nota }}</p>{% endif %}
+</div>
+{%- endmacro %}
+
+{% macro monitor(el) -%}
+<svg class="arte" viewBox="0 0 300 250" role="img" aria-label="Ilustração: computador antigo com o elemento do dia na tela, {{ el.nome }}">
+  <circle cx="150" cy="116" r="114" fill="url(#ht-blue)"/>
+  <g class="s-ink" stroke-width="2.5" stroke-linecap="round">
+    <line x1="14" y1="36" x2="38" y2="50"/><line x1="286" y1="36" x2="262" y2="50"/>
+    <line x1="6" y1="116" x2="32" y2="116"/><line x1="294" y1="116" x2="268" y2="116"/>
+  </g>
+  <rect x="61" y="28" width="186" height="160" rx="16" class="f-red" opacity=".9"/>
+  <rect x="55" y="22" width="186" height="160" rx="16" class="f-paper s-ink" stroke-width="3"/>
+  <rect x="72" y="38" width="152" height="114" rx="12" class="f-ink"/>
+  <rect x="72" y="38" width="152" height="114" rx="12" fill="url(#scan)"/>
+  <rect x="111" y="50" width="74" height="88" class="f-none s-mus" stroke-width="2.5"/>
+  <text x="117" y="65" class="t-data f-mus" font-size="14">{{ el.numero }}</text>
+  <text x="148" y="108" text-anchor="middle" class="t-slab f-paper" font-size="{{ 40 if el.simbolo|length < 3 else 29 }}">{{ el.simbolo }}</text>
+  <text x="148" y="122" text-anchor="middle" class="t-label f-mus" font-size="8.5" letter-spacing="1.6">{{ el.nome|upper }}</text>
+  <text x="148" y="133" text-anchor="middle" class="t-data f-paper" font-size="11">{{ el.detalhe }}</text>
+  <rect x="82" y="140" width="8" height="5" class="f-mus"/>
+  <rect x="172" y="161" width="52" height="6" rx="1" class="f-ink"/>
+  <circle cx="82" cy="165" r="3.6" class="f-red"/>
+  <text x="92" y="168" class="t-label f-ink" font-size="7" letter-spacing="1.2">CIRCUITO {{ ed.ano }}</text>
+  <path d="M122 182 L174 182 L184 198 L112 198 Z" class="f-shade s-ink" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M48 206 L252 206 L266 242 L34 242 Z" class="f-paper s-ink" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M57 211 L243 211 L254 237 L46 237 Z" fill="url(#teclas)"/>
+  <path d="M0,-9 L2.2,-2.2 L9,0 L2.2,2.2 L0,9 L-2.2,2.2 L-9,0 L-2.2,-2.2Z" class="f-mus s-ink" stroke-width="1.2" transform="translate(262 20)"/>
+  <path d="M0,-7 L1.8,-1.8 L7,0 L1.8,1.8 L0,7 L-1.8,1.8 L-7,0 L-1.8,-1.8Z" class="f-red" transform="translate(30 186)"/>
+</svg>
+{%- endmacro %}
+
+{% macro medidor(m) -%}
+<svg class="arte" viewBox="0 0 200 122" role="img" aria-label="Medidor do índice de medo e ganância marcando {{ m.valor }}, {{ m.classificacao }}">
+  <path d="M20 100 A80 80 0 0 1 87.5 21" class="f-none s-blue" stroke-width="15"/>
+  <path d="M87.5 21 A80 80 0 0 1 112.5 21" class="f-none" stroke="var(--paper-shade)" stroke-width="15"/>
+  <path d="M112.5 21 A80 80 0 0 1 180 100" class="f-none s-red" stroke-width="15"/>
+  <path d="M20 100 A80 80 0 0 1 180 100" class="f-none s-ink" stroke-width="1.2"/>
+  <text x="12" y="116" text-anchor="middle" class="t-data f-ink" font-size="12">0</text>
+  <text x="100" y="9" text-anchor="middle" class="t-data f-ink" font-size="12">50</text>
+  <text x="188" y="116" text-anchor="middle" class="t-data f-ink" font-size="12">100</text>
+  <line x1="100" y1="100" x2="{{ m.ponteiro_x }}" y2="{{ m.ponteiro_y }}" class="s-ink" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="7" class="f-ink"/>
+  <circle cx="100" cy="100" r="2.5" class="f-mus"/>
+  <text x="{{ 140 if m.valor < 50 else 60 }}" y="94" text-anchor="middle" class="t-slab f-ink" font-size="20">{{ m.valor }}</text>
+</svg>
+{%- endmacro %}
+
+{% macro anuncio(a, grande=false) -%}
+<div class="anuncio{{ ' grande' if grande }}">
+  {% if grande %}{{ svg[a.ilustracao] }}{% endif %}
+  <div>
+    <h3>{{ a.titulo }}</h3>
+    <p>{{ a.texto }}</p>
+  </div>
+  {% if not grande %}{{ svg[a.ilustracao] }}{% endif %}
+  <div class="cupom">{% for l in a.cupom %}{{ l }}{% if not loop.last %}<br>{% endif %}{% endfor %}</div>
+</div>
+<p class="miudo">Anúncio de mentirinha, homenagem às revistas de informática dos anos 80.</p>
+{%- endmacro %}
+
+{#- ================================================================ páginas -#}
+{% macro pagina(p) %}
+{% if p.tipo == 'capa' %}
+<article class="page capa" id="p{{ p.num }}"><div class="pg">
+  <div class="capa-faixa"><span>Nº {{ ed.numero_fmt }} · Ano {{ ed.ano_romano }}</span><span>{{ ed.data_capa }}</span></div>
+  <h1 class="logo">CIRCUITO</h1>
+  <p class="slogan">IA · Hardware · Big Techs · Cripto</p>
+  <div class="capa-miolo">
+    <div class="chamadas">
+      {% for c in ed.capa.chamadas %}<div class="chamada"><span>{{ c.rotulo }}</span><p>{{ c.texto }}</p></div>{% endfor %}
+    </div>
+    <div class="arte-capa">
+      {{ monitor(ed.capa.elemento) }}
+      <div class="selo" aria-hidden="true"><b>R$ 0</b>seg a sáb<br>às 7h</div>
+    </div>
+  </div>
+  <div class="manchete"><h2>{{ ed.capa.manchete }}</h2><p>{{ ed.capa.subtitulo }}</p></div>
+  <div class="capa-pe">
+    <p>Leitura de {{ ed.minutos }} minutos<br>Cada nota com o link para o estudo completo</p>
+    <div class="barras" aria-hidden="true"><i></i><span>{{ ed.data|replace('-', '·') }}</span></div>
+  </div>
+</div></article>
+
+{% elif p.tipo == 'editorial' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  <h2 class="titulo">{{ ed.editorial.titulo }}</h2>
+  {{ texto(ed.editorial.paragrafos) }}
+  <div class="quadro">
+    <h3>Nesta edição</h3>
+    <ol class="sumario">
+      {% for s in sumario %}<li><span><em>{{ s.rotulo }}</em>{{ s.titulo }}</span><b>{{ s.pagina }}</b></li>{% endfor %}
+    </ol>
+  </div>
+  <p class="expediente">{% for linha in expediente %}{{ linha }}{% if not loop.last %}<br>{% endif %}{% endfor %}</p>
+  {{ folio(p) }}
+</div></article>
+
+{% elif p.tipo == 'materia_a' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  {{ svg[p.ilustracao] }}
+  {% if p.legenda %}<p class="legenda">{{ p.legenda }}</p>{% endif %}
+  <span class="tarja">Capa · {{ p.secao }}</span>
+  <h2 class="titulo g">{{ p.titulo }}</h2>
+  <p class="olho">{{ p.olho }}</p>
+  {{ texto(p.paragrafos[:1]) }}
+  {{ folio(p) }}
+</div></article>
+
+{% elif p.tipo == 'materia_b' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  {{ texto(p.paragrafos[1:], capitular=false) }}
+  {% for q in p.quadros %}{{ quadro(q) }}{% endfor %}
+  {{ refs(p.refs) }}
+  {{ folio(p) }}
+</div></article>
+
+{% elif p.tipo == 'reportagem' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  {% if p.tarja %}<span class="tarja verm">{{ p.tarja }}</span>{% endif %}
+  <h2 class="titulo">{{ p.titulo }}</h2>
+  {% if p.ilustracao %}{{ svg[p.ilustracao] }}{% endif %}
+  {{ texto(p.paragrafos) }}
+  {% if p.quadro %}{{ quadro(p.quadro) }}{% endif %}
+  {{ refs(p.refs) }}
+  {{ folio(p) }}
+</div></article>
+
+{% elif p.tipo == 'notas' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  {% if p.ilustracao %}
+  <div class="lado inv">
+    <div>{% if p.tarja %}<span class="tarja">{{ p.tarja }}</span>{% endif %}<h2 class="titulo">{{ p.titulo }}</h2></div>
+    {{ svg[p.ilustracao] }}
+  </div>
+  {% else %}
+  {% if p.tarja %}<span class="tarja">{{ p.tarja }}</span>{% endif %}
+  <h2 class="titulo">{{ p.titulo }}</h2>
+  {% endif %}
+  {% if p.estilo == 'colunas' %}
+  <div class="cols">{% for n in p.notas %}<p><span class="empresa">{{ n.rotulo }}</span>{{ n.texto }}</p>{% endfor %}</div>
+  {% else %}
+  <div class="notas">{% for n in p.notas %}<p><span class="nota-cab">{{ n.rotulo }}</span>{{ n.texto }}</p>{% endfor %}</div>
+  {% endif %}
+  {% if p.grafico %}{{ grafico(p.grafico) }}{% endif %}
+  {% if p.quadro %}{{ quadro(p.quadro) }}{% endif %}
+  {{ refs(p.refs) }}
+  {{ folio(p) }}
+</div></article>
+
+{% elif p.tipo == 'cripto' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  <span class="tarja verm">Cotações da madrugada</span>
+  <h2 class="titulo">{{ p.titulo }}</h2>
+  {% if cotacoes %}
+  <table class="tabela">
+    <thead><tr><th scope="col">Moeda</th><th scope="col">US$</th><th scope="col">R$</th><th scope="col">24 h</th></tr></thead>
+    <tbody>{% for m in cotacoes.moedas %}<tr><td>{{ m.simbolo }}</td><td>{{ m.usd }}</td><td>{{ m.brl }}</td><td class="{{ m.classe }}">{{ m.variacao }}</td></tr>{% endfor %}</tbody>
+  </table>
+  <p class="legenda">CoinGecko, {{ cotacoes.quando }} (Brasília). Variação em dólar.</p>
+  {% else %}
+  <p class="legenda">As cotações não chegaram a tempo nesta edição.</p>
+  {% endif %}
+  {% if medo %}
+  <div class="lado">
+    {{ medidor(medo) }}
+    <div class="quadro">
+      <h3>Medo &amp; Ganância: {{ medo.valor }}</h3>
+      <p>Hoje marca “{{ medo.classificacao|lower }}”. Vai de 0 (pânico) a 100 (euforia) e mede o humor do mercado com volatilidade, volume e redes sociais.</p>
+    </div>
+  </div>
+  {% endif %}
+  <div class="notas">{% for n in p.notas %}<p><span class="nota-cab">{{ n.rotulo }}</span>{{ n.texto }}</p>{% endfor %}</div>
+  {{ refs(p.refs) }}
+  <p class="miudo">Isto não é recomendação de investimento.</p>
+  {{ folio(p) }}
+</div></article>
+
+{% elif p.tipo == 'comunidade' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  <h2 class="titulo">{{ p.titulo }}</h2>
+  <div class="vozes">
+    {% for v in p.vozes %}
+    <div class="voz">
+      <div class="avatar c{{ loop.index0 % 3 }}" aria-hidden="true">{{ v.iniciais }}</div>
+      <div>
+        <h4>{{ v.nome }} <small>· {{ v.onde }}</small></h4>
+        <p>{{ v.texto }}</p>
+        {% for l in v.links %}<a class="ref-link" href="{{ l.url }}">→ {{ l.rotulo }}</a>{% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% if p.quadro %}{{ quadro(p.quadro) }}{% endif %}
+  {{ folio(p) }}
+</div></article>
+
+{% elif p.tipo == 'perdeu' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  <span class="tarja verm">Para quem pulou o sábado</span>
+  <h2 class="titulo">{{ p.titulo }}</h2>
+  <ul class="perdeu">
+    {% for i in p.itens %}<li><span>{{ i.rotulo }}</span><p>{{ i.texto }}</p><a class="ref-link" href="{{ i.url }}">→ {{ i.fonte }}</a></li>{% endfor %}
+  </ul>
+  {{ folio(p) }}
+</div></article>
+
+{% elif p.tipo == 'glossario' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  <h2 class="titulo">Dicionário do Byte</h2>
+  <dl class="glossario">
+    {% for t in p.termos %}<div><dt>{{ t.termo }}{% if t.categoria %}<small>{{ t.categoria }}</small>{% endif %}</dt><dd>{{ t.definicao }}</dd></div>{% endfor %}
+  </dl>
+  {{ folio(p) }}
+</div></article>
+
+{% elif p.tipo == 'anuncio' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  {{ anuncio(p.anuncio, grande=true) }}
+  {{ folio(p) }}
+</div></article>
+
+{% elif p.tipo == 'contracapa' %}
+<article class="page" id="p{{ p.num }}"><div class="pg">
+  {{ runner(p) }}
+  <h2 class="titulo">Pra ler com calma</h2>
+  <ul class="leituras">
+    {% for l in p.leituras %}<li><div><a href="{{ l.url }}">{{ l.titulo }}</a><span>{{ l.onde }}</span></div></li>{% endfor %}
+  </ul>
+  {{ anuncio(p.anuncio) }}
+  <div class="capa-pe">
+    <p>{{ proxima[0] }}<br>{{ proxima[1] }}</p>
+    <div class="barras" aria-hidden="true"><i></i><span>CIRCUITO·{{ ed.numero_fmt }}</span></div>
+  </div>
+</div></article>
+{% endif %}
+{% endmacro %}
+
+<main class="mesa">
+  <div class="mesa-topo">
+    <span><strong>Circuito</strong> · nº {{ ed.numero_fmt }} · {{ ed.data_extenso }}</span>
+    <span><a href="{{ raiz }}arquivo.html">Edições anteriores</a></span>
+  </div>
+  {% if teste %}<div class="faixa-teste">Prévia · edição de teste, não publicada</div>{% endif %}
+  {% for grupo in grupos %}
+  <section class="spread{{ ' solo' if grupo|length == 1 }}" aria-label="{{ grupo|map(attribute='rotulo_aria')|join(' e ') }}">
+    {% for p in grupo %}{{ pagina(p) }}{% endfor %}
+  </section>
+  {% endfor %}
+</main>
+</body>
+</html>

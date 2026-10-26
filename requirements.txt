@@ -1,0 +1,6 @@
+feedparser==6.0.14
+requests==2.34.2
+PyYAML==6.0.3
+Jinja2==3.1.6
+yt-dlp==2026.8.19
+youtube-transcript-api==1.2.4
