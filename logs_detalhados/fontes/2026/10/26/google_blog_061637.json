@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261026T061633-19438b48",
+  "execucao": "2026-10-26T06:16:37-03:00",
+  "robo": "circuito_diario",
+  "fonte": "google_blog",
+  "nome": "Google",
+  "tipo": "rss",
+  "url": "https://blog.google/rss/",
+  "status": "ok",
+  "itens_lidos": 20,
+  "itens_na_janela": 0,
+  "erro": null,
+  "duracao_ms": 478
+}

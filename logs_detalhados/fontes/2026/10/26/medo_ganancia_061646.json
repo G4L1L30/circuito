@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261026T061633-19438b48",
+  "execucao": "2026-10-26T06:16:46-03:00",
+  "robo": "circuito_diario",
+  "fonte": "medo_ganancia",
+  "nome": "Índice Medo & Ganância (alternative.me)",
+  "tipo": "medo_ganancia",
+  "url": "https://api.alternative.me/fng/",
+  "status": "ok",
+  "itens_lidos": 0,
+  "itens_na_janela": 0,
+  "erro": null,
+  "duracao_ms": 368
+}

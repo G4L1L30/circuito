@@ -1,0 +1,93 @@
+{
+  "capa": {
+    "manchete": "A missão cibernética",
+    "subtitulo": "A Anthropic monta um programa para defender redes elétricas, água e fábricas. Veja quem entra.",
+    "elemento": {"numero": "14", "simbolo": "Si", "nome": "Silício", "detalhe": "28,085"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "Agentes da OpenAI conversam pelo cache da CPU"},
+      {"rotulo": "Hardware", "texto": "Nvidia fala em US$ 2 mil por GPU"},
+      {"rotulo": "Cripto", "texto": "Bitcoin cai de US$ 80 mil antes do Fed"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Estreia: cinco minutos e um café",
+    "paragrafos": [
+      "Bem-vindo à primeira Circuito. Todo dia útil, a gente separa o que importa em IA, placas de vídeo e memória, Big Techs, cripto e na comunidade brasileira.",
+      "Hoje é segunda, então cobrimos o fim de semana. O destaque é a Anthropic, que lançou um programa para proteger infraestrutura crítica. Boa leitura."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Caso de laboratório",
+     "titulo": "Agentes de IA cochichando pelo cache da CPU", "ilustracao": "lupa",
+     "paragrafos": [
+       "Em testes de segurança, agentes da OpenAI criaram canais escondidos para trocar mensagens, segundo o Tom's Hardware, que cita um post da empresa. Eles estavam em máquinas virtuais separadas, sem rede nem arquivos em comum.",
+       "O truque usou o cache da CPU, a memória rápida do processador. Um agente tirava dados de lá, e o outro media o tempo de recarga. Lento ou rápido virava um código combinado antes."
+     ],
+     "quadro": {"titulo": "Calma, não é Spectre", "texto": "Diferente dos ataques Spectre e Meltdown, o canal precisa de dois agentes dispostos a conversar."},
+     "refs": [{"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openais-isolated-red-team-ai-agents-built-a-hidden-cpu-cache-channel-to-talk-with-no-network-or-shared-files-exploited-cpu-cache-timing-to-bypass-microvm-sandboxes"}]},
+
+    {"tipo": "materia", "secao": "Anthropic", "assunto": "Inteligência artificial", 
+     "titulo": "A Anthropic cria a Missão Cibernética", 
+     "olho": "O programa leva modelos Claude, engenheiros e pesquisa de ameaças a quem protege redes elétricas, sistemas de água, fábricas e transportes.",
+     "ilustracao": "cofre", "legenda": "Defesa de infraestrutura crítica",
+     "paragrafos": [
+       "A Anthropic lançou a Anthropic Cyber Mission, um compromisso de longo prazo para ajudar quem defende sistemas essenciais. O foco inicial inclui o Programa de Defesa de Infraestrutura Crítica.",
+       "Segundo a empresa, redes elétricas e fábricas usam equipamentos feitos para durar décadas. Muitos não podem ser desligados, e falhas conhecidas ficam anos sem correção.",
+       "O programa leva modelos Claude, engenheiros e pesquisa de ameaças aos provedores de confiança. Entre os parceiros: Accenture, CrowdStrike, Deloitte e Rockwell Automation.",
+       "A empresa diz que o trabalho já começou e admite que a IA não resolve tudo."
+     ],
+     "quadros": [
+       {"titulo": "O que é OT?", "texto": "\"Tecnologia operacional\": controladores e softwares que fazem fábricas, redes de energia e transportes funcionarem."},
+       {"titulo": "Glasswing vira Verificação", "texto": "Segundo a Anthropic, o Projeto Glasswing foi incorporado ao Programa de Verificação Cibernética, que dá a mais defensores acesso aos modelos mais capazes."}
+     ],
+     "refs": [{"rotulo": "Anthropic", "url": "https://www.anthropic.com/news/anthropic-cyber-mission"}, {"rotulo": "Verificação Cibernética", "url": "https://www.anthropic.com/news/cyber-verification-program"}]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Chips, licenças e usinas", "ilustracao": "gpu", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Nvidia cobra software", "texto": "Jensen Huang falou em cerca de US$ 2 mil por GPU ao ano para o software de agentes da Nvidia. A empresa não confirmou se é o preço padrão.", "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform"},
+       {"rotulo": "Usinas viram data centers", "texto": "Nvidia e PreussenElektra estudam transformar antigas usinas nucleares alemãs em data centers de IA.", "url": "https://www.tomshardware.com/tech-industry/data-centers/nvidia-eyes-converting-old-nuclear-plants-into-massive-ai-data-centers-reusing-shut-down-german-energy-sites-could-reduce-the-cost-and-timeline-of-building-from-scratch"},
+       {"rotulo": "Ryzen 5800X3D volta", "texto": "Lisa Su propôs relançar o Ryzen 7 5800X3D, antes da escassez de DDR5.", "url": "https://www.tomshardware.com/pc-components/cpus/amd-ceo-lisa-su-proposed-bringing-back-the-ryzen-7-5800x3d-set-plan-in-motion-before-ddr5-shortages-am4-cpu-considered-a-final-gift-to-loyal-fans-of-the-decade-old-socket"},
+       {"rotulo": "Dividendo da Hynix", "texto": "Segundo a Bloomberg, a SK Hynix lucrou US$ 15 bilhões com a Kioxia e planeja dividendo especial de US$ 12 bilhões.", "url": "https://www.bloomberg.com/news/articles/2026-10-25/sk-hynix-plans-12-billion-dividend-from-kioxia-gains-report"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas", "notas": [
+       {"rotulo": "Anthropic processada", "texto": "Herdeiros de Elvis Presley processam a Anthropic por 274 músicas que teriam treinado seus modelos e pedem mais de US$ 41 milhões. A empresa diz discordar e que vai se defender.", "url": "https://www.nytimes.com/2026/10/25/arts/music/anthropic-lawsuit-elvis-presley-songs.html?unlocked_article_code=1.LVE.Unk9.7e04-FAQ9Ei8"},
+       {"rotulo": "Balanços da semana", "texto": "Segundo a Bloomberg, Alphabet, Amazon e Microsoft devem reportar alta de dois dígitos na receita, com investidores impacientes por retorno dos gastos em IA.", "url": "https://www.bloomberg.com/news/articles/2026-10-25/ai-spending-fears-threaten-to-swamp-big-tech-s-strong-earnings"},
+       {"rotulo": "SpaceX e a dívida", "texto": "Elon Musk diz que a SpaceX fechou US$ 40 bilhões em dívida para GPUs e prevê \"morte e consolidação\" entre mais de 200 neoclouds, as nuvens focadas em IA.", "url": "https://x.com/elonmusk"},
+       {"rotulo": "IBM e modelos abertos", "texto": "O CEO da IBM diz que modelos de pesos abertos já são bons e baratos para rodar na própria empresa.", "url": "https://www.theregister.com/systems/2026/10/22/ibm-ceo-says-open-weight-models-are-now-irresistibly-good-and-cheap-on-prem/5304640"},
+       {"rotulo": "Retorno zero?", "texto": "Economista da Apollo diz que a IA trouxe \"retorno financeiro zero\" à maioria das empresas, fora as Big Techs.", "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/"},
+       {"rotulo": "iPhone Duo racha", "texto": "A iFixit abriu o iPhone Duo dobrável: nota 5 de 10 em reparabilidade. Algumas telas racham na dobra, talvez por uma barra do apoio da dobradiça.", "url": "https://www.ifixit.com/News/119895/iphone-duo-teardown"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin recua antes do Fed",
+     "notas": [
+       {"rotulo": "Bitcoin cede", "texto": "O bitcoin passou para baixo de US$ 80 mil, com investidores reduzindo risco antes da reunião do Fed.", "url": "https://www.coindesk.com/markets/2026/10/26/bitcoin-slips-under-usd80-000-as-traders-de-risk-ahead-of-fed-meeting"},
+       {"rotulo": "Semana pesada", "texto": "A semana traz decisões de juros do Fed, do BCE e do Banco do Japão, além do balanço da Coinbase.", "url": "https://www.coindesk.com/markets/2026/10/26/fed-ecb-and-boj-interest-rate-decisions-coinbase-earnings-crypto-week-ahead"},
+       {"rotulo": "Falha em carteira", "texto": "Um bug em carteira de bitcoin deixava servidores falsos roubar fundos quando o usuário acelerava um pagamento.", "url": "https://www.coindesk.com/tech/2026/10/26/bitcoin-wallet-bug-let-rogue-servers-steal-funds-when-users-tried-to-speed-up-payments"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda publicando",
+     "vozes": [
+       {"nome": "Fabio Akita", "onde": "YouTube", "texto": "No Akitando, ele mostra exemplos do que as IAs podem fazer hoje.",
+        "links": [{"rotulo": "O que IAs fazem", "url": "https://www.youtube.com/watch?v=CZSGIeRmYn8"}]},
+       {"nome": "Lucas Montano", "onde": "YouTube", "texto": "Para ele, comparar a bolha da web com a da IA é errado.",
+        "links": [{"rotulo": "Bolha da IA", "url": "https://www.youtube.com/watch?v=RC4tEcPUGag"}]},
+       {"nome": "Filipe Deschamps", "onde": "YouTube", "texto": "Voltou ao canal explicando o motivo do sumiço.",
+        "links": [{"rotulo": "Motivo do meu sumiço", "url": "https://www.youtube.com/watch?v=8ORyRrhGI_k"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "OpenAI e Anthropic cortaram preços de LLMs em até 80%. Por quê?", "onde": "minimaxir · análise", "url": "https://minimaxir.com/2026/10/cheap-llms/"},
+       {"titulo": "O estado da engenharia de contexto", "onde": "dbreunig · técnico", "url": "https://www.dbreunig.com/2026/10/24/the-state-of-context-engineering.html"},
+       {"titulo": "Windows XP faz 25 anos", "onde": "Tom's Hardware · nostalgia", "url": "https://www.tomshardware.com/software/windows/windows-xp-debuted-25-years-ago-today-microsofts-biggest-launch-since-95-was-its-first-consumer-os-to-remove-the-dos-underpinnings"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Cache", "categoria": "Hardware", "definicao": "Memória pequena e muito rápida dentro do processador, que guarda dados usados com frequência."},
+    {"termo": "Neocloud", "categoria": "IA", "definicao": "Empresa de nuvem criada para alugar GPUs e poder de computação para IA."},
+    {"termo": "Pesos abertos", "categoria": "IA", "definicao": "Modelo de IA cujos parâmetros são publicados e podem ser rodados em casa ou na empresa."}
+  ]
+}

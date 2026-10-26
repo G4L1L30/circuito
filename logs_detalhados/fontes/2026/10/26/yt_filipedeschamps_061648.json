@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261026T061633-19438b48",
+  "execucao": "2026-10-26T06:16:48-03:00",
+  "robo": "circuito_diario",
+  "fonte": "yt_filipedeschamps",
+  "nome": "Filipe Deschamps (YouTube)",
+  "tipo": "youtube",
+  "url": "https://www.youtube.com/@FilipeDeschamps/videos",
+  "status": "ok",
+  "itens_lidos": 3,
+  "itens_na_janela": 3,
+  "erro": null,
+  "duracao_ms": 662
+}
