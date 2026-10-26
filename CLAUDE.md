@@ -56,6 +56,8 @@ Rode a partir da raiz do repositório, nesta ordem:
 
 **Conta das páginas:** capa (1) + editorial (2) + suas páginas (a `materia` ocupa 2) + contracapa. O total precisa fechar em múltiplo de 4, porque a revista é feita de folhas dobradas. A montagem completa até 2 páginas sozinha: primeiro com o `glossario`, se houver termos, e depois com anúncios de mentirinha. Mais que isso, ela recusa.
 
+**Página `perdeu`:** só existe na segunda e só quando a edição anterior (`edicao_anterior` na coleta) for de sábado. Se o sábado falhou, ou se é a estreia da revista, não há o que recuperar: faça a segunda sem ela.
+
 **A matéria de capa começa em página par**, para abrir em página dupla. Como a capa é a 1 e o editorial a 2, ponha 1 página (ou 3) antes da `materia`. A ordem que funciona: `reportagem`, `materia`, `notas` (hardware), `notas` (Big Techs), `cripto`, `comunidade`, `contracapa`. Nas segundas, a `perdeu` entra logo depois da `materia`.
 
 ## Formato do JSON

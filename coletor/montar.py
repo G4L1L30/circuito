@@ -227,7 +227,18 @@ def contar_noticias(paginas: list[dict]) -> int:
                for p in paginas)
 
 
-def validar(ed: dict, tipo_ed: str, v: Validador) -> None:
+def teve_sabado(coleta: dict) -> bool:
+    """A página 'perdeu' só faz sentido se a edição anterior for de sábado (não é, por exemplo, na estreia)."""
+    anterior = coleta.get("edicao_anterior")
+    if not anterior:
+        return False
+    try:
+        return datetime.strptime(Path(anterior).stem, "%Y-%m-%d").weekday() == 5
+    except ValueError:
+        return False
+
+
+def validar(ed: dict, tipo_ed: str, v: Validador, sabado: bool = True) -> None:
     capa = ed.get("capa") or {}
     v.texto("capa", capa, "manchete", max_chars=26)
     v.texto("capa", capa, "subtitulo", max_palavras=16)
@@ -343,8 +354,11 @@ def validar(ed: dict, tipo_ed: str, v: Validador) -> None:
         v.erro("paginas", f"{n} notícias (máximo {MAX_NOTICIAS[tipo_ed]} na edição '{tipo_ed}'); "
                           "corte as menos importantes")
 
-    if tipo_ed == "segunda" and not any(p.get("tipo") == "perdeu" for p in paginas):
+    tem_perdeu = any(p.get("tipo") == "perdeu" for p in paginas)
+    if tipo_ed == "segunda" and sabado and not tem_perdeu:
         v.erro("paginas", "a edição de segunda precisa da página 'perdeu' (destaques do sábado)")
+    if tem_perdeu and not sabado:
+        v.erro("paginas", "não houve edição no sábado: tire a página 'perdeu'")
 
     for i, t in enumerate(v.lista("glossario", ed, "glossario", 0, 15, obrigatorio=False)):
         v.texto(f"glossario[{i}]", t, "termo", max_chars=22)
@@ -620,7 +634,7 @@ def main() -> int:
     numero, tipo_ed = coleta["edicao"]["numero"], coleta["edicao"]["tipo"]
     links, _ = links_da_coleta(coleta)
     v = Validador(links)
-    validar(ed, tipo_ed, v)
+    validar(ed, tipo_ed, v, sabado=teve_sabado(coleta))
     paginas = paginar(ed, numero, tipo_ed, v.erros) if not v.erros else []
     sumario = montar_sumario(paginas, v.erros) if paginas else []
 
