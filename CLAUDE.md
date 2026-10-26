@@ -54,7 +54,7 @@ Rode a partir da raiz do repositório, nesta ordem:
 
 **O que conta como notícia:** a matéria (1), a reportagem (1), cada nota das páginas `notas` e cada nota do `cripto`. As vozes da comunidade e as leituras da contracapa não contam. Com 16 notícias, uma edição normal fica assim: matéria + reportagem + 3 de segurança ou bastidores + 3 de hardware + 6 no giro + 2 de cripto.
 
-**Conta das páginas:** capa (1) + editorial (2) + suas páginas (a `materia` ocupa 2) + contracapa. O total precisa fechar em múltiplo de 4, porque a revista é feita de folhas dobradas. A montagem completa até 2 páginas sozinha: primeiro com o `glossario`, se houver termos, e depois com anúncios de mentirinha. Mais que isso, ela recusa.
+**Conta das páginas:** capa (1) + editorial (2) + suas páginas (a `materia` ocupa 2) + contracapa. O total precisa fechar em múltiplo de 4, porque a revista é feita de folhas dobradas. A montagem completa até 2 páginas sozinha: primeiro com o `glossario` (por isso, de 6 a 10 termos) e, só se os termos acabarem, com um anúncio de mentirinha de página inteira. Mais que isso, ela recusa.
 
 **Página `perdeu`:** só existe na segunda e só quando a edição anterior (`edicao_anterior` na coleta) for de sábado. Se o sábado falhou, ou se é a estreia da revista, não há o que recuperar: faça a segunda sem ela.
 
@@ -129,7 +129,7 @@ Rode a partir da raiz do repositório, nesta ordem:
 - **`elemento`** é o "elemento do dia": o quadradinho da tabela periódica na tela do computador da capa, ligado à manchete. Use um elemento de verdade quando ele combinar (Ar, argônio, para o Argon; Si, silício, para chips). Senão, invente um no mesmo formato: símbolo de 1 a 3 letras, número, nome e um detalhe curto (ex.: `G4`, `04`, `Gemini`, `1 mi tokens`).
 - **`refs`** é opcional em `notas` e `cripto`: sem ele, a montagem lista sozinha os sites das notas.
 - **`grafico`** só com números que estão na fonte (`url` obrigatório). De 2 a 4 barras. A última barra sai em destaque, a não ser que outra tenha `"destaque": true`.
-- **`glossario`** é opcional, mas útil: preenche as páginas que faltam para fechar em múltiplo de 4.
+- **`glossario`**: mande sempre de **6 a 10 termos** que apareceram na edição (cada página do dicionário leva até 5). São eles que preenchem as páginas que faltam para fechar em múltiplo de 4. O anúncio de página inteira só entra quando os termos acabam, e a edição tem **um anúncio só**: se sair o de página inteira, a contracapa fica sem o pequeno.
 - **Ilustrações disponíveis:** `robo`, `gpu`, `memoria`, `chip`, `cofre`, `predio`, `lupa`, `disquete`.
 
 ## Limites (a montagem confere e recusa o que passar)

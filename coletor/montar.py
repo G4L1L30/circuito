@@ -437,6 +437,7 @@ def paginar(ed: dict, numero: int, tipo_ed: str, erros: list[str]) -> list[dict]
         erros.append(f"paginas: a edição ficaria com {total + faltam} páginas; edição '{tipo_ed}' "
                      f"precisa ter entre {minimo} e {maximo}")
     termos = list(ed.get("glossario") or [])
+    teve_anuncio_inteiro = False
     for k in range(faltam if faltam <= MAX_PREENCHIMENTO else 0):
         if termos:
             lote, termos = termos[:TERMOS_POR_PAGINA], termos[TERMOS_POR_PAGINA:]
@@ -445,10 +446,13 @@ def paginar(ed: dict, numero: int, tipo_ed: str, erros: list[str]) -> list[dict]
         else:
             paginas.append({"tipo": "anuncio", "anuncio": anuncio(numero + k + 1),
                             "runner": ["Classificados", "Anúncio"], "folio": "Classificados", "sem_sumario": True})
+            teve_anuncio_inteiro = True
 
+    # Um anúncio por edição: se já saiu o de página inteira, a contracapa fica sem o pequeno.
     contracapa = blocos[-1]
     paginas.append({**contracapa, "tipo": "contracapa", "runner": ["Pra ler com calma", "Contracapa"],
-                    "anuncio": anuncio(numero), "sumario_rotulo": "Fim", "sumario": "Pra ler com calma"})
+                    "anuncio": None if teve_anuncio_inteiro else anuncio(numero),
+                    "sumario_rotulo": "Fim", "sumario": "Pra ler com calma"})
 
     for n, p in enumerate(paginas, start=1):
         p["num"] = n

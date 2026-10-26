@@ -298,7 +298,7 @@
   <ul class="leituras">
     {% for l in p.leituras %}<li><div><a href="{{ l.url }}">{{ l.titulo }}</a><span>{{ l.onde }}</span></div></li>{% endfor %}
   </ul>
-  {{ anuncio(p.anuncio) }}
+  {% if p.anuncio %}{{ anuncio(p.anuncio) }}{% endif %}
   <div class="capa-pe">
     <p>{{ proxima[0] }}<br>{{ proxima[1] }}</p>
     <div class="barras" aria-hidden="true"><i></i><span>CIRCUITO·{{ ed.numero_fmt }}</span></div>
