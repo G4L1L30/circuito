@@ -13,6 +13,7 @@ Uso:
 import argparse
 import math
 import re
+import shutil
 import sys
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -22,9 +23,9 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from comum import (ARQ_ESTADO, ARQ_VISTOS, DIAS_SEMANA, MESES, PASTA_COLETA,  # noqa: E402
-                   PASTA_EDICOES, PASTA_ESTADO, PASTA_MODELO, PASTA_SITE, RAIZ, agora,
-                   data_extenso, de_iso, gravar_json, gravar_texto, iso, ler_json)
+from comum import (ARQ_ESTADO, ARQ_VISTOS, DIAS_SEMANA, IMAGEM_PREVIA, MESES,  # noqa: E402
+                   PASTA_COLETA, PASTA_EDICOES, PASTA_ESTADO, PASTA_MODELO, PASTA_SITE, RAIZ,
+                   SITE_URL, agora, data_extenso, de_iso, gravar_json, gravar_texto, iso, ler_json)
 
 ARQ_EDICOES_PUBLICADAS = PASTA_ESTADO / "edicoes.json"
 PASTA_PREVIA = RAIZ / "previa"
@@ -571,12 +572,17 @@ def renderizar(ed, coleta, paginas, sumario, data, numero, raiz, teste) -> str:
     for i in range(1, len(paginas) - 1, 2):
         grupos.append(paginas[i:i + 2])
     grupos.append([paginas[-1]])
+    # Prévia de link (WhatsApp, redes sociais): a página do dia aponta para a raiz; a de arquivo, para si mesma.
+    previa = {"url": SITE_URL if raiz != "../" else f"{SITE_URL}edicoes/{dados_ed['data']}.html",
+              "imagem": SITE_URL + IMAGEM_PREVIA,
+              "titulo": f"Circuito nº {dados_ed['numero_fmt']} · {ed['capa']['manchete']}",
+              "descricao": ed["capa"]["subtitulo"]}
     return ambiente_jinja().get_template("revista.html.j2").render(
         ed=dados_ed, grupos=grupos, sumario=sumario, expediente=expediente(coleta, ed),
         cotacoes=preparar_cotacoes(coleta.get("cotacoes")), medo=preparar_medo(coleta.get("medo_ganancia")),
         proxima=proxima_edicao(data, numero), css=Markup((PASTA_MODELO / "revista.css").read_text(encoding="utf-8")),
         defs=Markup((PASTA_MODELO / "padroes.svg").read_text(encoding="utf-8")), svg=carregar_svgs(),
-        raiz=raiz, teste=teste)
+        raiz=raiz, teste=teste, previa=previa)
 
 
 # ---------------------------------------------------------------- publicação
@@ -586,6 +592,7 @@ def publicar(html_edicao: str, html_raiz: str, coleta: dict, ed: dict, paginas: 
     gravar_texto(PASTA_SITE / "edicoes" / f"{dia}.html", html_edicao)
     gravar_texto(PASTA_SITE / "index.html", html_raiz)
     gravar_texto(PASTA_SITE / ".nojekyll", "")
+    shutil.copyfile(PASTA_MODELO / IMAGEM_PREVIA, PASTA_SITE / IMAGEM_PREVIA)
 
     publicadas = [e for e in ler_json(ARQ_EDICOES_PUBLICADAS, []) if e["data"] != dia]
     publicadas.append({"data": dia, "numero": numero, "manchete": ed["capa"]["manchete"],
@@ -593,7 +600,10 @@ def publicar(html_edicao: str, html_raiz: str, coleta: dict, ed: dict, paginas: 
     publicadas.sort(key=lambda e: e["data"], reverse=True)
     gravar_json(ARQ_EDICOES_PUBLICADAS, publicadas)
     gravar_texto(PASTA_SITE / "arquivo.html", ambiente_jinja().get_template("arquivo.html.j2").render(
-        edicoes=publicadas, css=Markup((PASTA_MODELO / "revista.css").read_text(encoding="utf-8"))))
+        edicoes=publicadas, css=Markup((PASTA_MODELO / "revista.css").read_text(encoding="utf-8")),
+        previa={"url": SITE_URL + "arquivo.html", "imagem": SITE_URL + IMAGEM_PREVIA,
+                "titulo": "Circuito · edições anteriores",
+                "descricao": "Revista diária de tecnologia em 5 minutos, de segunda a sábado, às 7h."}))
 
     estado = ler_json(ARQ_ESTADO, {})
     estado.update(ultimo_fechamento=coleta["janela"]["fim"],

@@ -1,5 +1,7 @@
 # Circuito
 
+**Leia a edição de hoje: https://g4l1l30.github.io/circuito/** · [edições anteriores](https://g4l1l30.github.io/circuito/arquivo.html)
+
 Revista diária de tecnologia em formatinho retrô (13,5 × 20,5 cm), com cara de revista de informática dos anos 80: IA, placas de vídeo e memória, Big Techs, um básico de cripto e a comunidade brasileira de tecnologia. São 5 minutos de leitura, e cada nota traz o link para a matéria original.
 
 Sai de segunda a sábado, às 7h (horário de Brasília). A edição de segunda é a maior, porque cobre o fim de semana.

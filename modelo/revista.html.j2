@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Circuito nº {{ ed.numero_fmt }} · {{ ed.data_curta }}</title>
 <meta name="description" content="{{ ed.capa.manchete }}. {{ ed.capa.subtitulo }}">
+{% include "previa.html.j2" %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=VT323&display=swap">
@@ -312,6 +313,7 @@
     <span><strong>Circuito</strong> · nº {{ ed.numero_fmt }} · {{ ed.data_extenso }}</span>
     <span><a href="{{ raiz }}arquivo.html">Edições anteriores</a></span>
   </div>
+  <p class="mesa-sobre">Revista diária de tecnologia em 5 minutos · de segunda a sábado, às 7h · grátis. Cada nota tem o link para a matéria original.</p>
   {% if teste %}<div class="faixa-teste">Prévia · edição de teste, não publicada</div>{% endif %}
   {% for grupo in grupos %}
   <section class="spread{{ ' solo' if grupo|length == 1 }}" aria-label="{{ grupo|map(attribute='rotulo_aria')|join(' e ') }}">

@@ -1,0 +1,68 @@
+<!doctype html>
+<!-- Fonte da imagem de prévia de link (WhatsApp, redes sociais): modelo/og-circuito.png, 1200 × 630.
+     Para regerar: abrir esta página num navegador sem janela com 1200 × 630 e salvar o print
+     (comando em docs/publicacao-diaria.md). A imagem é fixa; não muda a cada edição. -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=VT323&display=swap">
+<link rel="stylesheet" href="revista.css">
+<style>
+  html, body { margin:0; padding:0; width:1200px; height:630px; overflow:hidden; background:var(--desk) }
+  .cartao {
+    width:1200px; height:630px; box-sizing:border-box; padding:46px 60px;
+    display:grid; grid-template-columns:1fr 440px; gap:40px; align-items:center;
+    color:var(--ink); background-color:var(--paper);
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .22 0 0 0 0 .17 0 0 0 0 .10 0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"),
+      radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(120,92,45,.13) 100%);
+  }
+  .texto { display:flex; flex-direction:column; gap:22px }
+  .faixa { font:600 20px/1 var(--f-label); letter-spacing:.2em; text-transform:uppercase; display:flex; justify-content:space-between; border-bottom:4px solid var(--ink); padding-bottom:12px }
+  .marca { margin:0; font:400 128px/.9 var(--f-display); letter-spacing:-.015em; text-shadow:7px 7px 0 var(--red) }
+  .slogan { margin:0; font:600 24px/1 var(--f-label); letter-spacing:.32em; text-transform:uppercase }
+  .frase { margin:0; font:italic 400 34px/1.25 var(--f-body); border-left:9px solid var(--red); padding-left:22px }
+  .quando { margin:0; font:400 34px/1 var(--f-data); letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft) }
+</style>
+</head>
+<body>
+<svg width="0" height="0" aria-hidden="true" style="position:absolute"><defs>
+  <pattern id="ht-blue" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(75)"><circle cx="2.5" cy="2.5" r="1.45" class="f-blue"/></pattern>
+  <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" class="f-paper" opacity=".09"/></pattern>
+  <pattern id="teclas" width="12" height="9" patternUnits="userSpaceOnUse"><rect x="1.5" y="1.5" width="9" height="6" rx="1" class="f-ink" opacity=".8"/></pattern>
+</defs></svg>
+<div class="cartao">
+  <div class="texto">
+    <div class="faixa"><span>Revista diária</span><span>Grátis</span></div>
+    <h1 class="marca">CIRCUITO</h1>
+    <p class="slogan">IA · Hardware · Big Techs · Cripto</p>
+    <p class="frase">Tecnologia em 5 minutos, com cara de revista de informática dos anos 80.</p>
+    <p class="quando">Segunda a sábado · 7h</p>
+  </div>
+  <svg viewBox="0 0 300 250" width="440" height="367">
+    <circle cx="150" cy="116" r="114" fill="url(#ht-blue)"/>
+    <g class="s-ink" stroke-width="2.5" stroke-linecap="round">
+      <line x1="14" y1="36" x2="38" y2="50"/><line x1="286" y1="36" x2="262" y2="50"/>
+      <line x1="6" y1="116" x2="32" y2="116"/><line x1="294" y1="116" x2="268" y2="116"/>
+    </g>
+    <rect x="61" y="28" width="186" height="160" rx="16" class="f-red" opacity=".9"/>
+    <rect x="55" y="22" width="186" height="160" rx="16" class="f-paper s-ink" stroke-width="3"/>
+    <rect x="72" y="38" width="152" height="114" rx="12" class="f-ink"/>
+    <rect x="72" y="38" width="152" height="114" rx="12" fill="url(#scan)"/>
+    <rect x="111" y="50" width="74" height="88" class="f-none s-mus" stroke-width="2.5"/>
+    <text x="117" y="65" class="t-data f-mus" font-size="14">29</text>
+    <text x="148" y="108" text-anchor="middle" class="t-slab f-paper" font-size="40">Cu</text>
+    <text x="148" y="122" text-anchor="middle" class="t-label f-mus" font-size="8.5" letter-spacing="1.6">COBRE</text>
+    <text x="148" y="133" text-anchor="middle" class="t-data f-paper" font-size="11">63,546</text>
+    <rect x="82" y="140" width="8" height="5" class="f-mus"/>
+    <rect x="172" y="161" width="52" height="6" rx="1" class="f-ink"/>
+    <circle cx="82" cy="165" r="3.6" class="f-red"/>
+    <text x="92" y="168" class="t-label f-ink" font-size="7" letter-spacing="1.2">CIRCUITO</text>
+    <path d="M122 182 L174 182 L184 198 L112 198 Z" class="f-shade s-ink" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M48 206 L252 206 L266 242 L34 242 Z" class="f-paper s-ink" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M57 211 L243 211 L254 237 L46 237 Z" fill="url(#teclas)"/>
+    <path d="M0,-9 L2.2,-2.2 L9,0 L2.2,2.2 L0,9 L-2.2,2.2 L-9,0 L-2.2,-2.2Z" class="f-mus s-ink" stroke-width="1.2" transform="translate(262 20)"/>
+  </svg>
+</div>
+</body>
+</html>

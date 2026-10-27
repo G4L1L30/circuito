@@ -50,6 +50,18 @@ circuito/
 
 Identidade do robô: `robo_id` = `circuito_diario`, usado no log, no resumo de execução e nos commits.
 
+## Prévia de link (WhatsApp e redes)
+
+Cada página publicada leva tags Open Graph, que o WhatsApp lê para montar o cartão do link: título com o número e a manchete do dia, o subtítulo como descrição e uma imagem fixa (`modelo/og-circuito.jpg`, 1200 × 630, ~75 KB). A montagem copia a imagem para `site/` a cada publicação. O endereço do site fica em `SITE_URL`, no `coletor/comum.py`.
+
+A imagem é gerada a partir de `modelo/og-card.html`. Para mudar o visual, edite a página e rode, no Windows:
+
+```
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=10000 --window-size=1200,630 --screenshot=modelo\og-circuito.jpg modelo\og-card.html
+```
+
+Mantenha a imagem abaixo de ~300 KB, senão o WhatsApp não mostra a foto no cartão. O WhatsApp guarda a prévia em cache: um link já compartilhado pode demorar a mostrar a imagem nova.
+
 ## O que o robô faz em cada execução (às 6h10)
 
 1. A máquina da nuvem clona o repositório (automático).

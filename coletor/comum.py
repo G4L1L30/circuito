@@ -9,6 +9,10 @@ from pathlib import Path
 
 ROBO_ID = "circuito_diario"
 
+# Endereço público do site (GitHub Pages). As tags de prévia de link exigem URL absoluta.
+SITE_URL = "https://g4l1l30.github.io/circuito/"
+IMAGEM_PREVIA = "og-circuito.jpg"
+
 RAIZ = Path(__file__).resolve().parent.parent
 PASTA_COLETA = RAIZ / "coleta"
 PASTA_EDICOES = RAIZ / "edicoes"
