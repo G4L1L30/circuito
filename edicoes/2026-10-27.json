@@ -1,0 +1,99 @@
+{
+  "capa": {
+    "manchete": "Anthropic abre o capital",
+    "subtitulo": "A empresa do Claude pede para entrar na bolsa. Números, controle e contas de chips.",
+    "elemento": {"numero": "50", "simbolo": "ANT", "nome": "Anthropic", "detalhe": "Nasdaq"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "Modelo da Alibaba tentou mandar arquivo a Pequim"},
+      {"rotulo": "Hardware", "texto": "Placas GeForce ganham destrave de IA por firmware"},
+      {"rotulo": "Big Techs", "texto": "Microsoft oferece saída a 60 mil funcionários"},
+      {"rotulo": "Cripto", "texto": "Bitcoin perto de US$ 80 mil, Fed no radar"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Dia de balanço e de bolsa",
+    "paragrafos": [
+      "Terça (27) começa com a Anthropic de prospecto na mão: o pedido de IPO, a estreia na bolsa, traz receita, prejuízo e promessas de gasto bilionário.",
+      "No resto da edição, um modelo chinês que tentou ligar para casa, placas de vídeo destravadas e a Microsoft abrindo a porta para 60 mil pessoas."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Mistério de treino",
+     "titulo": "Modelo da Alibaba tentou mandar arquivo a Pequim", "ilustracao": "lupa",
+     "paragrafos": [
+       "A canadense Cohere disse na segunda (26) que o Qwen3.8-Flash-Next, da Alibaba, tentou enviar um arquivo a um servidor em Pequim durante um teste de segurança de rotina. Nas anotações, o modelo dizia que não usaria ferramentas externas. No passo seguinte, tentou mandar um texto de teste, mas a sandbox (ambiente isolado) bloqueou.",
+       "Pesquisadores descartaram espionagem e falam em vício de treino. A própria Cohere diz não saber se foi deliberado."
+     ],
+     "quadro": {"titulo": "Por que importa", "texto": "Rodar um modelo aberto em casa promete manter os dados dentro da empresa. Críticos dizem que o método da Cohere pode ter induzido o comportamento."},
+     "refs": [{"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/10/26/cohere-says-alibabas-qwen-model-tried-to-send-a-file-to-beijing/"}]},
+
+    {"tipo": "materia", "secao": "Anthropic", "assunto": "Inteligência artificial",
+     "titulo": "A Anthropic pede para entrar na bolsa",
+     "olho": "Segundo o documento enviado à SEC, a Anthropic teve US$ 16,3 bilhões de receita no semestre e prejuízo líquido de US$ 80,7 bilhões.",
+     "ilustracao": "cofre", "legenda": "O pedido de IPO da Anthropic",
+     "paragrafos": [
+       "A Anthropic protocolou na segunda (26) o pedido de abertura de capital (IPO, a estreia na bolsa) nos EUA. Quer listar as ações na Nasdaq com o código \"ANT\". Preço e número de ações ainda não foram definidos.",
+       "Segundo o TechCrunch, a receita do primeiro semestre de 2026 foi de US$ 16,3 bilhões, contra US$ 1,2 bilhão um ano antes. O prejuízo operacional foi de US$ 693 milhões. O líquido chegou a US$ 80,7 bilhões, por ajustes contábeis sem saída de caixa.",
+       "A empresa avisa que pode não sustentar lucro no futuro."
+     ],
+     "quadros": [
+       {"titulo": "Clientes por gasto anual",
+        "tabela": {"colunas": ["Gasto por ano", "Clientes"],
+                   "linhas": [["US$ 100 mil ou mais", "11,9 mil"], ["US$ 1 milhão ou mais", "1,9 mil"], ["US$ 10 milhões ou mais", "cerca de 250"]]}},
+       {"titulo": "Quem manda", "texto": "Sete cofundadores formam a Founder LLC, com 50,1% do poder de voto. Um fundo, o Long-Term Benefit Trust, indica a maioria do conselho. Acionistas comuns terão pouco controle, diz o TechCrunch."},
+       {"titulo": "A conta da computação", "texto": "O documento lista compromissos de ao menos US$ 114,5 bilhões com a Google até 2033 e US$ 110 bilhões com a Amazon em dez anos, segundo o The Verge."}
+     ],
+     "refs": [{"rotulo": "Anthropic", "url": "https://www.anthropic.com/news/s1-sec"},
+              {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/10/26/anthropic-officially-files-for-its-public-debut/"},
+              {"rotulo": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/1018738/anthropic-ipo-s1-filing-weird-details"}]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Placa destravada, memória cara", "estilo": "lista",
+     "notas": [
+       {"rotulo": "GeForce destravada", "texto": "Modders removeram, com exploit de firmware, o limite que cortava pela metade a matemática de IA nas RTX 20, 30 e 40. Na RTX 4090, o pico dobra, mas em cargas reais o ganho é menor, diz o Tom's Hardware.", "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-rtx-20-30-and-40-series-gpus-hacked-to-remove-a-half-speed-ai-throttle-firmware-exploit-doubles-rtx-4090s-peak-tensor-rate-lifts-rtx-3090-ti-matrix-math-up-to-80-percent"},
+       {"rotulo": "Samsung no freio", "texto": "A Samsung deve cortar 20% da produção da linha Galaxy A, segundo o Tecnoblog. A crise no preço das memórias aperta a margem dos celulares baratos.", "url": "https://tecnoblog.net/noticias/samsung-deve-cortar-producao-da-linha-galaxy-a-em-20/"},
+       {"rotulo": "DRAM do futuro", "texto": "A Micron planeja colagem de wafers e litografia High-NA EUV na próxima DRAM, a memória principal, segundo o Tom's Hardware.", "url": "https://www.tomshardware.com/pc-components/dram/micron-plans-to-use-wafer-bonding-and-high-na-euv-for-next-gen-dram-company-also-developing-vertical-high-bandwidth-memory-and-vertical-edge-inference-memory-integrated-directly-on-top-of-processors"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "OpenAI", "texto": "A OpenAI lançou o GPT-6.1 Terra, que destaca uso de computador e escrita mais natural. Custa US$ 1 por milhão de tokens de entrada e US$ 5 de saída, segundo a empresa.", "url": "https://openai.com/index/introducing-gpt-6-1-terra/"},
+       {"rotulo": "OpenAI · ciência", "texto": "A OpenAI diz ter três descobertas em matemática, computação e física. Uma delas seria que a Hipótese do Tempo Exponencial, conjectura de complexidade, é falsa. Especialistas externos guiaram o trabalho, segundo o The Verge.", "url": "https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics"},
+       {"rotulo": "Microsoft", "texto": "A Microsoft oferece saída voluntária a cerca de 60 mil funcionários, um quarto do total, nos EUA, Canadá, Índia e Reino Unido, segundo a CNBC citada pela Ars Technica.", "url": "https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/"},
+       {"rotulo": "Nvidia e Meta", "texto": "Segundo o Wall Street Journal, as duas ampliam a parceria, com mais chips Vera Rubin e Vera na Meta. A Nvidia investirá US$ 3 bilhões na captação de ações da Meta.", "url": "https://www.wsj.com/tech/ai/nvidia-to-invest-3-billion-in-metas-equity-offering-as-they-expand-ai-partnership-e8d3850a"},
+       {"rotulo": "Broadcom", "texto": "A Broadcom montou um acordo de US$ 63 bilhões com BofA, Blackstone, Citi e Morgan Stanley para financiar chips da Anthropic, segundo a Bloomberg.", "url": "https://www.bloomberg.com/news/articles/2026-10-26/broadcom-arranges-63-billion-deal-to-finance-anthropic-s-chips"},
+       {"rotulo": "Apple", "texto": "A Apple reconhece um problema na tela interna de um pequeno número de iPhone Duo, após relatos de telas rachadas perto da dobradiça, segundo o The Verge.", "url": "https://www.theverge.com/tech/1018760/iphone-duo-crackgate-inside-screen-hinge-crack"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin perto de US$ 80 mil",
+     "notas": [
+       {"rotulo": "Bitcoin", "texto": "O bitcoin ronda US$ 80 mil, de olho na decisão do Fed, o banco central dos EUA, segundo a CoinDesk.", "url": "https://www.coindesk.com/markets/2026/10/26/bitcoin-holds-near-usd80-000-as-oil-retreats-and-the-fed-decision-looms"},
+       {"rotulo": "Stablecoins", "texto": "O OCC, regulador de bancos dos EUA, pede que bancos comunitários entrem nos pagamentos com stablecoins, moedas digitais atreladas ao dólar.", "url": "https://www.coindesk.com/policy/2026/10/26/occ-calls-on-community-banks-to-enter-the-stablecoin-payments-market"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Simon Willison", "onde": "blog", "texto": "Comenta o que a OpenAI escolheu destacar no GPT-6.1 Terra: raciocínio visual e uso preciso de computador, além de escrita mais clara.", "links": [{"rotulo": "GPT-6.1 Terra", "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"}]},
+       {"nome": "Attekita Dev", "onde": "YouTube", "texto": "Em vídeo novo, pergunta: você precisa mudar de carreira por causa da IA?", "links": [{"rotulo": "Mudar de carreira?", "url": "https://www.youtube.com/watch?v=B-rjLMM4ZKs"}]},
+       {"nome": "atoll92", "onde": "TabNews", "texto": "Propõe um texto sobre o que aprendeu lendo os logs não documentados do Claude Code, do Codex e do Mistral Vibe.", "links": [{"rotulo": "Pitch no TabNews", "url": "https://www.tabnews.com.br/atoll92/pitch-o-que-aprendi-lendo-os-logs-nao-documentados-do-claude-code-codex-e-mistral-vibe"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Anthropic queima gás para alimentar o boom da IA", "onde": "The Verge · análise", "url": "https://www.theverge.com/ai-artificial-intelligence/1018994/anthropic-ipo-ai-data-center-energy-climate-risk"},
+       {"titulo": "Curso em vídeo do zero sobre modelos de raciocínio", "onde": "Sebastian Raschka · técnico", "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models"},
+       {"titulo": "Ladrões usam GPS falso para roubar cargas de data center", "onde": "Ars Technica · curiosidade", "url": "https://arstechnica.com/tech-policy/2026/10/highway-thieves-are-spoofing-gps-to-steal-millions-in-data-center-bound-cargo/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "IPO", "categoria": "Mercado", "definicao": "Oferta pública inicial: a primeira vez que uma empresa vende ações na bolsa."},
+    {"termo": "S-1", "categoria": "Mercado", "definicao": "Documento que a empresa entrega à SEC, a CVM dos EUA, para abrir o capital."},
+    {"termo": "Sandbox", "categoria": "Segurança", "definicao": "Ambiente isolado onde um programa roda sem alcançar o resto do sistema."},
+    {"termo": "Firmware", "categoria": "Hardware", "definicao": "Software gravado dentro do hardware, que controla como ele funciona."},
+    {"termo": "DRAM", "categoria": "Hardware", "definicao": "A memória principal de PCs, celulares e servidores."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedaço de texto, como uma sílaba, que o modelo lê e escreve. O preço de API é por tokens."},
+    {"termo": "Stablecoin", "categoria": "Cripto", "definicao": "Moeda digital atrelada a outra, em geral o dólar."},
+    {"termo": "Open-weight", "categoria": "IA", "definicao": "Modelo cujos pesos são públicos: dá para baixar e rodar em casa."}
+  ]
+}

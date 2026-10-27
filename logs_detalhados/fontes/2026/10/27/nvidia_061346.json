@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261027T061339-c90eb99c",
+  "execucao": "2026-10-27T06:13:46-03:00",
+  "robo": "circuito_diario",
+  "fonte": "nvidia",
+  "nome": "Nvidia",
+  "tipo": "rss",
+  "url": "https://blogs.nvidia.com/feed/",
+  "status": "ok",
+  "itens_lidos": 18,
+  "itens_na_janela": 0,
+  "erro": null,
+  "duracao_ms": 599
+}
