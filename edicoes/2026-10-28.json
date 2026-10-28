@@ -1,0 +1,98 @@
+{
+  "capa": {
+    "manchete": "Google lança o Genie 4",
+    "subtitulo": "O modelo que cria mundos jogáveis ganha som, fala e física mais real.",
+    "elemento": {"numero": "4", "simbolo": "G4", "nome": "Genie", "detalhe": "Mundos 3D"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "Falha de 16 anos ameaça servidores do mundo todo"},
+      {"rotulo": "Hardware", "texto": "SK Hynix vê falta de memória até 2030"},
+      {"rotulo": "Big Techs", "texto": "Apple estreia o chip M6 no MacBook Pro"},
+      {"rotulo": "Cripto", "texto": "Bitcoin perto de US$ 81 mil, Fed decide hoje"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Mundos de mentira, falhas de verdade",
+    "paragrafos": [
+      "Quarta (28) tem a Google mostrando o Genie 4, uma IA que inventa mundos inteiros enquanto você anda por eles.",
+      "Do lado menos divertido, um defeito antigo no firmware de servidores e uma memória que, segundo a SK Hynix, vai faltar por anos."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Alerta máximo",
+     "titulo": "Falha de 16 anos ameaça o firmware dos servidores", "ilustracao": "lupa",
+     "paragrafos": [
+       "Uma falha com nota 9,5 de 10 foi achada no EDK II, código aberto usado para criar o UEFI, o firmware que roda quando o servidor liga. Está no driver de boot pela rede e permite rodar código antes de o sistema ter qualquer defesa, segundo o Ars Technica.",
+       "Quem descobriu combinou divulgar em janeiro, mas o conserto vazou antes, numa proposta pública da AMI. Atualizar firmware em milhões de máquinas é lento."
+     ],
+     "quadro": {"titulo": "Quem achou", "texto": "Alex Matrosov, da Anthropic, e Dan Holmes, da Google, descobriram a falha, registrada como CVE-2026-97631."},
+     "refs": [{"rotulo": "Ars Technica", "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/"}]},
+
+    {"tipo": "materia", "secao": "Google", "assunto": "Inteligência artificial",
+     "titulo": "Google mostra o Genie 4, criador de mundos",
+     "olho": "O Genie 4 gera mundos em tempo real com som ambiente, música e diálogos, e você muda o clima ou a câmera só escrevendo, segundo a Google.",
+     "ilustracao": "robo", "legenda": "O Genie 4, da Google DeepMind",
+     "paragrafos": [
+       "A Google DeepMind apresentou o Genie 4, um modelo de mundo: uma IA que cria um ambiente interativo quadro a quadro, sem cenário pronto nem programação. Você descreve o que quer e explora.",
+       "É o primeiro da linha com áudio nativo: sons de fundo, música e conversas que se adaptam ao que muda na cena."
+     ],
+     "quadros": [
+       {"titulo": "O que mudou", "texto": "Segundo a Google, dá para mover a câmera, trocar o clima ou chamar personagens por texto. A física de colisões e do ar ficou mais realista, diz o Ars Technica."},
+       {"titulo": "E pra você?", "texto": "Ainda não dá para testar. Entra primeiro para assinantes do plano Google AI Ultra, a partir de US$ 100 por mês, e depois na API. Preço da API não saiu."},
+       {"titulo": "Limite", "texto": "Os mundos só se mantêm coerentes por cerca de dois minutos, segundo o TechCrunch."}
+     ],
+     "refs": [{"rotulo": "Google", "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/"},
+              {"rotulo": "Ars Technica", "url": "https://arstechnica.com/google/2026/10/deepminds-genie-4-world-model-adds-audio-and-more-realistic-people-to-simulations/"},
+              {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/"}]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Chip e memória em fila", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Falta até 2030", "texto": "A SK Hynix prevê escassez de memória até 2030, com contratos de longo prazo com 14 grandes clientes, segundo o The Register.", "url": "https://www.theregister.com/systems/2026/10/28/sk-hynix-says-memory-shortages-to-persist-until-2030/5305887"},
+       {"rotulo": "HBM chinesa", "texto": "A CXMT quer produzir HBM3E, memória de alta largura de banda para IA, mesmo com aproveitamento de 20% a 30%, segundo a Reuters.", "url": "https://www.reuters.com/world/china/chinas-cxmt-start-advanced-ai-memory-production-despite-poor-yields-sources-say-2026-10-28/"},
+       {"rotulo": "Embalagem mais cara", "texto": "A TSMC avalia subir até 20% o preço do CoWoS, técnica de empacotar chips, segundo o Tom's Hardware.", "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-reportedly-weighs-20-percent-cowos-price-increase-as-nvidia-blackwell-and-rubin-chips-put-pressure-on-packaging-capacity-equipment-lead-times-stretch-to-eight-months"},
+       {"rotulo": "Nvidia reserva fábrica", "texto": "A Nvidia fechou acordos bilionários para garantir substratos e embalagem até 2028.", "url": "https://www.tomshardware.com/tech-industry/semiconductors/nvidia-is-bankrolling-ai-accelerator-supply-chain-buildout-to-reserve-production-capacity-announces-billion-dollar-deals-with-six-major-suppliers-across-substrates-advanced-packaging-semiconductor-testing-and-optical-engines"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "OpenAI", "texto": "A OpenAI divulgou soluções para três problemas de matemática, uma delas contra a Hipótese do Tempo Exponencial, base da teoria da computação. A Anthropic publicou depois sua própria refutação, diz o TechCrunch.", "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"},
+       {"rotulo": "Apple", "texto": "A Apple lançou na terça (27) o MacBook Pro de 14 polegadas com chip M6, a partir de US$ 1.999. Promete 24 horas de bateria e até 25% mais velocidade em IA que o M5, segundo a empresa.", "url": "https://techcrunch.com/2026/10/27/apple-unveils-new-14-inch-macbook-pro-with-m6-chip/"},
+       {"rotulo": "Siri em português", "texto": "O iOS 27.2 libera a nova Siri com IA em português no Brasil, com acesso a mais dados pessoais, segundo o Tecnoblog.", "url": "https://tecnoblog.net/noticias/ios-27-2-libera-nova-siri-em-portugues-no-brasil/"},
+       {"rotulo": "Microsoft", "texto": "Uma falha grave no Microsoft Authenticator para Android deixava invasores obterem credenciais. A correção já saiu, diz o Tecnoblog.", "url": "https://tecnoblog.net/noticias/microsoft-authenticator-tem-falha-grave-correcao-ja-foi-liberada/"},
+       {"rotulo": "GitHub", "texto": "Thomas Dohmke, ex-CEO do GitHub, lançou a Entire, plataforma rival feita para IA e humanos, segundo o Tecnoblog.", "url": "https://tecnoblog.net/noticias/ex-ceo-do-github-lanca-entire-plataforma-rival-feita-para-ia-e-humanos/"},
+       {"rotulo": "Google Docs", "texto": "O Google Docs agora edita arquivos Markdown nativamente, mantendo o formato original, com edição em grupo e histórico de versões.", "url": "https://tecnoblog.net/noticias/google-docs-agora-edita-arquivos-markdown-nativamente/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin perto de US$ 81 mil, Fed decide",
+     "notas": [
+       {"rotulo": "Fed", "texto": "O bitcoin subiu quase 2% e ficou perto de US$ 81 mil antes da decisão de juros do Fed, o banco central dos EUA, nesta quarta (28), segundo a CoinDesk.", "url": "https://www.coindesk.com/markets/2026/10/28/bitcoin-nears-usd81-000-ahead-of-fed-decision-as-zec-jumps-8"},
+       {"rotulo": "Eleição no Brasil", "texto": "Empresas brasileiras buscaram stablecoins, moedas atreladas ao dólar, na eleição. No Mercado Bitcoin, o giro do USDT subiu quase 800%, segundo a CoinDesk.", "url": "https://www.coindesk.com/business/2026/10/27/brazilian-companies-turned-to-stablecoins-on-election-day-to-dodge-a-currency-crash"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Fabio Akita", "onde": "blog", "texto": "Publicou um benchmark de modelos abertos de IA para rodar em hardware caseiro, alugando placas como B300 e H200 para testar.", "links": [{"rotulo": "LLM Benchmark caseiro", "url": "https://www.akitaonrails.com/2026/10/27/llm-benchmark-melhores-llms-open-source-hardware-caseiro/"}]},
+       {"nome": "Fabio Akita", "onde": "blog", "texto": "Outro benchmark, para contadores e advogados: depois de quase 70 rodadas e uns 60 modelos, saiu o veredito.", "links": [{"rotulo": "Benchmark para contadores", "url": "https://www.akitaonrails.com/2026/10/27/llm-benchmark-para-contadores-e-advogados-experimental/"}]},
+       {"nome": "Simon Willison", "onde": "blog", "texto": "Mostra um Game Boy Color rodando no crachá de uma conferência, com emulador feito com ajuda do Gemini.", "links": [{"rotulo": "Game Boy no crachá", "url": "https://simonwillison.net/2026/Oct/27/game-boy-color-on-my-conference-badge/"}]}
+     ],
+     "quadro": {"titulo": "No TabNews", "texto": "Tem pitch do Yenpo, app de Mac para revisar código escrito por IA, e a EpistulaMail já pode ser baixada."}},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "O que muda para a Anthropic ao abrir o capital", "onde": "TechCrunch · análise", "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/"},
+       {"titulo": "Os sete pesadelos de IA no pedido de IPO da Anthropic", "onde": "Ars Technica · curiosidade", "url": "https://arstechnica.com/ai/2026/10/anthropic-ipo-warns-its-ai-could-blackmail-people-become-sentient-end-humanity/"},
+       {"titulo": "Ladrões sequestram cargas de equipamento de data center", "onde": "Tom's Hardware · reportagem", "url": "https://www.tomshardware.com/tech-industry/big-tech/data-center-gear-is-being-hijacked-in-transit-to-the-tune-of-hundreds-of-millions-grand-theft-gpu-thieves-hack-accounts-perform-hit-and-runs-spoof-gps-signals-and-funnel-hardware-to-china"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "UEFI", "categoria": "Segurança", "definicao": "Firmware que liga o computador e carrega o sistema operacional."},
+    {"termo": "Firmware", "categoria": "Hardware", "definicao": "Programa gravado dentro de um aparelho que controla o funcionamento básico dele."},
+    {"termo": "Modelo de mundo", "categoria": "IA", "definicao": "IA que simula ambientes interativos, gerando a cena quadro a quadro."},
+    {"termo": "HBM", "categoria": "Hardware", "definicao": "Memória de alta largura de banda, empilhada ao lado dos chips de IA."},
+    {"termo": "CoWoS", "categoria": "Hardware", "definicao": "Técnica da TSMC que junta chips e memória numa só peça."},
+    {"termo": "Stablecoin", "categoria": "Cripto", "definicao": "Moeda digital que busca valer o mesmo que o dólar."},
+    {"termo": "CVE", "categoria": "Segurança", "definicao": "Código público que identifica uma falha de segurança conhecida."},
+    {"termo": "Markdown", "categoria": "Software", "definicao": "Jeito simples de formatar texto com símbolos, como # para títulos."}
+  ]
+}
