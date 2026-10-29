@@ -1,0 +1,100 @@
+{
+  "capa": {
+    "manchete": "Gemini 4 Carbon chega",
+    "subtitulo": "Duas semanas depois do Argon, a Google mostra o modelo que lidera os testes de segurança.",
+    "elemento": {"numero": "6", "simbolo": "C", "nome": "Carbono", "detalhe": "12,011"},
+    "chamadas": [
+      {"rotulo": "Big Techs", "texto": "Microsoft fatura US$ 10 bi só com a OpenAI"},
+      {"rotulo": "Hardware", "texto": "Samsung vende toda a HBM de 2027"},
+      {"rotulo": "Google", "texto": "Busca desacelera e as ações caem 8%"},
+      {"rotulo": "Cripto", "texto": "Bitcoin cai abaixo de US$ 80 mil"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Balanços, memória e um modelo trancado",
+    "paragrafos": [
+      "Quinta (29) é dia de olhar o dinheiro. Microsoft e Google abriram os números, e a conta da IA apareceu inteira.",
+      "Enquanto isso, a Samsung bateu recorde de lucro com memória, e a Google mostrou um modelo que quase ninguém pode usar ainda."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Big Techs", "assunto": "Negócios", "tarja": "Siga o dinheiro",
+     "titulo": "Quanto a OpenAI paga à Microsoft", "ilustracao": "cofre",
+     "paragrafos": [
+       "A Microsoft contou em documento oficial que ganhou US$ 10 bilhões com a OpenAI no trimestre até 30 de setembro, quase 11% dos US$ 92,3 bilhões que faturou, segundo o TechCrunch.",
+       "As duas já disputam os mesmos clientes. Mesmo assim, a OpenAI deve repartir receita com a Microsoft até 2030, dentro de um teto, pelo acordo de abril."
+     ],
+     "quadro": {"titulo": "E a nuvem?", "texto": "Pela primeira vez, a Microsoft revelou a receita do Azure em dólares: US$ 33,2 bilhões no trimestre."},
+     "refs": [{"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"},
+              {"rotulo": "TechCrunch · Azure", "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"}]},
+
+    {"tipo": "materia", "secao": "Google", "assunto": "Inteligência artificial",
+     "titulo": "Google apresenta o Gemini 4 Carbon",
+     "olho": "O Carbon ficou em primeiro em testes de caça a falhas de segurança, segundo a Google. Por enquanto, só empresas de defesa digital têm acesso.",
+     "ilustracao": "robo", "legenda": "O Gemini 4 Carbon, da Google",
+     "paragrafos": [
+       "A Google apresentou na quarta (28) o Gemini 4 Carbon, sua nova IA de ponta, só duas semanas depois do Argon. A empresa diz que ele avançou muito em programação, tarefas longas e segurança digital.",
+       "O Ars Technica lembra que o ganho sobre o Argon é pequeno e que pode ser só um ajuste de treino."
+     ],
+     "quadros": [
+       {"titulo": "Quanto custa · API",
+        "tabela": {"colunas": ["US$ por 1 mi de tokens", "Entrada", "Saída"],
+                   "linhas": [["Preço de lançamento", "2,00", "10,00"], ["Depois", "o dobro", "o dobro"]]}},
+       {"titulo": "E pra você?", "texto": "Ainda não dá para usar. O acesso começa por empresas de defesa digital, no programa Fairwinds. A Google não deu data para o público geral."},
+       {"titulo": "Segundo a Google", "texto": "O Carbon gera código com o dobro de chance de ficar sem falhas que o Argon. Também resistiu a todos os ataques de injeção de comandos num teste."}
+     ],
+     "refs": [{"rotulo": "Google", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"},
+              {"rotulo": "Ars Technica", "url": "https://arstechnica.com/ai/2026/10/google-announces-gemini-4-carbon-its-latest-frontier-ai-model-that-you-cant-use/"},
+              {"rotulo": "The Verge", "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"}]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Memória vendida, preço lá em cima", "ilustracao": "memoria", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Samsung recorde", "texto": "A Samsung teve lucro operacional recorde de US$ 80,5 bilhões no trimestre. Sua HBM está vendida até 2027, diz a Bloomberg.", "url": "https://www.bloomberg.com/news/articles/2026-10-29/samsung-chip-profit-misses-estimates-lifted-by-resurgent-ai-hope"},
+       {"rotulo": "Flash 5× mais cara", "texto": "A memória flash ficou cinco vezes mais cara com a demanda da IA, e a Apple perdeu poder de barganha, segundo o Wall Street Journal.", "url": "https://www.wsj.com/tech/apple-iphone-memory-chips-ai-c0084cc9"},
+       {"rotulo": "Nova fábrica nos EUA", "texto": "A Solidigm, da SK hynix, avalia uma fábrica de memória flash nos EUA, segundo o Tom's Hardware.", "url": "https://www.tomshardware.com/tech-industry/manufacturing/sk-hynix-owned-solidigm-is-plotting-a-new-usd45-billion-flash-memory-factory-for-the-us-report-claims-wants-go-ahead-to-export-equipment-for-china-upgrades-in-return"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Alphabet", "texto": "A Alphabet faturou US$ 127,6 bilhões, mas a receita da Busca cresceu 12%, contra 17% no trimestre anterior. As ações caíram 8%. A Google levará anúncios do modo IA a outros países, diz o TechCrunch.", "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"},
+       {"rotulo": "Anthropic", "texto": "A Anthropic lançou relatórios que mostram a empresas o retorno do gasto com IA. Segundo o TechCrunch, ela teve lucro operacional no segundo trimestre, em números mostrados a investidores.", "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/"},
+       {"rotulo": "OpenAI", "texto": "A OpenAI ampliou a parceria com a ServiceNow, levando seus modelos e agentes para os fluxos de trabalho da empresa, e o contrário no ChatGPT e no Codex.", "url": "https://openai.com/index/openai-servicenow-partnership-expansion"},
+       {"rotulo": "Apple", "texto": "A Apple lançou o MacBook Pro com tela OLED sensível ao toque, a partir de US$ 2.899. Configurado ao máximo, chega a US$ 14.549, segundo o The Verge.", "url": "https://www.theverge.com/tech/1021308/apple-touchscreen-macbook-pro-proled-xdr-fully-specced"},
+       {"rotulo": "Amazon", "texto": "A Amazon pediu a seus engenheiros que parem de gastar tokens só para parecer produtivos. Para a empresa, medir uso de IA é falho, diz o Tom's Hardware.", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/amazon-tells-engineers-to-stop-tokenmaxxing-to-look-productive-says-ai-will-be-central-to-software-development-but-usage-is-not-the-goal-new-guidelines-claim"},
+       {"rotulo": "Anatel", "texto": "A Anatel mandou as operadoras usarem biometria facial em ativações, trocas de chip e portabilidade. Linhas sem cadastro poderão ser suspensas em 2029, diz o Tecnoblog.", "url": "https://tecnoblog.net/noticias/anatel-ordena-que-clientes-de-telefonia-movel-facam-biometria/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin cai abaixo de US$ 80 mil",
+     "notas": [
+       {"rotulo": "Mercado", "texto": "O bitcoin ficou abaixo de US$ 80 mil com a tensão nas techs, puxada pela Samsung, e um Fed duro, segundo a CoinDesk.", "url": "https://www.coindesk.com/markets/2026/10/29/bitcoin-dips-below-usd80-000-as-samsung-led-risk-aversion-in-tech-and-a-hawkish-fed-weigh-on-crypto"},
+       {"rotulo": "Ethereum", "texto": "Clientes do Ethereum lançaram correções para uma falha que podia redirecionar recompensas em ETH, diz a CoinDesk.", "url": "https://www.coindesk.com/tech/2026/10/29/ethereum-clients-patch-flaw-that-could-let-attackers-redirect-eth-rewards"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Fabio Akita", "onde": "blog", "texto": "Atualizou seu ranking de modelos comerciais de IA, o Benchmark v4, com Gemini 4 Argon, GPT Sol 6.1 Terra, Kimi K3.1 Pro e Claude Sonnet 5.5.", "links": [{"rotulo": "LLM Benchmark v4", "url": "https://www.akitaonrails.com/2026/10/28/llm-benchmark-v4-gemini-4-argon-gpt-sol-6-1-terra-kimi-k3-1-pro-claude-sonnet-5-5/"}]},
+       {"nome": "Simon Willison", "onde": "blog", "texto": "Do GitHub Universe: segundo o Octoverse 2026, os pull requests mesclados triplicaram em menos de um ano, para 220 milhões por mês.", "links": [{"rotulo": "GitHub Octoverse 2026", "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/"}]},
+       {"nome": "Simon Willison", "onde": "blog", "texto": "Defende que outubro de 2026 virou o ponto de virada para criar jogos com IA, o chamado vibe coding.", "links": [{"rotulo": "Vibe game development", "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/"}]}
+     ],
+     "quadro": {"titulo": "No TabNews", "texto": "Tem tutorial para acompanhar pedidos do iFood fora da aba e um texto sobre o timeout de agentes de código que reinicia a cada retry."}},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Contrabando de chips: Malásia apreende US$ 12 milhões em servidores", "onde": "Tom's Hardware · reportagem", "url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub"},
+       {"titulo": "Cabos submarinos da Google e da Meta estão entre os mais expostos a sabotagem", "onde": "Ars Technica · análise", "url": "https://arstechnica.com/gadgets/2026/10/google-and-meta-subsea-cables-among-most-at-risk-from-sabotage-in-pacific/"},
+       {"titulo": "A IA da Google fica evasiva quando perguntam quem ganhou a eleição de 2020", "onde": "Ars Technica · curiosidade", "url": "https://arstechnica.com/ai/2026/10/google-ai-gets-cagey-when-asked-who-won-the-2020-elections/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "HBM", "categoria": "Hardware", "definicao": "Memória de alta largura de banda, empilhada ao lado dos chips de IA."},
+    {"termo": "Memória flash", "categoria": "Hardware", "definicao": "Memória que guarda dados sem energia, usada em celulares e SSDs."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedaço de texto que a IA lê ou escreve; é a unidade em que se cobra o uso."},
+    {"termo": "API", "categoria": "Software", "definicao": "Porta que deixa um programa usar os serviços de outro."},
+    {"termo": "Injeção de comandos", "categoria": "Segurança", "definicao": "Ataque que esconde ordens num texto para enganar uma IA."},
+    {"termo": "Azure", "categoria": "Big Techs", "definicao": "Serviço de computação em nuvem da Microsoft."},
+    {"termo": "Tokenmaxxing", "categoria": "IA", "definicao": "Gastar o máximo de tokens para parecer produtivo."},
+    {"termo": "Vibe coding", "categoria": "Software", "definicao": "Criar programas pedindo tudo à IA, sem escrever o código na mão."}
+  ]
+}

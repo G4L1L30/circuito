@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261029T061715-4c955126",
+  "execucao": "2026-10-29T06:17:29-03:00",
+  "robo": "circuito_diario",
+  "fonte": "yt_lucasmontano",
+  "nome": "Lucas Montano (YouTube)",
+  "tipo": "youtube",
+  "url": "https://www.youtube.com/@LucasMontano/videos",
+  "status": "ok",
+  "itens_lidos": 3,
+  "itens_na_janela": 1,
+  "erro": null,
+  "duracao_ms": 869
+}
