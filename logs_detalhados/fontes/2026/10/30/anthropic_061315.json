@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261030T061312-aa29f3a9",
+  "execucao": "2026-10-30T06:13:15-03:00",
+  "robo": "circuito_diario",
+  "fonte": "anthropic",
+  "nome": "Anthropic",
+  "tipo": "html_links",
+  "url": "https://www.anthropic.com/news",
+  "status": "ok",
+  "itens_lidos": 10,
+  "itens_na_janela": 0,
+  "erro": null,
+  "duracao_ms": 465
+}

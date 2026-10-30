@@ -1,0 +1,101 @@
+{
+  "capa": {
+    "manchete": "Anthropic abre os livros",
+    "subtitulo": "O pedido de Bolsa mostra quanto o Claude rende e quanto custa a conta de chips.",
+    "elemento": {"numero": "79", "simbolo": "Au", "nome": "Ouro", "detalhe": "196,967"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "Hackers levam US$ 6 bi da Binance"},
+      {"rotulo": "Hardware", "texto": "RTX 5080 chega a US$ 2.000"},
+      {"rotulo": "IA aberta", "texto": "Mistral libera modelo de 1 trilhão"},
+      {"rotulo": "Cripto", "texto": "Bitcoin cai 3% após o roubo"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Um roubo, uma Bolsa e chips em falta",
+    "paragrafos": [
+      "Sexta (30) abriu com a Binance no centro das notícias. Hackers levaram cerca de US$ 6,3 bilhões na quinta (29), e o mercado cripto sentiu.",
+      "Na IA, a Anthropic mostrou as contas antes de ir à Bolsa. Nas lojas, placa de vídeo e memória seguem escassas e caras."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Caso de polícia",
+     "titulo": "Binance sofre um roubo de US$ 6 bilhões", "ilustracao": "cofre",
+     "paragrafos": [
+       "Na quinta (29), hackers levaram cerca de US$ 6,3 bilhões das carteiras da Binance, a maior corretora de cripto do mundo, segundo a empresa. Seria o maior roubo cripto da história; o recorde era o de US$ 1,5 bilhão da Bybit, em 2025. A Binance parou depósitos e saques e prometeu cobrir as perdas.",
+       "A TRM Labs, que rastreia transações, atribui o ataque a hackers norte-coreanos do grupo TraderTraitor, que teriam levado quase tudo em cerca de 20 minutos."
+     ],
+     "quadro": {"titulo": "E o seu dinheiro?", "texto": "A Binance diz que os fundos dos clientes estão seguros. A Binance.US, braço americano, afirma que não foi afetada, segundo o Financial Times."},
+     "refs": [{"rotulo": "Reuters", "url": "https://www.reuters.com/legal/government/blockchain-analysis-firm-trm-says-north-korea-behind-binance-crypto-theft-2026-10-30/"},
+              {"rotulo": "South China Morning Post", "url": "https://www.scmp.com/business/cryptocurrency/article/3372664/binance-pledges-cover-losses-after-us6-billion-crypto-hack"},
+              {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/"}]},
+
+    {"tipo": "materia", "secao": "Anthropic", "assunto": "Inteligência artificial",
+     "titulo": "O raio-X da Anthropic antes da Bolsa",
+     "olho": "O pedido de abertura de capital mostra uma empresa que lucra servindo o Claude, mas que assumiu contas de centenas de bilhões em computação.",
+     "ilustracao": "chip", "legenda": "Chips são o maior custo da Anthropic",
+     "paragrafos": [
+       "A Anthropic abriu os livros para o IPO, a estreia na Bolsa, e o Tom's Hardware fez a conta. No primeiro semestre, a empresa gastou US$ 8,9 bilhões em computação, o poder de processamento dos chips. Menos de um terço serviu clientes. O resto foi para treinar modelos, pesquisar e uso interno.",
+       "Servir o Claude custou US$ 2,4 bilhões, contra US$ 16,3 bilhões de receita. O problema é o que vem pela frente. Pela conta do Tom's Hardware, os cinco maiores contratos de chips custariam cerca de US$ 103 bilhões por ano, mais que o dobro da receita atual. A empresa avisa que a margem pode apertar."
+     ],
+     "quadros": [
+       {"titulo": "Primeiro semestre",
+        "tabela": {"colunas": ["Item", "US$ bi"],
+                   "linhas": [["Computação total", "8,9"], ["Servir clientes", "2,4"], ["Receita", "16,3"]]}},
+       {"titulo": "E pra você?", "texto": "Nada muda no uso do Claude hoje. Segundo a Anthropic, o Opus 5.5 cortou em cerca de 40% o custo por tarefa, em relação ao Opus 5."},
+       {"titulo": "Risco em Taiwan", "texto": "A empresa diz depender de chips feitos pela TSMC, em Taiwan, e alerta para \"potencial interrupção\" por tensões com a China, segundo o Wall Street Journal."}
+     ],
+     "refs": [{"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropics-ipo-filing-shows-most-of-its-compute-goes-to-r-and-d-not-serving-customers-company-details-massive-usd800-billion-in-tpu-and-gpu-contracts"},
+              {"rotulo": "Wall Street Journal", "url": "https://www.wsj.com/opinion/anthropics-ipo-will-be-a-national-security-win-for-taiwan-029888b5"}]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Tudo esgotado, tudo mais caro", "ilustracao": "gpu", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Placa de 2 mil", "texto": "A RTX 5080 chegou a US$ 2.000, o preço de lançamento da RTX 5090. O preço sugerido original era US$ 999, diz o Tom's Hardware.", "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5080-prices-hit-usd2-000-costing-more-than-the-rtx-5090-did-at-launch-and-with-limited-stock-available-original-usd999-msrp-long-forgotten-with-prices-now-2-3x-higher"},
+       {"rotulo": "Memória até 2030", "texto": "A SK hynix esgotou os estoques e prevê falta de memória até 2030, segundo o Tecnoblog.", "url": "https://tecnoblog.net/noticias/sk-hynix-esgota-estoques-e-preve-escassez-de-memoria-ate-2030/"},
+       {"rotulo": "Falta de placas", "texto": "A IA também causa escassez de PCBs, as placas de circuito dos PCs. Os pedidos estão cheios até 2030, diz o Tom's Hardware.", "url": "https://www.tomshardware.com/pc-components/ai-demand-triggers-massive-pcb-shortage-for-pc-makers-as-order-books-full-until-2030-lead-times-stretch-to-30-months-as-material-costs-surge-12x"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Mistral", "texto": "A francesa Mistral liberou os pesos (os números do treino que fazem o modelo funcionar) do Mistral Large 4, com 1 trilhão de parâmetros. Segundo a empresa, ele iguala o chinês GLM-5.3 em segurança digital usando 47% menos tokens.", "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"},
+       {"rotulo": "Google", "texto": "O Gemini agora gera, mostra e edita PDFs, documentos, planilhas e apresentações direto no chat, com editor em tela cheia, anunciou a Google.", "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/"},
+       {"rotulo": "Nvidia", "texto": "O Departamento de Justiça dos EUA investiga a compra da Hugging Face pela Nvidia, de cerca de US$ 13 bilhões, por receio de menos concorrência em IA, segundo o Tom's Hardware.", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/dept-of-justice-reportedly-probes-nvidia-over-usd13-billion-hugging-face-ai-platform-acquisition-concerns-raised-over-competition-in-ai-and-pressure-on-customers"},
+       {"rotulo": "OpenAI", "texto": "A Thrive Holdings, apoiada pela OpenAI, compra a ADT, de segurança residencial, por US$ 15,3 bilhões, para levar IA ao negócio, diz o TechCrunch.", "url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/"},
+       {"rotulo": "Amazon", "texto": "A nuvem da Amazon vai bem, mas o resto ficou abaixo do esperado. O fluxo de caixa livre foi negativo em US$ 2,4 bilhões, segundo o TechCrunch.", "url": "https://techcrunch.com/2026/10/29/amazon-reported-booming-cloud-revenue-but-otherwise-missed-expectations/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin cai 3% com o roubo na Binance",
+     "notas": [
+       {"rotulo": "Mercado", "texto": "O bitcoin recuou 3,1% em 24 horas, a US$ 77.721. O ether caiu 4,3%. Apostas com dinheiro emprestado somaram US$ 1,5 bilhão em liquidações, diz o CoinDesk.", "url": "https://www.coindesk.com/markets/2026/10/30/bitcoin-ether-and-xrp-selloff-wipes-out-usd1-5-billion-in-leveraged-crypto-bets"},
+       {"rotulo": "Polymarket", "texto": "A Polymarket parou as negociações após invasão via empresa terceirizada, com cerca de US$ 2 milhões roubados, segundo o TechCrunch.", "url": "https://techcrunch.com/2026/10/29/binance-pauses-withdrawals-as-hackers-suspected-of-stealing-billions-in-crypto/"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Fabio Akita", "onde": "blog", "texto": "Usa engenharia reversa com agentes de IA para portar o jogo Colin McRae 1 ao PC. Avisa: a ferramenta ajuda, mas não é botão mágico.",
+        "links": [{"rotulo": "akitaonrails.com", "url": "https://www.akitaonrails.com/2026/10/29/brincando-de-pc-ports-com-colin-mcrae-1/"}]},
+       {"nome": "Simon Willison", "onde": "blog", "texto": "A OpenAI lançou o mesmo benefício da Anthropic: assinantes de planos de US$ 100, US$ 200 e US$ 500 ganham créditos equivalentes para a API.",
+        "links": [{"rotulo": "API credits", "url": "https://simonwillison.net/2026/Oct/29/api-credits/"}]},
+       {"nome": "Simon Willison", "onde": "blog", "texto": "Comenta o Spawn, jogo online em que os jogadores mudam o mundo com prompts a um agente de IA. Ele criou um castelo no celular.",
+        "links": [{"rotulo": "Spawn", "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/"}]}
+     ],
+     "quadro": {"titulo": "No TabNews", "texto": "Tem um texto sobre quem registra o motivo das mudanças quando agentes de IA escrevem o código, e um pitch de app de espanhol com cenas do YouTube."}},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "GitHub precisou de 4 milhões de núcleos de CPU a mais por código de IA", "onde": "Tom's Hardware · reportagem", "url": "https://www.tomshardware.com/software/github-report-highlights-massive-influx-of-ai-generated-code-sixfold-increase-in-activity-over-one-year-required-extra-4-million-cpu-cores-and-160pb-of-storage"},
+       {"titulo": "Fujifilm quer produzir até 5 vezes mais fitas magnéticas de 100 TB", "onde": "Tom's Hardware · reportagem", "url": "https://www.tomshardware.com/tech-industry/data-centers/fujifilm-plans-5x-production-boost-of-100tb-magnetic-storage-tapes-driven-by-ai-usd63-million-injection-is-the-largest-investment-in-tape-for-20-years"},
+       {"titulo": "Startups apostam em IA para provar, com matemática, que software funciona", "onde": "Wired · análise", "url": "https://www.wired.com/story/software-verification-is-the-hot-new-answer-to-the-ai-safety-crisis/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "IPO", "categoria": "Negócios", "definicao": "Estreia de uma empresa na Bolsa, quando vende ações ao público."},
+    {"termo": "Computação", "categoria": "IA", "definicao": "Poder de processamento dos chips, usado para treinar e rodar modelos."},
+    {"termo": "Pesos", "categoria": "IA", "definicao": "Números aprendidos no treino que fazem um modelo funcionar. Com eles, dá para rodar o modelo em casa."},
+    {"termo": "Parâmetros", "categoria": "IA", "definicao": "Os ajustes internos de um modelo. Quanto mais, em geral, maior o modelo."},
+    {"termo": "Tokens", "categoria": "IA", "definicao": "Pedaços de texto que a IA lê e escreve. Servem para medir uso e preço."},
+    {"termo": "Liquidação", "categoria": "Cripto", "definicao": "Fechamento forçado de uma aposta feita com dinheiro emprestado, quando o preço vai contra ela."},
+    {"termo": "PCB", "categoria": "Hardware", "definicao": "Placa de circuito impresso, onde ficam os chips e as conexões de um aparelho."}
+  ]
+}
