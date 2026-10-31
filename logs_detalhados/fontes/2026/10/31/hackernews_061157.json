@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261031T061156-bc2b10ed",
+  "execucao": "2026-10-31T06:11:57-03:00",
+  "robo": "circuito_diario",
+  "fonte": "hackernews",
+  "nome": "Hacker News",
+  "tipo": "hackernews",
+  "url": "https://hacker-news.firebaseio.com/v0/topstories.json",
+  "status": "ok",
+  "itens_lidos": 17,
+  "itens_na_janela": 12,
+  "erro": null,
+  "duracao_ms": 2025
+}

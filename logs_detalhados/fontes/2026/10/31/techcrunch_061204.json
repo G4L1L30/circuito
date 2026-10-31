@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261031T061156-bc2b10ed",
+  "execucao": "2026-10-31T06:12:04-03:00",
+  "robo": "circuito_diario",
+  "fonte": "techcrunch",
+  "nome": "TechCrunch",
+  "tipo": "rss",
+  "url": "https://techcrunch.com/feed/",
+  "status": "ok",
+  "itens_lidos": 20,
+  "itens_na_janela": 19,
+  "erro": null,
+  "duracao_ms": 341
+}

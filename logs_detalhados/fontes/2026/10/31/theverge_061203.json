@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261031T061156-bc2b10ed",
+  "execucao": "2026-10-31T06:12:03-03:00",
+  "robo": "circuito_diario",
+  "fonte": "theverge",
+  "nome": "The Verge",
+  "tipo": "rss",
+  "url": "https://www.theverge.com/rss/index.xml",
+  "status": "ok",
+  "itens_lidos": 10,
+  "itens_na_janela": 10,
+  "erro": null,
+  "duracao_ms": 246
+}

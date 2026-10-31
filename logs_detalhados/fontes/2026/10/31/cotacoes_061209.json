@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261031T061156-bc2b10ed",
+  "execucao": "2026-10-31T06:12:09-03:00",
+  "robo": "circuito_diario",
+  "fonte": "cotacoes",
+  "nome": "CoinGecko",
+  "tipo": "coingecko",
+  "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum,solana&vs_currencies=usd,brl&include_24hr_change=true&include_last_updated_at=true",
+  "status": "ok",
+  "itens_lidos": 0,
+  "itens_na_janela": 0,
+  "erro": null,
+  "duracao_ms": 399
+}

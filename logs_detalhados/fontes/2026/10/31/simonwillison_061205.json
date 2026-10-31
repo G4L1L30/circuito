@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261031T061156-bc2b10ed",
+  "execucao": "2026-10-31T06:12:05-03:00",
+  "robo": "circuito_diario",
+  "fonte": "simonwillison",
+  "nome": "Simon Willison",
+  "tipo": "rss",
+  "url": "https://simonwillison.net/atom/everything/",
+  "status": "ok",
+  "itens_lidos": 15,
+  "itens_na_janela": 1,
+  "erro": null,
+  "duracao_ms": 492
+}

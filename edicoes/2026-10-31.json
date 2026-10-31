@@ -1,0 +1,103 @@
+{
+  "capa": {
+    "manchete": "Rachaduras no boom da IA",
+    "subtitulo": "Bolsa balança, OpenAI corta a meta e a Intel despenca. Também: extensão falsa do Claude Code.",
+    "elemento": {"numero": "14", "simbolo": "Si", "nome": "Silício", "detalhe": "28,085"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "Extensão falsa do Claude Code atinge até 5 mil"},
+      {"rotulo": "Hardware", "texto": "Intel tem o pior dia desde os anos 1970"},
+      {"rotulo": "Espaço", "texto": "Satélite da Google escreve haicai com IA"},
+      {"rotulo": "Cripto", "texto": "Binance mira reabrir saques no domingo"}
+    ]
+  },
+  "editorial": {
+    "titulo": "A festa da IA encontra a conta",
+    "paragrafos": [
+      "Sexta (30) foi de ressaca na Bolsa. Investidores passaram a perguntar quando tanto gasto em IA vai render, e as ações de chips e de Big Techs caíram juntas.",
+      "No meio disso, uma extensão falsa do Claude Code assustou programadores, e o bitcoin ficou de lado, de olho na Binance."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Caso de polícia",
+     "titulo": "Extensão falsa do Claude Code vira porta dos fundos", "ilustracao": "lupa",
+     "paragrafos": [
+       "Na quinta (29), uma versão adulterada da extensão do Claude Code apareceu na loja do Cursor, editor de código com IA. Segundo o Cursor, atingiu no máximo 5 mil usuários. Ela tentava roubar dados e abrir acesso remoto por SSH, uma conexão que dá controle da máquina.",
+       "A Anthropic diz que não foi invadida e que não criou essa versão. Quem instalou ou atualizou entre 5h27 e 16h35 (costa leste dos EUA) deve se considerar afetado."
+     ],
+     "quadro": {"titulo": "Ainda sem resposta", "texto": "Nem Cursor nem Anthropic explicaram como invadiram a conta oficial, diz a Ars Technica. O Cursor tirou a versão do ar."},
+     "refs": [{"rotulo": "Ars Technica", "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"},
+              {"rotulo": "Tecnoblog", "url": "https://tecnoblog.net/noticias/cursor-diz-que-extensao-falsa-do-claude-code-afetou-ate-5-mil-usuarios/"},
+              {"rotulo": "Felix Rieseberg (Anthropic)", "url": "https://x.com/felixrieseberg"}]},
+
+    {"tipo": "materia", "secao": "Mercado de IA", "assunto": "Inteligência artificial",
+     "titulo": "O boom da IA começa a rachar",
+     "olho": "Alphabet, Amazon, Meta e Microsoft indicaram investimentos de mais de US$ 740 bilhões este ano. Agora a Bolsa quer saber quando isso dá retorno.",
+     "ilustracao": "chip", "legenda": "Data centers e chips puxam a conta",
+     "paragrafos": [
+       "Antes, a Bolsa premiava cada bilhão gasto em IA. Agora, hesita. Segundo o TechCrunch, a Nasdaq caiu 2,9% na sexta (30), e chips como Nvidia e Qualcomm também recuaram.",
+       "A Alphabet teve fluxo de caixa livre negativo de US$ 9,1 bilhões no trimestre, ou seja, gastou mais do que entrou. As ações caíram 12% na quinta (29), o pior dia da empresa. A OpenAI também sente: segundo o Financial Times, cortou a meta da rodada de US$ 30 bilhões para cerca de US$ 20 bilhões."
+     ],
+     "quadros": [
+       {"titulo": "Caixa livre, 3º tri",
+        "tabela": {"colunas": ["Empresa", "US$ bi"],
+                   "linhas": [["Alphabet", "-9,1"], ["Meta", "-2,1"], ["Microsoft", "+18,6"]]}},
+       {"titulo": "Sem crédito fácil", "texto": "Segundo o Wall Street Journal, as neoclouds (empresas que alugam poder de computação de IA) CoreWeave, Nebius e Nscale estão fora do mercado de títulos de dívida nas últimas semanas."},
+       {"titulo": "Nem a nuvem salvou", "texto": "A nuvem da Amazon (AWS) cresceu 39%, mas as ações da empresa caíram 7% depois do balanço, diz o TechCrunch."}
+     ],
+     "refs": [{"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"},
+              {"rotulo": "Financial Times", "url": "https://www.ft.com/content/7a3ad950-1b3b-4d9e-8c15-65a61ae6180f"},
+              {"rotulo": "Wall Street Journal", "url": "https://www.wsj.com/finance/the-new-bottleneck-in-americas-ai-build-out-a-shortage-of-cheap-money-0c14c84d"}]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Intel cai, memória segue cara", "ilustracao": "memoria", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Pior dia da Intel", "texto": "As ações da Intel caíram 28,58% na sexta (30), o pior dia desde os anos 1970, após prever PCs em baixa por causa da memória cara, diz a CNBC.", "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html"},
+       {"rotulo": "RTX 5080 some", "texto": "A loja da Nvidia tirou do ar a RTX 5080, depois da 5090. Nas lojas, custa 2,2 vezes o preço sugerido, diz o Tom's Hardware.", "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-store-quietly-pulls-the-rtx-5080-following-rtx-5090-removal-street-prices-climb-to-2-2x-over-msrp"},
+       {"rotulo": "RAM no data center", "texto": "Para Sam Altman, da OpenAI, é \"terrível\" ter RAM em PCs em vez de data centers, segundo o The Verge.", "url": "https://www.theverge.com/ai-artificial-intelligence/1023820/sam-altman-ram-shortage-cloud-servers"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Google", "texto": "Um satélite da Google ligou seus chips de IA e usou o modelo Gemma 4 para escrever um haicai sobre o espaço, e mandou à Terra.", "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"},
+       {"rotulo": "Google", "texto": "A Google vai encerrar o Jules, agente de IA que programa sozinho. Ele deixa de aceitar tarefas em 11 de novembro, segundo o Tecnoblog.", "url": "https://tecnoblog.net/noticias/google-vai-encerrar-agente-de-ia-que-programa-sozinho/"},
+       {"rotulo": "Treino de IA", "texto": "OpenAI, Google, Microsoft e Anthropic vão adotar um padrão para sites recusarem, de uma vez, o uso de seus textos no treino de IA, diz o The Verge.", "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"},
+       {"rotulo": "Meta", "texto": "A S&P rebaixou a perspectiva da Meta de estável para negativa, por gasto alto e caixa negativo. A ação caiu 15% em outubro, diz a CNBC.", "url": "https://www.cnbc.com/2026/10/30/meta-outlook-to-revised-to-negative-by-sp-after-cash-flow-negative.html"},
+       {"rotulo": "Cisco", "texto": "A Cisco deu tokens de IA ilimitados a um engenheiro de 27 anos para reescrever 98% do código antigo em 24 meses, diz o Tom's Hardware.", "url": "https://www.tomshardware.com/tech-industry/big-tech/cisco-gives-27-year-old-engineer-unlimited-ai-tokens-to-rewrite-98-percent-of-the-companys-legacy-code-in-24-months-president-plucks-former-startup-founder-telling-him-to-go-nuts"},
+       {"rotulo": "Reddit", "texto": "O Reddit vai exigir login após 20 anos de acesso aberto, para reduzir a coleta automática de dados, segundo o Tecnoblog.", "url": "https://tecnoblog.net/noticias/reddit-exigira-login-apos-20-anos-de-acesso-aberto/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin de lado, com a Binance em foco",
+     "notas": [
+       {"rotulo": "Binance", "texto": "A Binance achou uma invasão mais ampla no roubo de US$ 6,3 bilhões e mira reabrir os saques no domingo (1º), diz o CoinDesk.", "url": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart"},
+       {"rotulo": "Cobertura", "texto": "A corretora organizou US$ 6,34 bilhões para cobrir as perdas, segundo o CoinDesk.", "url": "https://www.coindesk.com/business/2026/10/30/binance-arranges-usd6-34-billion-to-cover-losses-from-record-crypto-hack"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Simon Willison", "onde": "blog", "texto": "Destaca o nesformer: Drew Breunig embutiu um emulador de NES nos pesos do Qwen3.5-4B. Dá para jogar Super Mario Bros, bem devagar, dentro do modelo.",
+        "links": [{"rotulo": "simonwillison.net", "url": "https://simonwillison.net/2026/Oct/30/nesformer/"}]},
+       {"nome": "Lucas Montano", "onde": "YouTube", "texto": "Dedica o vídeo da semana a data centers de IA no espaço, com SpaceX e Brasil no título.",
+        "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=BQCi2AKEtLE"}]},
+       {"nome": "GuaraPay", "onde": "TabNews", "texto": "Explica por que o cartão é recusado em site gringo e por que tentar de novo só piora a situação.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/GuaraPay/por-que-o-cartao-e-recusado-em-site-gringo-e-por-que-tentar-de-novo-piora"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "KV cache, pesos e quantização: um guia de como a IA roda", "onde": "Tom's Hardware · guia", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/a-primer-on-key-ai-llm-concepts-kv-cache-weights-quantization-and-how-inference-actually-works"},
+       {"titulo": "Azure: cinco invasões entre contas na nuvem da Microsoft", "onde": "Binary Security · técnico", "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case"},
+       {"titulo": "A forja de código federada", "onde": "Tangled · técnico", "url": "https://tangled.org/blog/forge/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Backdoor", "categoria": "Segurança", "definicao": "Porta dos fundos que um invasor deixa num sistema para voltar a entrar depois."},
+    {"termo": "SSH", "categoria": "Segurança", "definicao": "Conexão remota segura usada para controlar outro computador pela rede."},
+    {"termo": "Fluxo de caixa livre", "categoria": "Negócios", "definicao": "Dinheiro que sobra depois de pagar as despesas e os investimentos. Negativo é gastar mais do que entra."},
+    {"termo": "Capex", "categoria": "Negócios", "definicao": "Gasto com bens duráveis, como data centers e chips."},
+    {"termo": "Neocloud", "categoria": "IA", "definicao": "Empresa que aluga poder de computação de IA a terceiros."},
+    {"termo": "Tokens", "categoria": "IA", "definicao": "Pedaços de texto que a IA lê e escreve. Servem para medir uso e custo."},
+    {"termo": "RAM", "categoria": "Hardware", "definicao": "Memória de trabalho do computador, onde ficam os dados em uso."},
+    {"termo": "TPU", "categoria": "Hardware", "definicao": "Chip da Google feito para rodar IA."}
+  ]
+}
