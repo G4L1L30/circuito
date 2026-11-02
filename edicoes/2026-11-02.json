@@ -1,0 +1,330 @@
+{
+ "capa": {
+  "manchete": "Altman vai à Samsung",
+  "subtitulo": "Memória escassa, Kioxia em queda e o FBI aponta a Coreia do Norte na Binance.",
+  "elemento": {
+   "numero": "31",
+   "simbolo": "Ga",
+   "nome": "Gálio",
+   "detalhe": "69,723"
+  },
+  "chamadas": [
+   {
+    "rotulo": "Cripto",
+    "texto": "FBI culpa Coreia do Norte pelo roubo na Binance"
+   },
+   {
+    "rotulo": "Hardware",
+    "texto": "Kioxia despenca até 15% com cautela na memória"
+   },
+   {
+    "rotulo": "Segurança",
+    "texto": "Malware manda dados roubados para o Claude avaliar"
+   },
+   {
+    "rotulo": "Mercado",
+    "texto": "ETFs de bitcoin perdem US$ 643 mi na sexta"
+   }
+  ]
+ },
+ "editorial": {
+  "titulo": "Memória curta, cofre aberto",
+  "paragrafos": [
+   "Sam Altman, da OpenAI, visitou a Samsung no sábado (31) atrás de memória, a peça mais disputada da IA. Nesta segunda (2), a japonesa Kioxia caiu na Bolsa.",
+   "No domingo (1º), a Binance reabriu os saques depois do roubo de US$ 6,3 bilhões. O FBI aponta a Coreia do Norte. Pegue o café e boa leitura."
+  ]
+ },
+ "paginas": [
+  {
+   "tipo": "reportagem",
+   "secao": "Bastidores",
+   "assunto": "Segurança",
+   "tarja": "Caso de polícia",
+   "titulo": "Binance reabre saques após roubo de US$ 6,3 bi",
+   "ilustracao": "cofre",
+   "paragrafos": [
+    "Na quinta (29), hackers levaram US$ 6,3 bilhões em cripto da corretora Binance. O FBI diz que o grupo norte-coreano TraderTraitor fez o ataque e já troca o dinheiro por ether, o que ajuda a lavá-lo.",
+    "A Binance reabriu os saques no domingo (1º), em etapas, e diz ter recomposto 95% do que sumiu. Segundo ela, o prejuízo não vai para os clientes."
+   ],
+   "quadro": {
+    "titulo": "Na fila dos saques",
+    "texto": "No primeiro dia, a Binance processou US$ 4,6 bilhões em saques e US$ 1 bilhão em depósitos. Saída líquida: US$ 3,6 bilhões, 2,1% dos ativos."
+   },
+   "refs": [
+    {
+     "rotulo": "TechCrunch",
+     "url": "https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/"
+    },
+    {
+     "rotulo": "The Verge",
+     "url": "https://www.theverge.com/tech/1024176/north-korea-binance-crypto-heist"
+    },
+    {
+     "rotulo": "CoinDesk",
+     "url": "https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses"
+    }
+   ]
+  },
+  {
+   "tipo": "materia",
+   "secao": "Memória",
+   "assunto": "Inteligência artificial",
+   "titulo": "Altman bate na porta da Samsung por memória",
+   "olho": "Samsung e SK hynix controlam a maior parte da memória da IA, e ela está curta. Enquanto a OpenAI corre atrás de mais, a Kioxia cai na Bolsa.",
+   "ilustracao": "memoria",
+   "legenda": "A memória virou o gargalo da IA",
+   "paragrafos": [
+    "Sam Altman, chefe da OpenAI, reuniu cerca de 50 executivos da Samsung na Coreia do Sul no sábado (31), diz o Tom's Hardware. A Samsung afirmou que falaram de IA e de novas oportunidades. Não anunciou contrato novo de memória.",
+    "O pano de fundo é a falta de DRAM, a memória de trabalho dos computadores. A TrendForce calcula que a oferta fique 1% a 2% abaixo da demanda este ano, e o desequilíbrio deve piorar em 2027. A Micron avisa que a escassez pode durar até 2028. Altman chamou de “terrível” a DRAM parada em PCs e foi criticado."
+   ],
+   "quadros": [
+    {
+     "titulo": "Fatia da Samsung + SK hynix",
+     "tabela": {
+      "colunas": [
+       "Memória",
+       "Receita global"
+      ],
+      "linhas": [
+       [
+        "DRAM",
+        "63%"
+       ],
+       [
+        "HBM",
+        "83%"
+       ]
+      ]
+     }
+    },
+    {
+     "titulo": "Sinal de freio?",
+     "texto": "A Kioxia, fabricante japonesa de memória NAND, caiu até 15% nesta segunda (2) após uma previsão cautelosa. Para a Bloomberg, cresce o temor de que a demanda por IA esteja desacelerando."
+    }
+   ],
+   "refs": [
+    {
+     "rotulo": "Tom's Hardware",
+     "url": "https://www.tomshardware.com/tech-industry/data-centers/sam-altman-travels-to-south-korea-to-meet-samsung-leadership-to-secure-more-ram-for-data-centers-amid-crushing-shortages-openai-ceo-meets-samsung-leadership-to-discuss-future-ai-data-centers"
+    },
+    {
+     "rotulo": "Bloomberg",
+     "url": "https://www.bloomberg.com/news/articles/2026-11-02/kioxia-shares-tumble-after-outlook-suggests-demand-leveling-off"
+    }
+   ]
+  },
+  {
+   "tipo": "perdeu",
+   "titulo": "Se você perdeu no sábado",
+   "itens": [
+    {
+     "rotulo": "Capa",
+     "texto": "Uma extensão falsa do Claude Code na loja do Cursor atingiu até 5 mil usuários. A Anthropic diz que não foi invadida.",
+     "url": "https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/"
+    },
+    {
+     "rotulo": "Mercado",
+     "texto": "A Nasdaq caiu 2,9% na sexta (30), e a Alphabet teve o pior dia da empresa na quinta (29).",
+     "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+    },
+    {
+     "rotulo": "Hardware",
+     "texto": "As ações da Intel caíram 28,58% na sexta (30), o pior dia desde os anos 1970.",
+     "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html"
+    },
+    {
+     "rotulo": "Espaço",
+     "texto": "Um satélite da Google usou o Gemma 4 para escrever um haicai no espaço.",
+     "url": "https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission"
+    },
+    {
+     "rotulo": "Cripto",
+     "texto": "A Binance mirava reabrir os saques no domingo, e reabriu.",
+     "url": "https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart"
+    }
+   ]
+  },
+  {
+   "tipo": "notas",
+   "secao": "Placas & Memórias",
+   "assunto": "Hardware",
+   "tarja": "Hardware",
+   "titulo": "Trava destravada, pendrive furado",
+   "ilustracao": "gpu",
+   "estilo": "lista",
+   "notas": [
+    {
+     "rotulo": "Limite da Nvidia",
+     "texto": "Uma ferramenta de código aberto tira o limite de desempenho de IA das placas RTX 20, 30 e 40, com ganho de até 65% em contas FP16, diz o Tom's Hardware.",
+     "url": "https://www.tomshardware.com/pc-components/gpus/open-source-usb-tool-unlocks-nvidias-half-speed-gpu-ai-limiter-on-windows-lifts-gpus-fp16-math-performance-up-to-65-percent-uefi-unlocker-covers-rtx-20-30-and-40-series-desktops-and-laptops"
+    },
+    {
+     "rotulo": "Pendrive furado",
+     "texto": "O pendrive “criptografado” da Lenovo guardava um cartão SD sem proteção. Uma análise com o Codex achou chaves fixas em outros modelos, segundo o Tom's Hardware.",
+     "url": "https://www.tomshardware.com/tech-industry/cyber-security/lenovo-fingerprint-usb-stick-sold-as-aes-256-encrypted-had-a-plain-sd-card-inside-ai-assisted-follow-up-finds-a-backdoor-and-hardcoded-keys-in-other-secure-usb-products"
+    }
+   ]
+  },
+  {
+   "tipo": "notas",
+   "secao": "Giro das Big Techs",
+   "assunto": "Notas",
+   "titulo": "Giro das Big Techs",
+   "estilo": "colunas",
+   "notas": [
+    {
+     "rotulo": "Anthropic",
+     "texto": "Um malware chamado VOLTA manda dados roubados ao Claude Opus 4.6 para ranquear o que vale mais, diz a Cisco Talos, segundo o Tom's Hardware.",
+     "url": "https://www.tomshardware.com/tech-industry/cyber-security/new-ai-driven-windows-malware-feeds-stolen-data-to-claude-to-rank-victims-assets-by-value-then-deletes-itself-payload-builds-custom-target-assessment-can-switch-models-if-one-refuses-or-skip-the-ai-step-entirely"
+    },
+    {
+     "rotulo": "Anthropic",
+     "texto": "O Opus 5.5 lidera o GDPx, novo benchmark (teste comparativo) da SemiAnalysis, com 12% de acerto.",
+     "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities"
+    },
+    {
+     "rotulo": "OpenAI",
+     "texto": "A OpenAI pode rebatizar seus data centers de “campi de computação de IA”, segundo o TechCrunch.",
+     "url": "https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/"
+    },
+    {
+     "rotulo": "OpenAI",
+     "texto": "A Parameter Labs diz ter achado uma falha nas prévias em HTML do ChatGPT que permitiu tomar contas, relata Simon Willison.",
+     "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/"
+    },
+    {
+     "rotulo": "xAI",
+     "texto": "Um juiz deixou seguir o processo da NAACP contra o data center da xAI, acusada de violar a lei do ar limpo dos EUA, diz o TechCrunch.",
+     "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
+    },
+    {
+     "rotulo": "Brasil",
+     "texto": "Advogados brasileiros esconderam um prompt injection (comando oculto para enganar a IA) num processo e levaram multa, diz o Tom's Hardware.",
+     "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/brazilian-lawyers-busted-for-attempting-to-manipulate-courts-ai-with-prompt-injection-hidden-in-filing-courts-ai-flags-hidden-text-that-demanded-superficial-legal-scrutiny-lawyers-fined-usd16-000"
+    }
+   ]
+  },
+  {
+   "tipo": "cripto",
+   "titulo": "Bitcoin se recupera após o susto",
+   "notas": [
+    {
+     "rotulo": "ETFs",
+     "texto": "Os ETFs (fundos negociados em Bolsa) de bitcoin perderam US$ 643 milhões na sexta, diz o CoinDesk.",
+     "url": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now"
+    },
+    {
+     "rotulo": "BTCPay",
+     "texto": "A ferramenta BTCPay pediu que usuários desliguem seus servidores após relatos de carteiras esvaziadas.",
+     "url": "https://www.coindesk.com/tech/2026/11/02/btcpay-a-bitcoin-payment-tool-tells-users-to-switch-off-their-servers-after-reports-of-drained-wallets"
+    },
+    {
+     "rotulo": "Eleição",
+     "texto": "Cripto entra na eleição dos EUA de terça (3), diz o CoinDesk.",
+     "url": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto"
+    }
+   ]
+  },
+  {
+   "tipo": "comunidade",
+   "titulo": "O que a turma anda escrevendo",
+   "vozes": [
+    {
+     "nome": "Simon Willison",
+     "onde": "blog",
+     "texto": "Desde que migrou para o Python 3.15, vê erros de dependência confusos. Sua regra agora: na dúvida, apague o arquivo uv.lock.",
+     "links": [
+      {
+       "rotulo": "simonwillison.net",
+       "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/"
+      }
+     ]
+    },
+    {
+     "nome": "aniruddhaadak",
+     "onde": "TabNews",
+     "texto": "Mostra como rodar mais de 360 ferramentas de PDF, imagem e vídeo direto no navegador, com WebAssembly.",
+     "links": [
+      {
+       "rotulo": "TabNews",
+       "url": "https://www.tabnews.com.br/aniruddhaadak/como-rodar-mais-de-360-ferramentas-de-pdf-imagem-e-video-100-por-cento-no-navegador-com-webassembly"
+      }
+     ]
+    },
+    {
+     "nome": "EvandroCarvalho",
+     "onde": "TabNews",
+     "texto": "Ensina a trocar o Fail2ban pelo CrowdSec no Linux, com defesa colaborativa contra IPs maliciosos.",
+     "links": [
+      {
+       "rotulo": "TabNews",
+       "url": "https://www.tabnews.com.br/EvandroCarvalho/crowdsec-no-linux-como-substituir-o-fail2ban-por-defesa-colaborativa-contra-ips-maliciosos"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "tipo": "contracapa",
+   "leituras": [
+    {
+     "titulo": "Matemática mudou. Vamos agir como se mudou",
+     "onde": "Terence Tao · ensaio",
+     "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/"
+    },
+    {
+     "titulo": "O custo, para a IA, dos frameworks de JavaScript",
+     "onde": "Nolan Lawson · técnico",
+     "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+    },
+    {
+     "titulo": "HackerTube: um YouTube feito de vídeos que o Hacker News recomenda",
+     "onde": "Andrej Karpathy · projeto",
+     "url": "https://karpathy.bearblog.dev/hacker-tube/"
+    }
+   ]
+  }
+ ],
+ "glossario": [
+  {
+   "termo": "HBM",
+   "categoria": "Hardware",
+   "definicao": "Memória de alta largura de banda, empilhada ao lado do chip de IA para entregar dados bem rápido."
+  },
+  {
+   "termo": "DRAM",
+   "categoria": "Hardware",
+   "definicao": "Memória de trabalho do computador, onde ficam os dados em uso. Some ao desligar."
+  },
+  {
+   "termo": "NAND",
+   "categoria": "Hardware",
+   "definicao": "Memória flash que guarda dados sem energia. Está nos SSDs e nos celulares."
+  },
+  {
+   "termo": "ETF",
+   "categoria": "Mercado",
+   "definicao": "Fundo negociado em Bolsa que acompanha um ativo, como o bitcoin."
+  },
+  {
+   "termo": "Infostealer",
+   "categoria": "Segurança",
+   "definicao": "Programa malicioso que rouba senhas e dados do computador da vítima."
+  },
+  {
+   "termo": "Prompt injection",
+   "categoria": "IA",
+   "definicao": "Comando escondido num texto para fazer uma IA obedecer a quem não deveria."
+  },
+  {
+   "termo": "WebAssembly",
+   "categoria": "Programação",
+   "definicao": "Formato que deixa o navegador rodar programas pesados quase na velocidade de um app instalado."
+  },
+  {
+   "termo": "Benchmark",
+   "categoria": "IA",
+   "definicao": "Teste padronizado para comparar o desempenho de modelos e máquinas."
+  }
+ ]
+}

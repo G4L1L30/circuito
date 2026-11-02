@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Circuito nº 007 · 02/11/2026</title>
+<meta name="description" content="Altman vai à Samsung. Memória escassa, Kioxia em queda e o FBI aponta a Coreia do Norte na Binance.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Circuito">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://g4l1l30.github.io/circuito/edicoes/2026-11-02.html">
+<meta property="og:title" content="Circuito nº 007 · Altman vai à Samsung">
+<meta property="og:description" content="Memória escassa, Kioxia em queda e o FBI aponta a Coreia do Norte na Binance.">
+<meta property="og:image" content="https://g4l1l30.github.io/circuito/og-circuito.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Circuito: revista diária de tecnologia em 5 minutos, com um computador antigo na capa">
+<meta name="twitter:card" content="summary_large_image"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=VT323&display=swap">
+<style>
+:root{
+  /* Layout: páginas em formatinho (13,5 × 20,5 cm) sobre a mesa; capa e contracapa sozinhas, miolo em pares abertos como revista.
+     A página é papel impresso e não muda com o tema; só a mesa escurece no modo escuro. Impressão em duas cores + preto, tinta desbotada. */
+  --desk:#cdc6b6;
+  --desk-ink:#4b453c;
+  --paper:#ebe3cd;
+  --paper-shade:#ddd2b5;
+  --ink:#25211d;
+  --ink-soft:#5f574b;
+  --red:#a24a33;
+  --blue:#3f5a68;
+  --mustard:#b38f3e;
+  --spine:rgba(37,33,29,.30);
+  --drop:rgba(37,33,29,.30);
+  --f-display:'Alfa Slab One','Rockwell','Roboto Slab',Georgia,serif;
+  --f-label:'Oswald','Arial Narrow','Helvetica Neue Condensed',Impact,sans-serif;
+  --f-body:'PT Serif',Georgia,'Times New Roman',serif;
+  --f-data:'VT323','Courier New',monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --desk:#1c1a17; --desk-ink:#b8b09f; --drop:rgba(0,0,0,.6); color-scheme:dark }
+}
+:root[data-theme="dark"]{ --desk:#1c1a17; --desk-ink:#b8b09f; --drop:rgba(0,0,0,.6); color-scheme:dark }
+
+*,*::before,*::after{ box-sizing:border-box }
+html{ padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); background:var(--desk) }
+body{ margin:0; background:var(--desk); color:var(--desk-ink); font:14px/1.4 var(--f-body) }
+img,svg{ max-width:100% }
+
+.mesa{
+  display:flex; flex-direction:column; align-items:center; gap:44px;
+  padding-block:28px 72px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+}
+.mesa-topo{
+  width:100%; max-width:960px;
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 24px;
+  font:500 12px/1.4 var(--f-label); letter-spacing:.14em; text-transform:uppercase;
+  border-bottom:1px solid currentColor; padding-bottom:10px;
+}
+.mesa-topo strong{ font-weight:700 }
+.mesa-topo a{ color:inherit }
+.mesa-sobre{
+  width:100%; max-width:960px; margin:-30px 0 0;
+  font:italic 400 14px/1.45 var(--f-body); text-wrap:balance;
+}
+.faixa-teste{
+  width:100%; max-width:960px; text-align:center; padding:8px 12px;
+  font:700 12px/1.3 var(--f-label); letter-spacing:.2em; text-transform:uppercase;
+  border:2px dashed currentColor;
+}
+
+.spread{ display:grid; grid-template-columns:minmax(0,480px); justify-content:center; gap:44px; width:100% }
+@media (min-width:1010px){
+  .spread:not(.solo){ grid-template-columns:repeat(2, minmax(0,480px)); gap:0 }
+  /* as duas páginas abertas acompanham a mais alta, como numa revista de verdade */
+  .spread:not(.solo) .page{ align-self:stretch }
+  .spread:not(.solo) .page:first-child{ box-shadow:inset -26px 0 26px -22px var(--spine), -6px 16px 30px -14px var(--drop) }
+  .spread:not(.solo) .page:last-child{ box-shadow:inset 26px 0 26px -22px var(--spine), 6px 16px 30px -14px var(--drop) }
+}
+
+/* ---------- a página ---------- */
+.page{
+  position:relative; width:100%; aspect-ratio:135/205;
+  container-type:inline-size;
+  display:flex; flex-direction:column;
+  color:var(--ink);
+  background-color:var(--paper);
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .22 0 0 0 0 .17 0 0 0 0 .10 0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"),
+    radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(120,92,45,.13) 100%);
+  box-shadow:0 16px 30px -14px var(--drop);
+}
+.pg{ flex:1; display:flex; flex-direction:column; gap:2.3cqw; padding:5.6cqw 6.2cqw 4.2cqw }
+
+.runner{
+  display:flex; justify-content:space-between; gap:2cqw;
+  font:600 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.16em; text-transform:uppercase;
+  border-bottom:.4cqw solid var(--ink); padding-bottom:1.3cqw;
+}
+.folio{
+  margin-top:auto; display:flex; justify-content:space-between; align-items:baseline;
+  font:500 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft);
+  border-top:.22cqw solid var(--ink); padding-top:1.3cqw;
+}
+.folio b{ font:400 3.4cqw/1 var(--f-display); color:var(--ink); letter-spacing:0 }
+
+.tarja{
+  align-self:flex-start;
+  font:600 max(9.5px,2.35cqw)/1 var(--f-label); letter-spacing:.17em; text-transform:uppercase;
+  background:var(--ink); color:var(--paper); padding:1cqw 1.8cqw .9cqw;
+}
+.tarja.verm{ background:var(--red) }
+.titulo{ margin:0; font:400 7.8cqw/1.02 var(--f-display); letter-spacing:-.005em; text-wrap:balance }
+.titulo.g{ font-size:9cqw }
+.olho{
+  margin:0; font:italic 400 max(12px,3.35cqw)/1.36 var(--f-body);
+  border-left:.9cqw solid var(--red); padding-left:2.4cqw;
+}
+.txt{ display:flex; flex-direction:column; gap:1.4cqw }
+.txt p, .cols p{
+  margin:0; font-size:max(12px,2.95cqw); line-height:1.44;
+  text-align:justify; hyphens:auto; -webkit-hyphens:auto;
+}
+.capitular::first-letter{
+  float:left; font-family:var(--f-display); font-size:3.5em; line-height:.82;
+  padding:.06em .09em 0 0; color:var(--red);
+}
+.cols{ columns:2; column-gap:4.4cqw; column-rule:.22cqw solid var(--ink-soft) }
+.cols p{ margin-bottom:1.6cqw; text-align:left; break-inside:avoid }
+
+.nota-cab{
+  display:inline-block; margin-right:.5em;
+  font:700 max(10px,2.45cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; color:var(--red);
+}
+.ref{ display:flex; flex-wrap:wrap; gap:.6cqw 3cqw }
+.ref a, a.ref-link{
+  font:500 max(9.5px,2.2cqw)/1.35 var(--f-label); letter-spacing:.08em; text-transform:uppercase;
+  color:var(--blue); text-decoration:none; border-bottom:.22cqw dotted var(--blue);
+}
+a.ref-link{ margin-right:2.4cqw }
+a:hover{ color:var(--red); border-bottom-color:var(--red) }
+a:focus-visible{ outline:2px solid var(--red); outline-offset:2px }
+
+.quadro{ position:relative; border:.45cqw solid var(--ink); background:var(--paper-shade); padding:2.5cqw 3cqw 2.7cqw }
+.quadro::after{
+  content:""; position:absolute; inset:1.5cqw -1.6cqw -1.6cqw 1.5cqw; z-index:-1;
+  background-image:radial-gradient(var(--ink) 32%, transparent 35%); background-size:1.25cqw 1.25cqw;
+}
+.quadro h3{ margin:0 0 1.2cqw; font:700 max(10px,2.55cqw)/1 var(--f-label); letter-spacing:.15em; text-transform:uppercase; color:var(--red) }
+.quadro p{ margin:0; font-size:max(11.5px,2.75cqw); line-height:1.42; hyphens:auto; -webkit-hyphens:auto }
+.quadro p + p{ margin-top:1cqw }
+
+.legenda{ margin:0; font:italic 400 max(10.5px,2.4cqw)/1.35 var(--f-body); color:var(--ink-soft) }
+.arte{ display:block; width:100%; height:auto; max-width:100% }
+
+/* SVG */
+.f-ink{fill:var(--ink)} .f-paper{fill:var(--paper)} .f-shade{fill:var(--paper-shade)}
+.f-red{fill:var(--red)} .f-blue{fill:var(--blue)} .f-mus{fill:var(--mustard)} .f-none{fill:none}
+.s-ink{stroke:var(--ink)} .s-red{stroke:var(--red)} .s-mus{stroke:var(--mustard)} .s-paper{stroke:var(--paper)} .s-blue{stroke:var(--blue)}
+.t-slab{font-family:var(--f-display)} .t-label{font-family:var(--f-label); font-weight:600} .t-data{font-family:var(--f-data)}
+
+/* ---------- capa ---------- */
+.capa .pg{ gap:2.4cqw }
+.capa-faixa{ display:flex; justify-content:space-between; font:600 max(9px,2.2cqw)/1 var(--f-label); letter-spacing:.16em; text-transform:uppercase }
+.logo{
+  margin:0; font:400 15.6cqw/.9 var(--f-display); letter-spacing:-.015em; text-align:center;
+  color:var(--ink); text-shadow:.75cqw .75cqw 0 var(--red);
+  border-block:.5cqw solid var(--ink); padding-block:2cqw 1.4cqw;
+}
+.slogan{ margin:-.6cqw 0 0; text-align:center; font:500 max(9.5px,2.4cqw)/1 var(--f-label); letter-spacing:.3em; text-transform:uppercase }
+.capa-miolo{ display:grid; grid-template-columns:31cqw minmax(0,1fr); gap:2.8cqw; align-items:center }
+.chamadas{ display:flex; flex-direction:column; gap:2.2cqw }
+.chamada{ border-top:.35cqw solid var(--ink); padding-top:1.3cqw }
+.chamada span{ display:block; font:700 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-bottom:.8cqw }
+.chamada p{ margin:0; font:700 max(11px,2.8cqw)/1.22 var(--f-body) }
+.arte-capa{ position:relative }
+.selo{
+  position:absolute; right:-1cqw; top:-1cqw; width:17cqw; aspect-ratio:1; border-radius:50%;
+  display:grid; place-content:center; text-align:center; transform:rotate(12deg);
+  background:var(--mustard); color:var(--ink); border:.5cqw solid var(--ink);
+  box-shadow:0 0 0 .8cqw var(--paper), 0 0 0 1.1cqw var(--ink);
+  font:700 2cqw/1.05 var(--f-label); letter-spacing:.08em; text-transform:uppercase;
+}
+.selo b{ display:block; font:400 3.4cqw/1 var(--f-display); letter-spacing:0 }
+.manchete{ text-align:center; display:flex; flex-direction:column; gap:1.2cqw }
+.manchete h2{ margin:0; font:700 11.4cqw/.92 var(--f-label); letter-spacing:.01em; text-transform:uppercase; text-wrap:balance }
+.manchete p{ margin:0; font:italic 400 max(12px,3.6cqw)/1.25 var(--f-body); text-wrap:balance }
+.capa-pe{ margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; gap:3cqw }
+.capa-pe p{ margin:0; font:500 max(9px,2.2cqw)/1.35 var(--f-label); letter-spacing:.1em; text-transform:uppercase }
+.barras{ display:flex; flex-direction:column; align-items:center; gap:.6cqw; background:var(--paper); padding:1.2cqw 1.6cqw .8cqw; border:.25cqw solid var(--ink) }
+.barras i{
+  display:block; width:22cqw; height:8cqw;
+  background:repeating-linear-gradient(90deg, var(--ink) 0 .45cqw, transparent .45cqw .8cqw, var(--ink) .8cqw 1.5cqw, transparent 1.5cqw 1.75cqw, var(--ink) 1.75cqw 1.95cqw, transparent 1.95cqw 2.5cqw, var(--ink) 2.5cqw 2.7cqw, transparent 2.7cqw 3.3cqw);
+}
+.barras span{ font:400 2.6cqw/1 var(--f-data); letter-spacing:.2em }
+
+/* ---------- miolo ---------- */
+.sumario{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1.1cqw }
+.sumario li{ display:flex; align-items:baseline; gap:1.4cqw; font-size:max(11.5px,2.85cqw) }
+.sumario li::after{ content:""; order:2; flex:1; border-bottom:.3cqw dotted var(--ink-soft) }
+.sumario li span{ order:1 }
+.sumario li b{ order:3; font:400 3.6cqw/1 var(--f-display); color:var(--red); min-width:4cqw; text-align:right }
+.sumario em{ font-style:normal; font:600 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); margin-right:.5em }
+.expediente{ margin:0; font:400 max(13px,3cqw)/1.1 var(--f-data); color:var(--ink-soft); text-transform:uppercase }
+
+.tabela{ width:100%; border-collapse:collapse; font:400 max(14px,3.7cqw)/1.15 var(--f-data); font-variant-numeric:tabular-nums }
+.tabela th{ font:600 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; text-align:right; padding:0 0 1cqw; border-bottom:.3cqw solid var(--ink) }
+.tabela th:first-child, .tabela td:first-child{ text-align:left }
+.tabela td{ text-align:right; padding:.7cqw 0; border-bottom:.22cqw dashed var(--ink-soft) }
+.tabela td.sobe{ color:var(--blue) }
+.tabela td.desce{ color:var(--red) }
+.tabela tr:last-child td{ border-bottom:0 }
+
+.lado{ display:grid; grid-template-columns:42cqw minmax(0,1fr); gap:3.4cqw; align-items:center }
+.lado.inv{ grid-template-columns:minmax(0,1fr) 38cqw }
+.lado > div{ display:flex; flex-direction:column; gap:2cqw; min-width:0 }
+.notas{ display:flex; flex-direction:column; gap:1.5cqw }
+.notas p{ margin:0; font-size:max(12px,2.95cqw); line-height:1.42; hyphens:auto; -webkit-hyphens:auto; text-align:justify }
+
+.empresa{
+  display:inline-block; margin-right:.45em; padding:.4cqw 1cqw .3cqw;
+  font:700 max(9.5px,2.2cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase;
+  border:.3cqw solid var(--ink); background:var(--paper);
+}
+
+.vozes{ display:flex; flex-direction:column; gap:2.4cqw }
+.voz{ display:grid; grid-template-columns:11cqw minmax(0,1fr); gap:2.8cqw; align-items:start }
+.avatar{
+  width:11cqw; aspect-ratio:1; border-radius:50%; border:.4cqw solid var(--ink);
+  display:grid; place-items:center; font:400 3.8cqw/1 var(--f-display); color:var(--paper);
+  background-color:var(--blue);
+  background-image:radial-gradient(var(--ink) 30%, transparent 34%); background-size:1.3cqw 1.3cqw;
+  text-shadow:0 0 .6cqw var(--ink);
+}
+.avatar.c1{ background-color:var(--red) }
+.avatar.c2{ background-color:var(--mustard) }
+.voz h4{ margin:0 0 .6cqw; font:700 max(10px,2.5cqw)/1.1 var(--f-label); letter-spacing:.12em; text-transform:uppercase }
+.voz h4 small{ font-weight:500; color:var(--ink-soft); letter-spacing:.08em }
+.voz p{ margin:0 0 .8cqw; font-size:max(12px,2.9cqw); line-height:1.4 }
+
+.leituras{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2.2cqw }
+.leituras li{ display:grid; grid-template-columns:3cqw minmax(0,1fr); gap:2cqw }
+.leituras li::before{ content:""; width:2.2cqw; height:2.2cqw; margin-top:1cqw; background:var(--red) }
+.leituras a{ font:700 max(12px,3.05cqw)/1.25 var(--f-body); color:var(--ink); text-decoration:none; border-bottom:.25cqw dotted var(--ink-soft) }
+.leituras span{ display:block; margin-top:.5cqw; font:500 max(9px,2.15cqw)/1.3 var(--f-label); letter-spacing:.1em; text-transform:uppercase; color:var(--blue) }
+
+.perdeu{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2.4cqw }
+.perdeu li{ border-top:.3cqw solid var(--ink); padding-top:1.6cqw }
+.perdeu li span{ display:block; font:700 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-bottom:1cqw }
+.perdeu li p{ margin:0 0 .8cqw; font-size:max(12px,2.95cqw); line-height:1.42 }
+
+.glossario{ margin:0; display:flex; flex-direction:column; gap:2.2cqw }
+.glossario dt{ font:400 4.6cqw/1 var(--f-display); color:var(--ink) }
+.glossario dt small{ font:600 max(9px,2.1cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-left:1.2cqw }
+.glossario dd{ margin:.8cqw 0 0; font-size:max(12px,2.95cqw); line-height:1.42; border-left:.6cqw solid var(--mustard); padding-left:2.2cqw }
+
+.anuncio{ border:.6cqw double var(--ink); padding:2.8cqw; display:grid; grid-template-columns:minmax(0,1fr) 20cqw; gap:2.4cqw; align-items:center; background:var(--paper) }
+.anuncio h3{ margin:0 0 1cqw; font:700 5.4cqw/.95 var(--f-label); text-transform:uppercase; letter-spacing:.01em }
+.anuncio h3 em{ font-style:normal; color:var(--red) }
+.anuncio p{ margin:0; font-size:max(11.5px,2.75cqw); line-height:1.35 }
+.cupom{ grid-column:1 / -1; border:.35cqw dashed var(--ink); padding:2cqw 2.4cqw; font:400 max(13px,3.2cqw)/1.35 var(--f-data); position:relative }
+.cupom::before{ content:"✂"; position:absolute; top:-2.4cqw; left:3cqw; background:var(--paper); padding:0 1cqw; font-size:3.4cqw; line-height:1 }
+.anuncio.grande{ grid-template-columns:1fr; text-align:center; padding:4cqw }
+.anuncio.grande .arte{ width:46cqw; margin:0 auto }
+.anuncio.grande h3{ font-size:7.4cqw }
+.miudo{ margin:0; font:italic 400 max(10px,2.2cqw)/1.3 var(--f-body); color:var(--ink-soft) }
+
+/* ---------- arquivo de edições ---------- */
+.arquivo{ width:100%; max-width:720px; list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px }
+.arquivo li{ display:grid; grid-template-columns:auto minmax(0,1fr); gap:6px 18px; align-items:baseline; border-bottom:1px solid currentColor; padding-bottom:12px }
+.arquivo b{ font:400 22px/1 var(--f-display) }
+.arquivo a{ color:inherit; font:700 16px/1.3 var(--f-body) }
+.arquivo span{ grid-column:2; font:500 12px/1.3 var(--f-label); letter-spacing:.12em; text-transform:uppercase }
+
+</style>
+</head>
+<body>
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <pattern id="ht-ink" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="2" cy="2" r="1.05" class="f-ink"/></pattern>
+    <pattern id="ht-fino" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="2" cy="2" r=".62" class="f-ink"/></pattern>
+    <pattern id="ht-red" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(15)"><circle cx="2" cy="2" r="1.25" class="f-red"/></pattern>
+    <pattern id="ht-blue" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(75)"><circle cx="2.5" cy="2.5" r="1.45" class="f-blue"/></pattern>
+    <pattern id="hachura" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.3" height="4" class="f-ink"/></pattern>
+    <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" class="f-paper" opacity=".09"/></pattern>
+    <pattern id="teclas" width="12" height="9" patternUnits="userSpaceOnUse"><rect x="1.5" y="1.5" width="9" height="6" rx="1" class="f-ink" opacity=".8"/></pattern>
+    <pattern id="pinos" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="2" height="4" class="f-mus"/></pattern>
+    <pattern id="dentes" width="5" height="4" patternUnits="userSpaceOnUse"><rect x="3" width="1.4" height="4" class="f-ink" opacity=".55"/></pattern>
+    <pattern id="janelas" width="12" height="12" patternUnits="userSpaceOnUse"><rect x="2" y="2" width="7" height="7" class="f-ink" opacity=".85"/></pattern>
+  </defs>
+</svg>
+
+
+
+
+
+
+
+
+
+<main class="mesa">
+  <div class="mesa-topo">
+    <span><strong>Circuito</strong> · nº 007 · segunda-feira, 2 de novembro de 2026</span>
+    <span><a href="../arquivo.html">Edições anteriores</a></span>
+  </div>
+  <p class="mesa-sobre">Revista diária de tecnologia em 5 minutos · de segunda a sábado, às 7h · grátis. Cada nota tem o link para a matéria original.</p>
+  <section class="spread solo" aria-label="Capa">
+<article class="page capa" id="p1"><div class="pg">
+  <div class="capa-faixa"><span>Nº 007 · Ano I</span><span>Segunda, 2 de novembro de 2026</span></div>
+  <h1 class="logo">CIRCUITO</h1>
+  <p class="slogan">IA · Hardware · Big Techs · Cripto</p>
+  <div class="capa-miolo">
+    <div class="chamadas">
+<div class="chamada"><span>Cripto</span><p>FBI culpa Coreia do Norte pelo roubo na Binance</p></div><div class="chamada"><span>Hardware</span><p>Kioxia despenca até 15% com cautela na memória</p></div><div class="chamada"><span>Segurança</span><p>Malware manda dados roubados para o Claude avaliar</p></div><div class="chamada"><span>Mercado</span><p>ETFs de bitcoin perdem US$ 643 mi na sexta</p></div>    </div>
+    <div class="arte-capa">
+      <svg class="arte" viewBox="0 0 300 250" role="img" aria-label="Ilustração: computador antigo com o elemento do dia na tela, Gálio">
+  <circle cx="150" cy="116" r="114" fill="url(#ht-blue)"/>
+  <g class="s-ink" stroke-width="2.5" stroke-linecap="round">
+    <line x1="14" y1="36" x2="38" y2="50"/><line x1="286" y1="36" x2="262" y2="50"/>
+    <line x1="6" y1="116" x2="32" y2="116"/><line x1="294" y1="116" x2="268" y2="116"/>
+  </g>
+  <rect x="61" y="28" width="186" height="160" rx="16" class="f-red" opacity=".9"/>
+  <rect x="55" y="22" width="186" height="160" rx="16" class="f-paper s-ink" stroke-width="3"/>
+  <rect x="72" y="38" width="152" height="114" rx="12" class="f-ink"/>
+  <rect x="72" y="38" width="152" height="114" rx="12" fill="url(#scan)"/>
+  <rect x="111" y="50" width="74" height="88" class="f-none s-mus" stroke-width="2.5"/>
+  <text x="117" y="65" class="t-data f-mus" font-size="14">31</text>
+  <text x="148" y="108" text-anchor="middle" class="t-slab f-paper" font-size="40">Ga</text>
+  <text x="148" y="122" text-anchor="middle" class="t-label f-mus" font-size="8.5" letter-spacing="1.6">GÁLIO</text>
+  <text x="148" y="133" text-anchor="middle" class="t-data f-paper" font-size="11">69,723</text>
+  <rect x="82" y="140" width="8" height="5" class="f-mus"/>
+  <rect x="172" y="161" width="52" height="6" rx="1" class="f-ink"/>
+  <circle cx="82" cy="165" r="3.6" class="f-red"/>
+  <text x="92" y="168" class="t-label f-ink" font-size="7" letter-spacing="1.2">CIRCUITO 2026</text>
+  <path d="M122 182 L174 182 L184 198 L112 198 Z" class="f-shade s-ink" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M48 206 L252 206 L266 242 L34 242 Z" class="f-paper s-ink" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M57 211 L243 211 L254 237 L46 237 Z" fill="url(#teclas)"/>
+  <path d="M0,-9 L2.2,-2.2 L9,0 L2.2,2.2 L0,9 L-2.2,2.2 L-9,0 L-2.2,-2.2Z" class="f-mus s-ink" stroke-width="1.2" transform="translate(262 20)"/>
+  <path d="M0,-7 L1.8,-1.8 L7,0 L1.8,1.8 L0,7 L-1.8,1.8 L-7,0 L-1.8,-1.8Z" class="f-red" transform="translate(30 186)"/>
+</svg>
+      <div class="selo" aria-hidden="true"><b>R$ 0</b>seg a sáb<br>às 7h</div>
+    </div>
+  </div>
+  <div class="manchete"><h2>Altman vai à Samsung</h2><p>Memória escassa, Kioxia em queda e o FBI aponta a Coreia do Norte na Binance.</p></div>
+  <div class="capa-pe">
+    <p>Leitura de 5 minutos<br>Cada nota com o link para o estudo completo</p>
+    <div class="barras" aria-hidden="true"><i></i><span>2026·11·02</span></div>
+  </div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 2 e Página 3">
+<article class="page" id="p2"><div class="pg">
+  <div class="runner"><span>Circuito · Nº 007</span><span>Ao leitor</span></div>
+  <h2 class="titulo">Memória curta, cofre aberto</h2>
+  <div class="txt"><p class="capitular">Sam Altman, da OpenAI, visitou a Samsung no sábado (31) atrás de memória, a peça mais disputada da IA. Nesta segunda (2), a japonesa Kioxia caiu na Bolsa.</p><p>No domingo (1º), a Binance reabriu os saques depois do roubo de US$ 6,3 bilhões. O FBI aponta a Coreia do Norte. Pegue o café e boa leitura.</p></div>
+  <div class="quadro">
+    <h3>Nesta edição</h3>
+    <ol class="sumario">
+<li><span><em>Bastidores</em>Binance reabre saques após roubo de US$ 6,3 bi</span><b>3</b></li><li><span><em>Capa</em>Altman bate na porta da Samsung por memória</span><b>4</b></li><li><span><em>Sábado</em>Se você perdeu no sábado</span><b>6</b></li><li><span><em>Placas &amp; Memórias</em>Trava destravada, pendrive furado</span><b>7</b></li><li><span><em>Giro das Big Techs</em>Giro das Big Techs</span><b>8</b></li><li><span><em>Cripto</em>Cofre Digital</span><b>9</b></li><li><span><em>Vozes</em>Da Comunidade</span><b>10</b></li><li><span><em>Fim</em>Pra ler com calma</span><b>12</b></li>    </ol>
+  </div>
+  <p class="expediente">Fechamento 02/11/2026 06h12 (Brasília)<br>Cobre de 31/10 às 06h11 a 02/11 às 06h12<br>Fontes: Ars Technica, Bloomberg, CNBC, CoinDesk, Simon Willison, TabNews, TechCrunch, The Verge, Tom&#39;s Hardware, karpathy.bearblog.dev e outras</p>
+  <div class="folio"><b>2</b><span>Ao leitor</span></div>
+</div></article>
+
+<article class="page" id="p3"><div class="pg">
+  <div class="runner"><span>Bastidores</span><span>Segurança</span></div>
+<span class="tarja verm">Caso de polícia</span>  <h2 class="titulo">Binance reabre saques após roubo de US$ 6,3 bi</h2>
+<svg class="arte" viewBox="0 0 300 170" role="img" aria-label="Ilustração: cofre antigo com segredo de girar e uma moeda ao lado">
+  <rect x="0" y="158" width="300" height="12" fill="url(#ht-fino)"/>
+  <line x1="0" y1="158" x2="300" y2="158" class="s-ink" stroke-width="2.5"/>
+  <rect x="86" y="22" width="128" height="132" rx="8" class="f-red" opacity=".9"/>
+  <rect x="80" y="16" width="128" height="132" rx="8" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="92" y="28" width="104" height="108" rx="4" fill="url(#ht-fino)" opacity=".6"/>
+  <rect x="92" y="28" width="104" height="108" rx="4" class="f-none s-ink" stroke-width="2"/>
+  <circle cx="144" cy="72" r="24" class="f-paper s-ink" stroke-width="3"/>
+  <circle cx="144" cy="72" r="18" class="f-none s-ink" stroke-width="2" stroke-dasharray="2 4"/>
+  <line x1="144" y1="72" x2="144" y2="54" class="s-red" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="144" cy="72" r="6" class="f-ink"/>
+  <rect x="170" y="102" width="9" height="26" rx="3" class="f-ink"/>
+  <rect x="92" y="148" width="18" height="9" class="f-ink"/>
+  <rect x="178" y="148" width="18" height="9" class="f-ink"/>
+  <circle cx="248" cy="120" r="30" class="f-mus s-ink" stroke-width="3"/>
+  <circle cx="248" cy="120" r="23" class="f-none s-ink" stroke-width="1.5"/>
+  <text x="248" y="131" text-anchor="middle" class="t-slab f-ink" font-size="30">B</text>
+  <g class="s-ink" stroke-width="2.5">
+    <line x1="244" y1="100" x2="244" y2="107"/><line x1="252" y1="100" x2="252" y2="107"/>
+    <line x1="244" y1="130" x2="244" y2="137"/><line x1="252" y1="130" x2="252" y2="137"/>
+  </g>
+  <circle cx="42" cy="138" r="18" class="f-mus s-ink" stroke-width="2.5"/>
+  <text x="42" y="145" text-anchor="middle" class="t-slab f-ink" font-size="19">$</text>
+</svg>
+  <div class="txt"><p class="capitular">Na quinta (29), hackers levaram US$ 6,3 bilhões em cripto da corretora Binance. O FBI diz que o grupo norte-coreano TraderTraitor fez o ataque e já troca o dinheiro por ether, o que ajuda a lavá-lo.</p><p>A Binance reabriu os saques no domingo (1º), em etapas, e diz ter recomposto 95% do que sumiu. Segundo ela, o prejuízo não vai para os clientes.</p></div>
+<div class="quadro">
+  <h3>Na fila dos saques</h3>
+<p>No primeiro dia, a Binance processou US$ 4,6 bilhões em saques e US$ 1 bilhão em depósitos. Saída líquida: US$ 3,6 bilhões, 2,1% dos ativos.</p></div>  <div class="ref"><a href="https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/">→ TechCrunch</a><a href="https://www.theverge.com/tech/1024176/north-korea-binance-crypto-heist">→ The Verge</a><a href="https://www.coindesk.com/policy/2026/10/31/fbi-confirms-north-korea-s-role-in-usd6-billion-binance-hack-asks-defi-community-to-block-btc-eth-sol-addresses">→ CoinDesk</a></div>
+  <div class="folio"><span>Bastidores</span><b>3</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 4 e Página 5">
+<article class="page" id="p4"><div class="pg">
+  <div class="runner"><span>Matéria de capa</span><span>Inteligência artificial</span></div>
+  <svg class="arte" viewBox="0 0 300 120" role="img" aria-label="Ilustração: pente de memória com oito chips">
+  <rect x="18" y="28" width="270" height="64" rx="3" class="f-red" opacity=".85"/>
+  <rect x="12" y="22" width="270" height="64" rx="3" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="12" y="22" width="270" height="64" rx="3" fill="url(#ht-fino)" opacity=".45"/>
+  <g class="f-ink">
+    <rect x="24" y="31" width="24" height="30"/><rect x="56" y="31" width="24" height="30"/>
+    <rect x="88" y="31" width="24" height="30"/><rect x="120" y="31" width="24" height="30"/>
+    <rect x="156" y="31" width="24" height="30"/><rect x="188" y="31" width="24" height="30"/>
+    <rect x="220" y="31" width="24" height="30"/><rect x="252" y="31" width="22" height="30"/>
+  </g>
+  <rect x="24" y="66" width="64" height="13" class="f-paper s-ink" stroke-width="1.5"/>
+  <text x="56" y="76.5" text-anchor="middle" class="t-data f-ink" font-size="12">DDR · 16 GB</text>
+  <circle cx="12" cy="56" r="5" class="f-paper s-ink" stroke-width="2"/>
+  <circle cx="282" cy="56" r="5" class="f-paper s-ink" stroke-width="2"/>
+  <rect x="20" y="86" width="124" height="13" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="156" y="86" width="118" height="13" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="22" y="88" width="120" height="9" fill="url(#dentes)"/>
+  <rect x="158" y="88" width="114" height="9" fill="url(#dentes)"/>
+</svg>
+
+<p class="legenda">A memória virou o gargalo da IA</p>  <span class="tarja">Capa · Memória</span>
+  <h2 class="titulo g">Altman bate na porta da Samsung por memória</h2>
+  <p class="olho">Samsung e SK hynix controlam a maior parte da memória da IA, e ela está curta. Enquanto a OpenAI corre atrás de mais, a Kioxia cai na Bolsa.</p>
+  <div class="txt"><p class="capitular">Sam Altman, chefe da OpenAI, reuniu cerca de 50 executivos da Samsung na Coreia do Sul no sábado (31), diz o Tom&#39;s Hardware. A Samsung afirmou que falaram de IA e de novas oportunidades. Não anunciou contrato novo de memória.</p></div>
+  <div class="folio"><b>4</b><span>Matéria de capa</span></div>
+</div></article>
+
+<article class="page" id="p5"><div class="pg">
+  <div class="runner"><span>Altman bate na porta da Samsung por memória</span><span>Continuação</span></div>
+  <div class="txt"><p>O pano de fundo é a falta de DRAM, a memória de trabalho dos computadores. A TrendForce calcula que a oferta fique 1% a 2% abaixo da demanda este ano, e o desequilíbrio deve piorar em 2027. A Micron avisa que a escassez pode durar até 2028. Altman chamou de “terrível” a DRAM parada em PCs e foi criticado.</p></div>
+<div class="quadro">
+  <h3>Fatia da Samsung + SK hynix</h3>
+  <table class="tabela">
+    <thead><tr><th scope="col">Memória</th><th scope="col">Receita global</th></tr></thead>
+    <tbody><tr><td>DRAM</td><td>63%</td></tr><tr><td>HBM</td><td>83%</td></tr></tbody>
+  </table>
+</div><div class="quadro">
+  <h3>Sinal de freio?</h3>
+<p>A Kioxia, fabricante japonesa de memória NAND, caiu até 15% nesta segunda (2) após uma previsão cautelosa. Para a Bloomberg, cresce o temor de que a demanda por IA esteja desacelerando.</p></div>  <div class="ref"><a href="https://www.tomshardware.com/tech-industry/data-centers/sam-altman-travels-to-south-korea-to-meet-samsung-leadership-to-secure-more-ram-for-data-centers-amid-crushing-shortages-openai-ceo-meets-samsung-leadership-to-discuss-future-ai-data-centers">→ Tom&#39;s Hardware</a><a href="https://www.bloomberg.com/news/articles/2026-11-02/kioxia-shares-tumble-after-outlook-suggests-demand-leveling-off">→ Bloomberg</a></div>
+  <div class="folio"><span>Matéria de capa</span><b>5</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 6 e Página 7">
+<article class="page" id="p6"><div class="pg">
+  <div class="runner"><span>Se você perdeu</span><span>Edição de sábado</span></div>
+  <span class="tarja verm">Para quem pulou o sábado</span>
+  <h2 class="titulo">Se você perdeu no sábado</h2>
+  <ul class="perdeu">
+<li><span>Capa</span><p>Uma extensão falsa do Claude Code na loja do Cursor atingiu até 5 mil usuários. A Anthropic diz que não foi invadida.</p><a class="ref-link" href="https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/">→ Ars Technica</a></li><li><span>Mercado</span><p>A Nasdaq caiu 2,9% na sexta (30), e a Alphabet teve o pior dia da empresa na quinta (29).</p><a class="ref-link" href="https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/">→ TechCrunch</a></li><li><span>Hardware</span><p>As ações da Intel caíram 28,58% na sexta (30), o pior dia desde os anos 1970.</p><a class="ref-link" href="https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html">→ CNBC</a></li><li><span>Espaço</span><p>Um satélite da Google usou o Gemma 4 para escrever um haicai no espaço.</p><a class="ref-link" href="https://www.theverge.com/tech/1023528/google-project-suncatcher-ai-satellite-transmission">→ The Verge</a></li><li><span>Cripto</span><p>A Binance mirava reabrir os saques no domingo, e reabriu.</p><a class="ref-link" href="https://www.coindesk.com/tech/2026/10/30/binance-uncovers-wider-breach-in-usd6-3-billion-exploit-targets-sunday-withdrawal-restart">→ CoinDesk</a></li>  </ul>
+  <div class="folio"><b>6</b><span>Se você perdeu</span></div>
+</div></article>
+
+<article class="page" id="p7"><div class="pg">
+  <div class="runner"><span>Placas &amp; Memórias</span><span>Hardware</span></div>
+  <div class="lado inv">
+    <div><span class="tarja">Hardware</span><h2 class="titulo">Trava destravada, pendrive furado</h2></div>
+    <svg class="arte" viewBox="0 0 300 130" role="img" aria-label="Ilustração: placa de vídeo com duas ventoinhas">
+  <rect x="31" y="27" width="252" height="80" rx="6" class="f-red" opacity=".85"/>
+  <rect x="6" y="14" width="14" height="98" class="f-shade s-ink" stroke-width="2.5"/>
+  <rect x="26" y="22" width="252" height="80" rx="6" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="26" y="22" width="252" height="80" rx="6" fill="url(#ht-fino)" opacity=".7"/>
+  <g transform="translate(96 62)">
+    <circle r="33" class="f-ink"/>
+    <g class="f-paper">
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(72)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(144)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(216)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(288)"/>
+    </g>
+    <circle r="7" class="f-mus s-ink" stroke-width="2"/>
+  </g>
+  <g transform="translate(206 62) rotate(30)">
+    <circle r="33" class="f-ink"/>
+    <g class="f-paper">
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(72)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(144)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(216)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(288)"/>
+    </g>
+    <circle r="7" class="f-mus s-ink" stroke-width="2"/>
+  </g>
+  <rect x="72" y="102" width="118" height="12" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="74" y="104" width="114" height="8" fill="url(#dentes)"/>
+</svg>
+
+  </div>
+  <div class="notas"><p><span class="nota-cab">Limite da Nvidia</span>Uma ferramenta de código aberto tira o limite de desempenho de IA das placas RTX 20, 30 e 40, com ganho de até 65% em contas FP16, diz o Tom&#39;s Hardware.</p><p><span class="nota-cab">Pendrive furado</span>O pendrive “criptografado” da Lenovo guardava um cartão SD sem proteção. Uma análise com o Codex achou chaves fixas em outros modelos, segundo o Tom&#39;s Hardware.</p></div>
+  <div class="ref"><a href="https://www.tomshardware.com/pc-components/gpus/open-source-usb-tool-unlocks-nvidias-half-speed-gpu-ai-limiter-on-windows-lifts-gpus-fp16-math-performance-up-to-65-percent-uefi-unlocker-covers-rtx-20-30-and-40-series-desktops-and-laptops">→ Tom&#39;s Hardware</a></div>
+  <div class="folio"><span>Placas &amp; Memórias</span><b>7</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 8 e Página 9">
+<article class="page" id="p8"><div class="pg">
+  <div class="runner"><span>Giro das Big Techs</span><span>Notas</span></div>
+  <h2 class="titulo">Giro das Big Techs</h2>
+  <div class="cols"><p><span class="empresa">Anthropic</span>Um malware chamado VOLTA manda dados roubados ao Claude Opus 4.6 para ranquear o que vale mais, diz a Cisco Talos, segundo o Tom&#39;s Hardware.</p><p><span class="empresa">Anthropic</span>O Opus 5.5 lidera o GDPx, novo benchmark (teste comparativo) da SemiAnalysis, com 12% de acerto.</p><p><span class="empresa">OpenAI</span>A OpenAI pode rebatizar seus data centers de “campi de computação de IA”, segundo o TechCrunch.</p><p><span class="empresa">OpenAI</span>A Parameter Labs diz ter achado uma falha nas prévias em HTML do ChatGPT que permitiu tomar contas, relata Simon Willison.</p><p><span class="empresa">xAI</span>Um juiz deixou seguir o processo da NAACP contra o data center da xAI, acusada de violar a lei do ar limpo dos EUA, diz o TechCrunch.</p><p><span class="empresa">Brasil</span>Advogados brasileiros esconderam um prompt injection (comando oculto para enganar a IA) num processo e levaram multa, diz o Tom&#39;s Hardware.</p></div>
+  <div class="ref"><a href="https://www.tomshardware.com/tech-industry/cyber-security/new-ai-driven-windows-malware-feeds-stolen-data-to-claude-to-rank-victims-assets-by-value-then-deletes-itself-payload-builds-custom-target-assessment-can-switch-models-if-one-refuses-or-skip-the-ai-step-entirely">→ Tom&#39;s Hardware</a><a href="https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities">→ newsletter.semianalysis.com</a><a href="https://techcrunch.com/2026/11/01/openai-might-rebrand-its-data-centers-as-ai-compute-campuses/">→ TechCrunch</a><a href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/">→ Simon Willison</a></div>
+  <div class="folio"><b>8</b><span>Giro das Big Techs</span></div>
+</div></article>
+
+<article class="page" id="p9"><div class="pg">
+  <div class="runner"><span>Cofre Digital</span><span>Cripto · o básico</span></div>
+  <span class="tarja verm">Cotações da madrugada</span>
+  <h2 class="titulo">Bitcoin se recupera após o susto</h2>
+  <table class="tabela">
+    <thead><tr><th scope="col">Moeda</th><th scope="col">US$</th><th scope="col">R$</th><th scope="col">24 h</th></tr></thead>
+    <tbody><tr><td>BTC</td><td>78.218</td><td>425.700</td><td class="sobe">+0,15%</td></tr><tr><td>ETH</td><td>2.296,05</td><td>12.496</td><td class="sobe">+1,04%</td></tr><tr><td>SOL</td><td>94,69</td><td>515,36</td><td class="desce">−1,04%</td></tr></tbody>
+  </table>
+  <p class="legenda">CoinGecko, 02/11 às 06h12 (Brasília). Variação em dólar.</p>
+  <div class="lado">
+    <svg class="arte" viewBox="0 0 200 122" role="img" aria-label="Medidor do índice de medo e ganância marcando 37, Medo">
+  <path d="M20 100 A80 80 0 0 1 87.5 21" class="f-none s-blue" stroke-width="15"/>
+  <path d="M87.5 21 A80 80 0 0 1 112.5 21" class="f-none" stroke="var(--paper-shade)" stroke-width="15"/>
+  <path d="M112.5 21 A80 80 0 0 1 180 100" class="f-none s-red" stroke-width="15"/>
+  <path d="M20 100 A80 80 0 0 1 180 100" class="f-none s-ink" stroke-width="1.2"/>
+  <text x="12" y="116" text-anchor="middle" class="t-data f-ink" font-size="12">0</text>
+  <text x="100" y="9" text-anchor="middle" class="t-data f-ink" font-size="12">50</text>
+  <text x="188" y="116" text-anchor="middle" class="t-data f-ink" font-size="12">100</text>
+  <line x1="100" y1="100" x2="73.0" y2="37.6" class="s-ink" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="7" class="f-ink"/>
+  <circle cx="100" cy="100" r="2.5" class="f-mus"/>
+  <text x="140" y="94" text-anchor="middle" class="t-slab f-ink" font-size="20">37</text>
+</svg>
+    <div class="quadro">
+      <h3>Medo &amp; Ganância: 37</h3>
+      <p>Hoje marca “medo”. Vai de 0 (pânico) a 100 (euforia) e mede o humor do mercado com volatilidade, volume e redes sociais.</p>
+    </div>
+  </div>
+  <div class="notas"><p><span class="nota-cab">ETFs</span>Os ETFs (fundos negociados em Bolsa) de bitcoin perderam US$ 643 milhões na sexta, diz o CoinDesk.</p><p><span class="nota-cab">BTCPay</span>A ferramenta BTCPay pediu que usuários desliguem seus servidores após relatos de carteiras esvaziadas.</p><p><span class="nota-cab">Eleição</span>Cripto entra na eleição dos EUA de terça (3), diz o CoinDesk.</p></div>
+  <div class="ref"><a href="https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now">→ CoinDesk</a></div>
+  <p class="miudo">Isto não é recomendação de investimento.</p>
+  <div class="folio"><span>Cofre Digital</span><b>9</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 10 e Página 11">
+<article class="page" id="p10"><div class="pg">
+  <div class="runner"><span>Da Comunidade</span><span>Blogs, YouTube e fóruns</span></div>
+  <h2 class="titulo">O que a turma anda escrevendo</h2>
+  <div class="vozes">
+    <div class="voz">
+      <div class="avatar c0" aria-hidden="true">SW</div>
+      <div>
+        <h4>Simon Willison <small>· blog</small></h4>
+        <p>Desde que migrou para o Python 3.15, vê erros de dependência confusos. Sua regra agora: na dúvida, apague o arquivo uv.lock.</p>
+<a class="ref-link" href="https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/">→ simonwillison.net</a>      </div>
+    </div>
+    <div class="voz">
+      <div class="avatar c1" aria-hidden="true">A</div>
+      <div>
+        <h4>aniruddhaadak <small>· TabNews</small></h4>
+        <p>Mostra como rodar mais de 360 ferramentas de PDF, imagem e vídeo direto no navegador, com WebAssembly.</p>
+<a class="ref-link" href="https://www.tabnews.com.br/aniruddhaadak/como-rodar-mais-de-360-ferramentas-de-pdf-imagem-e-video-100-por-cento-no-navegador-com-webassembly">→ TabNews</a>      </div>
+    </div>
+    <div class="voz">
+      <div class="avatar c2" aria-hidden="true">E</div>
+      <div>
+        <h4>EvandroCarvalho <small>· TabNews</small></h4>
+        <p>Ensina a trocar o Fail2ban pelo CrowdSec no Linux, com defesa colaborativa contra IPs maliciosos.</p>
+<a class="ref-link" href="https://www.tabnews.com.br/EvandroCarvalho/crowdsec-no-linux-como-substituir-o-fail2ban-por-defesa-colaborativa-contra-ips-maliciosos">→ TabNews</a>      </div>
+    </div>
+  </div>
+  <div class="folio"><b>10</b><span>Da Comunidade</span></div>
+</div></article>
+
+<article class="page" id="p11"><div class="pg">
+  <div class="runner"><span>Dicionário do Byte</span><span>Glossário</span></div>
+  <h2 class="titulo">Dicionário do Byte</h2>
+  <dl class="glossario">
+<div><dt>HBM<small>Hardware</small></dt><dd>Memória de alta largura de banda, empilhada ao lado do chip de IA para entregar dados bem rápido.</dd></div><div><dt>DRAM<small>Hardware</small></dt><dd>Memória de trabalho do computador, onde ficam os dados em uso. Some ao desligar.</dd></div><div><dt>NAND<small>Hardware</small></dt><dd>Memória flash que guarda dados sem energia. Está nos SSDs e nos celulares.</dd></div><div><dt>ETF<small>Mercado</small></dt><dd>Fundo negociado em Bolsa que acompanha um ativo, como o bitcoin.</dd></div><div><dt>Infostealer<small>Segurança</small></dt><dd>Programa malicioso que rouba senhas e dados do computador da vítima.</dd></div>  </dl>
+  <div class="folio"><span>Glossário</span><b>11</b></div>
+</div></article>
+
+  </section>
+  <section class="spread solo" aria-label="Página 12">
+<article class="page" id="p12"><div class="pg">
+  <div class="runner"><span>Pra ler com calma</span><span>Contracapa</span></div>
+  <h2 class="titulo">Pra ler com calma</h2>
+  <ul class="leituras">
+<li><div><a href="https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/">Matemática mudou. Vamos agir como se mudou</a><span>Terence Tao · ensaio</span></div></li><li><div><a href="https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/">O custo, para a IA, dos frameworks de JavaScript</a><span>Nolan Lawson · técnico</span></div></li><li><div><a href="https://karpathy.bearblog.dev/hacker-tube/">HackerTube: um YouTube feito de vídeos que o Hacker News recomenda</a><span>Andrej Karpathy · projeto</span></div></li>  </ul>
+<div class="anuncio">
+  <div>
+    <h3>Cofre para <em>moedas digitais</em></h3>
+    <p>Guarde as economias do futuro num cofre de verdade. Segredo de 3 números. Aceitamos cheque.</p>
+  </div>
+<svg class="arte" viewBox="0 0 300 170" role="img" aria-label="Ilustração: cofre antigo com segredo de girar e uma moeda ao lado">
+  <rect x="0" y="158" width="300" height="12" fill="url(#ht-fino)"/>
+  <line x1="0" y1="158" x2="300" y2="158" class="s-ink" stroke-width="2.5"/>
+  <rect x="86" y="22" width="128" height="132" rx="8" class="f-red" opacity=".9"/>
+  <rect x="80" y="16" width="128" height="132" rx="8" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="92" y="28" width="104" height="108" rx="4" fill="url(#ht-fino)" opacity=".6"/>
+  <rect x="92" y="28" width="104" height="108" rx="4" class="f-none s-ink" stroke-width="2"/>
+  <circle cx="144" cy="72" r="24" class="f-paper s-ink" stroke-width="3"/>
+  <circle cx="144" cy="72" r="18" class="f-none s-ink" stroke-width="2" stroke-dasharray="2 4"/>
+  <line x1="144" y1="72" x2="144" y2="54" class="s-red" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="144" cy="72" r="6" class="f-ink"/>
+  <rect x="170" y="102" width="9" height="26" rx="3" class="f-ink"/>
+  <rect x="92" y="148" width="18" height="9" class="f-ink"/>
+  <rect x="178" y="148" width="18" height="9" class="f-ink"/>
+  <circle cx="248" cy="120" r="30" class="f-mus s-ink" stroke-width="3"/>
+  <circle cx="248" cy="120" r="23" class="f-none s-ink" stroke-width="1.5"/>
+  <text x="248" y="131" text-anchor="middle" class="t-slab f-ink" font-size="30">B</text>
+  <g class="s-ink" stroke-width="2.5">
+    <line x1="244" y1="100" x2="244" y2="107"/><line x1="252" y1="100" x2="252" y2="107"/>
+    <line x1="244" y1="130" x2="244" y2="137"/><line x1="252" y1="130" x2="252" y2="137"/>
+  </g>
+  <circle cx="42" cy="138" r="18" class="f-mus s-ink" stroke-width="2.5"/>
+  <text x="42" y="145" text-anchor="middle" class="t-slab f-ink" font-size="19">$</text>
+</svg>
+  <div class="cupom">NOME: ______________________<br>( ) À VISTA  ( ) 3X SEM JUROS<br>( ) QUERO RECEBER UM VENDEDOR</div>
+</div>
+<p class="miudo">Anúncio de mentirinha, homenagem às revistas de informática dos anos 80.</p>  <div class="capa-pe">
+    <p>Amanhã nas bancas<br>Edição nº 008, às 7h</p>
+    <div class="barras" aria-hidden="true"><i></i><span>CIRCUITO·007</span></div>
+  </div>
+</div></article>
+  </section>
+</main>
+</body>
+</html>

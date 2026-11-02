@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261102T061241-a89faec3",
+  "execucao": "2026-11-02T06:12:53-03:00",
+  "robo": "circuito_diario",
+  "fonte": "coindesk",
+  "nome": "CoinDesk",
+  "tipo": "rss",
+  "url": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+  "status": "ok",
+  "itens_lidos": 25,
+  "itens_na_janela": 25,
+  "erro": null,
+  "duracao_ms": 495
+}
