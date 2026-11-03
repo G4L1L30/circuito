@@ -1,0 +1,290 @@
+{
+  "capa": {
+    "manchete": "Anthropic vai à Bolsa",
+    "subtitulo": "IPO traz prejuízo, aviso sobre IA que se melhora sozinha e corte na avaliação.",
+    "elemento": {
+      "numero": "1",
+      "simbolo": "An",
+      "nome": "Anthropic",
+      "detalhe": "~1,5 tri"
+    },
+    "chamadas": [
+      {
+        "rotulo": "Cripto BR",
+        "texto": "Mercado Bitcoin é hackeada e trava os saques"
+      },
+      {
+        "rotulo": "Memória",
+        "texto": "Apple vê memória mais cara até dezembro e além"
+      },
+      {
+        "rotulo": "Fusão",
+        "texto": "Marvell compra a Lumentum por US$ 115 bi"
+      },
+      {
+        "rotulo": "Cripto",
+        "texto": "Bitcoin cai abaixo de US$ 77 mil"
+      }
+    ]
+  },
+  "editorial": {
+    "titulo": "Cinco minutos, um café e o mundo",
+    "paragrafos": [
+      "Terça (3), dia de eleição nos EUA e de notícia grande na Bolsa: a Anthropic detalhou as contas e os riscos do seu IPO, a estreia em Bolsa.",
+      "No Brasil, o assunto é a Mercado Bitcoin, que travou saques depois de um ataque hacker. E a memória segue cara: até a Apple avisa que vai piorar."
+    ]
+  },
+  "paginas": [
+    {
+      "tipo": "reportagem",
+      "secao": "Cripto BR",
+      "assunto": "Segurança",
+      "tarja": "Caso de polícia",
+      "titulo": "Mercado Bitcoin é hackeada e trava saques",
+      "ilustracao": "cofre",
+      "paragrafos": [
+        "A Mercado Bitcoin, maior corretora de cripto do Brasil segundo o The Block, parou depósitos e saques depois de uma invasão. A empresa confirmou o acesso sem autorização ao sistema, segundo o Livecoins.",
+        "Os valores variam: US$ 40 milhões em 10 redes (CoinDesk), mais de US$ 46 milhões (Arkham, via The Block) e R$ 217 milhões (fontes, segundo o Tecnoblog). A Tether congelou mais de 4,5 milhões de USDT ligados ao atacante.",
+        "A corretora diz que nenhum cliente teve prejuízo nem dados vazados, e promete cobrir todas as perdas, segundo o CoinDesk."
+      ],
+      "quadro": {
+        "titulo": "Pra você",
+        "texto": "Corretora é custodiante: guarda suas moedas. Por isso o susto vale para qualquer uma. Este texto não é recomendação."
+      },
+      "refs": [
+        {
+          "rotulo": "The Block",
+          "url": "https://www.theblock.co/news/defi/2026-11-02-mercado-bitcoin-hack-46-million-brazil-exchange-432333"
+        },
+        {
+          "rotulo": "CoinDesk",
+          "url": "https://www.coindesk.com/business/2026/11/03/mercado-bitcoin-pledges-to-cover-all-user-losses-after-near-usd40-million-hack"
+        },
+        {
+          "rotulo": "Tecnoblog",
+          "url": "https://tecnoblog.net/noticias/mercado-bitcoin-pode-ter-perdido-r-217-milhoes-em-ataque-hacker/"
+        }
+      ]
+    },
+    {
+      "tipo": "materia",
+      "secao": "Anthropic",
+      "assunto": "Inteligência artificial",
+      "titulo": "O IPO da Anthropic traz contas e avisos",
+      "olho": "No pedido revisto de IPO, a Anthropic diz que pode atingir em breve o limite de progresso acelerado por IA do seu próprio regulamento, e que talvez só perceba depois.",
+      "ilustracao": "robo",
+      "legenda": "A IA que ajuda a construir a próxima IA.",
+      "paragrafos": [
+        "Na segunda (2), a Anthropic revisou o seu pedido de IPO (oferta inicial de ações, a estreia em Bolsa), o formulário S-1/A. O CoinDesk diz que a empresa teve prejuízo operacional no terceiro trimestre, com o custo de computação subindo.",
+        "A parte que mais chamou atenção está nos fatores de risco. Segundo o TechCrunch, a empresa diz que já deixou de notar uma aceleração antes de ela acontecer e que pode \"imminently meet\" (atingir em breve) o limite de progresso acelerado por IA da sua política de segurança. Nenhum modelo atual passou dele.",
+        "Para manter o controle, a Anthropic avalia mudar a política e manter humanos no desenvolvimento."
+      ],
+      "quadros": [
+        {
+          "titulo": "RSI, em uma frase",
+          "texto": "Autoaperfeiçoamento recursivo: a IA fica tão boa em treinar IA que o ritmo do avanço dispara."
+        },
+        {
+          "titulo": "O preço da estreia",
+          "texto": "Segundo o Wall Street Journal, investidores institucionais disseram que a avaliação deveria ficar em US$ 1,5 a 1,6 tri, abaixo dos US$ 2 tri estimados, por causa da queda das ações de tecnologia."
+        }
+      ],
+      "refs": [
+        {
+          "rotulo": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+        },
+        {
+          "rotulo": "CoinDesk",
+          "url": "https://www.coindesk.com/markets/2026/11/02/anthropic-swings-to-third-quarter-operating-loss-as-compute-costs-surge-ahead-of-ipo"
+        },
+        {
+          "rotulo": "Wall Street Journal",
+          "url": "https://www.wsj.com/finance/stocks/anthropic-investors-push-for-cautious-valuation-closer-to-1-5-trillion-2f2df9cf"
+        }
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Placas & Memórias",
+      "assunto": "Hardware",
+      "tarja": "Hardware",
+      "titulo": "Memória cara, chip vigiado",
+      "ilustracao": "memoria",
+      "estilo": "lista",
+      "notas": [
+        {
+          "rotulo": "Apple",
+          "texto": "John Ternus, CEO da Apple, diz esperar custo de memória maior em dezembro e depois. O estoque da empresa subiu 154,3% em um ano, para US$ 14,54 bi.",
+          "url": "https://techcrunch.com/2026/11/02/apples-inventory-surges-154-as-memory-chip-costs-climb/"
+        },
+        {
+          "rotulo": "Raspberry Pi",
+          "texto": "O Pi 5 de 16 GB subiu US$ 80 e custa US$ 385, mais que o triplo do preço de lançamento, em janeiro de 2025.",
+          "url": "https://www.tomshardware.com/raspberry-pi/16gb-raspberry-pi-5-hiked-to-usd385-more-than-triple-its-launch-price-makers-are-already-shifting-to-pico-esp32-for-small-projects-mini-pcs-for-more-ambitious-tasks"
+        },
+        {
+          "rotulo": "Nvidia",
+          "texto": "Segundo o Financial Times, a Nvidia mandou, de boca, parceiros de nuvem venderem 51% ou mais dos serviços a clientes fora da China.",
+          "url": "https://www.ft.com/content/1902df70-1380-4588-bad5-171352b575f2"
+        }
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Giro das Big Techs",
+      "assunto": "Notas",
+      "titulo": "Giro das Big Techs",
+      "estilo": "colunas",
+      "notas": [
+        {
+          "rotulo": "Anthropic",
+          "texto": "O Claude Code ganhou ordem no prompt de sistema para não recriar jogos existentes. Um funcionário disse ao Tom's Hardware que a empresa segue ajustando o equilíbrio.",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones"
+        },
+        {
+          "rotulo": "OpenAI",
+          "texto": "A OpenAI vai testar o Grid Protectors Program em um data center na Geórgia, EUA. Promete liberar até 1.000 megawatts em emergências, segundo a empresa.",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1024604/openai-data-center-grid-protection-program"
+        },
+        {
+          "rotulo": "Marvell",
+          "texto": "A Marvell vai comprar a Lumentum por US$ 115 bi, uma das maiores aquisições da história da tecnologia. As duas têm a Nvidia como investidora.",
+          "url": "https://techcrunch.com/2026/11/02/in-one-of-the-largest-deals-in-tech-history-marvell-buys-lumentum-for-115b/"
+        },
+        {
+          "rotulo": "Apple",
+          "texto": "A Apple faturou 12% mais no trimestre. O iPhone subiu 17%, para US$ 57,58 bi, e o Mac 24%, para US$ 10,8 bi.",
+          "url": "https://9to5mac.com/2026/11/02/apple-reports-q4-2026-earnings/"
+        },
+        {
+          "rotulo": "Google",
+          "texto": "A Google diz que uma fabricante parceira do Android, a Videostrong, escondeu uma porta dos fundos em 1,3 milhão de decodificadores e os transformou em botnet. A Google cortou relações.",
+          "url": "https://www.theverge.com/1024807/google-botnet-android-tv-shut-down"
+        },
+        {
+          "rotulo": "Nvidia",
+          "texto": "A Nvidia investiga uma invasão na plataforma Brev, entre 4 e 20 de outubro. Chaves SSH de máquinas de clientes podem ter vazado; a empresa diz não ver uso indevido.",
+          "url": "https://www.tomshardware.com/tech-industry/cyber-security/nvidia-brev-security-breach-may-have-exposed-ssh-keys-used-to-access-customer-vms-investigation-finds-unauthorized-activity-spanning-16-days-but-no-evidence-of-misuse"
+        }
+      ]
+    },
+    {
+      "tipo": "cripto",
+      "titulo": "Bitcoin cai, e o setor segue sob ataque",
+      "notas": [
+        {
+          "rotulo": "Binance",
+          "texto": "A Binance já gastou metade do seu fundo SAFU em bitcoin, cerca de US$ 580 milhões, segundo dados citados pelo CoinDesk.",
+          "url": "https://www.coindesk.com/markets/2026/11/03/binance-has-spent-half-its-safu-bitcoin-about-usd580-million-worth-data-shows"
+        },
+        {
+          "rotulo": "Strategy",
+          "texto": "A Strategy começou novembro com nova compra de US$ 65,5 milhões em bitcoin, diz o Livecoins.",
+          "url": "https://livecoins.com.br/strategy-inicia-mes-de-novembro-com-novo-aporte-de-us-655-milhoes-em-bitcoin/"
+        }
+      ]
+    },
+    {
+      "tipo": "comunidade",
+      "titulo": "O que a turma anda escrevendo",
+      "vozes": [
+        {
+          "nome": "Fabio Akita",
+          "onde": "blog",
+          "texto": "Usou IA para consertar jogos de corrida antigos, como Colin McRae e OutRun 2006. Os launchers rodam em 4K e widescreen, no Linux e no Windows.",
+          "links": [
+            {
+              "rotulo": "akitaonrails.com",
+              "url": "https://www.akitaonrails.com/2026/11/02/consertei-varios-jogos-de-corrida-antigos-usando-ia/"
+            }
+          ]
+        },
+        {
+          "nome": "Simon Willison",
+          "onde": "blog",
+          "texto": "Refez com IA a análise de um gráfico do Censo dos EUA sobre adoção de IA em grandes empresas, um ano depois.",
+          "links": [
+            {
+              "rotulo": "simonwillison.net",
+              "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/"
+            }
+          ]
+        },
+        {
+          "nome": "EllieWang",
+          "onde": "TabNews",
+          "texto": "Explica por que um resultado positivo em detector de IA não prova que o texto foi escrito por IA.",
+          "links": [
+            {
+              "rotulo": "TabNews",
+              "url": "https://www.tabnews.com.br/EllieWang/ai-detector-por-que-um-resultado-positivo-nao-prova-autoria-por-ia"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "contracapa",
+      "leituras": [
+        {
+          "titulo": "Escalando o Git na OpenAI",
+          "onde": "OpenAI · técnico",
+          "url": "https://openai.com/index/scaling-git-at-openai/"
+        },
+        {
+          "titulo": "A SEC deveria bloquear o IPO da Anthropic",
+          "onde": "Tech Policy Press · opinião",
+          "url": "https://www.techpolicy.press/the-sec-should-block-anthropics-ipo-to-protect-the-public/"
+        },
+        {
+          "titulo": "Import AI 479: Spacewar, tarefas de baixa latência e Genie 4",
+          "onde": "Jack Clark · newsletter",
+          "url": "https://importai.substack.com/p/import-ai-479-spacewar-low-latency"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "IPO",
+      "categoria": "Mercado",
+      "definicao": "Oferta inicial de ações: a estreia de uma empresa na Bolsa."
+    },
+    {
+      "termo": "S-1",
+      "categoria": "Mercado",
+      "definicao": "Formulário que a empresa entrega à SEC antes do IPO, com contas e riscos."
+    },
+    {
+      "termo": "RSI",
+      "categoria": "IA",
+      "definicao": "Autoaperfeiçoamento recursivo: IA que melhora a próxima IA, acelerando o avanço."
+    },
+    {
+      "termo": "Botnet",
+      "categoria": "Segurança",
+      "definicao": "Rede de aparelhos invadidos e controlados à distância por um atacante."
+    },
+    {
+      "termo": "Chave SSH",
+      "categoria": "Segurança",
+      "definicao": "Credencial usada para entrar em computadores remotos sem digitar senha."
+    },
+    {
+      "termo": "Custódia",
+      "categoria": "Cripto",
+      "definicao": "Quando a corretora guarda suas moedas por você."
+    },
+    {
+      "termo": "USDT",
+      "categoria": "Cripto",
+      "definicao": "Stablecoin da Tether, moeda digital atrelada ao dólar."
+    },
+    {
+      "termo": "Stablecoin",
+      "categoria": "Cripto",
+      "definicao": "Moeda digital criada para valer o mesmo que uma moeda comum, como o dólar."
+    }
+  ]
+}
