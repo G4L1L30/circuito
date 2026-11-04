@@ -1,0 +1,101 @@
+{
+  "capa": {
+    "manchete": "Gemini 4 Carbon",
+    "subtitulo": "Google volta ao topo do ranking de IA, por um ponto. E sai mais barato.",
+    "elemento": {"numero": "6", "simbolo": "C", "nome": "Carbono", "detalhe": "12,011"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "Hack de US$ 6,3 bi na Binance: falsa entrevista"},
+      {"rotulo": "Anthropic", "texto": "FlashProve prova qual IA respondeu"},
+      {"rotulo": "Memória", "texto": "HBM contrabandeada chega a US$ 4 mil"},
+      {"rotulo": "Cripto", "texto": "Bitcoin volta a US$ 78 mil"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Cinco minutos, um café e o mundo",
+    "paragrafos": [
+      "Quarta (4), e o ranking de IA mudou de dono: o Gemini 4 Carbon, da Google, passou o Claude Opus 5.5 por um ponto.",
+      "Na segurança, a Binance contou como perdeu US$ 6,3 bi. Tudo começou com uma falsa entrevista de emprego."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Cripto", "assunto": "Segurança", "tarja": "Caso de polícia",
+     "titulo": "A falsa vaga que custou US$ 6,3 bi", "ilustracao": "cofre",
+     "paragrafos": [
+       "A Binance contou como sofreu o maior roubo de cripto da história. Segundo a corretora, tudo começou em junho: um desenvolvedor baixou um instalador adulterado, espalhado por um anúncio no Google.",
+       "Em setembro, outro engenheiro foi abordado por um falso recrutador. Depois de várias entrevistas, ele baixou um \"teste\" que era vírus. O FBI atribui o ataque ao grupo norte-coreano TraderTraitor."
+     ],
+     "quadro": {"titulo": "Pra você", "texto": "Teste de emprego que pede para baixar e rodar um programa é a isca do golpe. Desconfie, mesmo de recrutador simpático."},
+     "refs": [
+       {"rotulo": "The Verge", "url": "https://www.theverge.com/news/1025576/binance-cyrpto-theft-explained"},
+       {"rotulo": "CoinDesk", "url": "https://www.coindesk.com/business/2026/11/03/binance-s-usd6-3-billion-hack-began-with-a-fake-job-interview-exchange-says"},
+       {"rotulo": "Livecoins", "url": "https://livecoins.com.br/binance-afirma-que-ataque-hacker-comecou-com-falsa-vaga-de-emprego/"}
+     ]},
+
+    {"tipo": "materia", "secao": "Google", "assunto": "Inteligência artificial",
+     "titulo": "Google volta ao topo com o Carbon",
+     "olho": "O Gemini 4 Carbon lidera o índice da Artificial Analysis com 59 pontos, um a mais que o Claude Opus 5.5. E custa menos por tarefa.",
+     "ilustracao": "robo", "legenda": "O novo modelo da Google, no topo por um ponto.",
+     "paragrafos": [
+       "Na semana passada, a Google lançou o Gemini 4 Carbon. No Índice de Inteligência V5, da Artificial Analysis, ele fez 59 pontos e ficou em primeiro: um à frente do Claude Opus 5.5 e dois à frente do GPT-6 Astra, da OpenAI.",
+       "Ele também lidera o teste AA-Omniscience, que mede alucinação, com 54 numa escala de -100 a +100. Mesmo assim, nota a Tom's Hardware, está longe de ser confiável. Em programação, perde para o Claude Code com Opus 5.5. O acesso começa por \"defensores cibernéticos\", no programa Fairwind. O resto vem depois."
+     ],
+     "quadros": [
+       {"titulo": "Pontos e custo por tarefa",
+        "tabela": {"colunas": ["Modelo", "Pontos", "US$ / tarefa"],
+                   "linhas": [["Gemini 4 Carbon", "59", "7,76"], ["Claude Opus 5.5", "58", "10,04"], ["GPT-6 Astra", "57", "6,25"], ["Claude Fable 5.1", "49", "12,99"]]}},
+       {"titulo": "Alucinação, em uma frase", "texto": "É quando a IA responde com firmeza algo que não é verdade. Por isso o teste de memória e fatos pesa tanto."}
+     ],
+     "refs": [{"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-reveals-new-gemini-4-carbon-ai-model-narrowly-beating-claude-opus-5-5-frontier-ai-model-is-also-the-least-likely-to-hallucinate-benchmarks-claim"}]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Memória no contrabando, AMD no azul", "ilustracao": "memoria", "estilo": "lista",
+     "notas": [
+       {"rotulo": "HBM", "texto": "Contrabandistas ligam chips baratos à memória HBM (a das placas de IA) para burlar o controle de exportação. Em Shenzhen, cada unidade sai a cerca de US$ 4 mil, diz The Information.", "url": "https://www.tomshardware.com/tech-industry/semiconductors/ai-chip-smugglers-exploit-trade-control-loophole-to-bring-banned-hbm-from-south-korea-into-china-expensive-memory-chips-packaged-with-cheap-unsanctioned-processors-to-become-legal-exports"},
+       {"rotulo": "AMD", "texto": "Faturou US$ 13,4 bi no trimestre, recorde. Prevê cerca de US$ 17 bi no próximo, acima dos US$ 15 a 16 bi da Intel, segundo o The Register.", "url": "https://www.theregister.com/systems/2026/11/04/amd-on-track-to-overtake-intel-as-biggest-x86-outfit/5307448"},
+       {"rotulo": "Nvidia", "texto": "Teria mandado nuvens venderem menos da metade dos serviços a clientes chineses, segundo relatório citado pela Tom's Hardware.", "url": "https://www.tomshardware.com/tech-industry/data-centers/nvidia-tells-data-center-operators-to-limit-business-from-chinese-customers-with-new-global-restrictions-report-claims-allegedly-restricted-to-49-percent-of-the-total-ensuring-51-percent-are-non-chinese-outfits"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Anthropic", "texto": "Apresentou o FlashProve, sistema aberto que prova qual modelo gerou uma resposta. É pesquisa em andamento, sem plano de uso nos laboratórios.", "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/"},
+       {"rotulo": "OpenAI", "texto": "Criou o Grid Protectors, que reduz o consumo dos data centers nos horários de pico da rede elétrica. O teste é na Geórgia.", "url": "https://www.tomshardware.com/tech-industry/data-centers/openai-introduces-program-to-reduce-ai-data-center-energy-demand-during-peak-hours-company-testing-grid-protectors-program-system-in-georgia"},
+       {"rotulo": "Google", "texto": "Desmontou uma botnet (rede de aparelhos infectados) escondida em 1,3 milhão de TV boxes com Android.", "url": "https://arstechnica.com/google/2026/11/google-dismantles-botnet-secretly-running-on-1-3-million-android-tv-boxes/"},
+       {"rotulo": "Meta", "texto": "Captou US$ 15 bi em títulos de dívida. Os pedidos chegaram a US$ 58 bi, segundo a Bloomberg.", "url": "https://www.bloomberg.com/news/articles/2026-11-03/meta-kicks-off-debt-offering-in-push-to-fund-ai-investments"},
+       {"rotulo": "CrowdStrike", "texto": "Vai pagar quase US$ 500 milhões pela Fiddler AI e pela Dreadnode, duas startups de segurança para agentes de IA.", "url": "https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/"},
+       {"rotulo": "Apple", "texto": "Passa a exigir classificação 18+ para apps de namoro e companhias de IA com conteúdo sexual ou romântico.", "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin volta a US$ 78 mil",
+     "notas": [
+       {"rotulo": "Bitcoin", "texto": "Subiu a US$ 78,3 mil, após tocar US$ 75,7 mil, segundo o CoinDesk.", "url": "https://www.coindesk.com/markets/2026/11/04/bitcoin-knocks-on-usd78-000-in-v-shaped-comeback-as-midterm-uncertainty-fades"},
+       {"rotulo": "ETF", "texto": "O fundo de Bitcoin da BlackRock teve saída de US$ 405 milhões, a maior desde junho.", "url": "https://livecoins.com.br/etf-de-bitcoin-da-blackrock-registra-saida-de-us-405-milhoes-a-maior-desde-junho/"},
+       {"rotulo": "Mercado Bitcoin", "texto": "Perda total foi de R$ 269 milhões; recuperou R$ 60 milhões, diz o Livecoins.", "url": "https://livecoins.com.br/ataque-hacker-no-mercado-bitcoin-atinge-r-269-milhoes-no-total-mas-corretora-recupera-r-60-milhoes-e-garante-saldos/"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Simon Willison", "onde": "blog", "texto": "Mostra que o Qwen 3.8 27B, rodando no notebook, também consegue interpretar os pesos de um modelo de IA.", "links": [{"rotulo": "simonwillison.net", "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"}]},
+       {"nome": "Matthew Honnibal", "onde": "blog", "texto": "Diz que o post \"Astra lê e escreve pesos para melhorar o Qwen\" engana o leitor.", "links": [{"rotulo": "honnibal.dev", "url": "https://honnibal.dev/blog/astra-read-write-misleading"}]},
+       {"nome": "tifon", "onde": "TabNews", "texto": "Avisa que o rsync 3.5.2 corrige uma falha em que um cliente malicioso esgota a CPU do servidor.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/tifon/rsync-3-5-2-corrige-cve-2026-119741-cliente-malicioso-esgota-a-cpu-do-servidor-na-checagem-de-checksum"}]},
+       {"nome": "limamarcelino", "onde": "TabNews", "texto": "Construiu uma memória compartilhada para o Claude Code, de código aberto e para hospedar por conta própria.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/limamarcelino/construi-uma-memoria-compartilhada-para-o-claude-code-open-source-self-hosted"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Os bastidores do PostgreSQL por dentro", "onde": "InterDB · técnico", "url": "https://www.interdb.jp/pg/index.html"},
+       {"titulo": "Como eu uso IA (outubro de 2026)", "onde": "Ben Stolovitz · blog", "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/"},
+       {"titulo": "C++26 reprovado: como o C++ sobrevive?", "onde": "Andreas Fertig · técnico", "url": "https://andreasfertig.com/blog/2026/11/cpp26-dis-failed-how-does-cpp-survive/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Alucinação", "categoria": "IA", "definicao": "Quando a IA responde com segurança algo que não é verdade."},
+    {"termo": "Benchmark", "categoria": "IA", "definicao": "Conjunto de testes padronizados para comparar o desempenho de modelos."},
+    {"termo": "HBM", "categoria": "Hardware", "definicao": "Memória de alta largura de banda, empilhada, usada nas placas de IA."},
+    {"termo": "Engenharia social", "categoria": "Segurança", "definicao": "Golpe que engana a pessoa, e não o computador, para ela abrir a porta."},
+    {"termo": "Backdoor", "categoria": "Segurança", "definicao": "Entrada escondida que deixa o invasor voltar ao sistema quando quiser."},
+    {"termo": "Botnet", "categoria": "Segurança", "definicao": "Rede de aparelhos infectados, controlada à distância por criminosos."},
+    {"termo": "Open source", "categoria": "Software", "definicao": "Código aberto: qualquer pessoa pode ler, usar e melhorar."},
+    {"termo": "ETF", "categoria": "Cripto", "definicao": "Fundo negociado em Bolsa que acompanha o preço de um ativo, como o Bitcoin."}
+  ]
+}
