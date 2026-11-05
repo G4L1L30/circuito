@@ -1,0 +1,103 @@
+{
+  "capa": {
+    "manchete": "948 falhas no Linux",
+    "subtitulo": "A OpenAI usou IA para validar e corrigir falhas graves. A conta: US$ 1,2 mi.",
+    "elemento": {"numero": "948", "simbolo": "Rt", "nome": "Root", "detalhe": "tudo pode"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "PHP sabia da falha havia dois anos"},
+      {"rotulo": "Anthropic", "texto": "Cat Wu, do Claude Code, vai para a OpenAI"},
+      {"rotulo": "Memória", "texto": "Crise de memória deve piorar no ano que vem"},
+      {"rotulo": "Cripto", "texto": "Bitcoin segura os US$ 80 mil"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Cinco minutos, um café e o mundo",
+    "paragrafos": [
+      "Quinta (5), e a IA virou caçadora de falhas. A OpenAI contou como validou e corrigiu 948 brechas no Linux.",
+      "No PHP, a mesma onda de buscas automáticas expôs um problema que a equipe já conhecia. Hoje a edição é de segurança."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Segurança", "assunto": "Software livre", "tarja": "Dívida técnica",
+     "titulo": "PHP: falha conhecida há dois anos",
+     "ilustracao": "lupa",
+     "paragrafos": [
+       "Em outubro, o GPT 5.6-Sol, da OpenAI, achou falhas críticas no PHP, linguagem que roda cerca de 70% dos sites. Segundo o post-mortem da fundação, a equipe sabia do problema havia dois anos.",
+       "A fundação tem um funcionário em tempo integral e 14 contratados parciais. Pior: 73% das instalações ainda usavam versões sem suporte."
+     ],
+     "quadro": {"titulo": "Pra você", "texto": "Se o seu site usa PHP, atualize para uma versão com suporte. O conserto costuma ser só uma atualização."},
+     "refs": [
+       {"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/cyber-security/php-vulnerability-post-mortem-reveals-bug-was-known-two-years-ago-small-team-of-maintainers-knew-of-the-issue-before-it-was-made-public-as-new-php2shell-chained-exploit-ravages-servers"},
+       {"rotulo": "IEEE Spectrum", "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability"}
+     ]},
+
+    {"tipo": "materia", "secao": "OpenAI", "assunto": "Inteligência artificial",
+     "titulo": "OpenAI usa IA para caçar falhas no Linux",
+     "olho": "Um modelo de segurança ainda não lançado validou e corrigiu 948 falhas de escalada de privilégio no Linux. O custo em API foi de US$ 1,2 milhão, segundo a OpenAI.",
+     "ilustracao": "robo", "legenda": "A IA vira linha de montagem de segurança.",
+     "paragrafos": [
+       "A OpenAI detalhou um processo em que um modelo ainda não lançado, voltado a segurança, validou e corrigiu 948 falhas de escalada de privilégio local no Linux. É quando alguém sem permissão ganha poder de administrador.",
+       "O custo, segundo a empresa, foi de US$ 1,2 milhão em uso de API. A tese da OpenAI: pesquisa de segurança que exigia uma investigação longa para cada falha agora pode virar processo sistemático. O CoinDesk lembra que isso também interessa ao mundo cripto."
+     ],
+     "quadros": [
+       {"titulo": "A conta, segundo a OpenAI",
+        "tabela": {"colunas": ["Item", "Valor"],
+                   "linhas": [["Falhas tratadas", "948"], ["Custo em API", "US$ 1,2 mi"], ["Por falha (conta nossa)", "~US$ 1,3 mil"]]}},
+       {"titulo": "E pra você?", "texto": "Mais falhas achadas e corrigidas cedo, em tese, é bom. Mas quem ataca pode usar a mesma técnica. Mantenha o sistema atualizado."}
+     ],
+     "refs": [{"rotulo": "OpenAI", "url": "https://openai.com/index/a-thousand-fewer-paths-to-root"},
+              {"rotulo": "CoinDesk", "url": "https://www.coindesk.com/tech/2026/11/05/openai-says-its-ai-can-break-into-linux-at-scale-here-s-what-it-means-for-crypto"}]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Memória em crise, Nvidia sem estoque", "ilustracao": "memoria", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Memória", "texto": "O CEO da Team Group avisa que a crise deve piorar no ano que vem, sem queda de preço à vista.", "url": "https://www.tomshardware.com/pc-components/dram/team-group-ceo-warns-memory-crisis-could-reach-point-where-even-money-cant-buy-goods-will-get-worse-next-year-with-no-downward-trend-in-price-whatsoever"},
+       {"rotulo": "Nvidia", "texto": "Só 1% do pedido chinês de US$ 70 bi em placas de IA seria entregue, segundo relatório.", "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-can-only-fulfill-1-percent-of-chinas-massive-usd70-billion-gpu-order-for-ai-chips-report-claims-supply-constraints-choke-export-friendly-rtx-pro-5500-deliveries-despite-huge-demand"},
+       {"rotulo": "Nintendo", "texto": "A Macronix, que faz chips ROM dos cartuchos, larga o negócio para fabricar flash para data centers de IA.", "url": "https://www.tomshardware.com/video-games/nintendo/nintendo-rom-chip-supplier-macronix-quits-to-focus-on-chips-for-ai-data-centers-game-key-cards-may-be-more-available-as-large-game-storage-chips-become-more-expensive"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Anthropic", "texto": "Cat Wu, que liderava o produto do Claude Code, saiu na semana passada e vai para a OpenAI, segundo o Business Insider.", "url": "https://www.businessinsider.com/cat-wu-joins-openai-from-anthropic-product-lead-coup-2026-11"},
+       {"rotulo": "Meta", "texto": "Comprou a Conductor, startup que permite pôr equipes de agentes de IA para trabalhar num mesmo projeto.", "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/"},
+       {"rotulo": "Google", "texto": "Ampliou as demissões voluntárias, com ofertas de até 12 meses de salário, para investir em IA. Não inclui o Brasil.", "url": "https://tecnoblog.net/noticias/google-amplia-demissoes-voluntarias-para-investir-mais-em-ia/"},
+       {"rotulo": "Apple", "texto": "Estaria cortando bastante o orçamento de uso de IA das equipes de engenharia, diz o TechCrunch.", "url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/"},
+       {"rotulo": "Uber", "texto": "Na semana mais cheia do trimestre, só quatro pessoas pediram corrida por um agente de IA, segundo a empresa.", "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/"},
+       {"rotulo": "Data centers", "texto": "Em votações locais nas eleições dos EUA, a maioria dos eleitores disse não a novos data centers, relata a Tom's Hardware.", "url": "https://www.tomshardware.com/tech-industry/data-centers/ai-data-centers-comprehensively-defeated-at-us-midterm-elections-45-measures-put-on-the-ballot-as-americans-overwhelmingly-vote-against-developments"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin segura os US$ 80 mil",
+     "notas": [
+       {"rotulo": "Bitcoin", "texto": "Segue acima de US$ 80 mil depois das eleições nos EUA. A Zcash subiu 12%, diz o CoinDesk.", "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-holds-above-usd80-000-as-zcash-jumps-12-in-post-election-crypto-rebound"},
+       {"rotulo": "Hong Kong", "texto": "Aprovou lei que obriga corretoras a informar ao fisco as transações dos clientes.", "url": "https://www.coindesk.com/policy/2026/11/04/hong-kong-passes-law-requiring-crypto-exchanges-to-report-customer-transactions-to-tax-authorities"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Fabio Akita", "onde": "blog", "texto": "Diz que não dá para enganar o 'algoritmo' do TikTok como muita gente pensa. E que o app, tecnicamente, não se enquadra nas leis brasileiras.", "links": [{"rotulo": "Fingerprinting", "url": "https://www.akitaonrails.com/2026/11/04/fingerprinting-voce-nao-consegue-enganar-o-algoritmo-como-pensa/"}, {"rotulo": "LGPD", "url": "https://www.akitaonrails.com/2026/11/04/tiktok-tecnicamente-nao-se-enquadra-nas-leis-brasileiras-lgpd-felca/"}]},
+       {"nome": "Simon Willison", "onde": "blog", "texto": "Lançou o datasette-llm 0.1a10, que corrige a lista de modelos de IA disponíveis no site de demonstração.", "links": [{"rotulo": "simonwillison.net", "url": "https://simonwillison.net/2026/Nov/4/datasette-llm/"}]},
+       {"nome": "andreektem", "onde": "TabNews", "texto": "Compara quanto imposto paga quem trabalha do Brasil para empresa de fora: PF, PJ ou LLC.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/andreektem/quanto-paga-de-imposto-quem-trabalha-do-brasil-para-empresa-de-fora-pf-pj-ou-llc"}]},
+       {"nome": "Lucas Montano", "onde": "YouTube", "texto": "Novo vídeo: \"Ansiedade da AI e Flipagem de Token\".", "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=IkaENjYTly8"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Progresso em inferência comprovável para modelos de linguagem", "onde": "Anthropic Research · técnico", "url": "https://www.anthropic.com/research/provable-inference"},
+       {"titulo": "Uma nova API de JSON para o Go", "onde": "Go Blog · técnico", "url": "https://go.dev/blog/jsonv2"},
+       {"titulo": "A IA nos obriga a pagar 40 anos de dívida técnica", "onde": "IEEE Spectrum · reportagem", "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability"},
+       {"titulo": "Insetos não se aglomeram em luzes de LED", "onde": "Birds Outside My Window · blog", "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Root", "categoria": "Segurança", "definicao": "A conta de administrador do Linux, que pode tudo no sistema."},
+    {"termo": "Escalada de privilégio", "categoria": "Segurança", "definicao": "Falha que dá a quem tem acesso limitado o poder de administrador."},
+    {"termo": "Vulnerabilidade", "categoria": "Segurança", "definicao": "Brecha num programa que pode ser usada num ataque."},
+    {"termo": "Execução remota", "categoria": "Segurança", "definicao": "Falha que deixa um atacante rodar código no computador de outra pessoa, de longe."},
+    {"termo": "Dívida técnica", "categoria": "Programação", "definicao": "Conserto adiado num software, que fica mais caro a cada ano."},
+    {"termo": "Versão sem suporte", "categoria": "Programação", "definicao": "Versão que não recebe mais correções de segurança."},
+    {"termo": "ROM", "categoria": "Hardware", "definicao": "Chip de memória que guarda dados fixos, como o jogo de um cartucho."},
+    {"termo": "Memória flash", "categoria": "Hardware", "definicao": "Memória que guarda dados sem energia. Os tipos NOR e NAND estão em pendrives e SSDs."},
+    {"termo": "API", "categoria": "Programação", "definicao": "Porta pela qual um programa pede serviços a outro. Aqui, o acesso pago aos modelos de IA."}
+  ]
+}
