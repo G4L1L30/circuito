@@ -1,0 +1,106 @@
+{
+  "capa": {
+    "manchete": "Inkling 2 Small",
+    "subtitulo": "Novo modelo da Thinking Machines tem 594 bilhões de parâmetros. Pesos abertos na semana que vem.",
+    "elemento": {"numero": "17", "simbolo": "Ik", "nome": "Inkling", "detalhe": "17 bi"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "Binance: US$ 2,5 bi saíram numa só transação"},
+      {"rotulo": "Bolsas", "texto": "Kospi cai 8,7% no susto com a IA"},
+      {"rotulo": "Hardware", "texto": "Micron tem obra de US$ 4,5 bi parada"},
+      {"rotulo": "Cripto", "texto": "Bitcoin cai a US$ 76 mil com a IA"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Cinco minutos, um café e o mundo",
+    "paragrafos": [
+      "Sexta (6), e o dia amanheceu vermelho. As bolsas asiáticas ligadas à IA despencaram, e o bitcoin foi junto.",
+      "No meio do barulho, saiu modelo novo e saiu mais um capítulo do roubo à Binance. A edição de hoje cobre os dois."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Segurança", "assunto": "Cripto", "tarja": "Caso de polícia",
+     "titulo": "Binance: US$ 2,5 bi em uma tacada",
+     "ilustracao": "cofre",
+     "paragrafos": [
+       "Os hackers que levaram US$ 6,3 bilhões da Binance na semana passada tiraram 40% disso numa única transação na Ethereum. Segundo a Blockaid, eles usaram permissões de carteira que custaram só US$ 15 para montar.",
+       "A CoinDesk liga o ataque ao grupo TraderTraitor. Nesta quinta (5), a cofundadora Yi He disse que a Binance desligou de forma preventiva a conexão com um serviço de terceiros."
+     ],
+     "quadro": {"titulo": "Pra você", "texto": "Se usa corretora, ative a verificação em duas etapas e revise as permissões de apps ligados à sua conta."},
+     "refs": [
+       {"rotulo": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-06/hackers-paid-15-to-drain-2-5-billion-from-binance-in-one-hit"},
+       {"rotulo": "CoinDesk", "url": "https://www.coindesk.com/business/2026/11/05/what-is-tradertraitor-the-hacking-squad-behind-the-usd6-3-billion-binance-heist"},
+       {"rotulo": "Livecoins", "url": "https://livecoins.com.br/cofundadora-da-binance-alerta-sobre-falha-em-empresa-terceira-uma-semana-apos-ataque-hacker-desligamos-api-de-forma-preventiva/"}
+     ]},
+
+    {"tipo": "materia", "secao": "Thinking Machines", "assunto": "Inteligência artificial",
+     "titulo": "Thinking Machines lança o Inkling 2 Small",
+     "olho": "O laboratório apresentou seu modelo de segunda geração, com 594 bilhões de parâmetros. A empresa promete liberar os pesos na semana que vem, depois de testes de segurança.",
+     "ilustracao": "robo", "legenda": "Muito parâmetro, pouca conta na hora de rodar.",
+     "paragrafos": [
+       "A Thinking Machines Lab apresentou o Inkling 2 Small, primeiro modelo da sua segunda geração. É um Mixture-of-Experts: o modelo é dividido em especialistas e só parte deles trabalha a cada resposta.",
+       "São 594 bilhões de parâmetros, mas só 17 bilhões ativos por vez. Os pesos, os números que formam o modelo, saem na semana que vem.",
+       "Por ora, ele é fechado e roda na plataforma Tinker. A Artificial Analysis diz que ele empata com o Gemini 3.8 Flash (high) no seu índice e seria o melhor modelo aberto fora da China."
+     ],
+     "quadros": [
+       {"titulo": "Inkling 2 Small",
+        "tabela": {"colunas": ["Item", "Valor"],
+                   "linhas": [["Parâmetros totais", "594 bi"], ["Ativos por vez", "17 bi"], ["Pesos abertos", "Semana que vem"]]}},
+       {"titulo": "E o dinheiro?", "texto": "Segundo o Business Insider, a empresa levanta US$ 5 bi, liderada pela Accel, a um valor de US$ 40 bi antes do aporte. O fechamento pode sair ainda nesta semana."}
+     ],
+     "refs": [{"rotulo": "Thinking Machines", "url": "https://thinkingmachines.ai/"},
+              {"rotulo": "Artificial Analysis", "url": "https://artificialanalysis.ai/articles/thinking-machines-releases-inkling-2-small-highest-scoring-open-weights-model-outside-of-chinia-upon-weights-release-it"},
+              {"rotulo": "Business Insider", "url": "https://www.businessinsider.com/thinking-machines-lab-is-closing-5-billion-new-round-2026-11"}]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Chips em disputa pelo mundo", "ilustracao": "chip", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Micron", "texto": "A obra de US$ 4,5 bi da fábrica de Taoyuan está parada por uma disputa trabalhista sobre divisão de lucros. Nova reunião hoje (6).", "url": "https://www.tomshardware.com/tech-industry/semiconductors/microns-usd4-5-billion-taoyuan-plant-construction-halted-amidst-labor-dispute-company-and-union-still-havent-reached-agreement-as-latter-asks-for-clearer-profit-sharing-terms"},
+       {"rotulo": "Marvell", "texto": "Vai comprar a Lumentum por US$ 115 bi, em ações, para vender conexões ópticas a data centers de IA.", "url": "https://www.tomshardware.com/tech-industry/semiconductors/marvell-to-buy-lumentum-in-usd115-billion-all-stock-deal-combined-company-to-supply-scale-up-and-scale-in-optics-for-ai-data-centers"},
+       {"rotulo": "Moonshot", "texto": "A chinesa dona do Kimi teria sondado data centers europeus para alugar ao menos 8 mil GPUs Blackwell da Nvidia.", "url": "https://www.tomshardware.com/tech-industry/policy/chinese-ai-lab-moonshot-reportedly-looked-at-european-data-centers-to-access-nvidia-chips-report-claims-kimi-maker-primarily-interested-in-inferencing-capacity-but-also-asked-about-training-clusters"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Bolsas", "texto": "Ações de tecnologia da Ásia despencaram hoje, com medo de que democratas atrasem data centers nos EUA. Kospi caiu 8,7% e Nikkei, 6,7%.", "url": "https://asia.nikkei.com/business/markets/taiwan-stocks-in-steepest-ever-fall-south-korea-halts-trading-amid-ai-rout"},
+       {"rotulo": "OpenAI", "texto": "Após as eleições, a empresa disse que não vai usar acordos de confidencialidade com autoridades públicas em projetos de data center.", "url": "https://www.theverge.com/ai-artificial-intelligence/1028454/openai-data-center-nda"},
+       {"rotulo": "Meta", "texto": "Alerta que a reação política contra data centers pode atrapalhar a expansão da IA. Também pausou, sem data, novos termos comerciais que permitiriam coletar sites de clientes.", "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/"},
+       {"rotulo": "Google", "texto": "O Gemini Omni 1.2 Flash cria vídeos de até 15 segundos, contra 10 do 1.1, e custa 30% menos, segundo o The Decoder.", "url": "https://the-decoder.com/googles-gemini-omni-1-2-flash-stretches-ai-video-clips-to-15-seconds-and-cuts-pricing-by-30-percent/"},
+       {"rotulo": "Anthropic", "texto": "O Claude ganhou uma ferramenta de finanças pessoais. O usuário conecta contas de banco e cartão pela Plaid e faz perguntas sobre os gastos.", "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"},
+       {"rotulo": "Segurança", "texto": "Falhas combinadas no OpenSSH e na musl-libc deixam entrar no Alpine Linux digitando mais de 256 caracteres como senha. Já há correções.", "url": "https://www.tomshardware.com/tech-industry/cyber-security/combined-flaws-let-anyone-into-alpine-linux-and-other-distros-by-typing-anything-over-256-characters-as-a-password-emergency-fixes-for-openssh-and-musl-libc-issued-for-millions-of-systems-patch-immediately"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin cai com a bolsa de IA",
+     "notas": [
+       {"rotulo": "Mercado", "texto": "O bitcoin derreteu junto com as ações de IA e chegou perto de US$ 76 mil, segundo a CoinDesk.", "url": "https://www.coindesk.com/markets/2026/11/05/bitcoin-crypto-stocks-caught-in-ai-trade-meltdown-but-wintermute-trader-sees-glass-half-full"},
+       {"rotulo": "Grécia", "texto": "O país aprovou imposto de 10% sobre ganhos com cripto e de 15% sobre renda de DeFi.", "url": "https://www.coindesk.com/policy/2026/11/06/greece-approves-10-tax-on-crypto-gains-and-15-levy-on-defi-income"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Centelha", "onde": "TabNews", "texto": "Com mais agentes de IA escrevendo código, chegam mais pull requests. O texto discute como organizar a revisão.",
+        "links": [{"rotulo": "tabnews.com.br", "url": "https://www.tabnews.com.br/Centelha/mais-agentes-mais-prs-como-organizar-a-revisao"}]},
+       {"nome": "katiabelokon", "onde": "TabNews", "texto": "Explica por que não dá para apagar CSS que parece não usado só buscando pelo nome da classe.",
+        "links": [{"rotulo": "tabnews.com.br", "url": "https://www.tabnews.com.br/katiabelokon/por-que-voce-nao-pode-apagar-css-nao-usado-buscando-pelo-nome-da-classe"}]},
+       {"nome": "soloo", "onde": "TabNews", "texto": "Fez uma IA de sobrevivência que roda 100% offline, até num pendrive.",
+        "links": [{"rotulo": "tabnews.com.br", "url": "https://www.tabnews.com.br/soloo/fiz-uma-ia-de-sobrevivencia-que-roda-100-por-cento-offline-ate-num-pendrive"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "O caso Binance mostra o lado perigoso da IA", "onde": "Código Fonte · vídeo", "url": "https://www.youtube.com/watch?v=DucXc2NU3-w"},
+       {"titulo": "Guerra cibernética? Entenda os ataques a supermercados na Europa", "onde": "Attekita · vídeo", "url": "https://www.youtube.com/watch?v=XfVQVdLwxPc"},
+       {"titulo": "Discord abandonará Electron e migrará o app desktop para Rust", "onde": "TabNews · técnico", "url": "https://www.tabnews.com.br/NewsletterOficial/discord-abandonara-electron-e-migrara-aplicativo-desktop-para-rust-que-pode-reduzir-consumo-de-ram-em-quase-70-por-cento"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Parâmetros", "categoria": "IA", "definicao": "Os números ajustados no treino que formam o modelo. Mais parâmetros, em geral, modelo maior."},
+    {"termo": "Mixture-of-Experts", "categoria": "IA", "definicao": "Modelo dividido em especialistas, em que só alguns trabalham a cada resposta."},
+    {"termo": "Pesos abertos", "categoria": "IA", "definicao": "Quando a empresa libera os números do modelo para qualquer um baixar e rodar."},
+    {"termo": "Ethereum", "categoria": "Cripto", "definicao": "Rede de cripto onde também rodam contratos e aplicativos."},
+    {"termo": "DeFi", "categoria": "Cripto", "definicao": "Finanças descentralizadas: serviços financeiros que rodam em blockchain, sem banco."},
+    {"termo": "Data center", "categoria": "Hardware", "definicao": "Prédio cheio de servidores onde rodam a nuvem e os modelos de IA."},
+    {"termo": "GPU", "categoria": "Hardware", "definicao": "Placa de vídeo, o chip que treina e roda a maioria dos modelos de IA."},
+    {"termo": "Pull request", "categoria": "Programação", "definicao": "Pedido para incluir uma mudança no código de um projeto, que alguém revisa antes."}
+  ]
+}
