@@ -1,0 +1,100 @@
+{
+  "capa": {
+    "manchete": "OpenAI vale US$ 1,25 tri",
+    "subtitulo": "A dona do ChatGPT fecha rodada bilionária, enquanto seis paletes de placas Nvidia somem na estrada.",
+    "elemento": {"numero": "79", "simbolo": "Au", "nome": "Ouro", "detalhe": "196,967"},
+    "chamadas": [
+      {"rotulo": "Roubo", "texto": "Seis paletes de placas Nvidia somem na estrada"},
+      {"rotulo": "Meta", "texto": "Muse, da Meta, monta apps sob encomenda"},
+      {"rotulo": "Memória", "texto": "Z2RAM promete memória veloz empilhada no chip de IA"},
+      {"rotulo": "Cripto", "texto": "ETFs de bitcoin perdem US$ 430 milhões"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Sábado de IA bilionária e placa sumida",
+    "paragrafos": [
+      "A OpenAI passou de US$ 1 trilhão de valor, mas a festa teve gosto de ressaca: a bolsa tombou e a meta de captação encolheu.",
+      "No meio disso, um caminhão sem dono levou US$ 11,4 milhões em placas Nvidia. Hoje tem dinheiro, tem chip e tem mistério. Bom sábado, e boa leitura."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Caso de polícia",
+     "titulo": "Seis paletes de placas Nvidia somem na estrada", "ilustracao": "gpu",
+     "paragrafos": [
+       "Seis paletes de hardware da Nvidia, avaliados em US$ 11,4 milhões, saíram de Oakland rumo ao Texas em 29 de agosto. Foram retirados por um caminhão que se passava por transportadora de alimentos. A polícia perdeu o veículo no condado de San Bernardino e recebeu a denúncia em 13 de setembro. Não houve prisões anunciadas.",
+       "Um professor de Berkeley diz que esses chips valem cerca de US$ 1 milhão no exterior, quase o dobro do preço americano."
+     ],
+     "quadro": {"titulo": "E no Brasil?", "texto": "Em setembro, dois paletes de RTX 5090 (R$ 2,5 milhões) sumiram do aeroporto de Guarulhos. A polícia investiga possível ajuda interna."},
+     "refs": [{"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/pc-components/gpus/six-pallets-of-nvidia-gpus-worth-usd11-4-million-stolen-in-california-cargo-heist-authorities-investigate-after-truck-posing-as-a-food-transport-company-disappears"},
+              {"rotulo": "Ars Technica", "url": "https://arstechnica.com/gadgets/2026/11/nvidia-hardware-worth-11-4m-vanished-between-oakland-and-texas/"}]},
+
+    {"tipo": "materia", "secao": "OpenAI", "assunto": "Inteligência artificial",
+     "titulo": "OpenAI vale US$ 1,25 trilhão", "olho": "A dona do ChatGPT fechou cerca de US$ 11 bilhões em nova rodada, que pode chegar a US$ 20 bilhões. Mas queria mais, e o humor do mercado azedou.",
+     "ilustracao": "robo", "legenda": "Rodada de investimento coloca a OpenAI entre as empresas mais valiosas do mundo.",
+     "paragrafos": [
+       "A OpenAI vale agora US$ 1,25 trilhão, segundo a Bloomberg. A empresa fechou cerca de US$ 11 bilhões, a primeira parte de uma rodada de investimento. Valor de mercado é quanto os investidores dizem que a empresa vale. Em março, a avaliação era de US$ 852 bilhões.",
+       "A rodada ainda pode chegar a US$ 20 bilhões, diz a Bloomberg. A meta inicial era US$ 30 bilhões, a US$ 1,4 trilhão. Isso foi antes de as ações de tecnologia caírem e de as eleições americanas mostrarem opinião pública contra empresas de IA e data centers. A rival Anthropic entregou na semana passada o pedido de abertura de capital na bolsa (IPO)."
+     ],
+     "quadros": [
+       {"titulo": "Rodadas da OpenAI",
+        "tabela": {"colunas": ["Rodada", "Valor (US$)", "Captação (US$)"],
+                   "linhas": [["Março", "852 bi", "122 bi"], ["Agora", "1,25 tri", "11 bi (até 20 bi)"], ["Meta inicial", "1,4 tri", "até 30 bi"]]}}
+     ],
+     "refs": [{"rotulo": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"},
+              {"rotulo": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-06/openai-completes-11-billion-portion-of-funding-at-1-25-trillion-value"}]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Chips sob vigilância e memória nova", "ilustracao": "memoria", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Nvidia rastreia", "texto": "Nuvens do Sudeste Asiático que quiserem ser parceiras oficiais terão de entrar no programa Fleet Intelligence, que mostra onde estão as GPUs. Washington pressiona por suspeita de contrabando para a China.", "url": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-tightens-tracking-of-ai-gpus-in-southeast-asia-as-chinese-chip-smuggling-draws-scrutiny-report-claims-cloud-providers-must-join-monitoring-program-to-qualify-for-official-partner-status"},
+       {"rotulo": "Z2RAM", "texto": "A Nagare Labs, apoiada por Pat Gelsinger, diz que sua memória sem capacitor une velocidade de SRAM e densidade de DRAM, empilhada sobre chips de IA. Boa parte dos números ainda é projeção.", "url": "https://www.tomshardware.com/tech-industry/semiconductors/gelsinger-backed-nagare-labs-capacitorless-z2ram-promises-sram-speed-with-dram-density-latest-published-cell-retains-data-for-over-300-seconds-at-85-c-but-further-figures-are-projected"},
+       {"rotulo": "Intel Nova Lake", "texto": "Os próximos processadores pedem soquete novo (LGA 1954) e placas-mãe novas, com chipsets Z990, Z970 e B960, mais PCIe 5.0.", "url": "https://www.tomshardware.com/pc-components/chipsets/intels-next-gen-nova-lake-needs-new-motherboards-what-we-expect-from-nova-point-and-z990-z970-and-b960-chipsets"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Meta", "texto": "O Muse ganhou os \"spaces\": você descreve e a IA monta um painel, como agenda escolar ou lista de compras. Já está liberado para todos os usuários do Muse.", "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces"},
+       {"rotulo": "Google", "texto": "A Google comprou da Crusoe um data center inacabado em Wyoming e promete investir US$ 17 bilhões no campus. O valor da compra não foi divulgado.", "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"},
+       {"rotulo": "Anthropic", "texto": "Dados da Ramp mostram que o gasto com IA cresceu só 1,5% entre agosto e setembro, contra 42% em julho, às vésperas do IPO da Anthropic.", "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/"},
+       {"rotulo": "Bolsas", "texto": "A Nasdaq recuou 5,52%, a maior queda diária desde abril de 2025, e a bolsa da Coreia do Sul parou os negócios por 20 minutos, segundo o Tecnoblog.", "url": "https://tecnoblog.net/noticias/tsla-nvda-meta-msft-acoes-de-big-techs-derretem-nas-bolsas/"},
+       {"rotulo": "Segurança", "texto": "A Chainalysis diz que invasores usaram agentes de IA e levaram nomes, hashes de senha e tokens ativos de todos os seus usuários.", "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers/"},
+       {"rotulo": "Tesla", "texto": "A Tesla vai parar de fazer o Cybertruck em 2027 e usar a fábrica para produzir mais Cybercabs, os robotáxis da marca.", "url": "https://techcrunch.com/2026/11/06/tesla-will-stop-making-the-cybertruck-in-2027/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin segura os US$ 76 mil",
+     "notas": [
+       {"rotulo": "ETFs", "texto": "Fundos de bitcoin na bolsa (ETFs) perderam US$ 430 milhões após a queda das techs.", "url": "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout"},
+       {"rotulo": "Mineração", "texto": "A Core Scientific vendeu 96% dos seus bitcoins e vai focar em IA.", "url": "https://livecoins.com.br/core-scientific-vende-96-de-seus-bitcoins-e-promete-encerrar-operacoes-de-mineracao/"},
+       {"rotulo": "Saques", "texto": "Mercado Pago e Nubank travaram transferências após incidente num fornecedor externo.", "url": "https://livecoins.com.br/mercado-pago-e-nubank-travam-saques-e-depositos-de-criptomoedas-com-rumor-de-ataque-hacker-em-provedor/"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Fabio Akita", "onde": "blog", "texto": "Com a enxurrada de falhas expostas por auditorias com IA, Akita mostra como pôr segurança de verdade em apps gráficos de Linux feitos por vibe coding. Para ele, é excelente que isso esteja acontecendo.",
+        "links": [{"rotulo": "akitaonrails.com", "url": "https://www.akitaonrails.com/2026/11/06/adicionando-seguranca-de-verdade-nos-seus-apps-gui-linux-vibecoded/"}]},
+       {"nome": "Lucas Montano", "onde": "YouTube", "texto": "Novo vídeo de cerca de 14 minutos: \"Como Astra editou os pesos do Qwen\".",
+        "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=anqN-iDO3uw"}]},
+       {"nome": "vallecexport", "onde": "TabNews", "texto": "Pôs dados do agro brasileiro atrás do x402, e agentes de IA pagam US$ 0,05 por consulta.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/vallecexport/coloquei-dados-do-agro-brasileiro-atras-do-x402-agentes-de-ia-pagam-us0-05-por-consulta"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Asahi Linux: relatório de progresso do Linux 7.3", "onde": "Asahi Linux · técnico", "url": "https://asahilinux.org/2026/11/progress-report-7-3/"},
+       {"titulo": "Libghostty 1.0", "onde": "Mitchell Hashimoto · técnico", "url": "https://mitchellh.com/writing/libghostty-1-0"},
+       {"titulo": "Fuga de VM no Firecracker: PwnEscape, parte 2", "onde": "pwn.ai · segurança", "url": "https://pwn.ai/blog/firecracker-escape"},
+       {"titulo": "Juiz de IA que pede ajuda ao Opus acerta como ele com custo 4 vezes menor", "onde": "Hightouch · IA", "url": "https://hightouch.com/blog/llm-judges-identity-resolution"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "IPO", "categoria": "Negócios", "definicao": "Sigla em inglês para a primeira venda de ações de uma empresa na bolsa."},
+    {"termo": "S-1", "categoria": "Negócios", "definicao": "Documento que a empresa entrega ao regulador americano para abrir seu capital."},
+    {"termo": "Valor de mercado", "categoria": "Negócios", "definicao": "Quanto os investidores dizem que a empresa vale, segundo o preço que pagam por ela."},
+    {"termo": "ETF", "categoria": "Cripto", "definicao": "Fundo negociado em bolsa que acompanha o preço de um ativo, como o bitcoin."},
+    {"termo": "SRAM", "categoria": "Hardware", "definicao": "Memória muito rápida que fica dentro do chip, mas ocupa muito espaço."},
+    {"termo": "Data center", "categoria": "Hardware", "definicao": "Prédio cheio de computadores que rodam serviços e modelos de IA."},
+    {"termo": "Vibe coding", "categoria": "Programação", "definicao": "Programar pedindo quase tudo à IA, sem revisar o código linha a linha."},
+    {"termo": "Hash de senha", "categoria": "Segurança", "definicao": "Versão embaralhada da senha, guardada pelos sistemas para não salvar o texto original."}
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261107T061055-c0cbfa78",
+  "execucao": "2026-11-07T06:11:04-03:00",
+  "robo": "circuito_diario",
+  "fonte": "tomshardware",
+  "nome": "Tom's Hardware",
+  "tipo": "rss",
+  "url": "https://www.tomshardware.com/feeds/all",
+  "status": "ok",
+  "itens_lidos": 25,
+  "itens_na_janela": 13,
+  "erro": null,
+  "duracao_ms": 1003
+}
