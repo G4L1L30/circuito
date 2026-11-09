@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261109T061417-8079914b",
+  "execucao": "2026-11-09T06:14:33-03:00",
+  "robo": "circuito_diario",
+  "fonte": "yt_fireship",
+  "nome": "Fireship (YouTube)",
+  "tipo": "youtube",
+  "url": "https://www.youtube.com/@Fireship/videos",
+  "status": "ok",
+  "itens_lidos": 3,
+  "itens_na_janela": 0,
+  "erro": null,
+  "duracao_ms": 635
+}

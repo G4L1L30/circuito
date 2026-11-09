@@ -1,0 +1,110 @@
+{
+  "capa": {
+    "manchete": "Nvidia investiga Jensen",
+    "subtitulo": "Conselho abre investigação sobre o CEO. E os chips que a China pode comprar.",
+    "elemento": {"numero": "14", "simbolo": "Si", "nome": "Silício", "detalhe": "28,085"},
+    "chamadas": [
+      {"rotulo": "Chips", "texto": "Firmas liberadas para comprar H200 têm escritório vazio"},
+      {"rotulo": "Apple", "texto": "Siri deve virar agente, diz Gurman"},
+      {"rotulo": "Brasil", "texto": "ByteDance quer ampliar data center no Ceará"},
+      {"rotulo": "Cripto", "texto": "Binance perde diretor financeiro após o hack"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Uma segunda-feira movimentada no Vale do Silício",
+    "paragrafos": [
+      "Esta edição cobre o fim de semana inteiro, e o assunto foi um só: o chefe da Nvidia.",
+      "Também tem chip de IA indo parar em firma de fachada, Siri querendo virar agente e data center brasileiro crescendo. Quem perdeu o sábado encontra um resumo na página \"Se você perdeu\". Bom café e boa leitura."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Chips", "tarja": "Caso de polícia",
+     "titulo": "Duas firmas liberadas a comprar H200 têm escritório vazio", "ilustracao": "lupa",
+     "paragrafos": [
+       "O New York Times foi aos endereços de duas empresas chinesas que o Departamento de Comércio dos EUA liberou para comprar o H200, chip de IA da Nvidia: New Matrix e Maginfra. Encontrou escritórios vazios, só com alguns móveis, e vizinhos que nunca ouviram falar delas.",
+       "Segundo o Tom's Hardware, os donos da New Matrix ligam-se a uma firma sancionada pelos EUA, e a Maginfra é suspeita de ligação com a Inspur, na lista negra desde 2023. Elas devem montar servidores, não usar os chips."
+     ],
+     "quadro": {"titulo": "O que diz a Nvidia", "texto": "Segundo o New York Times, a empresa afirma vender \"a primeira, a melhor e a maior parte\" da sua tecnologia nos Estados Unidos."},
+     "refs": [
+       {"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/two-chinese-companies-cleared-to-buy-banned-nvidia-ai-chips-have-empty-offices-and-unknown-addresses-investigation-reveals-businesses-have-ties-to-sanctioned-chinese-military-suppliers"},
+       {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"}
+     ]},
+
+    {"tipo": "materia", "secao": "Nvidia", "assunto": "Placas de vídeo",
+     "titulo": "Nvidia investiga o próprio chefe, Jensen Huang",
+     "olho": "O conselho da Nvidia abriu uma investigação independente sobre Jensen Huang. Ele admitiu um caso extraconjugal com uma executiva que, segundo um memo de inteligência dos EUA, teria sido recrutada pela China.",
+     "ilustracao": "chip", "legenda": "A Nvidia é peça central na disputa dos EUA com a China por chips de IA.",
+     "paragrafos": [
+       "O conselho da Nvidia anunciou no domingo (8) uma investigação independente sobre o CEO Jensen Huang. Em mensagem aos funcionários, ele admitiu ter sido infiel à mulher e pediu desculpas. O conselho diz não ter motivo para crer que a segurança nacional ou segredos da empresa foram comprometidos.",
+       "Um memo que circulou entre autoridades americanas neste ano afirma, segundo o New York Times e o Financial Times, que a parceira era uma executiva da Megaspeed, de Singapura, recrutada pelo serviço secreto chinês para espionar Huang. A Nvidia diz que o contato era \"não incomum\". O presidente Donald Trump disse que Huang deve ficar no cargo, segundo a Bloomberg."
+     ],
+     "quadros": [
+       {"titulo": "Cara ou coroa?", "texto": "Jeffrey Sonnenfeld, professor de Yale, estima em \"cerca de 50-50\" a chance de Huang continuar como CEO, segundo o TechCrunch."}
+     ],
+     "refs": [
+       {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"},
+       {"rotulo": "Bloomberg", "url": "https://www.bloomberg.com/news/articles/2026-11-08/trump-defends-nvidia-s-huang-after-he-admits-affair-with-spy"}
+     ]},
+
+    {"tipo": "perdeu", "titulo": "Se você perdeu no sábado",
+     "itens": [
+       {"rotulo": "Capa", "texto": "A OpenAI passou a valer US$ 1,25 trilhão, segundo a Bloomberg, ao fechar cerca de US$ 11 bilhões em nova rodada.", "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"},
+       {"rotulo": "Roubo", "texto": "Seis paletes de hardware da Nvidia, de US$ 11,4 milhões, sumiram entre Oakland e o Texas, levados por um falso caminhão de alimentos.", "url": "https://arstechnica.com/gadgets/2026/11/nvidia-hardware-worth-11-4m-vanished-between-oakland-and-texas/"},
+       {"rotulo": "Meta", "texto": "O Muse ganhou os \"spaces\": você descreve, e a IA monta um painel, como agenda escolar ou lista de compras.", "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces"},
+       {"rotulo": "Memória", "texto": "A Nagare Labs, apoiada por Pat Gelsinger, promete memória veloz empilhada sobre chips de IA. Boa parte dos números ainda é projeção.", "url": "https://www.tomshardware.com/tech-industry/semiconductors/gelsinger-backed-nagare-labs-capacitorless-z2ram-promises-sram-speed-with-dram-density-latest-published-cell-retains-data-for-over-300-seconds-at-85-c-but-further-figures-are-projected"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Memória em falta e muita gambiarra", "ilustracao": "memoria", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Menos RAM", "texto": "Os PCs com 64 GB de RAM caíram 18% em um ano, segundo dados do CPU-Z, com a memória DRAM cara por causa da IA. É a primeira queda da capacidade de memória nos PCs.", "url": "https://www.tomshardware.com/pc-components/ram/pcs-with-64gb-of-ram-plummet-18-percent-as-memory-prices-soar-cpu-z-install-base-data-shows-ddr4-making-a-surprise-comeback"},
+       {"rotulo": "TSMC", "texto": "A TSMC negou estudar uma DRAM em 3D a pedido da Nvidia. A tecnologia ainda está a anos de ser viável.", "url": "https://www.tomshardware.com/pc-components/dram/tsmc-denies-exploring-3d-dram-at-nvidias-request-advanced-memory-tech-is-still-years-from-market-viability"},
+       {"rotulo": "Optane", "texto": "Um usuário rodou o Kimi K3, de 2,8 trilhões de parâmetros, só na CPU com memória Optane: 0,85 token por segundo.", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/homelabber-uses-second-gen-optane-memory-sticks-to-run-a-2-8-trillion-parameter-ai-model-on-cpu-alone-warns-that-optanes-extreme-heat-can-burn-out-nearby-memory-dram-used-blower-fans-to-prevent-melting-ram"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Apple", "texto": "Segundo Mark Gurman, da Bloomberg, o CEO John Ternus pressiona Craig Federighi a acelerar a Siri e entregar um agente de IA poderoso.", "url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic"},
+       {"rotulo": "Google", "texto": "Uma atualização do Googlebook libera de 3 GB a 6 GB de RAM, reduz travadas do Chrome e corrige cerca de 60 falhas do Android.", "url": "https://www.androidcentral.com/chromebooks-laptops/google-just-made-googlebooks-faster-more-stable-and-less-crash-prone"},
+       {"rotulo": "ByteDance", "texto": "Segundo a Bloomberg, a dona do TikTok quer uma segunda fase, maior, do data center no Ceará, hoje um projeto de US$ 10 bilhões e 300 MW.", "url": "https://www.bloomberg.com/news/articles/2026-11-06/tiktok-owner-bytedance-weighs-data-center-expansion-in-brazil"},
+       {"rotulo": "Anthropic", "texto": "Yao Shunyu, cientista-chefe de IA da Tencent, diz que a Anthropic tem um \"argumento forte\" para manter modelos fechados, segundo o SCMP.", "url": "https://www.scmp.com/tech/big-tech/article/3373697/ai-will-soon-master-biology-unleashing-new-safety-risks-tencent-ai-chief-warns"},
+       {"rotulo": "Amazon", "texto": "Vagas de emprego indicam que a Amazon prepara um robô doméstico novo. O Astro, de US$ 1.450, chegou a poucos milhares de casas, segundo a CNBC.", "url": "https://www.cnbc.com/2026/11/08/amazon-home-robot-fauna-sprout.html"},
+       {"rotulo": "99", "texto": "A dona da 99 diz que foi \"insignificante\" o número de corridas pedidas por agentes de IA. A Uber contou só quatro, segundo o Tecnoblog.", "url": "https://tecnoblog.net/noticias/dona-da-99-teve-numero-insignificante-de-corridas-solicitadas-por-agentes-de-ia/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Binance ainda sente o hack",
+     "notas": [
+       {"rotulo": "Binance", "texto": "O diretor financeiro deixa a empresa, pouco mais de uma semana após o roubo de US$ 6,3 bilhões.", "url": "https://techcrunch.com/2026/11/07/binance-cfo-is-leaving-to-pursue-a-new-venture-after-6-3-billion-hack/"},
+       {"rotulo": "MEXC", "texto": "O Tesouro dos EUA age contra a corretora, acusada de US$ 16 bilhões em fluxos ilícitos.", "url": "https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows"},
+       {"rotulo": "Solana", "texto": "A rede quer aposentar o recurso usado no hack de US$ 270 milhões da Drift.", "url": "https://www.coindesk.com/tech/2026/11/09/solana-moves-to-scrap-the-transaction-feature-used-in-the-usd270-million-drift-hack"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "dooly6276", "onde": "TabNews", "texto": "Conta como impediu que sessões paralelas do Claude Code derrubassem os servidores umas das outras.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/dooly6276/como-impedi-que-sessoes-paralelas-do-claude-code-derrubassem-os-servidores-umas-das-outras"}]},
+       {"nome": "KickDown", "onde": "TabNews", "texto": "Criou uma biblioteca para inspecionar o Storage e interceptar requisições direto na tela do React (Overlay DevTools).",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/KickDown/criei-uma-biblioteca-para-inspecionar-storage-e-interceptar-requisicoes-direto-na-tela-do-react-overlay-devtools"}]},
+       {"nome": "deto", "onde": "TabNews", "texto": "Apresenta o Simcuit, um simulador web de circuitos digitais.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/deto/simcuit-um-simulador-web-de-circuitos-digitais"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Hide your slop PR descriptions behind <details>", "onde": "Simon Willison · técnico", "url": "https://simonwillison.net/2026/Nov/9/details-summary/"},
+       {"titulo": "Entrevista com Alex Stamos sobre IA e cibersegurança", "onde": "The Verge · podcast", "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos"},
+       {"titulo": "RIP, Harvest", "onde": "aphyr.com · opinião", "url": "https://aphyr.com/posts/427-rip-harvest"},
+       {"titulo": "How I Fight AI Brain Fry", "onde": "Sergey Kuhne · blog", "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "H200", "categoria": "Hardware", "definicao": "Chip de IA da Nvidia, usado para treinar e rodar modelos. Os EUA controlam a venda dele à China."},
+    {"termo": "Data center", "categoria": "Infraestrutura", "definicao": "Prédio cheio de computadores que guardam dados e rodam serviços e modelos de IA."},
+    {"termo": "Agente de IA", "categoria": "IA", "definicao": "IA que não só responde: executa tarefas por conta própria, como pedir uma corrida ou mexer em apps."},
+    {"termo": "DRAM", "categoria": "Hardware", "definicao": "A memória RAM comum dos computadores. Guarda os dados que o processador usa no momento."},
+    {"termo": "Parâmetros", "categoria": "IA", "definicao": "Os números ajustados no treino de um modelo de IA. Em geral, mais parâmetros pedem mais memória."},
+    {"termo": "ETF", "categoria": "Cripto", "definicao": "Fundo negociado em bolsa. Os de bitcoin permitem investir sem comprar a moeda diretamente."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedaço de texto, como uma sílaba, que o modelo lê e escreve. Medir tokens por segundo mede a velocidade."}
+  ]
+}

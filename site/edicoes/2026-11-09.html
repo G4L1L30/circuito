@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Circuito nº 013 · 09/11/2026</title>
+<meta name="description" content="Nvidia investiga Jensen. Conselho abre investigação sobre o CEO. E os chips que a China pode comprar.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Circuito">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://g4l1l30.github.io/circuito/edicoes/2026-11-09.html">
+<meta property="og:title" content="Circuito nº 013 · Nvidia investiga Jensen">
+<meta property="og:description" content="Conselho abre investigação sobre o CEO. E os chips que a China pode comprar.">
+<meta property="og:image" content="https://g4l1l30.github.io/circuito/og-circuito.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Circuito: revista diária de tecnologia em 5 minutos, com um computador antigo na capa">
+<meta name="twitter:card" content="summary_large_image"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=VT323&display=swap">
+<style>
+:root{
+  /* Layout: páginas em formatinho (13,5 × 20,5 cm) sobre a mesa; capa e contracapa sozinhas, miolo em pares abertos como revista.
+     A página é papel impresso e não muda com o tema; só a mesa escurece no modo escuro. Impressão em duas cores + preto, tinta desbotada. */
+  --desk:#cdc6b6;
+  --desk-ink:#4b453c;
+  --paper:#ebe3cd;
+  --paper-shade:#ddd2b5;
+  --ink:#25211d;
+  --ink-soft:#5f574b;
+  --red:#a24a33;
+  --blue:#3f5a68;
+  --mustard:#b38f3e;
+  --spine:rgba(37,33,29,.30);
+  --drop:rgba(37,33,29,.30);
+  --f-display:'Alfa Slab One','Rockwell','Roboto Slab',Georgia,serif;
+  --f-label:'Oswald','Arial Narrow','Helvetica Neue Condensed',Impact,sans-serif;
+  --f-body:'PT Serif',Georgia,'Times New Roman',serif;
+  --f-data:'VT323','Courier New',monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --desk:#1c1a17; --desk-ink:#b8b09f; --drop:rgba(0,0,0,.6); color-scheme:dark }
+}
+:root[data-theme="dark"]{ --desk:#1c1a17; --desk-ink:#b8b09f; --drop:rgba(0,0,0,.6); color-scheme:dark }
+
+*,*::before,*::after{ box-sizing:border-box }
+html{ padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); background:var(--desk) }
+body{ margin:0; background:var(--desk); color:var(--desk-ink); font:14px/1.4 var(--f-body) }
+img,svg{ max-width:100% }
+
+.mesa{
+  display:flex; flex-direction:column; align-items:center; gap:44px;
+  padding-block:28px 72px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+}
+.mesa-topo{
+  width:100%; max-width:960px;
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 24px;
+  font:500 12px/1.4 var(--f-label); letter-spacing:.14em; text-transform:uppercase;
+  border-bottom:1px solid currentColor; padding-bottom:10px;
+}
+.mesa-topo strong{ font-weight:700 }
+.mesa-topo a{ color:inherit }
+.mesa-sobre{
+  width:100%; max-width:960px; margin:-30px 0 0;
+  font:italic 400 14px/1.45 var(--f-body); text-wrap:balance;
+}
+.faixa-teste{
+  width:100%; max-width:960px; text-align:center; padding:8px 12px;
+  font:700 12px/1.3 var(--f-label); letter-spacing:.2em; text-transform:uppercase;
+  border:2px dashed currentColor;
+}
+
+.spread{ display:grid; grid-template-columns:minmax(0,480px); justify-content:center; gap:44px; width:100% }
+@media (min-width:1010px){
+  .spread:not(.solo){ grid-template-columns:repeat(2, minmax(0,480px)); gap:0 }
+  /* as duas páginas abertas acompanham a mais alta, como numa revista de verdade */
+  .spread:not(.solo) .page{ align-self:stretch }
+  .spread:not(.solo) .page:first-child{ box-shadow:inset -26px 0 26px -22px var(--spine), -6px 16px 30px -14px var(--drop) }
+  .spread:not(.solo) .page:last-child{ box-shadow:inset 26px 0 26px -22px var(--spine), 6px 16px 30px -14px var(--drop) }
+}
+
+/* ---------- a página ---------- */
+.page{
+  position:relative; width:100%; aspect-ratio:135/205;
+  container-type:inline-size;
+  display:flex; flex-direction:column;
+  color:var(--ink);
+  background-color:var(--paper);
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .22 0 0 0 0 .17 0 0 0 0 .10 0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"),
+    radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(120,92,45,.13) 100%);
+  box-shadow:0 16px 30px -14px var(--drop);
+}
+.pg{ flex:1; display:flex; flex-direction:column; gap:2.3cqw; padding:5.6cqw 6.2cqw 4.2cqw }
+
+.runner{
+  display:flex; justify-content:space-between; gap:2cqw;
+  font:600 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.16em; text-transform:uppercase;
+  border-bottom:.4cqw solid var(--ink); padding-bottom:1.3cqw;
+}
+.folio{
+  margin-top:auto; display:flex; justify-content:space-between; align-items:baseline;
+  font:500 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft);
+  border-top:.22cqw solid var(--ink); padding-top:1.3cqw;
+}
+.folio b{ font:400 3.4cqw/1 var(--f-display); color:var(--ink); letter-spacing:0 }
+
+.tarja{
+  align-self:flex-start;
+  font:600 max(9.5px,2.35cqw)/1 var(--f-label); letter-spacing:.17em; text-transform:uppercase;
+  background:var(--ink); color:var(--paper); padding:1cqw 1.8cqw .9cqw;
+}
+.tarja.verm{ background:var(--red) }
+.titulo{ margin:0; font:400 7.8cqw/1.02 var(--f-display); letter-spacing:-.005em; text-wrap:balance }
+.titulo.g{ font-size:9cqw }
+.olho{
+  margin:0; font:italic 400 max(12px,3.35cqw)/1.36 var(--f-body);
+  border-left:.9cqw solid var(--red); padding-left:2.4cqw;
+}
+.txt{ display:flex; flex-direction:column; gap:1.4cqw }
+.txt p, .cols p{
+  margin:0; font-size:max(12px,2.95cqw); line-height:1.44;
+  text-align:justify; hyphens:auto; -webkit-hyphens:auto;
+}
+.capitular::first-letter{
+  float:left; font-family:var(--f-display); font-size:3.5em; line-height:.82;
+  padding:.06em .09em 0 0; color:var(--red);
+}
+.cols{ columns:2; column-gap:4.4cqw; column-rule:.22cqw solid var(--ink-soft) }
+.cols p{ margin-bottom:1.6cqw; text-align:left; break-inside:avoid }
+
+.nota-cab{
+  display:inline-block; margin-right:.5em;
+  font:700 max(10px,2.45cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; color:var(--red);
+}
+.ref{ display:flex; flex-wrap:wrap; gap:.6cqw 3cqw }
+.ref a, a.ref-link{
+  font:500 max(9.5px,2.2cqw)/1.35 var(--f-label); letter-spacing:.08em; text-transform:uppercase;
+  color:var(--blue); text-decoration:none; border-bottom:.22cqw dotted var(--blue);
+}
+a.ref-link{ margin-right:2.4cqw }
+a:hover{ color:var(--red); border-bottom-color:var(--red) }
+a:focus-visible{ outline:2px solid var(--red); outline-offset:2px }
+
+.quadro{ position:relative; border:.45cqw solid var(--ink); background:var(--paper-shade); padding:2.5cqw 3cqw 2.7cqw }
+.quadro::after{
+  content:""; position:absolute; inset:1.5cqw -1.6cqw -1.6cqw 1.5cqw; z-index:-1;
+  background-image:radial-gradient(var(--ink) 32%, transparent 35%); background-size:1.25cqw 1.25cqw;
+}
+.quadro h3{ margin:0 0 1.2cqw; font:700 max(10px,2.55cqw)/1 var(--f-label); letter-spacing:.15em; text-transform:uppercase; color:var(--red) }
+.quadro p{ margin:0; font-size:max(11.5px,2.75cqw); line-height:1.42; hyphens:auto; -webkit-hyphens:auto }
+.quadro p + p{ margin-top:1cqw }
+
+.legenda{ margin:0; font:italic 400 max(10.5px,2.4cqw)/1.35 var(--f-body); color:var(--ink-soft) }
+.arte{ display:block; width:100%; height:auto; max-width:100% }
+
+/* SVG */
+.f-ink{fill:var(--ink)} .f-paper{fill:var(--paper)} .f-shade{fill:var(--paper-shade)}
+.f-red{fill:var(--red)} .f-blue{fill:var(--blue)} .f-mus{fill:var(--mustard)} .f-none{fill:none}
+.s-ink{stroke:var(--ink)} .s-red{stroke:var(--red)} .s-mus{stroke:var(--mustard)} .s-paper{stroke:var(--paper)} .s-blue{stroke:var(--blue)}
+.t-slab{font-family:var(--f-display)} .t-label{font-family:var(--f-label); font-weight:600} .t-data{font-family:var(--f-data)}
+
+/* ---------- capa ---------- */
+.capa .pg{ gap:2.4cqw }
+.capa-faixa{ display:flex; justify-content:space-between; font:600 max(9px,2.2cqw)/1 var(--f-label); letter-spacing:.16em; text-transform:uppercase }
+.logo{
+  margin:0; font:400 15.6cqw/.9 var(--f-display); letter-spacing:-.015em; text-align:center;
+  color:var(--ink); text-shadow:.75cqw .75cqw 0 var(--red);
+  border-block:.5cqw solid var(--ink); padding-block:2cqw 1.4cqw;
+}
+.slogan{ margin:-.6cqw 0 0; text-align:center; font:500 max(9.5px,2.4cqw)/1 var(--f-label); letter-spacing:.3em; text-transform:uppercase }
+.capa-miolo{ display:grid; grid-template-columns:31cqw minmax(0,1fr); gap:2.8cqw; align-items:center }
+.chamadas{ display:flex; flex-direction:column; gap:2.2cqw }
+.chamada{ border-top:.35cqw solid var(--ink); padding-top:1.3cqw }
+.chamada span{ display:block; font:700 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-bottom:.8cqw }
+.chamada p{ margin:0; font:700 max(11px,2.8cqw)/1.22 var(--f-body) }
+.arte-capa{ position:relative }
+.selo{
+  position:absolute; right:-1cqw; top:-1cqw; width:17cqw; aspect-ratio:1; border-radius:50%;
+  display:grid; place-content:center; text-align:center; transform:rotate(12deg);
+  background:var(--mustard); color:var(--ink); border:.5cqw solid var(--ink);
+  box-shadow:0 0 0 .8cqw var(--paper), 0 0 0 1.1cqw var(--ink);
+  font:700 2cqw/1.05 var(--f-label); letter-spacing:.08em; text-transform:uppercase;
+}
+.selo b{ display:block; font:400 3.4cqw/1 var(--f-display); letter-spacing:0 }
+.manchete{ text-align:center; display:flex; flex-direction:column; gap:1.2cqw }
+.manchete h2{ margin:0; font:700 11.4cqw/.92 var(--f-label); letter-spacing:.01em; text-transform:uppercase; text-wrap:balance }
+.manchete p{ margin:0; font:italic 400 max(12px,3.6cqw)/1.25 var(--f-body); text-wrap:balance }
+.capa-pe{ margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; gap:3cqw }
+.capa-pe p{ margin:0; font:500 max(9px,2.2cqw)/1.35 var(--f-label); letter-spacing:.1em; text-transform:uppercase }
+.barras{ display:flex; flex-direction:column; align-items:center; gap:.6cqw; background:var(--paper); padding:1.2cqw 1.6cqw .8cqw; border:.25cqw solid var(--ink) }
+.barras i{
+  display:block; width:22cqw; height:8cqw;
+  background:repeating-linear-gradient(90deg, var(--ink) 0 .45cqw, transparent .45cqw .8cqw, var(--ink) .8cqw 1.5cqw, transparent 1.5cqw 1.75cqw, var(--ink) 1.75cqw 1.95cqw, transparent 1.95cqw 2.5cqw, var(--ink) 2.5cqw 2.7cqw, transparent 2.7cqw 3.3cqw);
+}
+.barras span{ font:400 2.6cqw/1 var(--f-data); letter-spacing:.2em }
+
+/* ---------- miolo ---------- */
+.sumario{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1.1cqw }
+.sumario li{ display:flex; align-items:baseline; gap:1.4cqw; font-size:max(11.5px,2.85cqw) }
+.sumario li::after{ content:""; order:2; flex:1; border-bottom:.3cqw dotted var(--ink-soft) }
+.sumario li span{ order:1 }
+.sumario li b{ order:3; font:400 3.6cqw/1 var(--f-display); color:var(--red); min-width:4cqw; text-align:right }
+.sumario em{ font-style:normal; font:600 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); margin-right:.5em }
+.expediente{ margin:0; font:400 max(13px,3cqw)/1.1 var(--f-data); color:var(--ink-soft); text-transform:uppercase }
+
+.tabela{ width:100%; border-collapse:collapse; font:400 max(14px,3.7cqw)/1.15 var(--f-data); font-variant-numeric:tabular-nums }
+.tabela th{ font:600 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; text-align:right; padding:0 0 1cqw; border-bottom:.3cqw solid var(--ink) }
+.tabela th:first-child, .tabela td:first-child{ text-align:left }
+.tabela td{ text-align:right; padding:.7cqw 0; border-bottom:.22cqw dashed var(--ink-soft) }
+.tabela td.sobe{ color:var(--blue) }
+.tabela td.desce{ color:var(--red) }
+.tabela tr:last-child td{ border-bottom:0 }
+
+.lado{ display:grid; grid-template-columns:42cqw minmax(0,1fr); gap:3.4cqw; align-items:center }
+.lado.inv{ grid-template-columns:minmax(0,1fr) 38cqw }
+.lado > div{ display:flex; flex-direction:column; gap:2cqw; min-width:0 }
+.notas{ display:flex; flex-direction:column; gap:1.5cqw }
+.notas p{ margin:0; font-size:max(12px,2.95cqw); line-height:1.42; hyphens:auto; -webkit-hyphens:auto; text-align:justify }
+
+.empresa{
+  display:inline-block; margin-right:.45em; padding:.4cqw 1cqw .3cqw;
+  font:700 max(9.5px,2.2cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase;
+  border:.3cqw solid var(--ink); background:var(--paper);
+}
+
+.vozes{ display:flex; flex-direction:column; gap:2.4cqw }
+.voz{ display:grid; grid-template-columns:11cqw minmax(0,1fr); gap:2.8cqw; align-items:start }
+.avatar{
+  width:11cqw; aspect-ratio:1; border-radius:50%; border:.4cqw solid var(--ink);
+  display:grid; place-items:center; font:400 3.8cqw/1 var(--f-display); color:var(--paper);
+  background-color:var(--blue);
+  background-image:radial-gradient(var(--ink) 30%, transparent 34%); background-size:1.3cqw 1.3cqw;
+  text-shadow:0 0 .6cqw var(--ink);
+}
+.avatar.c1{ background-color:var(--red) }
+.avatar.c2{ background-color:var(--mustard) }
+.voz h4{ margin:0 0 .6cqw; font:700 max(10px,2.5cqw)/1.1 var(--f-label); letter-spacing:.12em; text-transform:uppercase }
+.voz h4 small{ font-weight:500; color:var(--ink-soft); letter-spacing:.08em }
+.voz p{ margin:0 0 .8cqw; font-size:max(12px,2.9cqw); line-height:1.4 }
+
+.leituras{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2.2cqw }
+.leituras li{ display:grid; grid-template-columns:3cqw minmax(0,1fr); gap:2cqw }
+.leituras li::before{ content:""; width:2.2cqw; height:2.2cqw; margin-top:1cqw; background:var(--red) }
+.leituras a{ font:700 max(12px,3.05cqw)/1.25 var(--f-body); color:var(--ink); text-decoration:none; border-bottom:.25cqw dotted var(--ink-soft) }
+.leituras span{ display:block; margin-top:.5cqw; font:500 max(9px,2.15cqw)/1.3 var(--f-label); letter-spacing:.1em; text-transform:uppercase; color:var(--blue) }
+
+.perdeu{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2.4cqw }
+.perdeu li{ border-top:.3cqw solid var(--ink); padding-top:1.6cqw }
+.perdeu li span{ display:block; font:700 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-bottom:1cqw }
+.perdeu li p{ margin:0 0 .8cqw; font-size:max(12px,2.95cqw); line-height:1.42 }
+
+.glossario{ margin:0; display:flex; flex-direction:column; gap:2.2cqw }
+.glossario dt{ font:400 4.6cqw/1 var(--f-display); color:var(--ink) }
+.glossario dt small{ font:600 max(9px,2.1cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-left:1.2cqw }
+.glossario dd{ margin:.8cqw 0 0; font-size:max(12px,2.95cqw); line-height:1.42; border-left:.6cqw solid var(--mustard); padding-left:2.2cqw }
+
+.anuncio{ border:.6cqw double var(--ink); padding:2.8cqw; display:grid; grid-template-columns:minmax(0,1fr) 20cqw; gap:2.4cqw; align-items:center; background:var(--paper) }
+.anuncio h3{ margin:0 0 1cqw; font:700 5.4cqw/.95 var(--f-label); text-transform:uppercase; letter-spacing:.01em }
+.anuncio h3 em{ font-style:normal; color:var(--red) }
+.anuncio p{ margin:0; font-size:max(11.5px,2.75cqw); line-height:1.35 }
+.cupom{ grid-column:1 / -1; border:.35cqw dashed var(--ink); padding:2cqw 2.4cqw; font:400 max(13px,3.2cqw)/1.35 var(--f-data); position:relative }
+.cupom::before{ content:"✂"; position:absolute; top:-2.4cqw; left:3cqw; background:var(--paper); padding:0 1cqw; font-size:3.4cqw; line-height:1 }
+.anuncio.grande{ grid-template-columns:1fr; text-align:center; padding:4cqw }
+.anuncio.grande .arte{ width:46cqw; margin:0 auto }
+.anuncio.grande h3{ font-size:7.4cqw }
+.miudo{ margin:0; font:italic 400 max(10px,2.2cqw)/1.3 var(--f-body); color:var(--ink-soft) }
+
+/* ---------- arquivo de edições ---------- */
+.arquivo{ width:100%; max-width:720px; list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px }
+.arquivo li{ display:grid; grid-template-columns:auto minmax(0,1fr); gap:6px 18px; align-items:baseline; border-bottom:1px solid currentColor; padding-bottom:12px }
+.arquivo b{ font:400 22px/1 var(--f-display) }
+.arquivo a{ color:inherit; font:700 16px/1.3 var(--f-body) }
+.arquivo span{ grid-column:2; font:500 12px/1.3 var(--f-label); letter-spacing:.12em; text-transform:uppercase }
+
+</style>
+</head>
+<body>
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <pattern id="ht-ink" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="2" cy="2" r="1.05" class="f-ink"/></pattern>
+    <pattern id="ht-fino" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="2" cy="2" r=".62" class="f-ink"/></pattern>
+    <pattern id="ht-red" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(15)"><circle cx="2" cy="2" r="1.25" class="f-red"/></pattern>
+    <pattern id="ht-blue" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(75)"><circle cx="2.5" cy="2.5" r="1.45" class="f-blue"/></pattern>
+    <pattern id="hachura" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.3" height="4" class="f-ink"/></pattern>
+    <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" class="f-paper" opacity=".09"/></pattern>
+    <pattern id="teclas" width="12" height="9" patternUnits="userSpaceOnUse"><rect x="1.5" y="1.5" width="9" height="6" rx="1" class="f-ink" opacity=".8"/></pattern>
+    <pattern id="pinos" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="2" height="4" class="f-mus"/></pattern>
+    <pattern id="dentes" width="5" height="4" patternUnits="userSpaceOnUse"><rect x="3" width="1.4" height="4" class="f-ink" opacity=".55"/></pattern>
+    <pattern id="janelas" width="12" height="12" patternUnits="userSpaceOnUse"><rect x="2" y="2" width="7" height="7" class="f-ink" opacity=".85"/></pattern>
+  </defs>
+</svg>
+
+
+
+
+
+
+
+
+
+<main class="mesa">
+  <div class="mesa-topo">
+    <span><strong>Circuito</strong> · nº 013 · segunda-feira, 9 de novembro de 2026</span>
+    <span><a href="../arquivo.html">Edições anteriores</a></span>
+  </div>
+  <p class="mesa-sobre">Revista diária de tecnologia em 5 minutos · de segunda a sábado, às 7h · grátis. Cada nota tem o link para a matéria original.</p>
+  <section class="spread solo" aria-label="Capa">
+<article class="page capa" id="p1"><div class="pg">
+  <div class="capa-faixa"><span>Nº 013 · Ano I</span><span>Segunda, 9 de novembro de 2026</span></div>
+  <h1 class="logo">CIRCUITO</h1>
+  <p class="slogan">IA · Hardware · Big Techs · Cripto</p>
+  <div class="capa-miolo">
+    <div class="chamadas">
+<div class="chamada"><span>Chips</span><p>Firmas liberadas para comprar H200 têm escritório vazio</p></div><div class="chamada"><span>Apple</span><p>Siri deve virar agente, diz Gurman</p></div><div class="chamada"><span>Brasil</span><p>ByteDance quer ampliar data center no Ceará</p></div><div class="chamada"><span>Cripto</span><p>Binance perde diretor financeiro após o hack</p></div>    </div>
+    <div class="arte-capa">
+      <svg class="arte" viewBox="0 0 300 250" role="img" aria-label="Ilustração: computador antigo com o elemento do dia na tela, Silício">
+  <circle cx="150" cy="116" r="114" fill="url(#ht-blue)"/>
+  <g class="s-ink" stroke-width="2.5" stroke-linecap="round">
+    <line x1="14" y1="36" x2="38" y2="50"/><line x1="286" y1="36" x2="262" y2="50"/>
+    <line x1="6" y1="116" x2="32" y2="116"/><line x1="294" y1="116" x2="268" y2="116"/>
+  </g>
+  <rect x="61" y="28" width="186" height="160" rx="16" class="f-red" opacity=".9"/>
+  <rect x="55" y="22" width="186" height="160" rx="16" class="f-paper s-ink" stroke-width="3"/>
+  <rect x="72" y="38" width="152" height="114" rx="12" class="f-ink"/>
+  <rect x="72" y="38" width="152" height="114" rx="12" fill="url(#scan)"/>
+  <rect x="111" y="50" width="74" height="88" class="f-none s-mus" stroke-width="2.5"/>
+  <text x="117" y="65" class="t-data f-mus" font-size="14">14</text>
+  <text x="148" y="108" text-anchor="middle" class="t-slab f-paper" font-size="40">Si</text>
+  <text x="148" y="122" text-anchor="middle" class="t-label f-mus" font-size="8.5" letter-spacing="1.6">SILÍCIO</text>
+  <text x="148" y="133" text-anchor="middle" class="t-data f-paper" font-size="11">28,085</text>
+  <rect x="82" y="140" width="8" height="5" class="f-mus"/>
+  <rect x="172" y="161" width="52" height="6" rx="1" class="f-ink"/>
+  <circle cx="82" cy="165" r="3.6" class="f-red"/>
+  <text x="92" y="168" class="t-label f-ink" font-size="7" letter-spacing="1.2">CIRCUITO 2026</text>
+  <path d="M122 182 L174 182 L184 198 L112 198 Z" class="f-shade s-ink" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M48 206 L252 206 L266 242 L34 242 Z" class="f-paper s-ink" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M57 211 L243 211 L254 237 L46 237 Z" fill="url(#teclas)"/>
+  <path d="M0,-9 L2.2,-2.2 L9,0 L2.2,2.2 L0,9 L-2.2,2.2 L-9,0 L-2.2,-2.2Z" class="f-mus s-ink" stroke-width="1.2" transform="translate(262 20)"/>
+  <path d="M0,-7 L1.8,-1.8 L7,0 L1.8,1.8 L0,7 L-1.8,1.8 L-7,0 L-1.8,-1.8Z" class="f-red" transform="translate(30 186)"/>
+</svg>
+      <div class="selo" aria-hidden="true"><b>R$ 0</b>seg a sáb<br>às 7h</div>
+    </div>
+  </div>
+  <div class="manchete"><h2>Nvidia investiga Jensen</h2><p>Conselho abre investigação sobre o CEO. E os chips que a China pode comprar.</p></div>
+  <div class="capa-pe">
+    <p>Leitura de 5 minutos<br>Cada nota com o link para o estudo completo</p>
+    <div class="barras" aria-hidden="true"><i></i><span>2026·11·09</span></div>
+  </div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 2 e Página 3">
+<article class="page" id="p2"><div class="pg">
+  <div class="runner"><span>Circuito · Nº 013</span><span>Ao leitor</span></div>
+  <h2 class="titulo">Uma segunda-feira movimentada no Vale do Silício</h2>
+  <div class="txt"><p class="capitular">Esta edição cobre o fim de semana inteiro, e o assunto foi um só: o chefe da Nvidia.</p><p>Também tem chip de IA indo parar em firma de fachada, Siri querendo virar agente e data center brasileiro crescendo. Quem perdeu o sábado encontra um resumo na página &#34;Se você perdeu&#34;. Bom café e boa leitura.</p></div>
+  <div class="quadro">
+    <h3>Nesta edição</h3>
+    <ol class="sumario">
+<li><span><em>Bastidores</em>Duas firmas liberadas a comprar H200 têm escritório vazio</span><b>3</b></li><li><span><em>Capa</em>Nvidia investiga o próprio chefe, Jensen Huang</span><b>4</b></li><li><span><em>Sábado</em>Se você perdeu no sábado</span><b>6</b></li><li><span><em>Placas &amp; Memórias</em>Memória em falta e muita gambiarra</span><b>7</b></li><li><span><em>Giro das Big Techs</em>Giro das Big Techs</span><b>8</b></li><li><span><em>Cripto</em>Cofre Digital</span><b>9</b></li><li><span><em>Vozes</em>Da Comunidade</span><b>10</b></li><li><span><em>Fim</em>Pra ler com calma</span><b>12</b></li>    </ol>
+  </div>
+  <p class="expediente">Fechamento 09/11/2026 06h14 (Brasília)<br>Cobre de 07/11 às 06h10 a 09/11 às 06h14<br>Fontes: Ars Technica, Bloomberg, CNBC, CoinDesk, Simon Willison, TabNews, TechCrunch, Tecnoblog, The Verge, Tom&#39;s Hardware e outras</p>
+  <div class="folio"><b>2</b><span>Ao leitor</span></div>
+</div></article>
+
+<article class="page" id="p3"><div class="pg">
+  <div class="runner"><span>Bastidores</span><span>Chips</span></div>
+<span class="tarja verm">Caso de polícia</span>  <h2 class="titulo">Duas firmas liberadas a comprar H200 têm escritório vazio</h2>
+<svg class="arte" viewBox="0 0 300 170" role="img" aria-label="Ilustração: lupa encontrando um inseto numa placa de circuito">
+  <rect x="34" y="30" width="200" height="120" rx="6" class="f-red" opacity=".9"/>
+  <rect x="28" y="24" width="200" height="120" rx="6" class="f-blue s-ink" stroke-width="3"/>
+  <g class="f-none s-paper" stroke-width="2.2" opacity=".85">
+    <path d="M44 50 H100 V68"/><path d="M44 120 H90 V100"/><path d="M146 80 H160 V40 H210"/><path d="M146 92 H214"/>
+  </g>
+  <g class="f-paper"><circle cx="44" cy="50" r="3"/><circle cx="44" cy="120" r="3"/><circle cx="210" cy="40" r="3"/></g>
+  <rect x="100" y="64" width="46" height="40" class="f-ink"/>
+  <rect x="56" y="72" width="22" height="14" class="f-mus"/>
+  <rect x="160" y="108" width="24" height="22" class="f-ink"/>
+  <circle cx="196" cy="80" r="34" class="f-paper" opacity=".35"/>
+  <ellipse cx="196" cy="80" rx="7" ry="9" class="f-red s-ink" stroke-width="1.5"/>
+  <circle cx="196" cy="68" r="4" class="f-ink"/>
+  <g class="s-ink" stroke-width="1.8" stroke-linecap="round">
+    <path d="M189 76 l-7 -4 M189 82 l-8 0 M189 88 l-7 4 M203 76 l7 -4 M203 82 l8 0 M203 88 l7 4"/>
+  </g>
+  <circle cx="196" cy="80" r="34" class="f-none s-ink" stroke-width="5"/>
+  <line x1="220" y1="104" x2="252" y2="142" class="s-ink" stroke-width="10" stroke-linecap="round"/>
+</svg>
+  <div class="txt"><p class="capitular">O New York Times foi aos endereços de duas empresas chinesas que o Departamento de Comércio dos EUA liberou para comprar o H200, chip de IA da Nvidia: New Matrix e Maginfra. Encontrou escritórios vazios, só com alguns móveis, e vizinhos que nunca ouviram falar delas.</p><p>Segundo o Tom&#39;s Hardware, os donos da New Matrix ligam-se a uma firma sancionada pelos EUA, e a Maginfra é suspeita de ligação com a Inspur, na lista negra desde 2023. Elas devem montar servidores, não usar os chips.</p></div>
+<div class="quadro">
+  <h3>O que diz a Nvidia</h3>
+<p>Segundo o New York Times, a empresa afirma vender &#34;a primeira, a melhor e a maior parte&#34; da sua tecnologia nos Estados Unidos.</p></div>  <div class="ref"><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/two-chinese-companies-cleared-to-buy-banned-nvidia-ai-chips-have-empty-offices-and-unknown-addresses-investigation-reveals-businesses-have-ties-to-sanctioned-chinese-military-suppliers">→ Tom&#39;s Hardware</a><a href="https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/">→ TechCrunch</a></div>
+  <div class="folio"><span>Bastidores</span><b>3</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 4 e Página 5">
+<article class="page" id="p4"><div class="pg">
+  <div class="runner"><span>Matéria de capa</span><span>Placas de vídeo</span></div>
+  <svg class="arte" viewBox="0 0 300 170" role="img" aria-label="Ilustração: processador visto de cima, com o quadradinho do silício da tabela periódica">
+  <circle cx="150" cy="85" r="82" fill="url(#ht-blue)"/>
+  <g class="f-none s-ink" stroke-width="2.5">
+    <path d="M81 55 H50 V35 H24"/><path d="M219 115 H250 V140 H276"/>
+    <path d="M81 115 H44 V138 H22"/><path d="M219 55 H258 V30 H280"/>
+  </g>
+  <g class="f-paper s-ink" stroke-width="2">
+    <circle cx="24" cy="35" r="4"/><circle cx="276" cy="140" r="4"/>
+    <circle cx="22" cy="138" r="4"/><circle cx="280" cy="30" r="4"/>
+  </g>
+  <g class="s-ink" stroke-width="4">
+    <path d="M105 30 V16 M120 30 V16 M135 30 V16 M150 30 V16 M165 30 V16 M180 30 V16 M195 30 V16"/>
+    <path d="M105 140 V154 M120 140 V154 M135 140 V154 M150 140 V154 M165 140 V154 M180 140 V154 M195 140 V154"/>
+    <path d="M95 40 H81 M95 55 H81 M95 70 H81 M95 85 H81 M95 100 H81 M95 115 H81 M95 130 H81"/>
+    <path d="M205 40 H219 M205 55 H219 M205 70 H219 M205 85 H219 M205 100 H219 M205 115 H219 M205 130 H219"/>
+  </g>
+  <rect x="100" y="35" width="110" height="110" rx="6" class="f-red" opacity=".9"/>
+  <rect x="95" y="30" width="110" height="110" rx="6" class="f-ink"/>
+  <rect x="117" y="52" width="66" height="66" class="f-mus s-paper" stroke-width="2"/>
+  <text x="122" y="65" class="t-data f-ink" font-size="12">14</text>
+  <text x="150" y="100" text-anchor="middle" class="t-slab f-ink" font-size="30">Si</text>
+  <text x="150" y="112" text-anchor="middle" class="t-label f-ink" font-size="6.5" letter-spacing="1.2">SILÍCIO</text>
+</svg>
+
+<p class="legenda">A Nvidia é peça central na disputa dos EUA com a China por chips de IA.</p>  <span class="tarja">Capa · Nvidia</span>
+  <h2 class="titulo g">Nvidia investiga o próprio chefe, Jensen Huang</h2>
+  <p class="olho">O conselho da Nvidia abriu uma investigação independente sobre Jensen Huang. Ele admitiu um caso extraconjugal com uma executiva que, segundo um memo de inteligência dos EUA, teria sido recrutada pela China.</p>
+  <div class="txt"><p class="capitular">O conselho da Nvidia anunciou no domingo (8) uma investigação independente sobre o CEO Jensen Huang. Em mensagem aos funcionários, ele admitiu ter sido infiel à mulher e pediu desculpas. O conselho diz não ter motivo para crer que a segurança nacional ou segredos da empresa foram comprometidos.</p></div>
+  <div class="folio"><b>4</b><span>Matéria de capa</span></div>
+</div></article>
+
+<article class="page" id="p5"><div class="pg">
+  <div class="runner"><span>Nvidia investiga o próprio chefe, Jensen Huang</span><span>Continuação</span></div>
+  <div class="txt"><p>Um memo que circulou entre autoridades americanas neste ano afirma, segundo o New York Times e o Financial Times, que a parceira era uma executiva da Megaspeed, de Singapura, recrutada pelo serviço secreto chinês para espionar Huang. A Nvidia diz que o contato era &#34;não incomum&#34;. O presidente Donald Trump disse que Huang deve ficar no cargo, segundo a Bloomberg.</p></div>
+<div class="quadro">
+  <h3>Cara ou coroa?</h3>
+<p>Jeffrey Sonnenfeld, professor de Yale, estima em &#34;cerca de 50-50&#34; a chance de Huang continuar como CEO, segundo o TechCrunch.</p></div>  <div class="ref"><a href="https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/">→ TechCrunch</a><a href="https://www.bloomberg.com/news/articles/2026-11-08/trump-defends-nvidia-s-huang-after-he-admits-affair-with-spy">→ Bloomberg</a></div>
+  <div class="folio"><span>Matéria de capa</span><b>5</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 6 e Página 7">
+<article class="page" id="p6"><div class="pg">
+  <div class="runner"><span>Se você perdeu</span><span>Edição de sábado</span></div>
+  <span class="tarja verm">Para quem pulou o sábado</span>
+  <h2 class="titulo">Se você perdeu no sábado</h2>
+  <ul class="perdeu">
+<li><span>Capa</span><p>A OpenAI passou a valer US$ 1,25 trilhão, segundo a Bloomberg, ao fechar cerca de US$ 11 bilhões em nova rodada.</p><a class="ref-link" href="https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation">→ The Verge</a></li><li><span>Roubo</span><p>Seis paletes de hardware da Nvidia, de US$ 11,4 milhões, sumiram entre Oakland e o Texas, levados por um falso caminhão de alimentos.</p><a class="ref-link" href="https://arstechnica.com/gadgets/2026/11/nvidia-hardware-worth-11-4m-vanished-between-oakland-and-texas/">→ Ars Technica</a></li><li><span>Meta</span><p>O Muse ganhou os &#34;spaces&#34;: você descreve, e a IA monta um painel, como agenda escolar ou lista de compras.</p><a class="ref-link" href="https://www.theverge.com/tech/1028871/meta-muse-ai-spaces">→ The Verge</a></li><li><span>Memória</span><p>A Nagare Labs, apoiada por Pat Gelsinger, promete memória veloz empilhada sobre chips de IA. Boa parte dos números ainda é projeção.</p><a class="ref-link" href="https://www.tomshardware.com/tech-industry/semiconductors/gelsinger-backed-nagare-labs-capacitorless-z2ram-promises-sram-speed-with-dram-density-latest-published-cell-retains-data-for-over-300-seconds-at-85-c-but-further-figures-are-projected">→ Tom&#39;s Hardware</a></li>  </ul>
+  <div class="folio"><b>6</b><span>Se você perdeu</span></div>
+</div></article>
+
+<article class="page" id="p7"><div class="pg">
+  <div class="runner"><span>Placas &amp; Memórias</span><span>Hardware</span></div>
+  <div class="lado inv">
+    <div><span class="tarja">Hardware</span><h2 class="titulo">Memória em falta e muita gambiarra</h2></div>
+    <svg class="arte" viewBox="0 0 300 120" role="img" aria-label="Ilustração: pente de memória com oito chips">
+  <rect x="18" y="28" width="270" height="64" rx="3" class="f-red" opacity=".85"/>
+  <rect x="12" y="22" width="270" height="64" rx="3" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="12" y="22" width="270" height="64" rx="3" fill="url(#ht-fino)" opacity=".45"/>
+  <g class="f-ink">
+    <rect x="24" y="31" width="24" height="30"/><rect x="56" y="31" width="24" height="30"/>
+    <rect x="88" y="31" width="24" height="30"/><rect x="120" y="31" width="24" height="30"/>
+    <rect x="156" y="31" width="24" height="30"/><rect x="188" y="31" width="24" height="30"/>
+    <rect x="220" y="31" width="24" height="30"/><rect x="252" y="31" width="22" height="30"/>
+  </g>
+  <rect x="24" y="66" width="64" height="13" class="f-paper s-ink" stroke-width="1.5"/>
+  <text x="56" y="76.5" text-anchor="middle" class="t-data f-ink" font-size="12">DDR · 16 GB</text>
+  <circle cx="12" cy="56" r="5" class="f-paper s-ink" stroke-width="2"/>
+  <circle cx="282" cy="56" r="5" class="f-paper s-ink" stroke-width="2"/>
+  <rect x="20" y="86" width="124" height="13" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="156" y="86" width="118" height="13" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="22" y="88" width="120" height="9" fill="url(#dentes)"/>
+  <rect x="158" y="88" width="114" height="9" fill="url(#dentes)"/>
+</svg>
+
+  </div>
+  <div class="notas"><p><span class="nota-cab">Menos RAM</span>Os PCs com 64 GB de RAM caíram 18% em um ano, segundo dados do CPU-Z, com a memória DRAM cara por causa da IA. É a primeira queda da capacidade de memória nos PCs.</p><p><span class="nota-cab">TSMC</span>A TSMC negou estudar uma DRAM em 3D a pedido da Nvidia. A tecnologia ainda está a anos de ser viável.</p><p><span class="nota-cab">Optane</span>Um usuário rodou o Kimi K3, de 2,8 trilhões de parâmetros, só na CPU com memória Optane: 0,85 token por segundo.</p></div>
+  <div class="ref"><a href="https://www.tomshardware.com/pc-components/ram/pcs-with-64gb-of-ram-plummet-18-percent-as-memory-prices-soar-cpu-z-install-base-data-shows-ddr4-making-a-surprise-comeback">→ Tom&#39;s Hardware</a></div>
+  <div class="folio"><span>Placas &amp; Memórias</span><b>7</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 8 e Página 9">
+<article class="page" id="p8"><div class="pg">
+  <div class="runner"><span>Giro das Big Techs</span><span>Notas</span></div>
+  <h2 class="titulo">Giro das Big Techs</h2>
+  <div class="cols"><p><span class="empresa">Apple</span>Segundo Mark Gurman, da Bloomberg, o CEO John Ternus pressiona Craig Federighi a acelerar a Siri e entregar um agente de IA poderoso.</p><p><span class="empresa">Google</span>Uma atualização do Googlebook libera de 3 GB a 6 GB de RAM, reduz travadas do Chrome e corrige cerca de 60 falhas do Android.</p><p><span class="empresa">ByteDance</span>Segundo a Bloomberg, a dona do TikTok quer uma segunda fase, maior, do data center no Ceará, hoje um projeto de US$ 10 bilhões e 300 MW.</p><p><span class="empresa">Anthropic</span>Yao Shunyu, cientista-chefe de IA da Tencent, diz que a Anthropic tem um &#34;argumento forte&#34; para manter modelos fechados, segundo o SCMP.</p><p><span class="empresa">Amazon</span>Vagas de emprego indicam que a Amazon prepara um robô doméstico novo. O Astro, de US$ 1.450, chegou a poucos milhares de casas, segundo a CNBC.</p><p><span class="empresa">99</span>A dona da 99 diz que foi &#34;insignificante&#34; o número de corridas pedidas por agentes de IA. A Uber contou só quatro, segundo o Tecnoblog.</p></div>
+  <div class="ref"><a href="https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic">→ The Verge</a><a href="https://www.androidcentral.com/chromebooks-laptops/google-just-made-googlebooks-faster-more-stable-and-less-crash-prone">→ androidcentral.com</a><a href="https://www.bloomberg.com/news/articles/2026-11-06/tiktok-owner-bytedance-weighs-data-center-expansion-in-brazil">→ Bloomberg</a><a href="https://www.scmp.com/tech/big-tech/article/3373697/ai-will-soon-master-biology-unleashing-new-safety-risks-tencent-ai-chief-warns">→ scmp.com</a><a href="https://www.cnbc.com/2026/11/08/amazon-home-robot-fauna-sprout.html">→ CNBC</a><a href="https://tecnoblog.net/noticias/dona-da-99-teve-numero-insignificante-de-corridas-solicitadas-por-agentes-de-ia/">→ Tecnoblog</a></div>
+  <div class="folio"><b>8</b><span>Giro das Big Techs</span></div>
+</div></article>
+
+<article class="page" id="p9"><div class="pg">
+  <div class="runner"><span>Cofre Digital</span><span>Cripto · o básico</span></div>
+  <span class="tarja verm">Cotações da madrugada</span>
+  <h2 class="titulo">Binance ainda sente o hack</h2>
+  <p class="legenda">As cotações não chegaram a tempo nesta edição.</p>
+  <div class="lado">
+    <svg class="arte" viewBox="0 0 200 122" role="img" aria-label="Medidor do índice de medo e ganância marcando 29, Medo">
+  <path d="M20 100 A80 80 0 0 1 87.5 21" class="f-none s-blue" stroke-width="15"/>
+  <path d="M87.5 21 A80 80 0 0 1 112.5 21" class="f-none" stroke="var(--paper-shade)" stroke-width="15"/>
+  <path d="M112.5 21 A80 80 0 0 1 180 100" class="f-none s-red" stroke-width="15"/>
+  <path d="M20 100 A80 80 0 0 1 180 100" class="f-none s-ink" stroke-width="1.2"/>
+  <text x="12" y="116" text-anchor="middle" class="t-data f-ink" font-size="12">0</text>
+  <text x="100" y="9" text-anchor="middle" class="t-data f-ink" font-size="12">50</text>
+  <text x="188" y="116" text-anchor="middle" class="t-data f-ink" font-size="12">100</text>
+  <line x1="100" y1="100" x2="58.3" y2="46.3" class="s-ink" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="7" class="f-ink"/>
+  <circle cx="100" cy="100" r="2.5" class="f-mus"/>
+  <text x="140" y="94" text-anchor="middle" class="t-slab f-ink" font-size="20">29</text>
+</svg>
+    <div class="quadro">
+      <h3>Medo &amp; Ganância: 29</h3>
+      <p>Hoje marca “medo”. Vai de 0 (pânico) a 100 (euforia) e mede o humor do mercado com volatilidade, volume e redes sociais.</p>
+    </div>
+  </div>
+  <div class="notas"><p><span class="nota-cab">Binance</span>O diretor financeiro deixa a empresa, pouco mais de uma semana após o roubo de US$ 6,3 bilhões.</p><p><span class="nota-cab">MEXC</span>O Tesouro dos EUA age contra a corretora, acusada de US$ 16 bilhões em fluxos ilícitos.</p><p><span class="nota-cab">Solana</span>A rede quer aposentar o recurso usado no hack de US$ 270 milhões da Drift.</p></div>
+  <div class="ref"><a href="https://techcrunch.com/2026/11/07/binance-cfo-is-leaving-to-pursue-a-new-venture-after-6-3-billion-hack/">→ TechCrunch</a><a href="https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows">→ CoinDesk</a></div>
+  <p class="miudo">Isto não é recomendação de investimento.</p>
+  <div class="folio"><span>Cofre Digital</span><b>9</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 10 e Página 11">
+<article class="page" id="p10"><div class="pg">
+  <div class="runner"><span>Da Comunidade</span><span>Blogs, YouTube e fóruns</span></div>
+  <h2 class="titulo">O que a turma anda escrevendo</h2>
+  <div class="vozes">
+    <div class="voz">
+      <div class="avatar c0" aria-hidden="true">D</div>
+      <div>
+        <h4>dooly6276 <small>· TabNews</small></h4>
+        <p>Conta como impediu que sessões paralelas do Claude Code derrubassem os servidores umas das outras.</p>
+<a class="ref-link" href="https://www.tabnews.com.br/dooly6276/como-impedi-que-sessoes-paralelas-do-claude-code-derrubassem-os-servidores-umas-das-outras">→ TabNews</a>      </div>
+    </div>
+    <div class="voz">
+      <div class="avatar c1" aria-hidden="true">K</div>
+      <div>
+        <h4>KickDown <small>· TabNews</small></h4>
+        <p>Criou uma biblioteca para inspecionar o Storage e interceptar requisições direto na tela do React (Overlay DevTools).</p>
+<a class="ref-link" href="https://www.tabnews.com.br/KickDown/criei-uma-biblioteca-para-inspecionar-storage-e-interceptar-requisicoes-direto-na-tela-do-react-overlay-devtools">→ TabNews</a>      </div>
+    </div>
+    <div class="voz">
+      <div class="avatar c2" aria-hidden="true">D</div>
+      <div>
+        <h4>deto <small>· TabNews</small></h4>
+        <p>Apresenta o Simcuit, um simulador web de circuitos digitais.</p>
+<a class="ref-link" href="https://www.tabnews.com.br/deto/simcuit-um-simulador-web-de-circuitos-digitais">→ TabNews</a>      </div>
+    </div>
+  </div>
+  <div class="folio"><b>10</b><span>Da Comunidade</span></div>
+</div></article>
+
+<article class="page" id="p11"><div class="pg">
+  <div class="runner"><span>Dicionário do Byte</span><span>Glossário</span></div>
+  <h2 class="titulo">Dicionário do Byte</h2>
+  <dl class="glossario">
+<div><dt>H200<small>Hardware</small></dt><dd>Chip de IA da Nvidia, usado para treinar e rodar modelos. Os EUA controlam a venda dele à China.</dd></div><div><dt>Data center<small>Infraestrutura</small></dt><dd>Prédio cheio de computadores que guardam dados e rodam serviços e modelos de IA.</dd></div><div><dt>Agente de IA<small>IA</small></dt><dd>IA que não só responde: executa tarefas por conta própria, como pedir uma corrida ou mexer em apps.</dd></div><div><dt>DRAM<small>Hardware</small></dt><dd>A memória RAM comum dos computadores. Guarda os dados que o processador usa no momento.</dd></div><div><dt>Parâmetros<small>IA</small></dt><dd>Os números ajustados no treino de um modelo de IA. Em geral, mais parâmetros pedem mais memória.</dd></div>  </dl>
+  <div class="folio"><span>Glossário</span><b>11</b></div>
+</div></article>
+
+  </section>
+  <section class="spread solo" aria-label="Página 12">
+<article class="page" id="p12"><div class="pg">
+  <div class="runner"><span>Pra ler com calma</span><span>Contracapa</span></div>
+  <h2 class="titulo">Pra ler com calma</h2>
+  <ul class="leituras">
+<li><div><a href="https://simonwillison.net/2026/Nov/9/details-summary/">Hide your slop PR descriptions behind &lt;details&gt;</a><span>Simon Willison · técnico</span></div></li><li><div><a href="https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos">Entrevista com Alex Stamos sobre IA e cibersegurança</a><span>The Verge · podcast</span></div></li><li><div><a href="https://aphyr.com/posts/427-rip-harvest">RIP, Harvest</a><span>aphyr.com · opinião</span></div></li><li><div><a href="https://sergeykuhne.com/blog/fighting-ai-brain-fry">How I Fight AI Brain Fry</a><span>Sergey Kuhne · blog</span></div></li>  </ul>
+<div class="anuncio">
+  <div>
+    <h3>Expansão de <em>memória</em> 640 KB!</h3>
+    <p>Seu micro mais rápido que nunca. Instalação em 5 minutos, sem soldar nada. Garantia de 90 dias.</p>
+  </div>
+<svg class="arte" viewBox="0 0 300 120" role="img" aria-label="Ilustração: pente de memória com oito chips">
+  <rect x="18" y="28" width="270" height="64" rx="3" class="f-red" opacity=".85"/>
+  <rect x="12" y="22" width="270" height="64" rx="3" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="12" y="22" width="270" height="64" rx="3" fill="url(#ht-fino)" opacity=".45"/>
+  <g class="f-ink">
+    <rect x="24" y="31" width="24" height="30"/><rect x="56" y="31" width="24" height="30"/>
+    <rect x="88" y="31" width="24" height="30"/><rect x="120" y="31" width="24" height="30"/>
+    <rect x="156" y="31" width="24" height="30"/><rect x="188" y="31" width="24" height="30"/>
+    <rect x="220" y="31" width="24" height="30"/><rect x="252" y="31" width="22" height="30"/>
+  </g>
+  <rect x="24" y="66" width="64" height="13" class="f-paper s-ink" stroke-width="1.5"/>
+  <text x="56" y="76.5" text-anchor="middle" class="t-data f-ink" font-size="12">DDR · 16 GB</text>
+  <circle cx="12" cy="56" r="5" class="f-paper s-ink" stroke-width="2"/>
+  <circle cx="282" cy="56" r="5" class="f-paper s-ink" stroke-width="2"/>
+  <rect x="20" y="86" width="124" height="13" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="156" y="86" width="118" height="13" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="22" y="88" width="120" height="9" fill="url(#dentes)"/>
+  <rect x="158" y="88" width="114" height="9" fill="url(#dentes)"/>
+</svg>
+  <div class="cupom">NOME: ______________________<br>MICRO: ________ ( ) 8 BITS ( ) 16 BITS<br>( ) QUERO O CATÁLOGO</div>
+</div>
+<p class="miudo">Anúncio de mentirinha, homenagem às revistas de informática dos anos 80.</p>  <div class="capa-pe">
+    <p>Amanhã nas bancas<br>Edição nº 014, às 7h</p>
+    <div class="barras" aria-hidden="true"><i></i><span>CIRCUITO·013</span></div>
+  </div>
+</div></article>
+  </section>
+</main>
+</body>
+</html>
