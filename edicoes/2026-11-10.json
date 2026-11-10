@@ -1,0 +1,104 @@
+{
+  "capa": {
+    "manchete": "Anthropic lança Fable 5.2",
+    "subtitulo": "A Anthropic baixa o preço, acelera o modelo e libera o Mythos só para poucos.",
+    "elemento": {"numero": "52", "simbolo": "F5", "nome": "Fable", "detalhe": "US$ 8/1 mi"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "Claude Code vaza senhas em repositórios públicos"},
+      {"rotulo": "Chips", "texto": "Google lança dois novos chips de IA"},
+      {"rotulo": "Bolsa", "texto": "Anthropic mantém plano de abrir o capital"},
+      {"rotulo": "Cripto", "texto": "Bitcoin a US$ 74,2 mil, de olho na inflação"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Cinco minutos, um café e o mundo",
+    "paragrafos": [
+      "Terça (10) começa com modelo novo na praça. A Anthropic soltou o Fable 5.2 na segunda (9), mais barato e mais rápido, segundo a empresa.",
+      "O resto da edição vai de um vazamento de senhas a chips do Google e à novela da Nvidia. Bom café."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Caso de polícia",
+     "titulo": "O botão \"não perguntar de novo\" que vaza senhas",
+     "ilustracao": "cofre",
+     "paragrafos": [
+       "Pesquisadores da Apiiro acharam mais de 100 mil arquivos de configuração do Claude Code em repositórios públicos do GitHub. Em cerca de 1,1 mil deles, de 63 organizações, havia segredos: senhas de banco de dados, chaves de API e chaves privadas.",
+       "A causa: ao escolher \"sim, e não perguntar de novo\", o comando aprovado vai para um arquivo local, às vezes com a senha dentro. Boris Cherny, do Claude Code, disse que a equipe estuda como evitar isso."
+     ],
+     "quadro": {"titulo": "O que fazer", "texto": "Cherny recomenda usar scanners de segredos e nunca enviar esse arquivo ao git."},
+     "refs": [{"rotulo": "Ars Technica", "url": "https://arstechnica.com/ai/2026/11/claude-code-settings-files-expose-thousands-of-secrets-on-github/"}]},
+
+    {"tipo": "materia", "secao": "Anthropic", "assunto": "Inteligência artificial",
+     "titulo": "Anthropic lança Fable 5.2 e guarda o Mythos",
+     "olho": "Os modelos novos prometem mais velocidade e resolver problemas técnicos \"assustadores\". O Fable 5.2 já está disponível e fica 20% mais barato. O Mythos 5.2 começa só com organizações selecionadas.",
+     "ilustracao": "robo",
+     "legenda": "Fable 5.2 e Mythos 5.2 chegaram na segunda (9).",
+     "paragrafos": [
+       "Na segunda (9), a Anthropic lançou o Claude Fable 5.2 e o Claude Mythos 5.2. A empresa diz que eles evoluíram em programação, raciocínio e visão e escrevem de forma mais clara.",
+       "O Fable 5.2 responde 30% mais rápido, segundo a Anthropic. Uma versão ainda mais veloz custa o dobro. O Mythos 5.2 só chega a organizações selecionadas. Segundo a empresa, os modelos ajudaram a resolver dois problemas abertos da física de buracos negros. A METR, grupo que avalia modelos de IA, diz que modelos internos aceleram a Anthropic em cerca de 2 vezes."
+     ],
+     "quadros": [
+       {"titulo": "Quanto custa · API",
+        "tabela": {"colunas": ["US$ por 1 mi de tokens", "Entrada", "Saída"],
+                   "linhas": [["Fable 5.1", "10", "50"], ["Fable 5.2", "8", "40"]]}},
+       {"titulo": "Token, o que é?", "texto": "É um pedacinho de texto, algo como uma sílaba. Modelos de IA cobram por milhão deles."}
+     ],
+     "refs": [
+       {"rotulo": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2"},
+       {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"},
+       {"rotulo": "Simon Willison", "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Chip novo, bug e memória cara", "ilustracao": "chip", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Google", "texto": "Lançou os TPUs 8tx, para inferência segura e confidencial, e 8i Max, para contextos enormes.", "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"},
+       {"rotulo": "AMD", "texto": "Investiga utilitário de drivers Radeon que grava até 5 MB/s no SSD, mesmo parado.", "url": "https://www.tomshardware.com/pc-components/gpu-drivers/amd-adrenalin-bug-could-be-writing-data-continuously-wearing-out-ssds-radeon-owner-claims-external-events-utility-used-up-1-percent-of-ssd-health-every-month-for-over-a-year"},
+       {"rotulo": "Nvidia", "texto": "Teria mandado nuvens parceiras destinar ao menos 51% do serviço a clientes fora da China, segundo o Financial Times. A Nvidia não confirmou.", "url": "https://www.tomshardware.com/tech-industry/policy/nvidia-cracks-down-on-overseas-cloud-ai-gpu-rentals-for-china-partners-face-51-percent-non-chinese-quota-as-black-market-b300-rack-prices-surge-to-usd2-8-million"},
+       {"rotulo": "Memória", "texto": "Memória reaproveitada de aparelhos velhos deve ir de 3–4% para 7–9% dos celulares em 2027, estima a TrendForce.", "url": "https://www.tomshardware.com/pc-components/dram/memory-shortage-spurs-smartphone-makers-to-melt-used-memory-off-old-devices-then-re-solder-it-onto-new-products-recycled-memory-to-keep-budget-phones-affordable-reballing-adoption-to-double-by-2027"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Anthropic · Bolsa", "texto": "Segue com o plano de abrir o capital, segundo o Wall Street Journal. A faixa de valor deve sair nesta semana, e as ações podem estrear na quinta ou sexta da semana que vem.", "url": "https://techcrunch.com/2026/11/09/anthropic-reportedly-plans-to-move-forward-with-ipo-plans/"},
+       {"rotulo": "Anthropic · Energia", "texto": "Fechou US$ 3,4 bilhões em geradores a gás de 1,7 GW, herdando pedidos da OnePWR à Caterpillar. A espera por esses equipamentos chega a seis anos.", "url": "https://www.tomshardware.com/tech-industry/data-centers/anthropic-skips-six-year-waitlist-with-massive-usd3-4-billion-gas-turbine-generator-deal-firm-takes-over-onepwrs-orders-secures-1-7gw-of-capacity-to-power-ai-data-centers"},
+       {"rotulo": "Meta", "texto": "Lançou o Muse Ember, seu modelo mais leve e barato, a US$ 0,10 por milhão de tokens de entrada. Foi feito para o trabalho repetitivo de agentes.", "url": "https://techcrunch.com/2026/11/09/meta-releases-muse-ember-a-new-lightweight-model-for-agent-execution/"},
+       {"rotulo": "Nvidia", "texto": "As ações caíram mais de 4% na segunda (9). Um escritório de advocacia abriu ação coletiva, e o Congresso americano convidou Jensen Huang para uma sessão fechada.", "url": "https://techcrunch.com/2026/11/09/the-race-is-on-to-sue-nvidia/"},
+       {"rotulo": "Nvidia · Congresso", "texto": "Três comitês da Câmara pediram que Huang explique a segurança da empresa contra espionagem.", "url": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-ceo-jensen-huang-summoned-to-congressional-committee-over-affair-with-alleged-chinese-spy-says-recent-reports-raise-concerns-over-security-protocols-and-ties-to-chinese-intelligence"},
+       {"rotulo": "Apple", "texto": "Começou a vender \"pacotes de uso\" de IA por US$ 49,99, pagos uma vez. Estreou no Logic Pro, para quem bate o limite mensal.", "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin espera a inflação dos EUA",
+     "notas": [
+       {"rotulo": "Inflação", "texto": "O mercado olha o dado de inflação dos EUA, o CPI. Analistas avisam que um alívio pode não bastar.", "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-faces-u-s-cpi-test-as-analysts-warn-inflation-relief-may-not-be-enough"},
+       {"rotulo": "MARA", "texto": "A mineradora vendeu 13.597 bitcoins por US$ 1,1 bilhão em seis semanas e planeja vender mais.", "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-miner-mara-sold-13-597-btc-for-usd1-1-billion-in-six-weeks-plans-to-sell-more"},
+       {"rotulo": "Coinbase", "texto": "Recebeu licença federal plena de banco fiduciário nos EUA.", "url": "https://www.coindesk.com/policy/2026/11/09/coinbase-gets-full-u-s-trust-charter-from-federal-banking-regulator"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Centelha", "onde": "TabNews", "texto": "Defende medir a espera por Git e CI antes de trocar o modelo de IA.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/Centelha/antes-de-trocar-o-modelo-de-ia-meca-a-espera-por-git-e-ci"}]},
+       {"nome": "EllieWang", "onde": "TabNews", "texto": "Propõe tratar a reescrita de documentação com IA como uma refatoração.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/EllieWang/parafrasear-documentacao-com-ia-trate-a-reescrita-como-uma-refatoracao"}]},
+       {"nome": "brunozilio", "onde": "TabNews", "texto": "Lançou o Superfik, um canvas nativo e de código aberto para trabalhar com agentes de IA.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/brunozilio/lancei-o-superfik-um-canvas-nativo-e-open-source-para-trabalhar-com-agentes-de-ia"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Prompting Claude Fable 5.2: diga ao modelo que o código é dele", "onde": "Simon Willison · técnico", "url": "https://simonwillison.net/2026/Nov/10/prompting-claude-fable-52/"},
+       {"titulo": "Tudo o que sabemos do escândalo de espionagem na Nvidia", "onde": "The Verge · explicação", "url": "https://www.theverge.com/ai-artificial-intelligence/1030422/nvidia-jensen-huang-ai-china-alice-huang"},
+       {"titulo": "Uma paródia de Sam Altman dá lição de gestão de memória", "onde": "Ars Technica · humor", "url": "https://arstechnica.com/gadgets/2026/11/a-sam-altman-parody-offers-an-amusing-lesson-in-memory-management/"},
+       {"titulo": "Is Linux cooked? OpenAI's agent swarm just found 948 root exploits", "onde": "Fireship · vídeo", "url": "https://www.youtube.com/watch?v=pf5tXJZM1Rw"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedacinho de texto, como uma sílaba, que os modelos de IA leem e cobram."},
+    {"termo": "API", "categoria": "Software", "definicao": "Porta pela qual um programa usa outro. É assim que empresas ligam seus sistemas a um modelo de IA."},
+    {"termo": "TPU", "categoria": "Hardware", "definicao": "Chip da Google feito para rodar e treinar modelos de IA."},
+    {"termo": "Inferência", "categoria": "IA", "definicao": "A hora em que o modelo já treinado responde a uma pergunta."},
+    {"termo": "IPO", "categoria": "Mercado", "definicao": "Estreia de uma empresa na bolsa, quando ela vende ações ao público pela primeira vez."},
+    {"termo": "CPI", "categoria": "Cripto", "definicao": "Índice de preços ao consumidor dos EUA, a medida oficial de inflação que mexe com o mercado."},
+    {"termo": "SSD", "categoria": "Hardware", "definicao": "Disco de memória flash do computador. Cada gravação o desgasta um pouco."},
+    {"termo": "Segredo", "categoria": "Segurança", "definicao": "Senha, chave de API ou outro dado que dá acesso a um sistema e não pode ficar público."}
+  ]
+}
