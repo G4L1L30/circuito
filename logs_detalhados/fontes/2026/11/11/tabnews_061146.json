@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261111T061144-12da10b3",
+  "execucao": "2026-11-11T06:11:46-03:00",
+  "robo": "circuito_diario",
+  "fonte": "tabnews",
+  "nome": "TabNews",
+  "tipo": "tabnews",
+  "url": "https://www.tabnews.com.br/api/v1/contents?page=1&per_page=30&strategy=relevant",
+  "status": "ok",
+  "itens_lidos": 25,
+  "itens_na_janela": 8,
+  "erro": null,
+  "duracao_ms": 613
+}

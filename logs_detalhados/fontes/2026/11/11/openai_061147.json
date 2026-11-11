@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261111T061144-12da10b3",
+  "execucao": "2026-11-11T06:11:47-03:00",
+  "robo": "circuito_diario",
+  "fonte": "openai",
+  "nome": "OpenAI",
+  "tipo": "rss",
+  "url": "https://openai.com/news/rss.xml",
+  "status": "ok",
+  "itens_lidos": 25,
+  "itens_na_janela": 3,
+  "erro": null,
+  "duracao_ms": 728
+}

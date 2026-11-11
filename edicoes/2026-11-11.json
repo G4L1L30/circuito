@@ -1,0 +1,126 @@
+{
+  "capa": {
+    "manchete": "Gemini 4 Carbon",
+    "subtitulo": "O modelo mais forte da Google sai do clube fechado e chega a todo mundo.",
+    "elemento": {"numero": "6", "simbolo": "C", "nome": "Carbono", "detalhe": "12,011"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "Grok Build expõe dados de 35 mil apps"},
+      {"rotulo": "Bolsa", "texto": "Anthropic põe preço na ação: US$ 70 a 78"},
+      {"rotulo": "Nvidia", "texto": "Ação cai 5,47% e FBI entra no caso"},
+      {"rotulo": "Cripto", "texto": "Inflação americana derruba o bitcoin"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Carbono na capa, vazamento na página 3",
+    "paragrafos": [
+      "Quarta (11) com troca de guarda. Um dia depois do Fable 5.2, a Google respondeu: o Gemini 4 Carbon, antes restrito a times de defesa digital, agora está aberto.",
+      "Tem também link \"secreto\" que não era secreto, a Anthropic a caminho da Nasdaq e a novela da Nvidia, que ganhou o FBI no elenco. Bom café."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Vazamento",
+     "titulo": "O link \"secreto\" do Grok que qualquer um acha",
+     "ilustracao": "lupa",
+     "paragrafos": [
+       "O Grok Build, agente de programação da SpaceXSI, deixa o usuário compartilhar seus apps por link com palavras sorteadas. Só que elas ficam à esquerda do domínio grok.me, e serviços públicos de DNS registram esses endereços.",
+       "A empresa de segurança Claroc achou 43.601 links. Mais de 35 mil abriam o app com todos os dados: planos de negócio, exames médicos, listas de funcionários. Entre eles, 24 apps da própria SpaceXSI, que saíram do ar depois de a Ars Technica procurar a empresa."
+     ],
+     "quadro": {"titulo": "DNS, o que é?", "texto": "É a lista telefônica da internet: traduz nomes de sites em endereços de máquinas. Parte dessas consultas fica em bancos de dados públicos."},
+     "refs": [{"rotulo": "Ars Technica", "url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"}]},
+
+    {"tipo": "materia", "secao": "Google", "assunto": "Inteligência artificial",
+     "titulo": "Google libera o Carbon para todo mundo",
+     "olho": "Duas semanas depois de estrear só para equipes de defesa digital, o Gemini 4 Carbon chega a desenvolvedores, empresas e assinantes. Vem com preço de lançamento e um recurso que monta times de agentes.",
+     "ilustracao": "robo",
+     "legenda": "O Carbon abriu as portas na terça (10).",
+     "paragrafos": [
+       "Na terça (10), a Google abriu o Gemini 4 Carbon ao público. Segundo a empresa, é seu modelo mais forte, com desempenho de ponta em cibersegurança e em tarefas longas de programação e ciência. Ele gasta mais tokens que o Argon para explorar, raciocinar e conferir o próprio trabalho.",
+       "O Argon segue como a escolha para o dia a dia, diz a Google. O Carbon chega pela API a quem paga e aos assinantes do Google AI Ultra no app Gemini, no Antigravity e no Modo IA da busca. A empresa afirma que ele lidera três testes independentes com custo por tarefa mais de duas vezes menor que o do rival mais próximo."
+     ],
+     "quadros": [
+       {"titulo": "Quanto custa · API",
+        "tabela": {"colunas": ["US$ por 1 mi de tokens", "Entrada", "Saída"],
+                   "linhas": [["Lançamento", "2,00", "10,00"], ["A partir de 1º/dez", "4,00", "20,00"]]}},
+       {"titulo": "O tal do /swarm", "texto": "É uma prévia no Antigravity, o editor de código da Google. Um pedido vira um time de agentes: o Carbon planeja e audita, modelos mais leves executam em paralelo e verificadores testam cada mudança."}
+     ],
+     "refs": [
+       {"rotulo": "Google DeepMind", "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/"},
+       {"rotulo": "Simon Willison", "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/"},
+       {"rotulo": "Tecnoblog", "url": "https://tecnoblog.net/noticias/google-libera-gemini-4-carbon-ao-publico-com-recurso-para-equipes-de-agentes-de-ia/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Mil threads e um HD exigente", "ilustracao": "chip", "estilo": "lista",
+     "notas": [
+       {"rotulo": "AMD", "texto": "Os EPYC Venice estreiam a arquitetura Zen 6. No teste do Tom's Hardware, um servidor com dois EPYC 9996 e 1.024 threads ficou 93% à frente da geração anterior.",
+        "url": "https://www.tomshardware.com/pc-components/cpus/amd-zen-6-epyc-venice-deep-dive-and-benchmarking-dual-epyc-9996-with-1-024-threads-delivers-up-to-93-percent-performance-gain-gen-on-gen-9686f-outclasses-nvidias-vera"},
+       {"rotulo": "Seagate", "texto": "O FireCuda Forge é um HD externo de 8 ou 20 TB que só funciona depois que você instala o seu próprio SSD.",
+        "url": "https://www.tomshardware.com/pc-components/external-ssds/seagate-resurrects-hybrid-storage-hands-on-with-the-firecuda-forge-8-or-20tb-external-hard-drive-requires-you-to-bring-your-own-nvme-ssd"},
+       {"rotulo": "Rapidus", "texto": "A japonesa ainda não produziu memória SRAM funcional, etapa da meta de fabricar chips de 2 nm em março de 2028, segundo a Bloomberg.",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-10/japan-s-rapidus-is-said-likely-to-miss-mass-production-deadline"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs",
+     "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Anthropic · Bolsa", "texto": "Começou a apresentar sua abertura de capital a investidores. São 825 milhões de ações, entre US$ 70 e US$ 78 cada, com estreia pedida na Nasdaq sob o código ANT.",
+        "url": "https://www.anthropic.com/news/roadshow-launch"},
+       {"rotulo": "Anthropic · Reunião", "texto": "Lançou o Claude Meetings: o Claude entra na videochamada como participante visível e já rascunha planos e tarefas. Sai em beta nos planos Team e Enterprise, no Google Meet.",
+        "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"},
+       {"rotulo": "Nvidia", "texto": "As ações caíram mais 5,47% na terça (10). Donald Trump disse que o FBI investiga o caso de Jensen Huang com uma suposta espiã chinesa.",
+        "url": "https://www.tomshardware.com/tech-industry/policy/president-trump-says-the-fbi-is-investigating-jensen-huangs-affair-nvidia-also-accused-of-intervening-in-megaspeed-chip-smuggling-investigation"},
+       {"rotulo": "Nvidia · China", "texto": "Uma universidade chinesa ligada ao exército comprou chips H200 em outubro, mesmo estando na lista negra de exportação dos EUA, segundo a Reuters.",
+        "url": "https://www.reuters.com/world/pla-linked-chinese-university-bought-nvidia-h200-chips-despite-us-blacklist-2026-11-11/"},
+       {"rotulo": "OpenAI", "texto": "Abriu em beta o Business Hub: empresas criam perfil verificado no ChatGPT e veem quantas vezes foram citadas, vistas e clicadas.",
+        "url": "https://techcrunch.com/2026/11/10/openai-rolls-out-new-business-profiles-making-chatgpt-just-a-little-bit-more-like-google/"},
+       {"rotulo": "Nova York", "texto": "Abriu o cadastro da lei RAISE. Grandes laboratórios de IA têm de se registrar até 1º de janeiro e avisar incidentes graves em 72 horas. A multa chega a US$ 1 milhão.",
+        "url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Inflação sobe, bitcoin desce",
+     "notas": [
+       {"rotulo": "Inflação", "texto": "O CPI dos EUA subiu 0,4% em outubro, acima do esperado. O núcleo subiu 0,3%.",
+        "url": "https://www.coindesk.com/markets/2026/11/10/u-s-cpi-rose-stronger-than-expected-0-4-in-october-core-rate-rose-0-3"},
+       {"rotulo": "Bitcoin", "texto": "Depois do dado, foi ao menor nível em quase três meses.",
+        "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"},
+       {"rotulo": "ETF", "texto": "O fundo de bitcoin da BlackRock somou US$ 1,65 bilhão em saídas em sete dias seguidos.",
+        "url": "https://livecoins.com.br/etf-de-bitcoin-da-blackrock-processa-vendas-de-us-165-bilhao-em-sete-dias-consecutivos-de-saidas/"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "jarbasgouveia", "onde": "TabNews", "texto": "Avisa: pedir para o modelo não usar o seu e-mail não é controle.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/jarbasgouveia/pedir-pro-modelo-nao-usar-seu-e-mail-nao-e-controle"}]},
+       {"nome": "PaiVelmoxia", "onde": "TabNews", "texto": "Conta como fez um filme de 8 minutos renderizado só com código Python e IA, sem editor de vídeo.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/PaiVelmoxia/fiz-um-filme-de-8-minutos-renderizado-so-com-codigo-python-e-ia-sem-editor-de-video"}]},
+       {"nome": "anderslee", "onde": "TabNews", "texto": "Gerou papel milimetrado em PDF na escala exata: 469 linhas, 15 KB e nenhum pixel.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/anderslee/papel-milimetrado-em-pdf-na-escala-exata-469-linhas-15-kb-e-nenhum-pixel"}]},
+       {"nome": "Lucas Montano", "onde": "YouTube", "texto": "Vídeo novo: \"A Febre das Novas Vagas de IA\".",
+        "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=SKQR-H_EkqQ"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "O que acontece com a matemática quando a IA vira oráculo?", "onde": "Ars Technica · entrevista",
+        "url": "https://arstechnica.com/science/2026/11/what-happens-to-mathematics-when-ai-becames-an-oracle/"},
+       {"titulo": "O caso de Jensen Huang, passo a passo", "onde": "TechCrunch · linha do tempo",
+        "url": "https://techcrunch.com/2026/11/10/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"},
+       {"titulo": "IA local: Mac Studio com M5 Ultra contra o Nvidia DGX Spark", "onde": "Tom's Hardware · teste",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/going-deep-on-local-ai-performance-with-apples-mac-studio-with-m5-ultra-inference-engine-recipes-mandatory-for-bigger-models-as-mlx-stack-matures"},
+       {"titulo": "Linus Torvalds: correções feitas por IA puxaram o avanço do kernel do Linux", "onde": "Tom's Hardware · software",
+        "url": "https://www.tomshardware.com/software/linux/linus-torvalds-says-that-ai-fixes-drove-most-of-the-progress-in-latest-linux-kernel-bpf-saw-more-ai-written-fixes-than-bug-reports-possibly-indicating-a-tidal-shift-for-open-source-maintainers-tired-of-flood-of-junk-reports"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Agente", "categoria": "IA", "definicao": "Modelo de IA que executa tarefas em várias etapas sozinho, usando ferramentas, em vez de só responder."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedacinho de texto, como uma sílaba, que os modelos de IA leem e cobram."},
+    {"termo": "API", "categoria": "Software", "definicao": "Porta pela qual um programa usa outro. É assim que empresas ligam seus sistemas a um modelo de IA."},
+    {"termo": "DNS", "categoria": "Internet", "definicao": "A lista telefônica da internet: traduz o nome de um site no endereço da máquina que o hospeda."},
+    {"termo": "Thread", "categoria": "Hardware", "definicao": "Fila de tarefas que um processador toca ao mesmo tempo. Mais threads, mais trabalho em paralelo."},
+    {"termo": "SRAM", "categoria": "Hardware", "definicao": "Memória rápida que fica dentro do chip. Fabricá-la é um teste clássico de um processo novo."},
+    {"termo": "2 nm", "categoria": "Hardware", "definicao": "Nome da geração mais avançada de fabricação de chips. Quanto menor o número, mais transistores cabem."},
+    {"termo": "IPO", "categoria": "Mercado", "definicao": "Estreia de uma empresa na bolsa, quando ela vende ações ao público pela primeira vez."},
+    {"termo": "CPI", "categoria": "Cripto", "definicao": "Índice de preços ao consumidor dos EUA, a medida oficial de inflação que mexe com o mercado."},
+    {"termo": "ETF", "categoria": "Cripto", "definicao": "Fundo negociado na bolsa como uma ação. O de bitcoin acompanha o preço da moeda."}
+  ]
+}

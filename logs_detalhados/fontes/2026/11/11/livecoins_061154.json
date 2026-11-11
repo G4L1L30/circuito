@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261111T061144-12da10b3",
+  "execucao": "2026-11-11T06:11:54-03:00",
+  "robo": "circuito_diario",
+  "fonte": "livecoins",
+  "nome": "Livecoins",
+  "tipo": "rss",
+  "url": "https://livecoins.com.br/feed/",
+  "status": "ok",
+  "itens_lidos": 10,
+  "itens_na_janela": 9,
+  "erro": null,
+  "duracao_ms": 749
+}
