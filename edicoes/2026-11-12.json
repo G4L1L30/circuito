@@ -1,0 +1,104 @@
+{
+  "capa": {
+    "manchete": "Nvidia sem Jensen?",
+    "subtitulo": "Conselho prepara a saída do fundador depois de um segundo caso extraconjugal. A ação despenca.",
+    "elemento": {"numero": "33", "simbolo": "Nv", "nome": "Nvidia", "detalhe": "33 anos"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "IA da Google prova a matemática do Signal"},
+      {"rotulo": "OpenAI", "texto": "Receita passa de US$ 10 bi num trimestre"},
+      {"rotulo": "Memória", "texto": "AMD roda servidor com metade da DRAM"},
+      {"rotulo": "Cripto", "texto": "MSCI vai tirar a Strategy do índice"}
+    ]
+  },
+  "editorial": {
+    "titulo": "O dia em que a Nvidia tremeu",
+    "paragrafos": [
+      "Quinta (12) com uma pergunta que ninguém fazia havia 33 anos: quem manda na Nvidia? O conselho prepara a saída de Jensen Huang, e o mercado já faz as contas.",
+      "Tem também a IA da Google conferindo a matemática do Signal, a OpenAI acima de US$ 10 bilhões num trimestre e um truque da AMD contra a falta de memória. Bom café."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Prova dos nove",
+     "titulo": "A IA da Google conferiu a matemática do Signal", "ilustracao": "cofre",
+     "paragrafos": [
+       "Pesquisadores da Google DeepMind usaram agentes de IA para provar matematicamente garantias centrais do protocolo do Signal, a criptografia que também protege o WhatsApp e o Google Mensagens. A técnica se chama verificação formal. O trabalho levou só quatro semanas, com uma ferramenta nova, a AlphaProof Code.",
+       "Nenhuma falha nova apareceu. Testada em versões antigas, com brechas já corrigidas, a IA achou os problemas. O app inteiro não foi verificado, e a Google não diz quanto custou."
+     ],
+     "quadro": {"titulo": "Gente no meio do caminho", "texto": "A DeepMind diz que não quer a IA criando sozinha as metas e as provas. Pessoas revisam as etapas mais importantes do processo."},
+     "refs": [{"rotulo": "Ars Technica", "url": "https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/"}]},
+
+    {"tipo": "materia", "secao": "Nvidia", "assunto": "Placas de vídeo",
+     "titulo": "Nvidia prepara a saída de Jensen Huang",
+     "olho": "Dias depois de admitir um caso com uma suposta espiã chinesa, o fundador e único CEO em 33 anos vê o conselho discutir sua demissão. A ação despencou.",
+     "ilustracao": "gpu", "legenda": "Ninguém além de Jensen comandou a Nvidia em 33 anos.",
+     "paragrafos": [
+       "O conselho da Nvidia se prepara para tirar Jensen Huang do comando, segundo o Wall Street Journal. O gatilho foi uma reportagem do New York Times sobre um segundo caso extraconjugal, desta vez com uma vice-presidente da empresa que respondia direto a ele. Ainda não há decisão final.",
+       "No domingo (8), Jensen admitiu o caso com uma executiva da Megaspeed, cliente de Singapura. A inteligência americana acredita que ela trabalha para a China, e o FBI investiga. O conselho, que nem presidente tem, contratou um ex-promotor federal. Parte dele prefere a diretora financeira, Colette Kress, como CEO interina, segundo o Semafor."
+     ],
+     "quadros": [
+       {"titulo": "A bolsa reage · quarta (11)",
+        "tabela": {"colunas": ["Ação", "No pregão", "Após o fechamento"],
+                   "linhas": [["Nvidia", "—", "−8,6%"], ["AMD", "+7,3%", "mais de +4%"], ["Broadcom", "+4%", "+2,4%"]]}},
+       {"titulo": "Na mira do Congresso", "texto": "Três presidentes de comissões da Câmara deram até o fim da quarta (11) para Jensen aceitar uma reunião fechada sobre espionagem. Sem resposta, pode vir uma intimação."},
+       {"titulo": "E a China?", "texto": "Empresas chinesas de IA correm para alugar chips da Nvidia fora do país, com medo de regras mais duras, segundo a Reuters."}
+     ],
+     "refs": [
+       {"rotulo": "Ars Technica", "url": "https://arstechnica.com/gadgets/2026/11/ceo-jensen-huangs-job-is-suddenly-on-the-line-at-nvidia/"},
+       {"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/pc-components/gpus/nvidias-board-reportedly-preparing-to-oust-ceo-jensen-huang-as-second-extra-marital-affair-emerges-stock-has-plunged-20-percent-since-scandals-began-huang-has-been-first-and-only-ceo-for-33-years"},
+       {"rotulo": "Semafor", "url": "https://www.semafor.com/article/11/11/2026/nvidia-board-preparing-to-oust-ceo-huang-wsj"},
+       {"rotulo": "Reuters", "url": "https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Meia memória, fôlego quase inteiro", "ilustracao": "memoria", "estilo": "lista",
+     "notas": [
+       {"rotulo": "AMD", "texto": "Com a tecnologia MEXT, roda servidores com metade da DRAM e 95% do desempenho em alguns programas. Uma IA prevê quais dados serão usados e os traz do SSD a tempo. Já são 145 servidores.", "url": "https://www.tomshardware.com/pc-components/cpus/amd-shares-how-it-can-retain-95-percent-of-server-performance-with-just-half-the-dram-sidestepping-memory-shortages-with-mext-tech-powers-over-100-servers-already-running-with-plans-to-expand-to-2-000-servers-in-2027"},
+       {"rotulo": "Fractile", "texto": "A britânica de chips de IA levantou US$ 720 milhões e promete entregar os primeiros chips no ano que vem.", "url": "https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/"},
+       {"rotulo": "ASRock", "texto": "Soltou firmware novo para as Radeon RX 7000, depois que o anterior deixou placas RX 7900 sem ligar. Não explicou o que mudou.", "url": "https://www.tomshardware.com/pc-components/gpus/asrock-attempts-to-correct-botched-radeon-rx-7000-firmware-release-with-new-version-revised-release-should-work-ok-but-company-provides-no-explanation-for-bricked-cards"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs", "estilo": "colunas",
+     "notas": [
+       {"rotulo": "OpenAI", "texto": "A receita trimestral passou de US$ 10 bilhões pela primeira vez, quase 50% acima do trimestre anterior, segundo a Bloomberg.", "url": "https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/"},
+       {"rotulo": "TSMC", "texto": "A fabricante de chips vai investir até US$ 500 milhões na OpenAI e outros US$ 500 milhões em ações da Anthropic, ao preço da estreia na bolsa, segundo a Reuters.", "url": "https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/"},
+       {"rotulo": "Google · API", "texto": "Lançou o Gemini Decision 1, modelo que responde sim ou não, escolhe entre opções ou dá nota. Custa 10 centavos de dólar por milhão de tokens de entrada, e a saída é grátis.", "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/"},
+       {"rotulo": "Google DeepMind", "texto": "O AlphaGenome 2 prevê como mudanças no DNA afetam cada tipo de célula humana, uma pista para entender doenças.", "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"},
+       {"rotulo": "xAI", "texto": "Cada vez mais jovens que tiveram fotos sexualizadas com o Grok tentam responsabilizar a empresa na Justiça, segundo a Bloomberg.", "url": "https://www.bloomberg.com/features/2026-grok-sexualized-childhood-photos/"},
+       {"rotulo": "United", "texto": "A companhia aérea não vai deixar assistentes de IA comprarem passagens, por privacidade e por regras do setor.", "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin empacado abaixo de US$ 74 mil",
+     "notas": [
+       {"rotulo": "Strategy", "texto": "O MSCI vai tirar a empresa do seu índice, o que pode frear a máquina de comprar bitcoin dela.", "url": "https://www.coindesk.com/markets/2026/11/12/msci-is-dropping-strategy-from-its-index-and-the-exclusion-could-hit-its-bitcoin-buying-machine"},
+       {"rotulo": "Bitcoin Core", "texto": "Revelou um bug que fazia milhares de nós confiarem em qualquer desconhecido na rede Tor.", "url": "https://www.coindesk.com/tech/2026/11/12/bitcoin-core-reveals-bug-that-made-thousands-of-nodes-trust-any-stranger-on-tor"},
+       {"rotulo": "ETF", "texto": "Os fundos de bitcoin somaram o quarto dia seguido de saídas.", "url": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "dooly6276", "onde": "TabNews", "texto": "Apresenta um hook que impede o agente de IA de rodar pkill -f 'cat' e fechar todos os apps do Mac.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/dooly6276/pitch-um-hook-que-impede-o-agente-de-rodar-pkill-f-cat-e-fechar-todos-os-apps-do-mac"}]},
+       {"nome": "nightnabbers", "onde": "TabNews", "texto": "Mostra o Night Nabbers, jogo 3D de guaxinins grátis no navegador, feito com three.js.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/nightnabbers/night-nabbers-jogo-3d-de-guaxinins-gratis-no-navegador-three-js-simulacao-deterministica-compartilhada"}]},
+       {"nome": "Lucas Montano", "onde": "YouTube", "texto": "Vídeo novo: \"GPT-6 Cyber: AI vs Hackers\".", "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=cM6_cD2IpIg"}]}
+     ],
+     "quadro": {"titulo": "Português no kernel", "texto": "Voluntários brasileiros traduzem partes da documentação do Linux 7.3, conta o Tecnoblog. O inglês segue obrigatório, mas a barreira do idioma diminui."}},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Quem poderia substituir Jensen Huang? Uma lista nada científica", "onde": "TechCrunch · bastidores", "url": "https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/"},
+       {"titulo": "Por que o data center que você teme pode nunca sair do papel", "onde": "TechCrunch · vídeo", "url": "https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/"},
+       {"titulo": "Um falso alarme de incêndio quase inundou o data center da Jane Street", "onde": "Blog · relato", "url": "https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/"},
+       {"titulo": "Falha de tensão para destravar a A100 de uma placa de mineração", "onde": "Blog · hardware", "url": "https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Verificação formal", "categoria": "Segurança", "definicao": "Usar matemática para provar que um programa faz exatamente o que promete, sem brechas."},
+    {"termo": "Criptografia", "categoria": "Segurança", "definicao": "Embaralhar mensagens de um jeito que só quem tem a chave consegue ler."},
+    {"termo": "CEO interino", "categoria": "Mercado", "definicao": "Executivo que assume o comando de forma provisória enquanto a empresa procura um chefe definitivo."},
+    {"termo": "DRAM", "categoria": "Hardware", "definicao": "A memória RAM do computador: rápida, mas apaga tudo quando a máquina desliga."},
+    {"termo": "SSD", "categoria": "Hardware", "definicao": "Disco feito de memória flash. Guarda dados sem energia e é bem mais lento que a RAM."},
+    {"termo": "Firmware", "categoria": "Hardware", "definicao": "Programa gravado dentro do aparelho que faz o hardware funcionar. Atualizar errado pode travar tudo."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedacinho de texto, como uma sílaba, que os modelos de IA leem e cobram."},
+    {"termo": "Tor", "categoria": "Internet", "definicao": "Rede que esconde quem está conversando com quem, passando os dados por vários computadores."},
+    {"termo": "ETF", "categoria": "Cripto", "definicao": "Fundo negociado na bolsa como uma ação. O de bitcoin acompanha o preço da moeda."}
+  ]
+}

@@ -1,0 +1,621 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Circuito nº 016 · 12/11/2026</title>
+<meta name="description" content="Nvidia sem Jensen?. Conselho prepara a saída do fundador depois de um segundo caso extraconjugal. A ação despenca.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Circuito">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://g4l1l30.github.io/circuito/edicoes/2026-11-12.html">
+<meta property="og:title" content="Circuito nº 016 · Nvidia sem Jensen?">
+<meta property="og:description" content="Conselho prepara a saída do fundador depois de um segundo caso extraconjugal. A ação despenca.">
+<meta property="og:image" content="https://g4l1l30.github.io/circuito/og-circuito.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Circuito: revista diária de tecnologia em 5 minutos, com um computador antigo na capa">
+<meta name="twitter:card" content="summary_large_image"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=VT323&display=swap">
+<style>
+:root{
+  /* Layout: páginas em formatinho (13,5 × 20,5 cm) sobre a mesa; capa e contracapa sozinhas, miolo em pares abertos como revista.
+     A página é papel impresso e não muda com o tema; só a mesa escurece no modo escuro. Impressão em duas cores + preto, tinta desbotada. */
+  --desk:#cdc6b6;
+  --desk-ink:#4b453c;
+  --paper:#ebe3cd;
+  --paper-shade:#ddd2b5;
+  --ink:#25211d;
+  --ink-soft:#5f574b;
+  --red:#a24a33;
+  --blue:#3f5a68;
+  --mustard:#b38f3e;
+  --spine:rgba(37,33,29,.30);
+  --drop:rgba(37,33,29,.30);
+  --f-display:'Alfa Slab One','Rockwell','Roboto Slab',Georgia,serif;
+  --f-label:'Oswald','Arial Narrow','Helvetica Neue Condensed',Impact,sans-serif;
+  --f-body:'PT Serif',Georgia,'Times New Roman',serif;
+  --f-data:'VT323','Courier New',monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --desk:#1c1a17; --desk-ink:#b8b09f; --drop:rgba(0,0,0,.6); color-scheme:dark }
+}
+:root[data-theme="dark"]{ --desk:#1c1a17; --desk-ink:#b8b09f; --drop:rgba(0,0,0,.6); color-scheme:dark }
+
+*,*::before,*::after{ box-sizing:border-box }
+html{ padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); background:var(--desk) }
+body{ margin:0; background:var(--desk); color:var(--desk-ink); font:14px/1.4 var(--f-body) }
+img,svg{ max-width:100% }
+
+.mesa{
+  display:flex; flex-direction:column; align-items:center; gap:44px;
+  padding-block:28px 72px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+}
+.mesa-topo{
+  width:100%; max-width:960px;
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 24px;
+  font:500 12px/1.4 var(--f-label); letter-spacing:.14em; text-transform:uppercase;
+  border-bottom:1px solid currentColor; padding-bottom:10px;
+}
+.mesa-topo strong{ font-weight:700 }
+.mesa-topo a{ color:inherit }
+.mesa-sobre{
+  width:100%; max-width:960px; margin:-30px 0 0;
+  font:italic 400 14px/1.45 var(--f-body); text-wrap:balance;
+}
+.faixa-teste{
+  width:100%; max-width:960px; text-align:center; padding:8px 12px;
+  font:700 12px/1.3 var(--f-label); letter-spacing:.2em; text-transform:uppercase;
+  border:2px dashed currentColor;
+}
+
+.spread{ display:grid; grid-template-columns:minmax(0,480px); justify-content:center; gap:44px; width:100% }
+@media (min-width:1010px){
+  .spread:not(.solo){ grid-template-columns:repeat(2, minmax(0,480px)); gap:0 }
+  /* as duas páginas abertas acompanham a mais alta, como numa revista de verdade */
+  .spread:not(.solo) .page{ align-self:stretch }
+  .spread:not(.solo) .page:first-child{ box-shadow:inset -26px 0 26px -22px var(--spine), -6px 16px 30px -14px var(--drop) }
+  .spread:not(.solo) .page:last-child{ box-shadow:inset 26px 0 26px -22px var(--spine), 6px 16px 30px -14px var(--drop) }
+}
+
+/* ---------- a página ---------- */
+.page{
+  position:relative; width:100%; aspect-ratio:135/205;
+  container-type:inline-size;
+  display:flex; flex-direction:column;
+  color:var(--ink);
+  background-color:var(--paper);
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .22 0 0 0 0 .17 0 0 0 0 .10 0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"),
+    radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(120,92,45,.13) 100%);
+  box-shadow:0 16px 30px -14px var(--drop);
+}
+.pg{ flex:1; display:flex; flex-direction:column; gap:2.3cqw; padding:5.6cqw 6.2cqw 4.2cqw }
+
+.runner{
+  display:flex; justify-content:space-between; gap:2cqw;
+  font:600 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.16em; text-transform:uppercase;
+  border-bottom:.4cqw solid var(--ink); padding-bottom:1.3cqw;
+}
+.folio{
+  margin-top:auto; display:flex; justify-content:space-between; align-items:baseline;
+  font:500 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft);
+  border-top:.22cqw solid var(--ink); padding-top:1.3cqw;
+}
+.folio b{ font:400 3.4cqw/1 var(--f-display); color:var(--ink); letter-spacing:0 }
+
+.tarja{
+  align-self:flex-start;
+  font:600 max(9.5px,2.35cqw)/1 var(--f-label); letter-spacing:.17em; text-transform:uppercase;
+  background:var(--ink); color:var(--paper); padding:1cqw 1.8cqw .9cqw;
+}
+.tarja.verm{ background:var(--red) }
+.titulo{ margin:0; font:400 7.8cqw/1.02 var(--f-display); letter-spacing:-.005em; text-wrap:balance }
+.titulo.g{ font-size:9cqw }
+.olho{
+  margin:0; font:italic 400 max(12px,3.35cqw)/1.36 var(--f-body);
+  border-left:.9cqw solid var(--red); padding-left:2.4cqw;
+}
+.txt{ display:flex; flex-direction:column; gap:1.4cqw }
+.txt p, .cols p{
+  margin:0; font-size:max(12px,2.95cqw); line-height:1.44;
+  text-align:justify; hyphens:auto; -webkit-hyphens:auto;
+}
+.capitular::first-letter{
+  float:left; font-family:var(--f-display); font-size:3.5em; line-height:.82;
+  padding:.06em .09em 0 0; color:var(--red);
+}
+.cols{ columns:2; column-gap:4.4cqw; column-rule:.22cqw solid var(--ink-soft) }
+.cols p{ margin-bottom:1.6cqw; text-align:left; break-inside:avoid }
+
+.nota-cab{
+  display:inline-block; margin-right:.5em;
+  font:700 max(10px,2.45cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; color:var(--red);
+}
+.ref{ display:flex; flex-wrap:wrap; gap:.6cqw 3cqw }
+.ref a, a.ref-link{
+  font:500 max(9.5px,2.2cqw)/1.35 var(--f-label); letter-spacing:.08em; text-transform:uppercase;
+  color:var(--blue); text-decoration:none; border-bottom:.22cqw dotted var(--blue);
+}
+a.ref-link{ margin-right:2.4cqw }
+a:hover{ color:var(--red); border-bottom-color:var(--red) }
+a:focus-visible{ outline:2px solid var(--red); outline-offset:2px }
+
+.quadro{ position:relative; border:.45cqw solid var(--ink); background:var(--paper-shade); padding:2.5cqw 3cqw 2.7cqw }
+.quadro::after{
+  content:""; position:absolute; inset:1.5cqw -1.6cqw -1.6cqw 1.5cqw; z-index:-1;
+  background-image:radial-gradient(var(--ink) 32%, transparent 35%); background-size:1.25cqw 1.25cqw;
+}
+.quadro h3{ margin:0 0 1.2cqw; font:700 max(10px,2.55cqw)/1 var(--f-label); letter-spacing:.15em; text-transform:uppercase; color:var(--red) }
+.quadro p{ margin:0; font-size:max(11.5px,2.75cqw); line-height:1.42; hyphens:auto; -webkit-hyphens:auto }
+.quadro p + p{ margin-top:1cqw }
+
+.legenda{ margin:0; font:italic 400 max(10.5px,2.4cqw)/1.35 var(--f-body); color:var(--ink-soft) }
+.arte{ display:block; width:100%; height:auto; max-width:100% }
+
+/* SVG */
+.f-ink{fill:var(--ink)} .f-paper{fill:var(--paper)} .f-shade{fill:var(--paper-shade)}
+.f-red{fill:var(--red)} .f-blue{fill:var(--blue)} .f-mus{fill:var(--mustard)} .f-none{fill:none}
+.s-ink{stroke:var(--ink)} .s-red{stroke:var(--red)} .s-mus{stroke:var(--mustard)} .s-paper{stroke:var(--paper)} .s-blue{stroke:var(--blue)}
+.t-slab{font-family:var(--f-display)} .t-label{font-family:var(--f-label); font-weight:600} .t-data{font-family:var(--f-data)}
+
+/* ---------- capa ---------- */
+.capa .pg{ gap:2.4cqw }
+.capa-faixa{ display:flex; justify-content:space-between; font:600 max(9px,2.2cqw)/1 var(--f-label); letter-spacing:.16em; text-transform:uppercase }
+.logo{
+  margin:0; font:400 15.6cqw/.9 var(--f-display); letter-spacing:-.015em; text-align:center;
+  color:var(--ink); text-shadow:.75cqw .75cqw 0 var(--red);
+  border-block:.5cqw solid var(--ink); padding-block:2cqw 1.4cqw;
+}
+.slogan{ margin:-.6cqw 0 0; text-align:center; font:500 max(9.5px,2.4cqw)/1 var(--f-label); letter-spacing:.3em; text-transform:uppercase }
+.capa-miolo{ display:grid; grid-template-columns:31cqw minmax(0,1fr); gap:2.8cqw; align-items:center }
+.chamadas{ display:flex; flex-direction:column; gap:2.2cqw }
+.chamada{ border-top:.35cqw solid var(--ink); padding-top:1.3cqw }
+.chamada span{ display:block; font:700 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-bottom:.8cqw }
+.chamada p{ margin:0; font:700 max(11px,2.8cqw)/1.22 var(--f-body) }
+.arte-capa{ position:relative }
+.selo{
+  position:absolute; right:-1cqw; top:-1cqw; width:17cqw; aspect-ratio:1; border-radius:50%;
+  display:grid; place-content:center; text-align:center; transform:rotate(12deg);
+  background:var(--mustard); color:var(--ink); border:.5cqw solid var(--ink);
+  box-shadow:0 0 0 .8cqw var(--paper), 0 0 0 1.1cqw var(--ink);
+  font:700 2cqw/1.05 var(--f-label); letter-spacing:.08em; text-transform:uppercase;
+}
+.selo b{ display:block; font:400 3.4cqw/1 var(--f-display); letter-spacing:0 }
+.manchete{ text-align:center; display:flex; flex-direction:column; gap:1.2cqw }
+.manchete h2{ margin:0; font:700 11.4cqw/.92 var(--f-label); letter-spacing:.01em; text-transform:uppercase; text-wrap:balance }
+.manchete p{ margin:0; font:italic 400 max(12px,3.6cqw)/1.25 var(--f-body); text-wrap:balance }
+.capa-pe{ margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; gap:3cqw }
+.capa-pe p{ margin:0; font:500 max(9px,2.2cqw)/1.35 var(--f-label); letter-spacing:.1em; text-transform:uppercase }
+.barras{ display:flex; flex-direction:column; align-items:center; gap:.6cqw; background:var(--paper); padding:1.2cqw 1.6cqw .8cqw; border:.25cqw solid var(--ink) }
+.barras i{
+  display:block; width:22cqw; height:8cqw;
+  background:repeating-linear-gradient(90deg, var(--ink) 0 .45cqw, transparent .45cqw .8cqw, var(--ink) .8cqw 1.5cqw, transparent 1.5cqw 1.75cqw, var(--ink) 1.75cqw 1.95cqw, transparent 1.95cqw 2.5cqw, var(--ink) 2.5cqw 2.7cqw, transparent 2.7cqw 3.3cqw);
+}
+.barras span{ font:400 2.6cqw/1 var(--f-data); letter-spacing:.2em }
+
+/* ---------- miolo ---------- */
+.sumario{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1.1cqw }
+.sumario li{ display:flex; align-items:baseline; gap:1.4cqw; font-size:max(11.5px,2.85cqw) }
+.sumario li::after{ content:""; order:2; flex:1; border-bottom:.3cqw dotted var(--ink-soft) }
+.sumario li span{ order:1 }
+.sumario li b{ order:3; font:400 3.6cqw/1 var(--f-display); color:var(--red); min-width:4cqw; text-align:right }
+.sumario em{ font-style:normal; font:600 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); margin-right:.5em }
+.expediente{ margin:0; font:400 max(13px,3cqw)/1.1 var(--f-data); color:var(--ink-soft); text-transform:uppercase }
+
+.tabela{ width:100%; border-collapse:collapse; font:400 max(14px,3.7cqw)/1.15 var(--f-data); font-variant-numeric:tabular-nums }
+.tabela th{ font:600 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; text-align:right; padding:0 0 1cqw; border-bottom:.3cqw solid var(--ink) }
+.tabela th:first-child, .tabela td:first-child{ text-align:left }
+.tabela td{ text-align:right; padding:.7cqw 0; border-bottom:.22cqw dashed var(--ink-soft) }
+.tabela td.sobe{ color:var(--blue) }
+.tabela td.desce{ color:var(--red) }
+.tabela tr:last-child td{ border-bottom:0 }
+
+.lado{ display:grid; grid-template-columns:42cqw minmax(0,1fr); gap:3.4cqw; align-items:center }
+.lado.inv{ grid-template-columns:minmax(0,1fr) 38cqw }
+.lado > div{ display:flex; flex-direction:column; gap:2cqw; min-width:0 }
+.notas{ display:flex; flex-direction:column; gap:1.5cqw }
+.notas p{ margin:0; font-size:max(12px,2.95cqw); line-height:1.42; hyphens:auto; -webkit-hyphens:auto; text-align:justify }
+
+.empresa{
+  display:inline-block; margin-right:.45em; padding:.4cqw 1cqw .3cqw;
+  font:700 max(9.5px,2.2cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase;
+  border:.3cqw solid var(--ink); background:var(--paper);
+}
+
+.vozes{ display:flex; flex-direction:column; gap:2.4cqw }
+.voz{ display:grid; grid-template-columns:11cqw minmax(0,1fr); gap:2.8cqw; align-items:start }
+.avatar{
+  width:11cqw; aspect-ratio:1; border-radius:50%; border:.4cqw solid var(--ink);
+  display:grid; place-items:center; font:400 3.8cqw/1 var(--f-display); color:var(--paper);
+  background-color:var(--blue);
+  background-image:radial-gradient(var(--ink) 30%, transparent 34%); background-size:1.3cqw 1.3cqw;
+  text-shadow:0 0 .6cqw var(--ink);
+}
+.avatar.c1{ background-color:var(--red) }
+.avatar.c2{ background-color:var(--mustard) }
+.voz h4{ margin:0 0 .6cqw; font:700 max(10px,2.5cqw)/1.1 var(--f-label); letter-spacing:.12em; text-transform:uppercase }
+.voz h4 small{ font-weight:500; color:var(--ink-soft); letter-spacing:.08em }
+.voz p{ margin:0 0 .8cqw; font-size:max(12px,2.9cqw); line-height:1.4 }
+
+.leituras{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2.2cqw }
+.leituras li{ display:grid; grid-template-columns:3cqw minmax(0,1fr); gap:2cqw }
+.leituras li::before{ content:""; width:2.2cqw; height:2.2cqw; margin-top:1cqw; background:var(--red) }
+.leituras a{ font:700 max(12px,3.05cqw)/1.25 var(--f-body); color:var(--ink); text-decoration:none; border-bottom:.25cqw dotted var(--ink-soft) }
+.leituras span{ display:block; margin-top:.5cqw; font:500 max(9px,2.15cqw)/1.3 var(--f-label); letter-spacing:.1em; text-transform:uppercase; color:var(--blue) }
+
+.perdeu{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2.4cqw }
+.perdeu li{ border-top:.3cqw solid var(--ink); padding-top:1.6cqw }
+.perdeu li span{ display:block; font:700 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-bottom:1cqw }
+.perdeu li p{ margin:0 0 .8cqw; font-size:max(12px,2.95cqw); line-height:1.42 }
+
+.glossario{ margin:0; display:flex; flex-direction:column; gap:2.2cqw }
+.glossario dt{ font:400 4.6cqw/1 var(--f-display); color:var(--ink) }
+.glossario dt small{ font:600 max(9px,2.1cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-left:1.2cqw }
+.glossario dd{ margin:.8cqw 0 0; font-size:max(12px,2.95cqw); line-height:1.42; border-left:.6cqw solid var(--mustard); padding-left:2.2cqw }
+
+.anuncio{ border:.6cqw double var(--ink); padding:2.8cqw; display:grid; grid-template-columns:minmax(0,1fr) 20cqw; gap:2.4cqw; align-items:center; background:var(--paper) }
+.anuncio h3{ margin:0 0 1cqw; font:700 5.4cqw/.95 var(--f-label); text-transform:uppercase; letter-spacing:.01em }
+.anuncio h3 em{ font-style:normal; color:var(--red) }
+.anuncio p{ margin:0; font-size:max(11.5px,2.75cqw); line-height:1.35 }
+.cupom{ grid-column:1 / -1; border:.35cqw dashed var(--ink); padding:2cqw 2.4cqw; font:400 max(13px,3.2cqw)/1.35 var(--f-data); position:relative }
+.cupom::before{ content:"✂"; position:absolute; top:-2.4cqw; left:3cqw; background:var(--paper); padding:0 1cqw; font-size:3.4cqw; line-height:1 }
+.anuncio.grande{ grid-template-columns:1fr; text-align:center; padding:4cqw }
+.anuncio.grande .arte{ width:46cqw; margin:0 auto }
+.anuncio.grande h3{ font-size:7.4cqw }
+.miudo{ margin:0; font:italic 400 max(10px,2.2cqw)/1.3 var(--f-body); color:var(--ink-soft) }
+
+/* ---------- arquivo de edições ---------- */
+.arquivo{ width:100%; max-width:720px; list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px }
+.arquivo li{ display:grid; grid-template-columns:auto minmax(0,1fr); gap:6px 18px; align-items:baseline; border-bottom:1px solid currentColor; padding-bottom:12px }
+.arquivo b{ font:400 22px/1 var(--f-display) }
+.arquivo a{ color:inherit; font:700 16px/1.3 var(--f-body) }
+.arquivo span{ grid-column:2; font:500 12px/1.3 var(--f-label); letter-spacing:.12em; text-transform:uppercase }
+
+</style>
+</head>
+<body>
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <pattern id="ht-ink" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="2" cy="2" r="1.05" class="f-ink"/></pattern>
+    <pattern id="ht-fino" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="2" cy="2" r=".62" class="f-ink"/></pattern>
+    <pattern id="ht-red" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(15)"><circle cx="2" cy="2" r="1.25" class="f-red"/></pattern>
+    <pattern id="ht-blue" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(75)"><circle cx="2.5" cy="2.5" r="1.45" class="f-blue"/></pattern>
+    <pattern id="hachura" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.3" height="4" class="f-ink"/></pattern>
+    <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" class="f-paper" opacity=".09"/></pattern>
+    <pattern id="teclas" width="12" height="9" patternUnits="userSpaceOnUse"><rect x="1.5" y="1.5" width="9" height="6" rx="1" class="f-ink" opacity=".8"/></pattern>
+    <pattern id="pinos" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="2" height="4" class="f-mus"/></pattern>
+    <pattern id="dentes" width="5" height="4" patternUnits="userSpaceOnUse"><rect x="3" width="1.4" height="4" class="f-ink" opacity=".55"/></pattern>
+    <pattern id="janelas" width="12" height="12" patternUnits="userSpaceOnUse"><rect x="2" y="2" width="7" height="7" class="f-ink" opacity=".85"/></pattern>
+  </defs>
+</svg>
+
+
+
+
+
+
+
+
+
+<main class="mesa">
+  <div class="mesa-topo">
+    <span><strong>Circuito</strong> · nº 016 · quinta-feira, 12 de novembro de 2026</span>
+    <span><a href="../arquivo.html">Edições anteriores</a></span>
+  </div>
+  <p class="mesa-sobre">Revista diária de tecnologia em 5 minutos · de segunda a sábado, às 7h · grátis. Cada nota tem o link para a matéria original.</p>
+  <section class="spread solo" aria-label="Capa">
+<article class="page capa" id="p1"><div class="pg">
+  <div class="capa-faixa"><span>Nº 016 · Ano I</span><span>Quinta, 12 de novembro de 2026</span></div>
+  <h1 class="logo">CIRCUITO</h1>
+  <p class="slogan">IA · Hardware · Big Techs · Cripto</p>
+  <div class="capa-miolo">
+    <div class="chamadas">
+<div class="chamada"><span>Segurança</span><p>IA da Google prova a matemática do Signal</p></div><div class="chamada"><span>OpenAI</span><p>Receita passa de US$ 10 bi num trimestre</p></div><div class="chamada"><span>Memória</span><p>AMD roda servidor com metade da DRAM</p></div><div class="chamada"><span>Cripto</span><p>MSCI vai tirar a Strategy do índice</p></div>    </div>
+    <div class="arte-capa">
+      <svg class="arte" viewBox="0 0 300 250" role="img" aria-label="Ilustração: computador antigo com o elemento do dia na tela, Nvidia">
+  <circle cx="150" cy="116" r="114" fill="url(#ht-blue)"/>
+  <g class="s-ink" stroke-width="2.5" stroke-linecap="round">
+    <line x1="14" y1="36" x2="38" y2="50"/><line x1="286" y1="36" x2="262" y2="50"/>
+    <line x1="6" y1="116" x2="32" y2="116"/><line x1="294" y1="116" x2="268" y2="116"/>
+  </g>
+  <rect x="61" y="28" width="186" height="160" rx="16" class="f-red" opacity=".9"/>
+  <rect x="55" y="22" width="186" height="160" rx="16" class="f-paper s-ink" stroke-width="3"/>
+  <rect x="72" y="38" width="152" height="114" rx="12" class="f-ink"/>
+  <rect x="72" y="38" width="152" height="114" rx="12" fill="url(#scan)"/>
+  <rect x="111" y="50" width="74" height="88" class="f-none s-mus" stroke-width="2.5"/>
+  <text x="117" y="65" class="t-data f-mus" font-size="14">33</text>
+  <text x="148" y="108" text-anchor="middle" class="t-slab f-paper" font-size="40">Nv</text>
+  <text x="148" y="122" text-anchor="middle" class="t-label f-mus" font-size="8.5" letter-spacing="1.6">NVIDIA</text>
+  <text x="148" y="133" text-anchor="middle" class="t-data f-paper" font-size="11">33 anos</text>
+  <rect x="82" y="140" width="8" height="5" class="f-mus"/>
+  <rect x="172" y="161" width="52" height="6" rx="1" class="f-ink"/>
+  <circle cx="82" cy="165" r="3.6" class="f-red"/>
+  <text x="92" y="168" class="t-label f-ink" font-size="7" letter-spacing="1.2">CIRCUITO 2026</text>
+  <path d="M122 182 L174 182 L184 198 L112 198 Z" class="f-shade s-ink" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M48 206 L252 206 L266 242 L34 242 Z" class="f-paper s-ink" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M57 211 L243 211 L254 237 L46 237 Z" fill="url(#teclas)"/>
+  <path d="M0,-9 L2.2,-2.2 L9,0 L2.2,2.2 L0,9 L-2.2,2.2 L-9,0 L-2.2,-2.2Z" class="f-mus s-ink" stroke-width="1.2" transform="translate(262 20)"/>
+  <path d="M0,-7 L1.8,-1.8 L7,0 L1.8,1.8 L0,7 L-1.8,1.8 L-7,0 L-1.8,-1.8Z" class="f-red" transform="translate(30 186)"/>
+</svg>
+      <div class="selo" aria-hidden="true"><b>R$ 0</b>seg a sáb<br>às 7h</div>
+    </div>
+  </div>
+  <div class="manchete"><h2>Nvidia sem Jensen?</h2><p>Conselho prepara a saída do fundador depois de um segundo caso extraconjugal. A ação despenca.</p></div>
+  <div class="capa-pe">
+    <p>Leitura de 5 minutos<br>Cada nota com o link para o estudo completo</p>
+    <div class="barras" aria-hidden="true"><i></i><span>2026·11·12</span></div>
+  </div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 2 e Página 3">
+<article class="page" id="p2"><div class="pg">
+  <div class="runner"><span>Circuito · Nº 016</span><span>Ao leitor</span></div>
+  <h2 class="titulo">O dia em que a Nvidia tremeu</h2>
+  <div class="txt"><p class="capitular">Quinta (12) com uma pergunta que ninguém fazia havia 33 anos: quem manda na Nvidia? O conselho prepara a saída de Jensen Huang, e o mercado já faz as contas.</p><p>Tem também a IA da Google conferindo a matemática do Signal, a OpenAI acima de US$ 10 bilhões num trimestre e um truque da AMD contra a falta de memória. Bom café.</p></div>
+  <div class="quadro">
+    <h3>Nesta edição</h3>
+    <ol class="sumario">
+<li><span><em>Bastidores</em>A IA da Google conferiu a matemática do Signal</span><b>3</b></li><li><span><em>Capa</em>Nvidia prepara a saída de Jensen Huang</span><b>4</b></li><li><span><em>Placas &amp; Memórias</em>Meia memória, fôlego quase inteiro</span><b>6</b></li><li><span><em>Giro das Big Techs</em>Giro das Big Techs</span><b>7</b></li><li><span><em>Cripto</em>Cofre Digital</span><b>8</b></li><li><span><em>Vozes</em>Da Comunidade</span><b>9</b></li><li><span><em>Fim</em>Pra ler com calma</span><b>12</b></li>    </ol>
+  </div>
+  <p class="expediente">Fechamento 12/11/2026 06h11 (Brasília)<br>Cobre de 11/11 às 06h11 a 12/11 às 06h11<br>Fontes: Ars Technica, Bloomberg, CoinDesk, Google DeepMind, Reuters, Semafor, Simon Willison, TabNews, TechCrunch, The Verge e outras</p>
+  <div class="folio"><b>2</b><span>Ao leitor</span></div>
+</div></article>
+
+<article class="page" id="p3"><div class="pg">
+  <div class="runner"><span>Bastidores</span><span>Segurança</span></div>
+<span class="tarja verm">Prova dos nove</span>  <h2 class="titulo">A IA da Google conferiu a matemática do Signal</h2>
+<svg class="arte" viewBox="0 0 300 170" role="img" aria-label="Ilustração: cofre antigo com segredo de girar e uma moeda ao lado">
+  <rect x="0" y="158" width="300" height="12" fill="url(#ht-fino)"/>
+  <line x1="0" y1="158" x2="300" y2="158" class="s-ink" stroke-width="2.5"/>
+  <rect x="86" y="22" width="128" height="132" rx="8" class="f-red" opacity=".9"/>
+  <rect x="80" y="16" width="128" height="132" rx="8" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="92" y="28" width="104" height="108" rx="4" fill="url(#ht-fino)" opacity=".6"/>
+  <rect x="92" y="28" width="104" height="108" rx="4" class="f-none s-ink" stroke-width="2"/>
+  <circle cx="144" cy="72" r="24" class="f-paper s-ink" stroke-width="3"/>
+  <circle cx="144" cy="72" r="18" class="f-none s-ink" stroke-width="2" stroke-dasharray="2 4"/>
+  <line x1="144" y1="72" x2="144" y2="54" class="s-red" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="144" cy="72" r="6" class="f-ink"/>
+  <rect x="170" y="102" width="9" height="26" rx="3" class="f-ink"/>
+  <rect x="92" y="148" width="18" height="9" class="f-ink"/>
+  <rect x="178" y="148" width="18" height="9" class="f-ink"/>
+  <circle cx="248" cy="120" r="30" class="f-mus s-ink" stroke-width="3"/>
+  <circle cx="248" cy="120" r="23" class="f-none s-ink" stroke-width="1.5"/>
+  <text x="248" y="131" text-anchor="middle" class="t-slab f-ink" font-size="30">B</text>
+  <g class="s-ink" stroke-width="2.5">
+    <line x1="244" y1="100" x2="244" y2="107"/><line x1="252" y1="100" x2="252" y2="107"/>
+    <line x1="244" y1="130" x2="244" y2="137"/><line x1="252" y1="130" x2="252" y2="137"/>
+  </g>
+  <circle cx="42" cy="138" r="18" class="f-mus s-ink" stroke-width="2.5"/>
+  <text x="42" y="145" text-anchor="middle" class="t-slab f-ink" font-size="19">$</text>
+</svg>
+  <div class="txt"><p class="capitular">Pesquisadores da Google DeepMind usaram agentes de IA para provar matematicamente garantias centrais do protocolo do Signal, a criptografia que também protege o WhatsApp e o Google Mensagens. A técnica se chama verificação formal. O trabalho levou só quatro semanas, com uma ferramenta nova, a AlphaProof Code.</p><p>Nenhuma falha nova apareceu. Testada em versões antigas, com brechas já corrigidas, a IA achou os problemas. O app inteiro não foi verificado, e a Google não diz quanto custou.</p></div>
+<div class="quadro">
+  <h3>Gente no meio do caminho</h3>
+<p>A DeepMind diz que não quer a IA criando sozinha as metas e as provas. Pessoas revisam as etapas mais importantes do processo.</p></div>  <div class="ref"><a href="https://arstechnica.com/ai/2026/11/signals-encryption-just-passed-an-ai-powered-mathematical-checkup/">→ Ars Technica</a></div>
+  <div class="folio"><span>Bastidores</span><b>3</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 4 e Página 5">
+<article class="page" id="p4"><div class="pg">
+  <div class="runner"><span>Matéria de capa</span><span>Placas de vídeo</span></div>
+  <svg class="arte" viewBox="0 0 300 130" role="img" aria-label="Ilustração: placa de vídeo com duas ventoinhas">
+  <rect x="31" y="27" width="252" height="80" rx="6" class="f-red" opacity=".85"/>
+  <rect x="6" y="14" width="14" height="98" class="f-shade s-ink" stroke-width="2.5"/>
+  <rect x="26" y="22" width="252" height="80" rx="6" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="26" y="22" width="252" height="80" rx="6" fill="url(#ht-fino)" opacity=".7"/>
+  <g transform="translate(96 62)">
+    <circle r="33" class="f-ink"/>
+    <g class="f-paper">
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(72)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(144)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(216)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(288)"/>
+    </g>
+    <circle r="7" class="f-mus s-ink" stroke-width="2"/>
+  </g>
+  <g transform="translate(206 62) rotate(30)">
+    <circle r="33" class="f-ink"/>
+    <g class="f-paper">
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(72)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(144)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(216)"/>
+      <path d="M0 -6 C 10 -16, 24 -12, 28 -2 C 17 -5, 8 -2, 0 0 Z" transform="rotate(288)"/>
+    </g>
+    <circle r="7" class="f-mus s-ink" stroke-width="2"/>
+  </g>
+  <rect x="72" y="102" width="118" height="12" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="74" y="104" width="114" height="8" fill="url(#dentes)"/>
+</svg>
+
+<p class="legenda">Ninguém além de Jensen comandou a Nvidia em 33 anos.</p>  <span class="tarja">Capa · Nvidia</span>
+  <h2 class="titulo g">Nvidia prepara a saída de Jensen Huang</h2>
+  <p class="olho">Dias depois de admitir um caso com uma suposta espiã chinesa, o fundador e único CEO em 33 anos vê o conselho discutir sua demissão. A ação despencou.</p>
+  <div class="txt"><p class="capitular">O conselho da Nvidia se prepara para tirar Jensen Huang do comando, segundo o Wall Street Journal. O gatilho foi uma reportagem do New York Times sobre um segundo caso extraconjugal, desta vez com uma vice-presidente da empresa que respondia direto a ele. Ainda não há decisão final.</p></div>
+  <div class="folio"><b>4</b><span>Matéria de capa</span></div>
+</div></article>
+
+<article class="page" id="p5"><div class="pg">
+  <div class="runner"><span>Nvidia prepara a saída de Jensen Huang</span><span>Continuação</span></div>
+  <div class="txt"><p>No domingo (8), Jensen admitiu o caso com uma executiva da Megaspeed, cliente de Singapura. A inteligência americana acredita que ela trabalha para a China, e o FBI investiga. O conselho, que nem presidente tem, contratou um ex-promotor federal. Parte dele prefere a diretora financeira, Colette Kress, como CEO interina, segundo o Semafor.</p></div>
+<div class="quadro">
+  <h3>A bolsa reage · quarta (11)</h3>
+  <table class="tabela">
+    <thead><tr><th scope="col">Ação</th><th scope="col">No pregão</th><th scope="col">Após o fechamento</th></tr></thead>
+    <tbody><tr><td>Nvidia</td><td>—</td><td>−8,6%</td></tr><tr><td>AMD</td><td>+7,3%</td><td>mais de +4%</td></tr><tr><td>Broadcom</td><td>+4%</td><td>+2,4%</td></tr></tbody>
+  </table>
+</div><div class="quadro">
+  <h3>Na mira do Congresso</h3>
+<p>Três presidentes de comissões da Câmara deram até o fim da quarta (11) para Jensen aceitar uma reunião fechada sobre espionagem. Sem resposta, pode vir uma intimação.</p></div><div class="quadro">
+  <h3>E a China?</h3>
+<p>Empresas chinesas de IA correm para alugar chips da Nvidia fora do país, com medo de regras mais duras, segundo a Reuters.</p></div>  <div class="ref"><a href="https://arstechnica.com/gadgets/2026/11/ceo-jensen-huangs-job-is-suddenly-on-the-line-at-nvidia/">→ Ars Technica</a><a href="https://www.tomshardware.com/pc-components/gpus/nvidias-board-reportedly-preparing-to-oust-ceo-jensen-huang-as-second-extra-marital-affair-emerges-stock-has-plunged-20-percent-since-scandals-began-huang-has-been-first-and-only-ceo-for-33-years">→ Tom&#39;s Hardware</a><a href="https://www.semafor.com/article/11/11/2026/nvidia-board-preparing-to-oust-ceo-huang-wsj">→ Semafor</a><a href="https://www.reuters.com/world/china/chinese-ai-firms-rush-secure-nvidia-chip-capacity-spy-scandal-stirs-fear-us-2026-11-12/">→ Reuters</a></div>
+  <div class="folio"><span>Matéria de capa</span><b>5</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 6 e Página 7">
+<article class="page" id="p6"><div class="pg">
+  <div class="runner"><span>Placas &amp; Memórias</span><span>Hardware</span></div>
+  <div class="lado inv">
+    <div><span class="tarja">Hardware</span><h2 class="titulo">Meia memória, fôlego quase inteiro</h2></div>
+    <svg class="arte" viewBox="0 0 300 120" role="img" aria-label="Ilustração: pente de memória com oito chips">
+  <rect x="18" y="28" width="270" height="64" rx="3" class="f-red" opacity=".85"/>
+  <rect x="12" y="22" width="270" height="64" rx="3" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="12" y="22" width="270" height="64" rx="3" fill="url(#ht-fino)" opacity=".45"/>
+  <g class="f-ink">
+    <rect x="24" y="31" width="24" height="30"/><rect x="56" y="31" width="24" height="30"/>
+    <rect x="88" y="31" width="24" height="30"/><rect x="120" y="31" width="24" height="30"/>
+    <rect x="156" y="31" width="24" height="30"/><rect x="188" y="31" width="24" height="30"/>
+    <rect x="220" y="31" width="24" height="30"/><rect x="252" y="31" width="22" height="30"/>
+  </g>
+  <rect x="24" y="66" width="64" height="13" class="f-paper s-ink" stroke-width="1.5"/>
+  <text x="56" y="76.5" text-anchor="middle" class="t-data f-ink" font-size="12">DDR · 16 GB</text>
+  <circle cx="12" cy="56" r="5" class="f-paper s-ink" stroke-width="2"/>
+  <circle cx="282" cy="56" r="5" class="f-paper s-ink" stroke-width="2"/>
+  <rect x="20" y="86" width="124" height="13" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="156" y="86" width="118" height="13" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="22" y="88" width="120" height="9" fill="url(#dentes)"/>
+  <rect x="158" y="88" width="114" height="9" fill="url(#dentes)"/>
+</svg>
+
+  </div>
+  <div class="notas"><p><span class="nota-cab">AMD</span>Com a tecnologia MEXT, roda servidores com metade da DRAM e 95% do desempenho em alguns programas. Uma IA prevê quais dados serão usados e os traz do SSD a tempo. Já são 145 servidores.</p><p><span class="nota-cab">Fractile</span>A britânica de chips de IA levantou US$ 720 milhões e promete entregar os primeiros chips no ano que vem.</p><p><span class="nota-cab">ASRock</span>Soltou firmware novo para as Radeon RX 7000, depois que o anterior deixou placas RX 7900 sem ligar. Não explicou o que mudou.</p></div>
+  <div class="ref"><a href="https://www.tomshardware.com/pc-components/cpus/amd-shares-how-it-can-retain-95-percent-of-server-performance-with-just-half-the-dram-sidestepping-memory-shortages-with-mext-tech-powers-over-100-servers-already-running-with-plans-to-expand-to-2-000-servers-in-2027">→ Tom&#39;s Hardware</a><a href="https://techcrunch.com/2026/11/11/with-720m-round-britains-fractile-gets-a-leg-up-in-the-race-for-ai-chips/">→ TechCrunch</a></div>
+  <div class="folio"><b>6</b><span>Placas &amp; Memórias</span></div>
+</div></article>
+
+<article class="page" id="p7"><div class="pg">
+  <div class="runner"><span>Giro das Big Techs</span><span>Notas</span></div>
+  <h2 class="titulo">Giro das Big Techs</h2>
+  <div class="cols"><p><span class="empresa">OpenAI</span>A receita trimestral passou de US$ 10 bilhões pela primeira vez, quase 50% acima do trimestre anterior, segundo a Bloomberg.</p><p><span class="empresa">TSMC</span>A fabricante de chips vai investir até US$ 500 milhões na OpenAI e outros US$ 500 milhões em ações da Anthropic, ao preço da estreia na bolsa, segundo a Reuters.</p><p><span class="empresa">Google · API</span>Lançou o Gemini Decision 1, modelo que responde sim ou não, escolhe entre opções ou dá nota. Custa 10 centavos de dólar por milhão de tokens de entrada, e a saída é grátis.</p><p><span class="empresa">Google DeepMind</span>O AlphaGenome 2 prevê como mudanças no DNA afetam cada tipo de célula humana, uma pista para entender doenças.</p><p><span class="empresa">xAI</span>Cada vez mais jovens que tiveram fotos sexualizadas com o Grok tentam responsabilizar a empresa na Justiça, segundo a Bloomberg.</p><p><span class="empresa">United</span>A companhia aérea não vai deixar assistentes de IA comprarem passagens, por privacidade e por regras do setor.</p></div>
+  <div class="ref"><a href="https://techcrunch.com/2026/11/11/openais-quarterly-revenue-reportedly-crosses-10b-for-the-first-time/">→ TechCrunch</a><a href="https://arstechnica.com/ai/2026/11/taiwans-chipmaking-giant-tsmc-to-invest-1b-in-anthropic-openai/">→ Ars Technica</a><a href="https://simonwillison.net/2026/Nov/11/gemini-decisions-api/">→ Simon Willison</a><a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/">→ Google DeepMind</a><a href="https://www.bloomberg.com/features/2026-grok-sexualized-childhood-photos/">→ Bloomberg</a><a href="https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents">→ The Verge</a></div>
+  <div class="folio"><span>Giro das Big Techs</span><b>7</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 8 e Página 9">
+<article class="page" id="p8"><div class="pg">
+  <div class="runner"><span>Cofre Digital</span><span>Cripto · o básico</span></div>
+  <span class="tarja verm">Cotações da madrugada</span>
+  <h2 class="titulo">Bitcoin empacado abaixo de US$ 74 mil</h2>
+  <table class="tabela">
+    <thead><tr><th scope="col">Moeda</th><th scope="col">US$</th><th scope="col">R$</th><th scope="col">24 h</th></tr></thead>
+    <tbody><tr><td>BTC</td><td>73.381</td><td>409.597</td><td class="desce">−0,43%</td></tr><tr><td>ETH</td><td>2.042,14</td><td>11.402</td><td class="desce">−0,69%</td></tr><tr><td>SOL</td><td>82,74</td><td>461,95</td><td class="desce">−0,26%</td></tr></tbody>
+  </table>
+  <p class="legenda">CoinGecko, 12/11 às 06h11 (Brasília). Variação em dólar.</p>
+  <div class="lado">
+    <svg class="arte" viewBox="0 0 200 122" role="img" aria-label="Medidor do índice de medo e ganância marcando 28, Medo">
+  <path d="M20 100 A80 80 0 0 1 87.5 21" class="f-none s-blue" stroke-width="15"/>
+  <path d="M87.5 21 A80 80 0 0 1 112.5 21" class="f-none" stroke="var(--paper-shade)" stroke-width="15"/>
+  <path d="M112.5 21 A80 80 0 0 1 180 100" class="f-none s-red" stroke-width="15"/>
+  <path d="M20 100 A80 80 0 0 1 180 100" class="f-none s-ink" stroke-width="1.2"/>
+  <text x="12" y="116" text-anchor="middle" class="t-data f-ink" font-size="12">0</text>
+  <text x="100" y="9" text-anchor="middle" class="t-data f-ink" font-size="12">50</text>
+  <text x="188" y="116" text-anchor="middle" class="t-data f-ink" font-size="12">100</text>
+  <line x1="100" y1="100" x2="56.7" y2="47.6" class="s-ink" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="7" class="f-ink"/>
+  <circle cx="100" cy="100" r="2.5" class="f-mus"/>
+  <text x="140" y="94" text-anchor="middle" class="t-slab f-ink" font-size="20">28</text>
+</svg>
+    <div class="quadro">
+      <h3>Medo &amp; Ganância: 28</h3>
+      <p>Hoje marca “medo”. Vai de 0 (pânico) a 100 (euforia) e mede o humor do mercado com volatilidade, volume e redes sociais.</p>
+    </div>
+  </div>
+  <div class="notas"><p><span class="nota-cab">Strategy</span>O MSCI vai tirar a empresa do seu índice, o que pode frear a máquina de comprar bitcoin dela.</p><p><span class="nota-cab">Bitcoin Core</span>Revelou um bug que fazia milhares de nós confiarem em qualquer desconhecido na rede Tor.</p><p><span class="nota-cab">ETF</span>Os fundos de bitcoin somaram o quarto dia seguido de saídas.</p></div>
+  <div class="ref"><a href="https://www.coindesk.com/markets/2026/11/12/msci-is-dropping-strategy-from-its-index-and-the-exclusion-could-hit-its-bitcoin-buying-machine">→ CoinDesk</a></div>
+  <p class="miudo">Isto não é recomendação de investimento.</p>
+  <div class="folio"><b>8</b><span>Cofre Digital</span></div>
+</div></article>
+
+<article class="page" id="p9"><div class="pg">
+  <div class="runner"><span>Da Comunidade</span><span>Blogs, YouTube e fóruns</span></div>
+  <h2 class="titulo">O que a turma anda escrevendo</h2>
+  <div class="vozes">
+    <div class="voz">
+      <div class="avatar c0" aria-hidden="true">D</div>
+      <div>
+        <h4>dooly6276 <small>· TabNews</small></h4>
+        <p>Apresenta um hook que impede o agente de IA de rodar pkill -f &#39;cat&#39; e fechar todos os apps do Mac.</p>
+<a class="ref-link" href="https://www.tabnews.com.br/dooly6276/pitch-um-hook-que-impede-o-agente-de-rodar-pkill-f-cat-e-fechar-todos-os-apps-do-mac">→ TabNews</a>      </div>
+    </div>
+    <div class="voz">
+      <div class="avatar c1" aria-hidden="true">N</div>
+      <div>
+        <h4>nightnabbers <small>· TabNews</small></h4>
+        <p>Mostra o Night Nabbers, jogo 3D de guaxinins grátis no navegador, feito com three.js.</p>
+<a class="ref-link" href="https://www.tabnews.com.br/nightnabbers/night-nabbers-jogo-3d-de-guaxinins-gratis-no-navegador-three-js-simulacao-deterministica-compartilhada">→ TabNews</a>      </div>
+    </div>
+    <div class="voz">
+      <div class="avatar c2" aria-hidden="true">LM</div>
+      <div>
+        <h4>Lucas Montano <small>· YouTube</small></h4>
+        <p>Vídeo novo: &#34;GPT-6 Cyber: AI vs Hackers&#34;.</p>
+<a class="ref-link" href="https://www.youtube.com/watch?v=cM6_cD2IpIg">→ YouTube</a>      </div>
+    </div>
+  </div>
+<div class="quadro">
+  <h3>Português no kernel</h3>
+<p>Voluntários brasileiros traduzem partes da documentação do Linux 7.3, conta o Tecnoblog. O inglês segue obrigatório, mas a barreira do idioma diminui.</p></div>  <div class="folio"><span>Da Comunidade</span><b>9</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 10 e Página 11">
+<article class="page" id="p10"><div class="pg">
+  <div class="runner"><span>Dicionário do Byte</span><span>Glossário</span></div>
+  <h2 class="titulo">Dicionário do Byte</h2>
+  <dl class="glossario">
+<div><dt>Verificação formal<small>Segurança</small></dt><dd>Usar matemática para provar que um programa faz exatamente o que promete, sem brechas.</dd></div><div><dt>Criptografia<small>Segurança</small></dt><dd>Embaralhar mensagens de um jeito que só quem tem a chave consegue ler.</dd></div><div><dt>CEO interino<small>Mercado</small></dt><dd>Executivo que assume o comando de forma provisória enquanto a empresa procura um chefe definitivo.</dd></div><div><dt>DRAM<small>Hardware</small></dt><dd>A memória RAM do computador: rápida, mas apaga tudo quando a máquina desliga.</dd></div><div><dt>SSD<small>Hardware</small></dt><dd>Disco feito de memória flash. Guarda dados sem energia e é bem mais lento que a RAM.</dd></div>  </dl>
+  <div class="folio"><b>10</b><span>Glossário</span></div>
+</div></article>
+
+<article class="page" id="p11"><div class="pg">
+  <div class="runner"><span>Dicionário do Byte</span><span>Glossário</span></div>
+  <h2 class="titulo">Dicionário do Byte</h2>
+  <dl class="glossario">
+<div><dt>Firmware<small>Hardware</small></dt><dd>Programa gravado dentro do aparelho que faz o hardware funcionar. Atualizar errado pode travar tudo.</dd></div><div><dt>Token<small>IA</small></dt><dd>Pedacinho de texto, como uma sílaba, que os modelos de IA leem e cobram.</dd></div><div><dt>Tor<small>Internet</small></dt><dd>Rede que esconde quem está conversando com quem, passando os dados por vários computadores.</dd></div><div><dt>ETF<small>Cripto</small></dt><dd>Fundo negociado na bolsa como uma ação. O de bitcoin acompanha o preço da moeda.</dd></div>  </dl>
+  <div class="folio"><span>Glossário</span><b>11</b></div>
+</div></article>
+
+  </section>
+  <section class="spread solo" aria-label="Página 12">
+<article class="page" id="p12"><div class="pg">
+  <div class="runner"><span>Pra ler com calma</span><span>Contracapa</span></div>
+  <h2 class="titulo">Pra ler com calma</h2>
+  <ul class="leituras">
+<li><div><a href="https://techcrunch.com/2026/11/11/who-could-replace-jensen-huang-a-highly-unscientific-list-of-possible-successors/">Quem poderia substituir Jensen Huang? Uma lista nada científica</a><span>TechCrunch · bastidores</span></div></li><li><div><a href="https://techcrunch.com/video/why-the-data-center-you-dread-might-never-even-be-built/">Por que o data center que você teme pode nunca sair do papel</a><span>TechCrunch · vídeo</span></div></li><li><div><a href="https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/">Um falso alarme de incêndio quase inundou o data center da Jane Street</a><span>Blog · relato</span></div></li><li><div><a href="https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/">Falha de tensão para destravar a A100 de uma placa de mineração</a><span>Blog · hardware</span></div></li>  </ul>
+<div class="anuncio">
+  <div>
+    <h3>Aprenda <em>Prompt</em> por correspondência!</h3>
+    <p>Em 10 lições você conversa com as máquinas do futuro. Material didático em disquete.</p>
+  </div>
+<svg class="arte" viewBox="0 0 100 100" role="img" aria-label="Ilustração: disquete">
+  <path d="M12 10 H80 L90 20 V90 H12 Z" class="f-ink"/>
+  <rect x="30" y="10" width="38" height="28" class="f-shade"/>
+  <rect x="30" y="10" width="38" height="28" fill="url(#ht-fino)"/>
+  <rect x="52" y="15" width="9" height="18" class="f-ink"/>
+  <rect x="22" y="52" width="58" height="34" class="f-paper"/>
+  <line x1="27" y1="62" x2="75" y2="62" class="s-red" stroke-width="2"/>
+  <line x1="27" y1="70" x2="75" y2="70" class="s-ink" stroke-width="1"/>
+  <line x1="27" y1="78" x2="75" y2="78" class="s-ink" stroke-width="1"/>
+</svg>
+  <div class="cupom">NOME: ______________________<br>CIDADE: _________ UF: ___<br>( ) QUERO O DISQUETE GRÁTIS</div>
+</div>
+<p class="miudo">Anúncio de mentirinha, homenagem às revistas de informática dos anos 80.</p>  <div class="capa-pe">
+    <p>Amanhã nas bancas<br>Edição nº 017, às 7h</p>
+    <div class="barras" aria-hidden="true"><i></i><span>CIRCUITO·016</span></div>
+  </div>
+</div></article>
+  </section>
+</main>
+</body>
+</html>
