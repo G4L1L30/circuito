@@ -1,0 +1,113 @@
+{
+  "capa": {
+    "manchete": "Jensen Huang sai da Nvidia",
+    "subtitulo": "Fundador renuncia em meio a escândalo de espionagem. Colette Kress assume interinamente; ação cai 10%.",
+    "elemento": {"numero": "36", "simbolo": "Kr", "nome": "Criptônio", "detalhe": "83,798"},
+    "chamadas": [
+      {"rotulo": "Google", "texto": "Gemini 4 Hydrogen vira o motor da Busca"},
+      {"rotulo": "Vazamento", "texto": "Caixa expõe dados de 7,6 milhões de clientes"},
+      {"rotulo": "Microsoft", "texto": "Outlook passa a noite fora do ar"},
+      {"rotulo": "Cripto", "texto": "Bitcoin cai abaixo de US$ 70 mil"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Sexta-feira 13 sem Jensen",
+    "paragrafos": [
+      "Ontem a pergunta era se a Nvidia ficaria sem Jensen Huang. Hoje é quem vai sentar na cadeira dele. O fundador saiu na quinta (12), e Washington, Wall Street e até Elon Musk já dão palpite.",
+      "Tem ainda o Gemini 4 Hydrogen na Busca da Google, um vazamento enorme na Caixa e o bitcoin abaixo de US$ 70 mil. Bom café."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Google", "assunto": "Inteligência artificial", "tarja": "Modelo novo",
+     "titulo": "A Google troca o motor da Busca", "ilustracao": "robo",
+     "paragrafos": [
+       "A Google lançou na quinta (12) o Gemini 4 Hydrogen, o membro mais barato da família Gemini 4. Ele substitui o Gemini 3.8 Flash nos produtos da empresa e já move a Busca, na maior atualização da pesquisa com IA, segundo a Google. A empresa diz que ele é 2,5 vezes mais rápido que o antecessor e inventa cinco vezes menos.",
+       "Na API, custa US$ 1,50 por milhão de tokens de entrada e US$ 7,50 na saída. Os irmãos maiores, Argon e Carbon, dobram de preço em 1º de dezembro."
+     ],
+     "quadro": {"titulo": "Barato, mas nem tanto", "texto": "Simon Willison lembra que os modelos pequenos da Anthropic e da OpenAI custam US$ 0,10 e US$ 0,50. O Hydrogen sai 15 vezes mais caro."},
+     "refs": [
+       {"rotulo": "Ars Technica", "url": "https://arstechnica.com/google/2026/11/google-rolls-out-gemini-4-hydrogen-finally-replacing-3-8-flash/"},
+       {"rotulo": "Anúncio oficial", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"},
+       {"rotulo": "Simon Willison", "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/"}
+     ]},
+
+    {"tipo": "materia", "secao": "Nvidia", "assunto": "Placas de vídeo",
+     "titulo": "Jensen Huang sai, e a Nvidia recomeça",
+     "olho": "Depois de 33 anos no comando, o fundador renunciou na quinta (12), em meio a casos extraconjugais e suspeitas de espionagem. A diretora financeira assume enquanto o conselho procura um sucessor.",
+     "ilustracao": "gpu", "legenda": "Pela primeira vez, a Nvidia procura um CEO que não se chama Jensen.",
+     "paragrafos": [
+       "Acabou. Na quinta (12), o conselho da Nvidia anunciou que Jensen Huang deixou os cargos de CEO e de conselheiro, com efeito imediato. A saída veio depois da revelação de dois casos extraconjugais: um com uma executiva suspeita de trabalhar para a China, outro com uma vice-presidente que respondia a ele.",
+       "A diretora financeira, Colette Kress, vira CEO interina sem largar o cargo antigo. O conselho busca um nome definitivo, de dentro ou de fora, e ganha seu primeiro presidente: Harvey Jones, ex-chefe da Synopsys. A ação caiu mais de 10% no início do pregão. Horas depois, a Reuters revelou um terceiro caso, com outra funcionária."
+     ],
+     "quadros": [
+       {"titulo": "Quem é Colette Kress", "texto": "Tem 59 anos e cuida das finanças da Nvidia desde 2013. Antes, passou 13 anos na Microsoft e três na Cisco. Prometeu construir sobre a base que Jensen criou em 33 anos."},
+       {"titulo": "Palpites de fora", "texto": "Donald Trump escreveu que só um homem pode substituir Jensen: Tim Cook, presidente do conselho da Apple. Elon Musk respondeu no X que seria uma honra contratar o ex-CEO."},
+       {"titulo": "Washington quer ouvir", "texto": "Jensen aceitou depor a portas fechadas na Câmara americana ainda em novembro. No Senado, Tim Scott chamou Jensen e o secretário Howard Lutnick para dezembro. Democratas abriram outra investigação."}
+     ],
+     "refs": [
+       {"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/nvidia-confirms-jensen-huang-has-resigned-as-ceo-colette-kress-executive-vice-president-and-chief-financial-officer-appointed-interim-ceo"},
+       {"rotulo": "TechCrunch · Congresso", "url": "https://techcrunch.com/2026/11/12/jensen-huang-agrees-to-testify-before-congress/"},
+       {"rotulo": "Politico", "url": "https://www.politico.com/live-updates/2026/11/12/congress/tim-scott-summons-jensen-huang-howard-lutnick-to-testify-over-nvidia-saga-01164124"},
+       {"rotulo": "The Verge", "url": "https://www.theverge.com/tech/1032434/nvidia-jensen-huang-resignation-reactions"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Chip em dobro, processador fresquinho", "ilustracao": "chip", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Google · TPU", "texto": "O chip de IA da Google ganhou duas versões. A TPU 8i Max junta dois chips num pacote, para agentes que leem textos longos. A TPU 8tx faz inferência sigilosa para governos.", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/google-adds-two-new-specialized-chips-for-ai-agents-and-security-to-8th-gen-tpu-lineup-tpu-8i-max-puts-two-chips-on-one-package-for-long-context-work-tpu-8tx-swaps-arm-hosts-for-amd-epyc"},
+       {"rotulo": "Samsung", "texto": "Negocia a compra da Modine, americana que refrigera data centers e vale US$ 5,6 bilhões, segundo a Bloomberg.", "url": "https://www.bloomberg.com/news/articles/2026-11-12/samsung-is-in-talks-to-acquire-data-center-cooling-firm-modine"},
+       {"rotulo": "Noctua", "texto": "Vende por US$ 24,95 uma almofada térmica de nanotubos de carbono para processadores AMD AM4 e AM5. Promete anos sem troca.", "url": "https://www.tomshardware.com/pc-components/thermal-paste/noctua-brings-space-grade-carbon-nanotube-thermal-pad-to-amd-am5-and-am4-processors-promises-years-of-maintenance-free-performance-for-usd24-95"}
+     ]},
+
+    {"tipo": "notas", "secao": "Segurança", "assunto": "Vazamentos", "tarja": "Segurança",
+     "titulo": "Portas abertas por todo lado", "ilustracao": "cofre", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Caixa", "texto": "Uma invasão à Caixa Vida e Previdência expôs nome, CPF, e-mail e telefone de 7,6 milhões de clientes, conta o Tecnoblog.", "url": "https://tecnoblog.net/noticias/alerta-vazamento-na-caixa-expoe-dados-de-76-milhoes-de-clientes/"},
+       {"rotulo": "Grok", "texto": "Links de projetos do Grok, da xAI, podiam ser achados na internet e abriam documentos de mais de 35 mil aplicativos, inclusive da SpaceX.", "url": "https://tecnoblog.net/noticias/grok-vaza-dados-confidenciais-de-mais-de-35-mil-aplicativos/"},
+       {"rotulo": "Fireworks AI", "texto": "Hackers invadiram a plataforma de modelos de IA e levaram conversas de clientes do Notion AI. É o segundo ataque em dois meses.", "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs", "estilo": "colunas",
+     "notas": [
+       {"rotulo": "OpenAI", "texto": "Lançou dois produtos de segurança: o Daybreak Red Team, em acesso antecipado, procura falhas em aplicações web; o Daybreak Defense Factory automatiza achar, validar e corrigir os problemas.", "url": "https://www.theregister.com/security/2026/11/12/openai-launches-security-products-tells-orgs-theyre-doomed-if-they-dont-use-them/5309500"},
+       {"rotulo": "Microsoft", "texto": "O Outlook ficou fora do ar no mundo todo desde a tarde de quinta (12). A Microsoft citou excesso de carga em parte da infraestrutura e religou servidores aos poucos.", "url": "https://www.theverge.com/tech/1032226/microsoft-outlook-is-down"},
+       {"rotulo": "Anthropic", "texto": "A Nscale, nuvem de IA apoiada pela Nvidia, diz que precisa de mais dinheiro para cumprir contratos com a Anthropic, num acordo de US$ 45 bilhões, segundo o Financial Times.", "url": "https://www.ft.com/content/8d5a8642-d0a1-458d-aaa4-c1e7d344fe47"},
+       {"rotulo": "Mirendil", "texto": "A startup de ex-pesquisadores da Anthropic, que faz ferramentas para pesquisa de IA, levantou US$ 1 bilhão, seis meses depois de captar US$ 200 milhões.", "url": "https://www.wsj.com/pro/venture-capital/this-startup-raised-1-billion-to-build-ai-faster-and-with-fewer-humans-f7f07a59"},
+       {"rotulo": "Google", "texto": "Abriu a pré-venda dos primeiros óculos com Gemini, feitos com Samsung, Warby Parker e Gentle Monster. Não têm tela: você fala com a IA ou usa a câmera. A partir de US$ 395.", "url": "https://arstechnica.com/google/2026/11/google-pushes-privacy-angle-as-gemini-powered-smartglasses-debut-starting-at-395/"},
+       {"rotulo": "Compras com IA", "texto": "ChatGPT e Gemini indicaram lojas falsas num estudo citado pelo Tecnoblog. A pior foi a Perplexity, com sites problemáticos em 15% das respostas.", "url": "https://tecnoblog.net/noticias/chatgpt-e-gemini-indicam-lojas-falsas-para-compras-aponta-estudo/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin perde os US$ 70 mil",
+     "notas": [
+       {"rotulo": "Bitcoin", "texto": "Caiu abaixo de US$ 70 mil, com o índice do dólar na máxima em 19 meses.", "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace"},
+       {"rotulo": "ETF", "texto": "Os fundos de bitcoin somam mais de US$ 1,5 bilhão em saídas líquidas no ano.", "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-etfs-are-now-down-over-usd1-5-billion-in-net-outflows-for-the-year"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Código Fonte TV", "onde": "YouTube", "texto": "Vídeo novo: \"Jensen Huang fora da Nvidia! E agora?\".", "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=xUMiOPerPwE"}]},
+       {"nome": "Attekita Dev", "onde": "YouTube", "texto": "Ensina a encontrar falhas de segurança no próprio código com IA, ferramentas e skills.", "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=wQoedgH8Bt4"}]},
+       {"nome": "melteam", "onde": "TabNews", "texto": "Pergunta se a turma deixa agentes de IA rodarem comandos sozinhos no terminal.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/melteam/voces-deixam-agentes-de-ia-rodarem-comandos-sozinhos-no-terminal"}]}
+     ],
+     "quadro": {"titulo": "Livro para caçar bugs", "texto": "Bruno Garcia, doutorando da USP e chefe de engenharia da Vinteum, lança livro sobre fuzzing. Autógrafos na quinta (19), em São Paulo, conta o Livecoins."}},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "O escândalo de Jensen Huang, do começo ao fim, numa linha do tempo", "onde": "TechCrunch · bastidores", "url": "https://techcrunch.com/2026/11/12/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"},
+       {"titulo": "Cinco jeitos de a queda de Jensen prejudicar a indústria de IA", "onde": "TechCrunch · análise", "url": "https://techcrunch.com/2026/11/12/five-ways-jensen-huangs-ouster-from-nvidia-could-damage-the-ai-industry/"},
+       {"titulo": "Modelos chineses de IA carregam a impressão digital de GPUs proibidas", "onde": "Unemployment Labs · técnico", "url": "https://unemploymentlabs.com/checkpoint-forensics"},
+       {"titulo": "Minha máquina de bordar de US$ 300 pedia assinatura, então fiz meu próprio app", "onde": "GitHub · projeto", "url": "https://github.com/simpsoka/zigzag"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "CEO interino", "categoria": "Mercado", "definicao": "Executivo que assume o comando de forma provisória enquanto a empresa procura um chefe definitivo."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedacinho de texto, como uma sílaba, que os modelos de IA leem e cobram."},
+    {"termo": "API", "categoria": "Software", "definicao": "Porta de entrada para programas conversarem com um serviço, como um modelo de IA, sem passar pelo app."},
+    {"termo": "TPU", "categoria": "Hardware", "definicao": "Chip que a Google projeta só para treinar e rodar modelos de IA."},
+    {"termo": "Inferência", "categoria": "IA", "definicao": "Quando o modelo já treinado entra em ação e responde a um pedido."},
+    {"termo": "Data center", "categoria": "Infraestrutura", "definicao": "Galpão cheio de servidores que guarda dados e roda os serviços da internet. Esquenta muito."},
+    {"termo": "Almofada térmica", "categoria": "Hardware", "definicao": "Lâmina que fica entre o processador e o cooler para passar o calor, no lugar da pasta térmica."},
+    {"termo": "Fuzzing", "categoria": "Segurança", "definicao": "Bombardear um programa com entradas aleatórias, de forma automática, para ver onde ele quebra."},
+    {"termo": "ETF", "categoria": "Cripto", "definicao": "Fundo negociado na bolsa como uma ação. O de bitcoin acompanha o preço da moeda."}
+  ]
+}
