@@ -1,0 +1,116 @@
+{
+  "capa": {
+    "manchete": "ChatGPT vai às compras",
+    "subtitulo": "Os agentes da OpenAI ganham carteira e fecham o pedido por você. O Face ID decide.",
+    "elemento": {"numero": "79", "simbolo": "Au", "nome": "Ouro", "detalhe": "196,97"},
+    "chamadas": [
+      {"rotulo": "Nvidia", "texto": "Conselho sonda o chefe da Arm"},
+      {"rotulo": "Windows", "texto": "Falha nova dá poder total a usuário comum"},
+      {"rotulo": "Microsoft", "texto": "Microsoft 365 volta depois de 18 horas"},
+      {"rotulo": "Cripto", "texto": "Bitcoin na mínima em 12 semanas"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Seu robô agora tem cartão",
+    "paragrafos": [
+      "A OpenAI deu aos agentes do ChatGPT um cartão de crédito, com o Face ID no meio do caminho. A Google pôs o Gemini para olhar seus gastos, e a Amazon sonha em catalogar tudo o que se vende na internet.",
+      "Na Nvidia, a caça ao novo chefe passa pela Arm. E o Microsoft 365 voltou depois de um dia fora. Bom sábado."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Nvidia", "assunto": "Placas de vídeo", "tarja": "Sucessão",
+     "titulo": "A Nvidia procura um chefe, e os chips sumidos", "ilustracao": "lupa",
+     "paragrafos": [
+       "O conselho da Nvidia sondou Rene Haas, chefe da Arm, para o lugar de Jensen Huang, segundo o Financial Times. Haas trabalhou sete anos na Nvidia e é um dos candidatos.",
+       "Enquanto isso, a consultoria SemiAnalysis estima que mais de 1,5 gigawatt em chips proibidos da Nvidia, até 1,5 milhão de GPUs, chegou à China. Para ela, o contrabando ajuda a explicar a saída de Jensen. Prova direta, não apresentou."
+     ],
+     "quadro": {"titulo": "Cerco no Sudeste Asiático", "texto": "A Malásia investiga se a Speedmatrix, braço da Megaspeed, reexportou chips de IA. Em Singapura, um executivo chinês responde a 41 acusações pela compra de 917 servidores."},
+     "refs": [
+       {"rotulo": "Tom's Hardware · Haas", "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-board-reportedly-approached-arm-ceo-rene-haas-during-replacement-search-jensen-huangs-transgressions-leave-nvidia-scrambling-to-fill-a-massive-void"},
+       {"rotulo": "Tom's Hardware · SemiAnalysis", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls"},
+       {"rotulo": "Tom's Hardware · Malásia", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/malaysia-and-singapore-step-up-nvidia-ai-chip-probes-as-charges-brought-against-chinese-national-over-917-smuggled-servers-firm-at-center-of-jensen-huang-controversy-announces-inventory-audit-to-account-for-all-restricted-gpus"}
+     ]},
+
+    {"tipo": "materia", "secao": "OpenAI", "assunto": "Inteligência artificial",
+     "titulo": "A OpenAI dá um cartão ao seu robô",
+     "olho": "Com o ChatGPT Wallet, os agentes do ChatGPT escolhem o produto e pagam a conta. A última palavra continua sua, por enquanto.",
+     "ilustracao": "robo", "legenda": "O agente monta o carrinho. Você só confirma com o dedo.",
+     "paragrafos": [
+       "Na sexta (13), a OpenAI lançou o ChatGPT Wallet, uma carteira para os dots, seus agentes de IA. Agente é a IA que faz tarefas sozinha: aqui, ela escolhe o produto e fecha a compra. Por enquanto, só assinantes do plano Pro nos EUA, maiores de 18 anos.",
+       "Antes de pagar, o agente mostra os itens, o total e o cartão. Você aprova com Face ID ou digital. O cartão vira um token, um código substituto, e nem o agente nem a loja veem o número real. A OpenAI quer, no futuro, deixar o agente comprar sozinho, dentro de limites de gasto, categoria ou período."
+     ],
+     "quadros": [
+       {"titulo": "Nem toda loja abre a porta", "texto": "Alguns varejistas bloqueiam agentes de IA. A Amazon, a maior delas, prefere empurrar a própria assistente, a Alexa. A OpenAI publicou um guia para lojas que querem receber compradores-robôs."},
+       {"titulo": "A Amazon quer o catálogo mundial", "texto": "Um documento interno revelado pela Reuters descreve o World Product Graph: dados de todo produto vendido na internet, até em sites rivais. A Amazon diz que o rascunho não reflete necessariamente seus planos."},
+       {"titulo": "Enquanto isso, na Google", "texto": "O Gemini agora se conecta ao Google Wallet nos EUA e responde sobre seus gastos. Ele só lê: não move nem investe dinheiro, segundo a Google."}
+     ],
+     "refs": [
+       {"rotulo": "Anúncio oficial", "url": "https://openai.com/index/introducing-chatgpt-wallet"},
+       {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/"},
+       {"rotulo": "The Verge · Amazon", "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search"},
+       {"rotulo": "Google", "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Digitais de chip, Intel surpresa", "ilustracao": "gpu", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Rastro do Blackwell", "texto": "Um estudo da Unemployment Labs achou nos modelos abertos da DeepSeek e da Moonshot sinais de treino em GPUs Blackwell, proibidas para a China. Os chips podem ter estado fora do país, pondera o TechCrunch.", "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"},
+       {"rotulo": "Torneira fechando", "texto": "A Nvidia entrou em 105 rodadas de investimento em startups neste ano, segundo a PitchBook. Sem Jensen, investidores temem cheques menores.", "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"},
+       {"rotulo": "Intel", "texto": "O Core Ultra 7 260K apareceu em PCs montados antes de qualquer anúncio. É um 265K com 100 MHz a menos. A Intel confirmou: tiragem limitada.", "url": "https://www.tomshardware.com/pc-components/cpus/unannounced-intel-core-ultra-7-260k-cpu-surfaces-in-newegg-prebuilt-gaming-pcs-intel-doesnt-have-official-specs-list-available-for-exclusive-arrow-lake-chip"}
+     ]},
+
+    {"tipo": "notas", "secao": "Segurança", "assunto": "Vazamentos", "tarja": "Segurança",
+     "titulo": "Fornecedor furado, Windows aberto", "ilustracao": "cofre", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Uber", "texto": "Avisa motoristas que dados de carteira de habilitação vazaram na invasão à Fireworks AI, sua fornecedora. Só em três estados americanos, são quase 8 mil pessoas.", "url": "https://techcrunch.com/2026/11/13/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/"},
+       {"rotulo": "Windows", "texto": "Um pesquisador em briga com a Microsoft divulgou a SignDrop, falha que dá poder total a um usuário comum no Windows 11. Dá até para desligar o antivírus.", "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/"},
+       {"rotulo": "Tesouro", "texto": "Um ataque ao portal e-Serviços do Tesouro Nacional expôs dados de 30 mil pessoas e 4 mil chaves Pix.", "url": "https://tecnoblog.net/noticias/tesouro-nacional-alerta-para-vazamento-de-dados-pessoais-e-chaves-pix/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs", "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Microsoft", "texto": "O Microsoft 365 voltou depois de cerca de 18 horas de pane, que derrubou Outlook, Teams e Copilot no mundo todo. A Microsoft diz que não houve ataque.", "url": "https://techcrunch.com/2026/11/13/microsoft-latest-email-outage-turned-into-a-full-blown-global-cloud-crisis/"},
+       {"rotulo": "Anthropic", "texto": "Se a empresa estrear na bolsa valendo cerca de US$ 1,5 trilhão, os US$ 500 milhões que Sam Bankman-Fried pôs nela em 2021 valeriam uns US$ 37 bilhões, calcula o Financial Times. A fatia foi vendida em 2024 por cerca de US$ 1,3 bilhão.", "url": "https://www.ft.com/content/0ef40ac9-6d01-428f-98c8-a52bf5b9a787?sharetype=gift&syn-25a6b1a6=1"},
+       {"rotulo": "LangChain", "texto": "A startup de agentes levantou US$ 300 milhões e passou a valer US$ 3 bilhões, mais que o dobro de um ano atrás. Diz ter 7 mil clientes.", "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"},
+       {"rotulo": "ElevenLabs", "texto": "Lançou em prévia o ElevenAI, app que anota reuniões, transcreve ditado em mais de 90 idiomas e aciona agentes.", "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/"},
+       {"rotulo": "Tesla", "texto": "Abriu pedidos do Cybercab para uso pessoal, só para clientes selecionados: US$ 30 mil, mais assinatura obrigatória de US$ 299 por mês.", "url": "https://www.bloomberg.com/news/articles/2026-11-14/tesla-says-it-s-starting-to-sell-cybercabs-for-personal-use"},
+       {"rotulo": "Tinder", "texto": "A Match Group proibiu que agentes de IA escolham perfis e mandem mensagens no lugar dos usuários.", "url": "https://tecnoblog.net/noticias/tinder-proibe-que-agentes-de-ia-conversem-pelos-usuarios/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin desce mais um degrau",
+     "notas": [
+       {"rotulo": "Bitcoin", "texto": "Bateu a mínima em 12 semanas, com o dólar em alta e mais de US$ 1,6 bilhão em posições liquidadas.", "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-hits-12-week-low-as-dollar-rallies-on-interest-rate-outlook-liquidations-top-usd1-6-billion"},
+       {"rotulo": "Binance", "texto": "A Justiça americana diz ter bloqueado US$ 1,2 bilhão roubados da corretora.", "url": "https://livecoins.com.br/justica-americana-afirma-ter-bloqueado-judicialmente-us-12-bilhao-roubados-da-binance/"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "rodrigoaraujo990", "onde": "TabNews", "texto": "Automatiza candidaturas a vagas e descobriu que o vilão não é o CAPTCHA, é o campo de múltipla escolha. Em 7 de cada 10 candidaturas, sobrava ao menos uma pergunta obrigatória em branco.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/rodrigoaraujo990/pitch-achei-que-o-dificil-de-automatizar-candidatura-era-o-captcha-era-um-select"}]},
+       {"nome": "fernandomorais", "onde": "TabNews", "texto": "Fez em JavaScript puro uma IA de 19 neurônios que zerou o Snake, com 397 maçãs. Ao testar de novo, ela nunca mais repetiu o feito.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/fernandomorais/fiz-uma-ia-de-19-neuronios-em-js-puro-que-zerou-o-snake-depois-testei-de-verdade-e-ela-nunca-mais-zerou"}]},
+       {"nome": "tobiasteles", "onde": "TabNews", "texto": "Transformou o portfólio num buraco negro com lente gravitacional, feito com Three.js e GLSL, e explica a física por trás.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/tobiasteles/como-fiz-um-buraco-negro-com-lente-gravitacional-no-navegador-three-js-e-glsl"}]},
+       {"nome": "mayaa", "onde": "TabNews", "texto": "Ensina a puxar em JSON, com Python, as licitações de obras abertas no PNCP, o portal nacional de compras públicas.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/mayaa/como-obter-licitacoes-de-obras-publicas-do-pncp-em-json-com-python"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "A IA na matemática é uma prévia do que fará na pesquisa de IA", "onde": "Dwarkesh Podcast · ensaio", "url": "https://www.dwarkesh.com/p/rsi"},
+       {"titulo": "Depois de 600 experimentos, o que aprendi sobre modelos de mundo JEPA", "onde": "Blog pessoal · técnico", "url": "https://haddyalchaer.com/jepa"},
+       {"titulo": "Jonathan Blow: se a IA resolveu a programação, por que meu software continua igual?", "onde": "YouTube · vídeo", "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q"},
+       {"titulo": "Bordas no terminal que não gastam uma célula", "onde": "joshka.net · técnico", "url": "https://www.joshka.net/cell-borders/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Agente de IA", "categoria": "IA", "definicao": "Programa de IA que não só conversa: executa tarefas sozinho, como pesquisar, preencher formulários ou fazer compras."},
+    {"termo": "Token de pagamento", "categoria": "Pagamentos", "definicao": "Código que substitui o número do cartão na compra. Se vazar, não serve para nada fora daquela transação."},
+    {"termo": "Biometria", "categoria": "Segurança", "definicao": "Conferir quem você é pelo corpo: rosto, digital, voz. O Face ID é biometria."},
+    {"termo": "GPU", "categoria": "Hardware", "definicao": "A placa de vídeo. Nasceu para os games e virou o motor que treina e roda modelos de IA."},
+    {"termo": "Gigawatt", "categoria": "Energia", "definicao": "Um bilhão de watts. Serve de régua para o tamanho de data centers de IA, que consomem como cidades."},
+    {"termo": "Zero-day", "categoria": "Segurança", "definicao": "Falha divulgada ou explorada antes de o fabricante ter uma correção pronta."},
+    {"termo": "Rodada de investimento", "categoria": "Mercado", "definicao": "Quando uma startup vende um pedaço de si a investidores em troca de dinheiro para crescer."},
+    {"termo": "Liquidação", "categoria": "Cripto", "definicao": "Quando a corretora fecha à força a aposta de quem operava com dinheiro emprestado e o preço andou contra."}
+  ]
+}
