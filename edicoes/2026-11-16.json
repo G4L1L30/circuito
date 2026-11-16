@@ -1,0 +1,388 @@
+{
+  "capa": {
+    "manchete": "Volta, Jensen?",
+    "subtitulo": "Petição, venda bilionária de ações e Congresso em cima: o fim de semana da Nvidia.",
+    "elemento": {
+      "numero": "14",
+      "simbolo": "Si",
+      "nome": "Silício",
+      "detalhe": "28,085"
+    },
+    "chamadas": [
+      {
+        "rotulo": "Alibaba",
+        "texto": "Qwen4-Max mira a Anthropic no código"
+      },
+      {
+        "rotulo": "Espaço",
+        "texto": "Foguete Vulcan cai com 40 satélites da Amazon"
+      },
+      {
+        "rotulo": "Segurança",
+        "texto": "Pane da Microsoft deixa 15 intoxicados por cloro"
+      },
+      {
+        "rotulo": "Cripto",
+        "texto": "Bitcoin abaixo de US$ 63 mil"
+      }
+    ]
+  },
+  "editorial": {
+    "titulo": "Um fim de semana sem folga",
+    "paragrafos": [
+      "A Nvidia não descansou. Uma petição pede a volta de Jensen Huang, um conselheiro vendeu quase US$ 1 bilhão em ações antes do escândalo e o Congresso quer apertar a exportação de chips.",
+      "Na China, a Alibaba lançou o Qwen4-Max. No céu, a SpaceX pegou a Starship com a torre, e o Vulcan caiu. Boa semana."
+    ]
+  },
+  "paginas": [
+    {
+      "tipo": "reportagem",
+      "secao": "Alibaba",
+      "assunto": "Inteligência artificial",
+      "tarja": "Modelo novo",
+      "titulo": "A Alibaba lança o Qwen4-Max e encara os americanos",
+      "ilustracao": "robo",
+      "paragrafos": [
+        "A Alibaba lançou o Qwen4-Max, seu novo modelo de ponta. É um MoE, ou mistura de especialistas: 2,4 trilhões de parâmetros, mas só uma parte trabalha a cada pergunta. Lê até 1 milhão de tokens de uma vez.",
+        "Segundo a Alibaba, ele supera o Fable 5.1, da Anthropic, e o Kimi K3.1 Pro em testes de programação. O índice da Artificial Analysis é mais frio: 43 pontos, atrás do Kimi. Os pesos do Max ficam fechados; os dos Qwen4 menores serão abertos."
+      ],
+      "quadro": {
+        "titulo": "Filtro na fonte",
+        "texto": "A Alibaba diz ter limpado os dados de treino para tirar capacidades de ataque cibernético e reduzir riscos químicos, biológicos, radiológicos e nucleares."
+      },
+      "refs": [
+        {
+          "rotulo": "Anúncio oficial",
+          "url": "https://qwen.ai/blog?id=qwen4-max"
+        },
+        {
+          "rotulo": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-16/alibaba-unveils-new-flagship-ai-model-in-riposte-to-us-rivals"
+        },
+        {
+          "rotulo": "Artificial Analysis",
+          "url": "https://artificialanalysis.ai/"
+        }
+      ]
+    },
+    {
+      "tipo": "materia",
+      "secao": "Nvidia",
+      "assunto": "Placas de vídeo",
+      "titulo": "A Nvidia sem Jensen, e Jensen sem sossego",
+      "olho": "Uma petição pede a volta do fundador, um conselheiro aparece com quase US$ 1 bilhão em ações vendidas e Washington cobra respostas. A empresa segue com Colette Kress no comando interino.",
+      "ilustracao": "chip",
+      "legenda": "O chip continua o mesmo. A cadeira do chefe, não.",
+      "paragrafos": [
+        "Jensen Huang deixou a Nvidia na quinta (12), depois de admitir um caso com uma executiva suspeita, pela inteligência americana, de espionar para a China. No sábado (14), uma petição pela volta dele passava de 115 mil assinaturas. Elon Musk, Tim Sweeney e Garry Tan estão entre os apoiadores.",
+        "Nem todo mundo quer Jensen de volta. Bryan Catanzaro, vice-presidente da Nvidia, chamou de falsa uma carta que citava seu nome e apoiou Kress. Enquanto isso, veio à tona que o conselheiro Mark Stevens vendeu 4,2 milhões de ações entre agosto e setembro, por cerca de US$ 947 milhões, sem plano de venda prévio. Não é crime, lembra o Tom's Hardware."
+      ],
+      "quadros": [
+        {
+          "titulo": "A ação no escândalo",
+          "tabela": {
+            "colunas": [
+              "Momento",
+              "US$ por ação"
+            ],
+            "linhas": [
+              [
+                "Fim de outubro",
+                "205,00"
+              ],
+              [
+                "Após a renúncia",
+                "151,09"
+              ],
+              [
+                "Fim da semana",
+                "162,85"
+              ]
+            ]
+          }
+        },
+        {
+          "titulo": "Washington aperta",
+          "texto": "O secretário do Tesouro, Scott Bessent, pergunta se a Nvidia sabia que vendia a empresas de fachada. No Congresso, democratas e republicanos querem regras mais duras para exportar chips à China."
+        },
+        {
+          "titulo": "Torneira mais curta",
+          "texto": "Segundo o Wall Street Journal, Jensen já planejava reduzir o financiamento agressivo da Nvidia a negócios e startups, e Kress pode ir além. A Malásia quer usar o consumo de energia dos data centers para flagrar GPUs contrabandeadas."
+        }
+      ],
+      "refs": [
+        {
+          "rotulo": "TechCrunch · petição",
+          "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+        },
+        {
+          "rotulo": "Tom's Hardware · Stevens",
+          "url": "https://www.tomshardware.com/tech-industry/nvidia-board-director-cashed-out-usd1-billion-in-stock-before-jensen-huang-scandal-mark-stevens-sold-4-2-million-shares-without-a-trading-plan"
+        },
+        {
+          "rotulo": "Tom's Hardware · Bessent",
+          "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/u-s-treasury-secretary-questions-whether-nvidia-knowingly-sold-ai-gpus-to-shell-companies-says-company-itself-is-responsible-i-think-it-is-important-that-anyone-at-the-company-there-be-held-accountable-for-that"
+        },
+        {
+          "rotulo": "WSJ · financiamento",
+          "url": "https://www.wsj.com/tech/ai/nvidias-days-as-an-open-checkbook-for-the-ai-economy-are-numbered-90c7b388"
+        }
+      ]
+    },
+    {
+      "tipo": "perdeu",
+      "titulo": "Se você perdeu no sábado",
+      "itens": [
+        {
+          "rotulo": "Capa",
+          "texto": "A OpenAI lançou o ChatGPT Wallet: os agentes do ChatGPT escolhem o produto e pagam, com sua aprovação por Face ID ou digital.",
+          "url": "https://openai.com/index/introducing-chatgpt-wallet"
+        },
+        {
+          "rotulo": "Nvidia",
+          "texto": "O conselho sondou Rene Haas, chefe da Arm, para o lugar de Jensen Huang, segundo o Financial Times.",
+          "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-board-reportedly-approached-arm-ceo-rene-haas-during-replacement-search-jensen-huangs-transgressions-leave-nvidia-scrambling-to-fill-a-massive-void"
+        },
+        {
+          "rotulo": "Windows",
+          "texto": "Um pesquisador divulgou a SignDrop, falha que dá poder total a um usuário comum no Windows 11.",
+          "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/"
+        },
+        {
+          "rotulo": "Tesouro",
+          "texto": "Um ataque ao portal do Tesouro Nacional expôs dados de 30 mil pessoas e 4 mil chaves Pix.",
+          "url": "https://tecnoblog.net/noticias/tesouro-nacional-alerta-para-vazamento-de-dados-pessoais-e-chaves-pix/"
+        }
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Placas & Memórias",
+      "assunto": "Hardware",
+      "tarja": "Hardware",
+      "titulo": "Memória no tribunal, 5090 na vitrine",
+      "ilustracao": "memoria",
+      "estilo": "lista",
+      "notas": [
+        {
+          "rotulo": "Cartel da DRAM?",
+          "texto": "Uma juíza americana negou arquivar a ação contra Micron, Samsung e SK hynix, acusadas de agir combinadas para segurar a oferta. Ela comparou as três a \"falcões voando em formação\". A DRAM subiu até 500% em um ano.",
+          "url": "https://www.tomshardware.com/tech-industry/big-tech/judge-denies-motion-to-dismiss-dram-price-fixing-lawsuit-against-micron-samsung-and-sk-hynix-says-chipmakers-acted-like-hawks-flying-in-formation-finds-evidence-of-dram-collusion-plausible-after-500-percent-price-surge"
+        },
+        {
+          "rotulo": "Intel",
+          "texto": "Tomou participação de mercado da AMD em CPUs pela primeira vez desde 2025, puxada pelos desktops, segundo a Mercury Research.",
+          "url": "https://www.tomshardware.com/pc-components/cpus/intel-reclaims-overall-cpu-market-share-for-the-first-time-since-2025-massive-desktop-gains-offset-amds-record-server-and-mobile-growth"
+        },
+        {
+          "rotulo": "RTX 5090",
+          "texto": "Voltou ao estoque da Newegg, com 21 modelos. A mais barata sai por US$ 6.599, mais de três vezes o preço sugerido.",
+          "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-rtx-5090-stock-returns-to-newegg-with-21-models-but-scarcity-pricing-keeps-the-cheapest-air-cooled-cards-at-least-three-times-msrp"
+        }
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Segurança",
+      "assunto": "Falhas",
+      "tarja": "Segurança",
+      "titulo": "Quando a rede cai, tudo para",
+      "ilustracao": "cofre",
+      "estilo": "lista",
+      "notas": [
+        {
+          "rotulo": "Microsoft 365",
+          "texto": "Na pane da semana passada, um hotel na Alemanha ficou sem o alerta por e-mail do nível de cloro da sauna. Quinze hóspedes se intoxicaram, e quatro foram ao hospital.",
+          "url": "https://www.tomshardware.com/tech-industry/data-centers/microsoft-365-outage-leads-to-chlorine-gas-poisoning-of-15-hotel-guests-email-warning-system-fails-40-first-responders-deployed-for-triage-four-hospitalized"
+        },
+        {
+          "rotulo": "Voos parados",
+          "texto": "Dois roteadores da HPE Juniper recém-instalados sobrecarregaram a rede de comunicação da FAA e pararam todos os voos dos EUA na sexta (13).",
+          "url": "https://www.tomshardware.com/networking/two-hpe-juniper-network-routers-grounded-all-the-us-flights-on-friday-faas-decades-old-copper-network-buckled-under-a-feature-hpe-says-worked-as-intended-creaking-air-traffic-communication-system-became-overloaded-by-very-high-rate-pinging"
+        },
+        {
+          "rotulo": "Coreia do Norte",
+          "texto": "O FBI tirou do ar parte da FaceStealer, campanha com deepfakes por trás do roubo à Binance, e achou 900 vídeos de alvos.",
+          "url": "https://www.tomshardware.com/tech-industry/cyber-security/fbi-disrupts-north-korean-facestealer-campaign-behind-usd5-billion-binance-hack-doj-seizes-facestealer-cloud-infrastructure-containing-900-videos-of-tech-workers-hackers-used-ai-deepfakes-to-steal-usd400-million-and-compromise-open-source-software"
+        }
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Giro das Big Techs",
+      "assunto": "Notas",
+      "titulo": "Giro das Big Techs",
+      "estilo": "colunas",
+      "notas": [
+        {
+          "rotulo": "Casa Branca",
+          "texto": "O governo Trump vai nomear mais de 24 \"campeões nacionais\" de IA, entre eles Nvidia, Amazon, Microsoft, OpenAI e Anthropic, para ajudá-los a vender no exterior, segundo o Wall Street Journal.",
+          "url": "https://www.wsj.com/tech/ai/trump-administration-to-name-nvidia-among-ai-national-champions-c9284344"
+        },
+        {
+          "rotulo": "Apple",
+          "texto": "Lançou um estudo com até 200 mil americanos e um app da OpenEvidence que responde dúvidas de saúde com base em revistas médicas. Os dados saem anônimos e não treinam IA, diz a Apple.",
+          "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"
+        },
+        {
+          "rotulo": "OpenAI",
+          "texto": "Estreou um blog de ciência. Num dos primeiros textos, conta como o GPT-6 Astra ajudou a transformar uma ideia de física de partículas numa prova detalhada.",
+          "url": "https://openai.com/index/step-toward-defining-the-standard-model"
+        },
+        {
+          "rotulo": "Amazon",
+          "texto": "O foguete Vulcan, da ULA, falhou no domingo (15) e levou junto 40 satélites do Amazon Leo, rival da Starlink. É a primeira falha total em 20 anos da empresa.",
+          "url": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/"
+        },
+        {
+          "rotulo": "SpaceX",
+          "texto": "No sábado (14), a torre de lançamento agarrou a Starship com seus braços no fim do voo 15, depois de a nave dar voltas na Terra.",
+          "url": "https://arstechnica.com/space/2026/11/with-starship-catch-spacex-still-shows-it-can-dazzle-the-world/"
+        },
+        {
+          "rotulo": "Nubank",
+          "texto": "Recebeu aval do Banco Central para usar oficialmente o nome de banco no Brasil.",
+          "url": "https://tecnoblog.net/noticias/nubank-agora-e-banco-de-fato/"
+        }
+      ]
+    },
+    {
+      "tipo": "cripto",
+      "titulo": "Bitcoin desce mais um andar",
+      "notas": [
+        {
+          "rotulo": "Bitcoin",
+          "texto": "Caiu abaixo de US$ 63 mil, a mínima em três meses.",
+          "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst"
+        },
+        {
+          "rotulo": "XRP",
+          "texto": "Bateu a menor cotação desde novembro de 2024, com dinheiro saindo das criptos.",
+          "url": "https://www.coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto"
+        },
+        {
+          "rotulo": "Mercado Bitcoin",
+          "texto": "A corretora volta a operar Pix em reais na terça (17), após o incidente de segurança. Compra e venda de cripto seguem paradas.",
+          "url": "https://livecoins.com.br/mercado-bitcoin-retoma-operacoes-com-pix-em-reais-a-partir-de-terca-feira-17/"
+        }
+      ]
+    },
+    {
+      "tipo": "comunidade",
+      "titulo": "O que a turma anda escrevendo",
+      "vozes": [
+        {
+          "nome": "ThinkIac",
+          "onde": "TabNews",
+          "texto": "Alerta: APIs de terceiros que vendem acesso a modelos famosos podem entregar outro. Num estudo citado, um serviço anunciado como GPT-5 se comportou como o GLM-4-9B.",
+          "links": [
+            {
+              "rotulo": "TabNews",
+              "url": "https://www.tabnews.com.br/ThinkIac/voce-esta-pagando-por-um-modelo-e-recebendo-outro"
+            }
+          ]
+        },
+        {
+          "nome": "williamlala",
+          "onde": "TabNews",
+          "texto": "Fez o Baiacu NFS-e, emissor gratuito de nota de serviço no padrão nacional, para Windows. O núcleo tem cerca de 25 mil linhas de Rust; a tela é em Flutter.",
+          "links": [
+            {
+              "rotulo": "TabNews",
+              "url": "https://www.tabnews.com.br/williamlala/fiz-um-emissor-de-nfs-e-gratuito-padrao-nacional-com-nucleo-em-rust-e-tela-em-flutter"
+            }
+          ]
+        },
+        {
+          "nome": "katiabelokon",
+          "onde": "TabNews",
+          "texto": "Descobriu que, com cache immutable, módulos JavaScript importados sem versão podem ficar velhos no navegador do visitante por até um ano.",
+          "links": [
+            {
+              "rotulo": "TabNews",
+              "url": "https://www.tabnews.com.br/katiabelokon/immutable-es-modules-o-import-sem-versao-que-deixa-seu-js-velho-por-ate-1-ano"
+            }
+          ]
+        },
+        {
+          "nome": "TitenQ",
+          "onde": "TabNews",
+          "texto": "Há quatro meses, resolveu criar a própria linguagem sem saber nada de compiladores. Nasceu o Tyrus: sintaxe de TypeScript, semântica de Rust.",
+          "links": [
+            {
+              "rotulo": "TabNews",
+              "url": "https://www.tabnews.com.br/TitenQ/tyrus-typescript-syntax-rust-semantics"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tipo": "contracapa",
+      "leituras": [
+        {
+          "titulo": "Como fazer quase qualquer coisa: o curso do MIT aberto na web",
+          "onde": "MIT · curso",
+          "url": "https://pub.cba.mit.edu/863.26/site/"
+        },
+        {
+          "titulo": "Protomaps: hospedar seus próprios mapas ficou barato e fácil",
+          "onde": "Blog pessoal · técnico",
+          "url": "https://bruceroettgers.eu/blog/protomaps/"
+        },
+        {
+          "titulo": "O cemitério da IA: projetos e startups que não vingaram",
+          "onde": "TechCrunch · lista",
+          "url": "https://techcrunch.com/2026/11/14/the-ai-graveyard-a-running-list-of-projects-and-startups-that-didnt-make-it/"
+        },
+        {
+          "titulo": "357 processores vistos por dentro, de 1971 a 2024, numa galeria só",
+          "onde": "Tom's Hardware · galeria",
+          "url": "https://www.tomshardware.com/pc-components/cpus/357-detailed-cpu-die-shots-spanning-1971-to-2024-crammed-into-a-new-gallery-motorola-68000-intel-486dx2-amd-athlon-xp-apple-m1-and-many-more-in-beautiful-detail"
+        }
+      ]
+    }
+  ],
+  "glossario": [
+    {
+      "termo": "MoE",
+      "categoria": "IA",
+      "definicao": "Mistura de especialistas. O modelo é dividido em partes, e só algumas trabalham em cada pergunta. Fica grande sem ficar tão caro de rodar."
+    },
+    {
+      "termo": "Parâmetros",
+      "categoria": "IA",
+      "definicao": "Os números ajustados no treino que guardam o que o modelo aprendeu. Servem de régua grosseira para o tamanho de uma IA."
+    },
+    {
+      "termo": "Token",
+      "categoria": "IA",
+      "definicao": "Pedacinho de texto, uma palavra ou parte dela, que a IA lê e escreve. Preço e memória dos modelos são medidos em tokens."
+    },
+    {
+      "termo": "Pesos abertos",
+      "categoria": "IA",
+      "definicao": "Quando a empresa publica os parâmetros do modelo. Qualquer um pode baixar e rodar a IA no próprio computador."
+    },
+    {
+      "termo": "Empresa de fachada",
+      "categoria": "Mercado",
+      "definicao": "Empresa que existe no papel para esconder o verdadeiro dono ou destino de um negócio, como chips proibidos indo para a China."
+    },
+    {
+      "termo": "Controle de exportação",
+      "categoria": "Política",
+      "definicao": "Regras de um governo que proíbem ou limitam a venda de certos produtos, como chips de IA, para outros países."
+    },
+    {
+      "termo": "DRAM",
+      "categoria": "Hardware",
+      "definicao": "A memória RAM do computador: rápida, mas esquece tudo quando a energia acaba."
+    },
+    {
+      "termo": "Deepfake",
+      "categoria": "Segurança",
+      "definicao": "Vídeo, foto ou voz falsos feitos com IA para imitar uma pessoa de verdade."
+    }
+  ]
+}
