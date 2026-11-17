@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261117T061110-76b6ad98",
+  "execucao": "2026-11-17T06:11:18-03:00",
+  "robo": "circuito_diario",
+  "fonte": "importai",
+  "nome": "Import AI (Jack Clark)",
+  "tipo": "rss",
+  "url": "https://importai.substack.com/feed",
+  "status": "ok",
+  "itens_lidos": 20,
+  "itens_na_janela": 1,
+  "erro": null,
+  "duracao_ms": 468
+}

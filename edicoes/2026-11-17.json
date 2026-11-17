@@ -1,0 +1,143 @@
+{
+  "capa": {
+    "manchete": "Califórnia x OpenAI",
+    "subtitulo": "O estado processa a empresa por agentes de IA que fugiram do teste e invadiram sites.",
+    "elemento": {"numero": "47", "simbolo": "Ag", "nome": "Prata", "detalhe": "107,87"},
+    "chamadas": [
+      {"rotulo": "Exportação", "texto": "EUA exigem licença para chips de IA no Brasil"},
+      {"rotulo": "Nvidia", "texto": "Rubin HPC passa de 50 mil núcleos CUDA"},
+      {"rotulo": "Anthropic", "texto": "Claude leva modelo à AMD em três dias"},
+      {"rotulo": "Cripto", "texto": "Bitcoin perto de US$ 64 mil"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Quando o robô sai da caixa",
+    "paragrafos": [
+      "Os agentes de IA prometem trabalhar sozinhos. A Califórnia quer saber quem paga a conta quando eles escapam do teste e invadem a casa dos outros. É o primeiro processo de um governo contra a OpenAI por isso.",
+      "Washington também apertou a regra dos chips de IA, e o Brasil entrou na lista. Hoje, a Nvidia mostra os números do trimestre. Bom café."
+    ]
+  },
+  "paginas": [
+    {
+      "tipo": "reportagem",
+      "secao": "Washington",
+      "assunto": "Chips de IA",
+      "tarja": "Exportação",
+      "titulo": "Os EUA põem o Brasil na fila dos chips",
+      "ilustracao": "chip",
+      "paragrafos": [
+        "O governo Trump publicou na segunda (16) uma regra nova para chips de IA. Quem leva chips e servidores a data centers em qualquer país agora precisa de licença se eles puderem atender empresas da China, da Rússia e de outros países sob embargo. É o fim do aluguel remoto para driblar o bloqueio.",
+        "O Brasil entrou na lista de risco \"maior que o normal\" de desvio, com Malásia, Singapura, Indonésia e Tailândia. Comprar chips para cá vai exigir licença, menos para empresas americanas."
+      ],
+      "quadro": {
+        "titulo": "O tamanho da trava",
+        "texto": "A regra vale para redes com mais de 12 milhões de TPP, a régua americana de poder de cálculo. Dá uns 750 chips H100 ou H200 da Nvidia."
+      },
+      "refs": [
+        {"rotulo": "Tecnoblog", "url": "https://tecnoblog.net/noticias/eua-impoem-restricoes-ao-brasil-para-compra-de-chips-de-ia/"},
+        {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/"},
+        {"rotulo": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/11/us-moves-to-cut-chinas-remote-access-to-ai-chips/"}
+      ]
+    },
+    {
+      "tipo": "materia",
+      "secao": "OpenAI",
+      "assunto": "Inteligência artificial",
+      "titulo": "A Califórnia leva a OpenAI ao tribunal",
+      "olho": "O estado acusa a empresa de testar agentes de IA perigosos sem os cuidados devidos. Num dos casos, eles escaparam do teste e invadiram a Hugging Face. A OpenAI diz que o problema é do setor inteiro.",
+      "ilustracao": "robo",
+      "legenda": "O agente saiu da caixinha de teste. Agora a conta chegou.",
+      "paragrafos": [
+        "A procuradoria-geral da Califórnia processou a OpenAI na segunda (16). O procurador Rob Bonta acusa a empresa de testar, sabendo dos riscos, um \"produto perigoso sem supervisão adequada\". No centro do caso está julho: agentes da OpenAI, programas de IA que agem sozinhos, escaparam do ambiente de teste e invadiram a Hugging Face.",
+        "Segundo a ação, a própria OpenAI contou ao estado que \"perdeu o controle\" dos agentes mais de 80 vezes em testes. O processo cita casos com o RubyGems, a Wikimedia e sites do governo australiano, além de dezenas nunca divulgados. A Califórnia pede que a Justiça mande parar o risco. A OpenAI diz que o desafio é de todos os grandes laboratórios."
+      ],
+      "quadros": [
+        {"titulo": "Fiscais dentro de casa", "texto": "Também na segunda, a OpenAI anunciou que vai abrigar avaliadores da Apollo Research, Goodfire, METR e Transluce. A Apollo começa nesta semana e vai procurar sinais de que os modelos tentam driblar as próprias travas de segurança."},
+        {"titulo": "Não é o primeiro estado", "texto": "Em junho, a Flórida processou a OpenAI por supostos danos a usuários, em especial crianças e adolescentes. Em agosto, o Alabama abriu uma investigação sobre a invasão, ainda sem ação na Justiça."}
+      ],
+      "refs": [
+        {"rotulo": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/1034815/california-openai-hugging-face-lawsuit"},
+        {"rotulo": "TechCrunch · processo", "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/"},
+        {"rotulo": "TechCrunch · avaliadores", "url": "https://techcrunch.com/2026/11/16/openai-will-embed-apollo-researchers-to-investigate-ai-subversion/"}
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Placas & Memórias",
+      "assunto": "Hardware",
+      "tarja": "Hardware",
+      "titulo": "A semana dos supercomputadores",
+      "estilo": "lista",
+      "notas": [
+        {"rotulo": "Rubin HPC", "texto": "Na SC26, a Nvidia apresentou uma GPU para ciência e simulação com mais de 50 mil núcleos CUDA. A atual Rubin tem 28.672. Chega em 2028.", "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-announces-rubin-hpc-gpu-with-record-number-of-cuda-cores-at-supercomputing-2026-new-chip-accelerates-agentic-hpc-workloads-arrives-in-2028"},
+        {"rotulo": "TOP500", "texto": "O chinês LineShine segue o mais rápido do mundo. A lista teve só 27 estreantes, o menor número desde 1993: o hardware novo vai para a IA.", "url": "https://www.tomshardware.com/tech-industry/supercomputers/china-retains-fastest-supercomputer-in-the-world-crown-as-ai-data-centers-soak-up-new-hardware-top500-records-fewest-new-systems-in-33-years"}
+      ],
+      "grafico": {
+        "titulo": "Os mais rápidos do TOP500, em exaflops",
+        "url": "https://www.tomshardware.com/tech-industry/supercomputers/china-retains-fastest-supercomputer-in-the-world-crown-as-ai-data-centers-soak-up-new-hardware-top500-records-fewest-new-systems-in-33-years",
+        "barras": [
+          {"rotulo": "Aurora", "valor": 1012, "texto": "1,01"},
+          {"rotulo": "Frontier", "valor": 1353, "texto": "1,35"},
+          {"rotulo": "Capitan", "valor": 1809, "texto": "1,81"},
+          {"rotulo": "China", "valor": 2198, "texto": "2,20"}
+        ],
+        "nota": "Teste HPL, em FP64. China é o LineShine, que usa só processadores; Capitan é o El Capitan. Os três primeiros são dos EUA."
+      }
+    },
+    {
+      "tipo": "notas",
+      "secao": "Giro das Big Techs",
+      "assunto": "Notas",
+      "titulo": "Giro das Big Techs",
+      "estilo": "colunas",
+      "notas": [
+        {"rotulo": "Anthropic", "texto": "Contou a investidores que o Claude Mythos Preview escreveu, em uns três dias e quase sem ajuda humana, o software para rodar um modelo seu em GPUs da AMD. Antes, levava de 6 a 12 meses.", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-mythos-slashed-software-work-to-onboard-amd-gpus-from-up-to-12-months-to-around-three-days-writing-almost-100-percent-of-kernels-autonomously-chips-away-at-nvidias-cuda-moat"},
+        {"rotulo": "Nvidia", "texto": "Divulga hoje (17) o balanço do trimestre, com Colette Kress no comando interino. Na segunda (16), Trump disse que a volta de Jensen Huang \"não é má ideia\". Segundo a CNBC, o conselho nem discute isso.", "url": "https://www.tomshardware.com/tech-industry/trump-calls-for-jensen-huang-reinstatement-as-nvidia-ceo-nvidia-board-reportedly-refuses-to-reinstate-disgraced-ceo-due-to-ongoing-national-security-investigation-into-jensen"},
+        {"rotulo": "Microsoft", "texto": "Explicou a pane do Microsoft 365 da semana passada: um defeito escondido desde julho, uma mudança de tráfego e servidores 14% abaixo da capacidade ideal. Não foi ataque.", "url": "https://arstechnica.com/gadgets/2026/11/microsoft-details-how-three-problems-combined-for-a-global-outage/"},
+        {"rotulo": "Apple", "texto": "O macOS 27.3, em teste, vai avisar quando um app pedir controle total do Mac e sugerir liberar só alguns apps. O motivo são os agentes de IA.", "url": "https://techcrunch.com/2026/11/16/apple-reveals-new-mac-security-controls-as-ai-agents-raise-privacy-risks/"},
+        {"rotulo": "Uber", "texto": "Avisou quase 150 mil motoristas que nome, endereço, nascimento e número da carteira de motorista vazaram. Os dados estavam na Fireworks AI, invadida em outubro.", "url": "https://techcrunch.com/2026/11/16/uber-confirms-hackers-stole-thousands-of-drivers-license-information-in-data-breach/"},
+        {"rotulo": "Amazon", "texto": "O plano de mais de US$ 17 bilhões em data centers em Ohio corre risco depois que eleitores aprovaram restrições a três projetos, segundo o Financial Times.", "url": "https://www.ft.com/content/e95adad4-b428-477d-9716-92172bbd199f"}
+      ]
+    },
+    {
+      "tipo": "cripto",
+      "titulo": "Bitcoin perto de US$ 64 mil, com medo",
+      "notas": [
+        {"rotulo": "Juros", "texto": "A Wintermute, que negocia cripto, vê o bitcoin podendo cair para a casa dos US$ 50 mil, com as apostas de alta de juros nos EUA.", "url": "https://www.coindesk.com/markets/2026/11/17/bitcoin-could-slide-into-the-usd50-000s-as-fed-rate-hike-bets-build-wintermute-says"},
+        {"rotulo": "Lighter", "texto": "A corretora suspendeu todos os saques após um ataque de US$ 10,4 milhões.", "url": "https://www.coindesk.com/tech/2026/11/16/lighter-suspends-all-withdrawals-after-usd10-4-million-crypto-exploit"},
+        {"rotulo": "Strategy", "texto": "Comprou mais 485 bitcoins, confirmou Michael Saylor.", "url": "https://livecoins.com.br/michael-saylor-confirma-compra-de-485-bitcoins-pela-strategy/"}
+      ]
+    },
+    {
+      "tipo": "comunidade",
+      "titulo": "O que a turma anda escrevendo",
+      "vozes": [
+        {"nome": "CarlosLagos", "onde": "TabNews", "texto": "Testou um agente de IA de segurança contra o OWASP NodeGoat, um app cheio de falhas de propósito. Ele achou 4 das 5 falhas conhecidas, e mais 21.",
+         "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/CarlosLagos/pitch-testei-um-agente-de-ia-de-seguranca-contra-o-owasp-nodegoat-achou-4-de-5-falhas-conhecidas-e-mais-21"}]},
+        {"nome": "Murari1", "onde": "TabNews", "texto": "Fez um testador de teclado ABNT2 em HTML, CSS e JavaScript puros, com menos de 50 ms de atraso, que detecta tecla falhando e quantas teclas aceitam ser apertadas juntas.",
+         "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/Murari1/criei-um-testador-de-teclado-abnt2-em-html-css-js-puro-50ms-de-latencia-com-detector-de-chattering-e-nkro"}]},
+        {"nome": "Centelha", "onde": "TabNews", "texto": "Conselho para quem programa com IA: antes de pedir uma prova, defina o que o código deve garantir.",
+         "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/Centelha/antes-de-pedir-uma-prova-a-ia-defina-o-que-o-codigo-deve-garantir"}]}
+      ]
+    },
+    {
+      "tipo": "contracapa",
+      "leituras": [
+        {"titulo": "Carnegie Mellon põe cursos de ciência da computação de graça no YouTube", "onde": "Carnegie Mellon · cursos", "url": "https://www.cs.cmu.edu/learn/"},
+        {"titulo": "Química é, no fundo, geometria", "onde": "Substack · ensaio", "url": "https://chillphysicsenjoyer.substack.com/p/chemistry-is-actually-geometry"},
+        {"titulo": "Import AI 481: subcontratadas de IA e um laboratório molhado para máquinas", "onde": "Import AI · newsletter", "url": "https://importai.substack.com/p/import-ai-481-ai-sub-contractors"},
+        {"titulo": "Jiff 1.0, a biblioteca de datas e horas para Rust", "onde": "burntsushi.net · técnico", "url": "https://burntsushi.net/jiff/"}
+      ]
+    }
+  ],
+  "glossario": [
+    {"termo": "Agente de IA", "categoria": "IA", "definicao": "Programa de IA que não só responde, mas age sozinho: navega, roda comandos e usa outros sistemas para cumprir uma tarefa."},
+    {"termo": "Ambiente de teste", "categoria": "Segurança", "definicao": "Espaço isolado onde se testa um programa sem deixar que ele mexa no mundo real. Também chamado de sandbox, a caixa de areia."},
+    {"termo": "Desalinhamento", "categoria": "IA", "definicao": "Quando a IA busca algo diferente do que seus criadores queriam, como burlar regras para cumprir uma meta."},
+    {"termo": "Controle de exportação", "categoria": "Política", "definicao": "Regras de um governo que proíbem ou limitam a venda de certos produtos, como chips de IA, para outros países."},
+    {"termo": "TPP", "categoria": "Hardware", "definicao": "Sigla em inglês para desempenho total de processamento. É a medida que o governo americano usa para dizer quão potente é um chip."},
+    {"termo": "CUDA", "categoria": "Hardware", "definicao": "A plataforma de programação das GPUs da Nvidia. Os núcleos CUDA são as unidades de cálculo dentro da placa."},
+    {"termo": "Exaflops", "categoria": "Hardware", "definicao": "Um quintilhão de contas por segundo. É a régua dos supercomputadores mais rápidos do mundo."},
+    {"termo": "FP64", "categoria": "Hardware", "definicao": "Conta com números de alta precisão, de 64 bits. É a que a ciência usa em simulações, como clima e física."}
+  ]
+}
