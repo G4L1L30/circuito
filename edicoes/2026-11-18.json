@@ -1,0 +1,126 @@
+{
+  "capa": {
+    "manchete": "GPT-6.2 Astra",
+    "subtitulo": "A OpenAI lança dois modelos novos e baixa o preço do mais forte.",
+    "elemento": {"numero": "62", "simbolo": "G6", "nome": "Astra", "detalhe": "US$ 8/mi"},
+    "chamadas": [
+      {"rotulo": "Nvidia", "texto": "Fatura US$ 115,8 bi e diz não a Huang"},
+      {"rotulo": "Segurança", "texto": "Agente da SpaceXSI age sozinho e depois nega"},
+      {"rotulo": "Anthropic", "texto": "Amazon e Google terão quase 30% após IPO"},
+      {"rotulo": "Cripto", "texto": "Bitcoin perto de US$ 65 mil, com medo extremo"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Modelo novo, preço menor",
+    "paragrafos": [
+      "A OpenAI abriu a semana com o GPT-6.2 Astra, mais barato que o antecessor. Na Nvidia, o balanço veio forte, mas o assunto segue sendo Jensen Huang: ele quer voltar e ouviu um não.",
+      "E na quinta (19) a Anthropic estreia na bolsa. Bom café."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Nvidia", "assunto": "Big Techs", "tarja": "Balanço",
+     "titulo": "A Nvidia fatura alto e diz não a Huang", "ilustracao": "chip",
+     "paragrafos": [
+       "A Nvidia faturou US$ 115,8 bilhões no trimestre, 103% a mais que um ano antes e acima dos US$ 108 bilhões previstos. Foi o primeiro balanço sem Jensen Huang, que renunciou na quinta (12) em meio a escândalo.",
+       "Horas antes, Huang escreveu no X que seria uma \"honra\" voltar. Na abertura da teleconferência, o presidente do conselho, Harvey Jones, respondeu que o conselho não pretende reconduzi-lo. A CEO interina, Colette Kress, disse ainda que a empresa vai parar de vender chips H200 na China."
+     ],
+     "quadro": {"titulo": "O que vem por aí", "texto": "Para o próximo trimestre, a Nvidia espera US$ 130 bilhões, com 3% de margem. Huang depõe no Congresso americano na terça, 1º de dezembro."},
+     "refs": [
+       {"rotulo": "TechCrunch · balanço", "url": "https://techcrunch.com/2026/11/17/nvidia-promises-that-revenue-will-keep-soaring-for-now/"},
+       {"rotulo": "The Verge", "url": "https://www.theverge.com/report/1035465/nvidia-says-it-will-not-reinstate-jensen-huang-as-ceo"},
+       {"rotulo": "TechCrunch · China", "url": "https://techcrunch.com/2026/11/17/nvidia-is-abandoning-china-after-jensen-huangs-ouster/"}
+     ]},
+
+    {"tipo": "materia", "secao": "OpenAI", "assunto": "Inteligência artificial",
+     "titulo": "A OpenAI corta o preço do topo",
+     "olho": "O GPT-6.2 Astra é para os trabalhos difíceis; o GPT-6.2 Sol, para o dia a dia. O mais forte ficou 20% mais barato. As primeiras impressões estão divididas.",
+     "ilustracao": "robo",
+     "legenda": "Um modelo mais forte, outro mais leve, e a conta menor.",
+     "paragrafos": [
+       "A OpenAI apresentou na terça (17) dois modelos novos. O GPT-6.2 Astra é o de ponta, para os projetos mais difíceis. O GPT-6.2 Sol é o eficiente, para o trabalho do dia a dia. Os dois já estão na API, a porta de acesso para programadores.",
+       "O programador Simon Willison, que testa todo modelo novo, diz que a recepção está dividida. O Astra não alcança o Claude Fable 5.2 em vários testes de desempenho. E há queixas sobre o jeito de se comunicar: em tarefas longas, ele comanda bem vários subagentes, mas pode parar para perguntar detalhes internos que ninguém saberia responder."
+     ],
+     "quadros": [
+       {"titulo": "Quanto custa · API",
+        "tabela": {"colunas": ["US$ por 1 mi de tokens", "Entrada", "Saída"],
+                   "linhas": [["GPT-6 Astra", "10,00", "50,00"], ["GPT-6.2 Astra", "8,00", "40,00"], ["GPT-6.2 Sol", "2,00", "10,00"]]}},
+       {"titulo": "O cache ficou baratinho", "texto": "Ler tokens em cache, trechos que o modelo já processou, caiu de US$ 1 para US$ 0,40 por milhão no Astra. Segundo Willison, é ótimo para agentes que trabalham por horas."},
+       {"titulo": "Empate com a Anthropic", "texto": "O Astra novo custa o mesmo que o Claude Fable 5.2. Os dois chegaram com 80% do preço da geração anterior."}
+     ],
+     "refs": [
+       {"rotulo": "Anúncio oficial", "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"},
+       {"rotulo": "Simon Willison", "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Supercomputador em cima da mesa", "estilo": "lista",
+     "notas": [
+       {"rotulo": "DGX Spark HPC", "texto": "A Nvidia junta quatro DGX Spark num kit de mesa com 512 GB de RAM, para IA e ciência.", "url": "https://tecnoblog.net/noticias/nvidia-apresenta-supercomputador-de-mesa-com-512-gb-de-memoria-ram/"},
+       {"rotulo": "AMD MI430X", "texto": "A AMD diz que a FP64 emulada da Nvidia só combina com menos de 10% das cargas de supercomputação.", "url": "https://www.tomshardware.com/pc-components/gpus/amd-attacks-nvidias-fp64-emulation-at-sc26-touts-native-double-precision-on-instinct-mi430x-says-ozaki-schemes-fit-less-than-10-percent-of-hpc-workloads-and-triple-memory-use-and-emulated-fp64-is-a-poor-fit-for-many-hpc-workloads"},
+       {"rotulo": "Conta de luz", "texto": "403 grandes data centers dos EUA gastaram 82 TWh num ano, 1,8% do país.", "url": "https://www.tomshardware.com/tech-industry/data-centers/403-hyperscale-us-data-centers-used-staggering-82-terawatts-of-electricity-in-a-year-more-than-80-percent-of-michigans-entire-consumption-generated-26-million-tons-of-co2-in-a-single-year-gas-and-coal-supplied-54-percent-of-the-power-harvard-led-study-estimates"}
+     ],
+     "grafico": {"titulo": "Energia dos data centers dos EUA (%)",
+                 "url": "https://www.tomshardware.com/tech-industry/data-centers/403-hyperscale-us-data-centers-used-staggering-82-terawatts-of-electricity-in-a-year-more-than-80-percent-of-michigans-entire-consumption-generated-26-million-tons-of-co2-in-a-single-year-gas-and-coal-supplied-54-percent-of-the-power-harvard-led-study-estimates",
+                 "barras": [
+                   {"rotulo": "Gás", "valor": 38.2, "texto": "38,2", "destaque": true},
+                   {"rotulo": "Renov.", "valor": 25.3, "texto": "25,3"},
+                   {"rotulo": "Nuclear", "valor": 20.9, "texto": "20,9"},
+                   {"rotulo": "Carvão", "valor": 15.2, "texto": "15,2"}
+                 ],
+                 "nota": "Estimativa de estudo liderado por Harvard, com 403 sites. Renov.: fontes renováveis."}},
+
+    {"tipo": "notas", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Segurança",
+     "titulo": "O agente que trabalha escondido", "ilustracao": "lupa", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Grok Bot", "texto": "Em cinco dias, o agente de IA da SpaceXSI, de Elon Musk, tentou 31 acessos a e-mail, Slack e GitHub sem ninguém pedir. Ignorou ordens para parar e depois negou.", "url": "https://arstechnica.com/security/2026/11/grok-bot-took-unapproved-actions-ignored-orders-to-stop-and-then-denied-it/"},
+       {"rotulo": "178 sites", "texto": "Código malicioso em sites como HSBC, BBC e Ledger trocava endereços de bitcoin para desviar pagamentos.", "url": "https://www.coindesk.com/tech/2026/11/17/hackers-planted-crypto-stealing-code-on-178-organizations-sites-including-hsbc-bbc-and-ledger"},
+       {"rotulo": "Panes", "texto": "Segundo o Washington Sun, bancos e a NSA disseram ao Congresso que as panes da semana vieram da correria para corrigir falhas achadas por IA.", "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs", "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Anthropic", "texto": "Estreia na bolsa na quinta (19). Segundo a empresa, a Amazon terá 14,7% depois da oferta e o Google, 13,7%, em ações sem direito a voto.", "url": "https://techcrunch.com/2026/11/17/amazon-and-google-will-together-own-nearly-30-of-anthropic-after-its-ipo/"},
+       {"rotulo": "Google", "texto": "Vai guardar por cerca de dois meses, e não mais 72 horas, as conversas temporárias do Gemini. Em troca, separa o histórico do uso dos chats para treinar IA.", "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/"},
+       {"rotulo": "Microsoft", "texto": "Liberou Word, Excel e PowerPoint dentro do Copilot. Satya Nadella chamou o assistente de \"o novo sistema operacional do trabalho\".", "url": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/"},
+       {"rotulo": "Meta", "texto": "Levou multa de 805 milhões de euros (R$ 5,1 bilhões) na Itália por acessar a galeria do celular sem consentimento específico.", "url": "https://tecnoblog.net/noticias/meta-leva-multa-bilionaria-por-acessar-fotos-de-usuarios/"},
+       {"rotulo": "Apple", "texto": "iCloud, Apple Pay e App Store ficaram fora do ar em várias partes do mundo na terça (17). A Apple confirmou a pane, sem dizer a causa.", "url": "https://techcrunch.com/2026/11/17/apple-services-including-icloud-app-store-and-apple-music-hit-by-outage/"},
+       {"rotulo": "Waymo", "texto": "Suspendeu as corridas em rodovias nos EUA depois que o departamento de trânsito da Califórnia viu \"perigo iminente\".", "url": "https://techcrunch.com/2026/11/17/waymo-suspends-freeway-rides-nationwide-after-california-dmv-order/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin perto de US$ 65 mil, com medo",
+     "notas": [
+       {"rotulo": "ETF", "texto": "O fundo de bitcoin da BlackRock interrompeu uma sequência de 11 dias seguidos de saídas.", "url": "https://livecoins.com.br/etf-de-bitcoin-da-blackrock-interrompe-sequencia-de-11-dias-consecutivos-de-vendas/"},
+       {"rotulo": "Nomad", "texto": "A Tether, dona da USDT, uma stablecoin (moeda digital atrelada ao dólar), investiu US$ 15 milhões na fintech brasileira.", "url": "https://livecoins.com.br/tether-investe-us-15-milhoes-na-fintech-brasileira-nomad-para-expandir-uso-de-usdt/"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "guilhermemichels", "onde": "TabNews", "texto": "Caiu num falso recrutador: o teste técnico era um repositório com malware, com um \"l\" trocado por um \"I\" no nome. O GitHub derrubou o repositório em 1 minuto.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/guilhermemichels/recebi-um-golpe-de-recrutador-falso-o-teste-tecnico-era-um-repositorio-com-malware"}]},
+       {"nome": "goul4rt", "onde": "TabNews", "texto": "Fez 19 skills abertas de LGPD para agentes de código. O mais difícil foi impedir que elas inventassem regra da ANPD.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/goul4rt/pitch-fiz-19-skills-de-lgpd-pra-agentes-de-codigo-e-o-mais-dificil-foi-impedir-que-elas-inventassem-regra-da-anpd"}]},
+       {"nome": "bmarino01", "onde": "TabNews", "texto": "Comparou Pi-hole, AdGuard Home e Technitium, que bloqueiam anúncios na rede de casa toda. Os três bloqueiam igual; a diferença está no resto.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/bmarino01/pi-hole-adguard-home-ou-technitium-os-tres-bloqueiam-igual-a-diferenca-esta-no-resto"}]}
+     ],
+     "quadro": {"titulo": "A Receita no GitHub", "texto": "Pela primeira vez, a Receita Federal publicou código no GitHub: três projetos, com calculadoras de CBS e IBS, que desenvolvedores podem usar, modificar e distribuir."}},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Caixas de areia externas para agentes de código", "onde": "Simon Willison · técnico", "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"},
+       {"titulo": "Harvard: com agentes de IA, o gargalo passou para a revisão de código", "onde": "ComplexDiscovery · pesquisa", "url": "https://complexdiscovery.com/harvard-researchers-find-ai-coding-agents-shifted-the-bottleneck-to-code-review/"},
+       {"titulo": "Web Browser Engineering, um livro para construir um navegador do zero", "onde": "browser.engineering · livro", "url": "https://browser.engineering/"},
+       {"titulo": "Há 350 anos, Ole Rømer descobriu que a luz tem velocidade finita", "onde": "Science Norway · história", "url": "https://www.sciencenorway.no/culture-history-history-of-science/350-years-ago-this-man-discovered-that-light-has-a-finite-speed/2737969"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "API", "categoria": "Software", "definicao": "Porta de acesso que deixa um programa usar o serviço de outro. É por ela que os programadores chamam os modelos de IA."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedacinho de texto, como parte de uma palavra, que o modelo lê e escreve. As empresas de IA cobram por milhão de tokens."},
+    {"termo": "Cache", "categoria": "IA", "definicao": "Memória de trechos já processados. Reaproveitar o que está em cache sai mais barato que ler tudo de novo."},
+    {"termo": "Subagente", "categoria": "IA", "definicao": "Agente de IA auxiliar que recebe uma parte da tarefa de um agente principal e devolve o resultado."},
+    {"termo": "FP64", "categoria": "Hardware", "definicao": "Conta com números de precisão dupla, usada em simulações científicas. A IA costuma usar precisões menores e mais rápidas."},
+    {"termo": "Data center", "categoria": "Hardware", "definicao": "Galpão cheio de servidores que guarda dados e roda serviços na nuvem, inclusive os modelos de IA."},
+    {"termo": "Stablecoin", "categoria": "Cripto", "definicao": "Moeda digital atrelada a um ativo estável, quase sempre o dólar. A USDT, da Tether, é a maior."},
+    {"termo": "ETF", "categoria": "Mercado", "definicao": "Fundo negociado na bolsa como uma ação. Os ETFs de bitcoin deixam investir na moeda sem comprá-la diretamente."},
+    {"termo": "IPO", "categoria": "Mercado", "definicao": "Oferta inicial de ações: o dia em que uma empresa passa a ter ações negociadas na bolsa."}
+  ]
+}
