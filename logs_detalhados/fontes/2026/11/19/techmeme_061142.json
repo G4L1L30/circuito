@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261119T061142-50a3a161",
+  "execucao": "2026-11-19T06:11:42-03:00",
+  "robo": "circuito_diario",
+  "fonte": "techmeme",
+  "nome": "Techmeme",
+  "tipo": "rss",
+  "url": "https://www.techmeme.com/feed.xml",
+  "status": "ok",
+  "itens_lidos": 15,
+  "itens_na_janela": 14,
+  "erro": null,
+  "duracao_ms": 467
+}

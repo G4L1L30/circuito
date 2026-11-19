@@ -1,0 +1,126 @@
+{
+  "capa": {
+    "manchete": "Anthropic na bolsa",
+    "subtitulo": "A dona do Claude estreia hoje na Nasdaq, com o maior IPO da história.",
+    "elemento": {"numero": "83", "simbolo": "ANT", "nome": "Anthropic", "detalhe": "US$ 83"},
+    "chamadas": [
+      {"rotulo": "Google", "texto": "Gemini 4 Neon chega para brigar no topo"},
+      {"rotulo": "Meta", "texto": "Agente Muse assusta os próprios funcionários"},
+      {"rotulo": "Memória", "texto": "Chip de SSD cai 20% em um mês"},
+      {"rotulo": "Cripto", "texto": "Bitcoin abaixo de US$ 64 mil, com medo extremo"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Dia de estreia na bolsa",
+    "paragrafos": [
+      "Hoje a Anthropic vira empresa de capital aberto, com o maior IPO já feito. Na véspera, a Google respondeu com o Gemini 4 Neon. E os agentes de IA seguem dando trabalho: a Meta lida com um que fala demais, e os bancos avisam que o risco é do cliente.",
+      "Bom café."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Google", "assunto": "Inteligência artificial", "tarja": "Modelo novo",
+     "titulo": "A Google acende o Gemini 4 Neon", "ilustracao": "robo",
+     "paragrafos": [
+       "A Google lançou na quarta (18) o Gemini 4 Neon, modelo para programação, trabalho de escritório e ciência. Segundo a empresa, ele é o 3º colocado no índice de inteligência da Artificial Analysis e o 1º no ranking de agentes de código do mesmo site.",
+       "Custa US$ 3 por milhão de tokens de entrada e US$ 15 na saída. O programador Simon Willison reclama da confusão: hoje o Neon sai mais caro que o Carbon, que está pela metade do preço até 1º de dezembro."
+     ],
+     "quadro": {"titulo": "Onde usar", "texto": "Já está na API do Gemini, no Google AI Studio e, para assinantes Pro e Ultra, no app do Gemini e no Antigravity."},
+     "refs": [
+       {"rotulo": "Anúncio oficial", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"},
+       {"rotulo": "Simon Willison", "url": "https://simonwillison.net/2026/Nov/18/llm-gemini/"},
+       {"rotulo": "micjm.com", "url": "https://micjm.com/blog/gemini-4-neon-looks-like-a-top-model/"}
+     ]},
+
+    {"tipo": "materia", "secao": "Anthropic", "assunto": "Inteligência artificial",
+     "titulo": "A Anthropic estreia na bolsa",
+     "olho": "A dona do Claude vendeu 980 milhões de ações a US$ 83 cada e levantou US$ 81,3 bilhões. Nenhuma empresa arrecadou tanto ao abrir o capital.",
+     "ilustracao": "predio",
+     "legenda": "Do laboratório para o pregão: o Claude agora tem ação na bolsa.",
+     "paragrafos": [
+       "A Anthropic, dona do Claude, fixou na quarta (18) o preço da sua oferta inicial de ações, o IPO: US$ 83 cada, acima da faixa prevista, de US$ 70 a US$ 78. As ações começam a ser negociadas hoje, quinta (19), na Nasdaq, com o código ANT.",
+       "Segundo o TechCrunch, a oferta arrecadou US$ 81,3 bilhões e superou o recorde da SpaceX, de US$ 75 bilhões. A empresa passa a valer cerca de US$ 1,5 trilhão, contra US$ 965 bilhões em maio. Nem todos comemoram: em entrevistas ao New York Times, funcionários mostraram entusiasmo contido e debatem o ritmo da corrida da IA."
+     ],
+     "quadros": [
+       {"titulo": "A oferta em números",
+        "tabela": {"colunas": ["Item", "Valor"],
+                   "linhas": [["Preço por ação", "US$ 83"], ["Faixa prevista", "US$ 70 a 78"], ["Ações vendidas", "980 milhões"]]}},
+       {"titulo": "Os sócios gigantes", "texto": "A Amazon tem quase 15% da empresa e o Google, quase 14%. AMD, Broadcom, Microsoft, Nvidia e outras vão comprar US$ 26 bilhões em ações sem direito a voto."},
+       {"titulo": "E o pequeno investidor?", "texto": "Fontes ouvidas pelo Financial Times esperam que a fatia do varejo fique abaixo de 20%. É mais que o normal: em IPOs grandes, ela costuma ser de 5% a 10%."}
+     ],
+     "refs": [
+       {"rotulo": "Anúncio oficial", "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"},
+       {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/18/anthropic-reportedly-prices-ipo-at-83-a-share-above-projected-range/"},
+       {"rotulo": "New York Times", "url": "https://www.nytimes.com/2026/11/18/opinion/anthropic-ai-openai.html?unlocked_article_code=1.RVE.AUKz.AkiqfoAGG5ph"},
+       {"rotulo": "Financial Times", "url": "https://www.ft.com/content/38c122d6-b533-4595-9554-3852c52e580f"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "O SSD respira, o driver atrapalha", "estilo": "lista",
+     "notas": [
+       {"rotulo": "NAND em queda", "texto": "O preço à vista dos chips de memória flash caiu 20% em um mês, segundo jornal coreano. SSD, celular e PC podem baratear.", "url": "https://www.tomshardware.com/pc-components/ssds/ssds-laptops-and-phones-may-get-cheaper-as-consumer-nand-spot-pricing-drops-20-percent-bank-of-america-expects-contract-price-drops-report-cites-oversupply-in-consumer-market-amid-declining-demand-and-growing-chinese-competition"},
+       {"rotulo": "Driver guloso", "texto": "Bug nos drivers GeForce 621.14 e 621.24 grava até 30 GB por hora no SSD, segundo usuários.", "url": "https://www.tomshardware.com/pc-components/gpu-drivers/nvidia-geforce-driver-bug-reportedly-hammers-ssds-with-up-to-30gb-of-writes-per-hour-users-trace-massive-idle-wear-to-background-service-newer-driver-reportedly-still-affected"},
+       {"rotulo": "RTX Spark", "texto": "Chegaram os mini PCs da Nvidia, por Asus, Dell e MSI, com até 128 GB de memória para IA local.", "url": "https://blogs.nvidia.com/blog/rtx-spark-desktop-local-ai-available-now/"}
+     ],
+     "grafico": {"titulo": "Monitores OLED: fatia das vendas (%)",
+                 "url": "https://www.tomshardware.com/monitors/gaming-monitors/global-oled-monitor-shipments-doubled-year-over-year-in-q3-2026-gamers-turn-to-display-upgrades-as-technology-gets-cheaper-and-ai-squeezes-components",
+                 "barras": [
+                   {"rotulo": "Asus", "valor": 21.7, "texto": "21,7", "destaque": true},
+                   {"rotulo": "MSI", "valor": 14.5, "texto": "14,5"},
+                   {"rotulo": "Samsung", "valor": 11.3, "texto": "11,3"}
+                 ],
+                 "nota": "TrendForce, 3º trimestre de 2026. As vendas de OLED dobraram em um ano."}},
+
+    {"tipo": "notas", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Segurança",
+     "titulo": "O agente que fala demais", "ilustracao": "lupa", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Meta Muse", "texto": "Segundo a Reuters, funcionários da Meta viram o agente Muse misturar conversas de contas diferentes e citar saldos bancários de estranhos. A Meta diz que eram alucinações.", "url": "https://arstechnica.com/tech-policy/2026/11/muse-privacy-invasions-are-freaking-out-meta-staffers-internal-chats-show/"},
+       {"rotulo": "Citi", "texto": "O banco avisou que, se um agente de IA com acesso à conta errar ou for invadido, o prejuízo é do cliente. JPMorgan e Bank of America já fazem igual.", "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/"},
+       {"rotulo": "Arizona", "texto": "A procuradoria do estado abriu investigação criminal contra a OpenAI e outras empresas por suposta infiltração de agentes de IA em bancos, segundo a Reuters.", "url": "https://www.reuters.com/legal/transactional/arizona-says-it-is-investigating-openai-other-firms-over-possible-rogue-agents-2026-11-19/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs", "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Microsoft", "texto": "Lançou sete modelos de IA próprios, para código, cibersegurança, imagem e voz. Eles devem chegar ao GitHub.", "url": "https://tecnoblog.net/noticias/microsoft-amplia-linha-propria-de-ia-com-sete-novos-modelos/"},
+       {"rotulo": "Google", "texto": "Liberou o Genie 4 para assinantes do AI Ultra. O modelo cria mundos virtuais que dá para editar em tempo real, digitando, e agora com som.", "url": "https://deepmind.google/blog/genie-4-is-now-available/"},
+       {"rotulo": "Nvidia", "texto": "Na primeira reunião geral sem Jensen Huang, a CEO interina, Colette Kress, prometeu aumento e mais ações já em dezembro, segundo a Wired.", "url": "https://www.tomshardware.com/tech-industry/big-tech/nvidia-promises-employee-pay-raises-equity-before-december-to-quell-unrest-in-wake-of-jensen-huang-scandal-at-first-all-hands-meeting-since-ceos-departure-staff-offered-perks-told-were-going-to-be-fine"},
+       {"rotulo": "Tesla", "texto": "Vai vender o Cybercab, carro sem volante, por US$ 29,9 mil. Mas ele só roda com uma assinatura a partir de US$ 299 por mês.", "url": "https://arstechnica.com/cars/2026/11/tesla-will-sell-you-a-cybercab-for-30000-then-charge-299-a-month-to-use-it/"},
+       {"rotulo": "WhatsApp", "texto": "Testa backup na nuvem com 2 GB grátis para alguns usuários de Android. Haverá planos pagos para quem precisar de mais.", "url": "https://tecnoblog.net/noticias/whatsapp-comeca-a-testar-backup-nas-nuvens-com-2-gb-gratis/"},
+       {"rotulo": "Snapchat", "texto": "Criadores de filtros de realidade aumentada já podem descrever o efeito em linguagem comum a assistentes como Claude Code e Cursor.", "url": "https://techcrunch.com/2026/11/18/snapchat-now-lets-developers-build-ar-lenses-with-ai-coding-assistants-like-claude-code-and-cursor/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin abaixo de US$ 64 mil, com medo",
+     "notas": [
+       {"rotulo": "Movie2k", "texto": "Um juiz alemão propôs encerrar o caso do antigo site pirata se o operador entregar cerca de 40 mil bitcoins. Ele ficaria com uns 16 mil.", "url": "https://livecoins.com.br/justica-alema-propoe-que-operador-de-site-de-pirataria-fique-com-us-1-bilhao-em-bitcoin-e-processo-seja-encerrado-mas-ha-uma-condicao/"},
+       {"rotulo": "Bradesco", "texto": "A Bradesco Asset é a única gestora latino-americana no Projeto Harmonia, da Allfunds e da Solana, que testa fundos tokenizados.", "url": "https://livecoins.com.br/bradesco-asset-e-a-unica-gestora-da-america-latina-selecionada-para-o-projeto-harmonia-iniciativa-global-de-tokenizacao-de-fundos/"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Programmer404", "onde": "TabNews", "texto": "Perguntou se a IA mudou mesmo o dia a dia da turma. No dele, quase nada: usa o ChatGPT grátis como buscador, porque o modelo procura em centenas de fontes de uma vez.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/Programmer404/inteligencia-artificial-realmente-mudou-algo-no-seu-dia-a-dia"}]},
+       {"nome": "rubin", "onde": "TabNews", "texto": "Mostrou como fazer uma foto caber no limite de bytes de um formulário sem mudar a resolução: recorte primeiro e teste algumas qualidades de JPEG.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/rubin/jpeg-para-formularios-como-limitar-bytes-sem-mudar-a-resolucao"}]},
+       {"nome": "prelulu", "onde": "TabNews", "texto": "Um roteiro para medir se uma videochamada com personagem de IA para de falar rápido quando o usuário interrompe, e quanto demora para retomar.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/prelulu/pitch-como-testar-interrupcoes-em-uma-videochamada-com-um-personagem-de-ia"}]}
+     ],
+     "quadro": {"titulo": "GTA 6 na banda larga", "texto": "Com 212 GB, o GTA 6 causou picos de tráfego lá fora no pré-download. Ao Tecnoblog, operadoras brasileiras disseram que monitoram a demanda."}},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Daniel Stenberg: enquanto agentes reescreviam o curl em Rust, o curl de verdade ganhou 200 correções", "onde": "Simon Willison · citação", "url": "https://simonwillison.net/2026/Nov/18/daniel-stenberg/"},
+       {"titulo": "Engenharia reversa com a ajuda de modelos de linguagem", "onde": "Slow Chronicle · técnico", "url": "https://www.slowchronicle.com/posts/llm-assisted-reverse-engineering"},
+       {"titulo": "Desmonte a Voyager 1 até chegar a um único chip de memória", "onde": "rshekhar.com · interativo", "url": "https://rshekhar.com/voyager/"},
+       {"titulo": "O consenso silencioso: como manter o controle das instituições com IA mais capaz", "onde": "OpenAI · ensaio", "url": "https://openai.com/index/the-silent-consensus"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "IPO", "categoria": "Mercado", "definicao": "Oferta inicial de ações: o dia em que uma empresa passa a ter ações negociadas na bolsa."},
+    {"termo": "Nasdaq", "categoria": "Mercado", "definicao": "Bolsa de valores americana onde ficam muitas empresas de tecnologia, como Apple, Microsoft e Nvidia."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedacinho de texto, como parte de uma palavra, que o modelo lê e escreve. As empresas de IA cobram por milhão de tokens."},
+    {"termo": "API", "categoria": "Software", "definicao": "Porta de acesso que deixa um programa usar o serviço de outro. É por ela que os programadores chamam os modelos de IA."},
+    {"termo": "Agente de IA", "categoria": "IA", "definicao": "Programa de IA que age sozinho em nome do usuário: lê mensagens, abre sites, faz compras ou mexe em contas."},
+    {"termo": "NAND", "categoria": "Hardware", "definicao": "Tipo de memória flash que guarda os dados mesmo desligada. É o chip que vai dentro de SSDs, celulares e pendrives."},
+    {"termo": "Driver", "categoria": "Software", "definicao": "Programa que ensina o sistema operacional a conversar com uma peça, como a placa de vídeo."},
+    {"termo": "Tokenização", "categoria": "Cripto", "definicao": "Transformar um ativo, como a cota de um fundo, num registro digital numa blockchain, para negociar e liquidar mais rápido."}
+  ]
+}
