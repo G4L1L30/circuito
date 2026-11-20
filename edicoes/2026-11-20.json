@@ -1,0 +1,116 @@
+{
+  "capa": {
+    "manchete": "A Anthropic abre em alta",
+    "subtitulo": "Ações da dona do Claude estreiam 33% acima da oferta. Mas a conta é trilionária.",
+    "elemento": {"numero": "111", "simbolo": "ANT", "nome": "Anthropic", "detalhe": "US$ 111,50"},
+    "chamadas": [
+      {"rotulo": "Segurança", "texto": "64 letras A abrem brecha no Java"},
+      {"rotulo": "Nvidia", "texto": "Califórnia intima a empresa por chips na China"},
+      {"rotulo": "Memória", "texto": "DDR6 chega com pente 44% menor"},
+      {"rotulo": "Cripto", "texto": "Bitcoin na menor cotação desde julho"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Sino, champanhe e ressaca",
+    "paragrafos": [
+      "A Anthropic estreou na Nasdaq na quinta (19) e abriu 33% acima do preço da oferta. Nesta sexta (20), a ressaca veio pela Ásia: ações de chips caíram, e o bitcoin foi junto. No resto da edição, uma falha grave no Java achada por IA com US$ 200 em tokens e a Nvidia na mira da Califórnia.",
+      "Bom café."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Alerta vermelho",
+     "titulo": "Java4Shell: 64 letras A abrem o Java",
+     "ilustracao": "cofre",
+     "paragrafos": [
+       "Uma falha crítica no Java, apelidada de Java4Shell, deixa invasores rodarem programas em servidores alheios, muitas vezes sem login. Quem achou foi o laboratório Calif Research, com um robô de IA e US$ 200 em tokens.",
+       "O defeito está no OpenJDK, a base de quase todo Java, numa otimização do Base64, formato que transforma arquivos em texto. Basta enviar 64 letras A e um sinal de igual. Só afeta servidores com chips Intel Ice Lake, AMD Zen 4 ou mais novos. A Oracle já liberou a correção."
+     ],
+     "quadro": {"titulo": "Quem precisa correr", "texto": "Segundo a Calif, Jira, Confluence, Jenkins e Keycloak podiam ser invadidos sem login. Kafka, Solr e Elasticsearch, com login. Muitos programas trazem cópia própria do Java."},
+     "refs": [
+       {"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/cyber-security/critical-java-vulnerability-puts-millions-of-sites-services-and-devices-at-risk-of-remote-code-execution-triggers-with-64-as-and-an-sign-openjdk-optimization-bug-lets-an-attacker-trigger-it-just-by-inputting-repeated-text"},
+       {"rotulo": "Tecnoblog", "url": "https://tecnoblog.net/noticias/ia-ajudou-a-descobrir-falha-critica-no-java/"},
+       {"rotulo": "Correção no OpenJDK", "url": "https://github.com/openjdk/jdk/pull/32781"}
+     ]},
+
+    {"tipo": "materia", "secao": "Anthropic", "assunto": "Inteligência artificial",
+     "titulo": "A Anthropic estreia em alta na Nasdaq",
+     "olho": "As ações da dona do Claude abriram 33% acima do preço da oferta. A empresa sai com caixa recorde, e uma conta de infraestrutura ainda maior.",
+     "ilustracao": "predio",
+     "legenda": "Dia de sino na Nasdaq: a dona do Claude agora tem ações na bolsa.",
+     "paragrafos": [
+       "As ações da Anthropic começaram a ser negociadas na Nasdaq na quinta (19). Nos primeiros minutos, valiam US$ 111,50, ou 33% acima dos US$ 83 fixados na oferta inicial, o IPO. Segundo o TechCrunch, a esse preço a empresa passaria de US$ 2 trilhões em valor de mercado, à frente de Meta e Tesla.",
+       "A oferta levantou US$ 81,3 bilhões. Somando ações especiais vendidas a Nvidia, Google e outras, o caixa da empresa recebeu cerca de US$ 105 bilhões. Os sete fundadores embolsaram uns US$ 280 milhões cada. Mas a conta pesa: nos documentos da oferta, a Anthropic lista de US$ 1,05 a 1,08 trilhão em compromissos de infraestrutura nos próximos anos."
+     ],
+     "quadros": [
+       {"titulo": "Quem é dono de quanto",
+        "tabela": {"colunas": ["Acionista", "Fatia"],
+                   "linhas": [["Amazon", "14,6%"], ["Google", "13,4%"], ["Iconiq*", "1,8%"]]}},
+       {"titulo": "O discurso no sino", "texto": "Antes da abertura, o CEO Dario Amodei repetiu o compromisso com a segurança: mostrar que dá para fazer as escolhas certas e ainda ter sucesso. Ele chama isso de \"corrida para o topo\"."},
+       {"titulo": "E a ressaca?", "texto": "Na sexta (20), a Ásia caiu: SoftBank perdeu cerca de 15%, Samsung e SK Hynix mais de 6%, segundo o Financial Times. *A fatia da Iconiq é estimativa da Forbes."}
+     ],
+     "refs": [
+       {"rotulo": "TechCrunch · estreia", "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/"},
+       {"rotulo": "TechCrunch · números", "url": "https://techcrunch.com/2026/11/19/anthropics-7-founders-cashed-out-nearly-2b-in-record-breaking-ipo/"},
+       {"rotulo": "Financial Times", "url": "https://www.ft.com/content/c7ad2e0c-efd1-40c2-a5a8-819ced8acf5b"},
+       {"rotulo": "Forbes", "url": "https://www.forbes.com/sites/richardnieva/2026/11/19/the-big-vc-winners-in-anthropics-ipo/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Memória nova, placa velha", "ilustracao": "memoria", "estilo": "lista",
+     "notas": [
+       {"rotulo": "DDR6", "texto": "A JEDEC, que define os padrões de memória, mostrou o DDR6: pente 44% menor, partindo de 12,8 GT/s e com até 1 TB por slot.", "url": "https://www.tomshardware.com/pc-components/ram/ddr6-ram-shrinks-by-44-percent-while-delivering-4x-ddr5s-baseline-bandwidth-jedec-previews-12-8-gt-s-modules-with-up-to-1-terabyte-of-capacity-per-slot"},
+       {"rotulo": "Intel 18A", "texto": "O processo de fabricação 18A chegou a 70% de chips aproveitados. E a Microsoft vai usar o EMIB, o encapsulamento da Intel.", "url": "https://www.tomshardware.com/tech-industry/semiconductors/intel-18a-yields-hit-70-percent-as-company-signs-microsoft-as-emib-customer-the-first-company-to-publicly-commit-to-intels-new-packaging-technology"},
+       {"rotulo": "Sucata turbo", "texto": "Três Nvidia V100 usadas, num PC de US$ 1.042, rodam o modelo Qwen 3.6 35B a uns 100 tokens por segundo.", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/three-e-waste-nvidia-v100s-hit-100-tokens-per-second-on-qwen-3-6-35b-in-a-usd1-042-homelab-rig-decommissioned-gpus-outpace-a-usd5-399-m5-max-mac-studio-at-long-contexts"}
+     ]},
+
+    {"tipo": "notas", "secao": "Bastidores", "assunto": "Chips", "tarja": "Nvidia",
+     "titulo": "A Nvidia na mira da Califórnia", "ilustracao": "chip", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Intimação", "texto": "O procurador-geral da Califórnia, Rob Bonta, intimou a Nvidia. Quer saber se atos de Jensen Huang levaram chips avançados à China e se investidores foram enganados.", "url": "https://www.cbsnews.com/sanfrancisco/news/california-nvidia-subpoena-jensen-huang-affair-alleged-chinese-spy/"},
+       {"rotulo": "Compra", "texto": "Segundo o The Information, a Nvidia negocia comprar a Inception, de modelos de difusão, por mais de US$ 500 milhões.", "url": "https://www.theinformation.com/articles/nvidia-nears-acquisition-diffusion-ai-developer-500-million"},
+       {"rotulo": "Exportação", "texto": "Documentos obtidos pela CNBC mostram que, até maio, os EUA aprovaram a venda de mais de 879 mil chips de IA a empresas chinesas.", "url": "https://www.cnbc.com/2026/11/19/nvidia-amd-china-chip-sales-congress.html"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs", "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Apple", "texto": "Procura engenheiro para liderar um agente de IA próprio, que navega na web, usa apps e escreve código, segundo a Bloomberg.", "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing"},
+       {"rotulo": "Google", "texto": "O Gemini ganhou um agente que usa o Mac por você: organiza arquivos e preenche formulários. E agora guarda as conversas por dois meses, mesmo com o histórico desligado.", "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"},
+       {"rotulo": "Meta", "texto": "O Muse Charm, aparelhinho com tela para conversar com o agente Muse, deve custar US$ 300, segundo o The Information.", "url": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price"},
+       {"rotulo": "xAI", "texto": "Pesquisadores flagraram o Grok Bot tentando, 31 vezes e sem autorização, entrar em e-mail, Slack, calendário e GitHub. Depois, a IA mentiu sobre isso.", "url": "https://tecnoblog.net/noticias/grok-bot-tentou-acessar-contas-sem-autorizacao-e-depois-mentiu/"},
+       {"rotulo": "Microsoft", "texto": "Falha nova na tela de bloqueio do Windows 11 deixa quem pega o PC rodar programas com poucas teclas, mesmo com o disco criptografado pelo BitLocker.", "url": "https://www.tomshardware.com/tech-industry/cyber-security/new-windows-11-lock-screen-zero-day-unlocks-bitlocker-protected-pcs-with-just-a-few-keystrokes-win-u-keyboard-trick-lets-physical-attackers-run-usb-payloads-or-create-new-admin-accounts"},
+       {"rotulo": "Apple x Reino Unido", "texto": "Um tribunal obrigou o governo britânico a admitir a ordem secreta que mandou à Apple para furar a criptografia.", "url": "https://techcrunch.com/2026/11/19/u-k-government-forced-to-disclose-secret-apple-backdoor-order/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin na menor cotação desde julho",
+     "notas": [
+       {"rotulo": "Mínima", "texto": "O bitcoin caiu ao menor nível em quatro meses, junto com as ações de tecnologia, depois da estreia da Anthropic.", "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"},
+       {"rotulo": "Ethereum", "texto": "A próxima grande atualização da rede ficou para 2027, porque quebraria aplicativos.", "url": "https://www.coindesk.com/tech/2026/11/20/ethereum-s-next-big-upgrade-is-pushed-into-2027-by-apps-it-would-break"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda falando",
+     "vozes": [
+       {"nome": "Valmirmd", "onde": "TabNews", "texto": "Compartilhou o checklist que segue antes de aceitar código escrito por IA.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/Valmirmd/o-checklist-que-eu-sigo-antes-de-aceitar-codigo-que-a-ia-escreveu"}]},
+       {"nome": "henriquesk", "onde": "TabNews", "texto": "Contou que seus agentes de IA seguiam decisões que ele já tinha abandonado, e o que fez a respeito.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/henriquesk/pitch-meus-agentes-de-ia-seguiam-decisoes-que-eu-ja-tinha-abandonado"}]},
+       {"nome": "Attekita Dev", "onde": "YouTube", "texto": "Vídeo novo: a conta da IA chegou, e quem paga é o desenvolvedor do futuro.", "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=SW93RhgeFHo"}]},
+       {"nome": "Código Fonte TV", "onde": "YouTube", "texto": "Pergunta se o mercado de desenvolvimento voltou a crescer, e para quem.", "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=3wTzHDxtpnw"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Como o Claude resolveu dois problemas abertos na física dos buracos negros", "onde": "Anthropic · pesquisa", "url": "https://www.anthropic.com/research/claude-black-hole-physics"},
+       {"titulo": "PostgreSQL 19 saiu, atrasado pela enxurrada de falhas achadas por IA", "onde": "Simon Willison · técnico", "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/"},
+       {"titulo": "A fraude de tokens chegou, e é feia", "onde": "Simon Willison · comentário", "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/"},
+       {"titulo": "Uma revistinha de 8 páginas numa folha A4, montada no navegador", "onde": "krthr.co · diversão", "url": "https://krthr.co/paper-folds-and-whats-new-in-fanzines-app/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Valor de mercado", "categoria": "Mercado", "definicao": "Preço de uma ação multiplicado pelo total de ações. É quanto a bolsa diz que a empresa vale."},
+    {"termo": "Base64", "categoria": "Programação", "definicao": "Formato que transforma dados binários, como imagens, em texto comum, para viajar em e-mails e páginas."},
+    {"termo": "OpenJDK", "categoria": "Programação", "definicao": "Versão aberta do Java. Quase todas as distribuições da linguagem, inclusive a da Oracle, saem dela."},
+    {"termo": "JEDEC", "categoria": "Hardware", "definicao": "Associação que define os padrões de memória, como DDR5 e DDR6, para que peças de marcas diferentes se entendam."},
+    {"termo": "EMIB", "categoria": "Hardware", "definicao": "Tecnologia de encapsulamento da Intel que liga vários pedaços de chip num pacote só, com uma ponte de silício."},
+    {"termo": "Modelo de difusão", "categoria": "IA", "definicao": "Tipo de IA que gera o resultado inteiro de uma vez e vai refinando, em vez de escrever palavra por palavra."},
+    {"termo": "BitLocker", "categoria": "Segurança", "definicao": "Recurso do Windows que criptografa o disco, para os dados ficarem ilegíveis sem a senha ou a chave."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedacinho de texto que a IA lê ou escreve. É a unidade usada para medir velocidade e cobrar pelo uso."}
+  ]
+}
