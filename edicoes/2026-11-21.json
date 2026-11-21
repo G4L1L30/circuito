@@ -1,0 +1,114 @@
+{
+  "capa": {
+    "manchete": "Riemann, 167 anos depois",
+    "subtitulo": "Matemático da Anthropic diz ter provado, com o Claude, o problema mais famoso da matemática.",
+    "elemento": {"numero": "167", "simbolo": "Zt", "nome": "Zeta", "detalhe": "ζ(s) = 0"},
+    "chamadas": [
+      {"rotulo": "Bolsa", "texto": "Nasdaq tem a pior semana em seis anos"},
+      {"rotulo": "Segurança", "texto": "Dois milhões de iscas flagram vazamento na IA"},
+      {"rotulo": "Chips", "texto": "IA da OpenAI melhora placa da AMD"},
+      {"rotulo": "Cripto", "texto": "Bitcoin abaixo de US$ 57 mil"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Um problema de 1859, uma sexta de 2026",
+    "paragrafos": [
+      "Um matemático da Anthropic diz ter provado, com o Claude, a hipótese de Riemann, aberta desde 1859. O computador já conferiu a prova; falta gente entender. Enquanto isso, a bolsa não quis saber de matemática: o Nasdaq 100 teve a pior semana em mais de seis anos, e o bitcoin perdeu os US$ 57 mil.",
+      "Bom sábado."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Bastidores", "assunto": "Mercado", "tarja": "Ressaca",
+     "titulo": "Nasdaq tem a pior semana em seis anos",
+     "ilustracao": "predio",
+     "paragrafos": [
+       "Na sexta (20), o Nasdaq 100, índice das maiores empresas de tecnologia dos EUA, caiu 5,6%. Na semana, a perda chegou a 10,4%, a pior sequência em mais de seis anos, segundo o Financial Times. O motivo: medo de que a onda de investimentos em IA perca fôlego.",
+       "As ações da Anthropic e da Nvidia tombaram. A Oracle correu para avisar que já garantiu todo o dinheiro para cumprir o contrato de infraestrutura com a OpenAI. E o bitcoin foi junto."
+     ],
+     "quadro": {"titulo": "O caixa da estreia", "texto": "A Anthropic fechou a oferta com o lote extra: US$ 93,5 bilhões. Com a venda paralela a Nvidia, Google, Microsoft e outras, o total bruto foi a US$ 119,5 bilhões."},
+     "refs": [
+       {"rotulo": "Financial Times", "url": "https://www.ft.com/content/9f3c6ed6-c08f-4710-9683-ee2f5eb25841?sharetype=gift"},
+       {"rotulo": "Anthropic · oferta", "url": "https://www.anthropic.com/news/ipo-close"},
+       {"rotulo": "Oracle no X", "url": "https://x.com/oracle"}
+     ]},
+
+    {"tipo": "materia", "secao": "Anthropic", "assunto": "Inteligência artificial",
+     "titulo": "O Claude e o problema de 1859",
+     "olho": "Um matemático da Anthropic diz ter provado a hipótese de Riemann com a ajuda da IA. O computador já conferiu a prova. Agora falta os humanos entenderem.",
+     "ilustracao": "robo",
+     "legenda": "Dupla de trabalho: Alpöge diz que o Claude o deixou para trás na reta final.",
+     "paragrafos": [
+       "Levent Alpöge, matemático da Anthropic, diz ter provado a hipótese de Riemann com a ajuda do Claude. O problema é de 1859 e trata da distribuição dos números primos. É um dos sete Problemas do Milênio. A Anthropic não comentou o anúncio, segundo o The Verge.",
+       "A prova saiu em Lean, linguagem que deixa o computador conferir cada passo. Segundo o TechCrunch, matemáticos como Andrew Sutherland, do MIT, confirmaram que ela compila. Falta gente entender e explicar o argumento, o que Alpöge promete fazer. Ele conta que avisou o CEO Dario Amodei no domingo (15). O Claude, escreveu, \"voou, dançou e brilhou\" perto da linha de chegada."
+     ],
+     "quadros": [
+       {"titulo": "O que é a hipótese", "texto": "Proposta por Bernhard Riemann, diz que todas as soluções interessantes da equação ζ(s) = 0 ficam numa mesma reta. Prová-la ajuda a explicar como os números primos se distribuem."},
+       {"titulo": "E a prova humana", "texto": "No mesmo dia, Ravi Vakil, de Stanford, divulgou uma prova da versão generalizada, escrita por Alessandro Masullo: \"toda humana, sem IA\". Sem Lean, ainda é cedo para saber se fecha, nota o TechCrunch."},
+       {"titulo": "E o milhão?", "texto": "O Instituto Clay paga US$ 1 milhão por problema. Mas a prova precisa ser publicada e resistir a pelo menos dois anos de escrutínio. Até hoje, só a conjectura de Poincaré levou o carimbo oficial."}
+     ],
+     "refs": [
+       {"rotulo": "The Verge", "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem"},
+       {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/20/ai-claimed-a-solution-to-the-167-year-old-riemann-hypothesis-and-a-human-did-too/"},
+       {"rotulo": "Texto de Alpöge", "url": "https://alpo.ge/remark.pdf"},
+       {"rotulo": "Anúncio de Ravi Vakil", "url": "https://math216.wordpress.com/2026/11/20/hurried-announcement-alessandro-masullo-grh/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Chip desenhado por IA, memória salgada", "ilustracao": "gpu", "estilo": "lista",
+     "notas": [
+       {"rotulo": "AMD + OpenAI", "texto": "Modelos da OpenAI reescreveram o código dos circuitos da próxima placa de vídeo topo de linha da AMD. O ganho, segundo a OpenAI: até 14% em PPA, a conta de consumo, desempenho e área.", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/openai-helped-amd-improve-its-upcoming-flagship-gpu-design-by-14-percent-ppa-gpt-models-also-helping-lisa-sus-outfit-boost-its-new-cpus"},
+       {"rotulo": "SK Hynix", "texto": "Masayoshi Son, do SoftBank, sondou bancos para comprar a gigante de memória por US$ 1 trilhão, segundo o The Information. O SoftBank diz que a ideia saiu da mesa.", "url": "https://www.theinformation.com/articles/softbanks-masayoshi-son-explored-1-trillion-moonshot-buyout-sk-hynix"},
+       {"rotulo": "Steam Machine", "texto": "A Valve avisou que memória e armazenamento seguem encarecendo e que o preço do aparelho pode subir.", "url": "https://arstechnica.com/gaming/2026/11/valve-says-it-might-have-to-raise-the-price-of-supply-limited-steam-machines/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Vazamentos",
+     "titulo": "Dois milhões de iscas, três invasões", "ilustracao": "lupa", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Canários", "texto": "O pesquisador HD Moore mandou quase 2 milhões de prompts com segredos rastreáveis a serviços de IA. Descobriu três provedores de hospedagem invadidos e revendedores que roubavam as chaves.", "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"},
+       {"rotulo": "FBI", "texto": "O FBI investiga uma aparente invasão do NCIC, o banco de dados nacional de crimes usado pelas polícias americanas, segundo a CNN.", "url": "https://cnn.com/2026/11/20/politics/fbi-hacked-again-target-crime-database"},
+       {"rotulo": "Destilação", "texto": "A OpenAI detalhou como combate a destilação adversária: treinar um modelo copiando, sem autorização, as respostas de outro.", "url": "https://openai.com/index/combatting-adversarial-distillation"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs", "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Google", "texto": "Vai aposentar o Google Assistente nas caixas e telas inteligentes em 2 de agosto de 2027; entra o Gemini for Home. Antes, em 25 de janeiro, o app Nest fecha e tudo migra para o Google Home.", "url": "https://www.theverge.com/tech/1038834/google-assistant-smart-speakers-nest-app-killed-shut-down"},
+       {"rotulo": "Meta", "texto": "Admitiu, no relatório de sustentabilidade, que reavalia a meta de zerar as emissões líquidas até 2030. A razão, diz, é a demanda por infraestrutura de IA. Amazon, Google e Microsoft mantêm as suas, nota o Ars Technica.", "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/"},
+       {"rotulo": "Microsoft", "texto": "Vai encerrar o app de tarefas To Do em 30 de junho de 2027. Contas de trabalho e escola migram para o Planner; contas pessoais ficam sem substituto, segundo o GeekWire.", "url": "https://www.geekwire.com/2026/microsoft-to-do-users-make-a-big-to-do-over-popular-task-apps-retirement/"},
+       {"rotulo": "Nvidia", "texto": "Funcionários disseram ao New York Times que Jensen Huang liderava com elogio, medo e humilhação. O porta-voz dele chama os relatos de invenção. Milhares de empregados assinaram uma carta pela volta do ex-CEO.", "url": "https://techcrunch.com/2026/11/20/behind-jensen-huangs-exit-questions-about-a-management-style-reportedly-built-on-fear/"},
+       {"rotulo": "Cursor", "texto": "A plataforma de programação com IA, da SpaceX, disse a parlamentares americanos que pensa em abandonar modelos chineses de pesos abertos por \"risco geopolítico\", segundo a CNBC.", "url": "https://www.cnbc.com/2026/11/20/cursor-chinese-ai-models-geopolitical-risk.html"},
+       {"rotulo": "Casa Branca", "texto": "Trump prometeu, na sexta (20), um \"imposto tremendo\" para empresas que construírem data centers fora dos EUA. Não deu detalhes.", "url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin perde os US$ 57 mil",
+     "notas": [
+       {"rotulo": "Tombo", "texto": "O bitcoin chegou a cair abaixo de US$ 57 mil pela primeira vez em dois anos, e outras moedas foram junto, segundo o CoinDesk.", "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone"},
+       {"rotulo": "Brasil", "texto": "O ministro Flávio Dino, do STF, deu até 15 de janeiro para CVM e Banco Central começarem a trabalhar juntos na regulação de tokens e criptoativos.", "url": "https://livecoins.com.br/flavio-dino-da-prazo-ate-janeiro-para-cvm-e-banco-central-unirem-regulacao-sobre-tokenizacao-e-criptoativos/"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "Fabio Akita", "onde": "blog", "texto": "Publicou a quinta versão do seu benchmark de LLMs. A pergunta mudou: em vez de medir qualidade pura, quanto custa ser competente o suficiente?", "links": [{"rotulo": "akitaonrails.com", "url": "https://www.akitaonrails.com/2026/11/20/llm-benchmark-v5-quanto-custa-ser-competente-o-suficiente/"}]},
+       {"nome": "nocthost", "onde": "TabNews", "texto": "Criou três servidores novos, sem divulgar os endereços, para medir em quanto tempo seriam atacados. Todos levaram o primeiro chute em poucos minutos.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/nocthost/medi-quanto-tempo-um-vps-novo-demora-para-ser-atacado-5-minutos"}]},
+       {"nome": "drcarlosperiotto", "onde": "TabNews", "texto": "Psiquiatra que atende gente de tecnologia, descreve como o burnout aparece no consultório e o que costuma ajudar.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/drcarlosperiotto/burnout-em-tech-o-que-eu-vejo-no-consultorio-e-o-que-ajuda-de-verdade"}]},
+       {"nome": "Lucas Montano", "onde": "YouTube", "texto": "Vídeo novo: verdades sobre IA que hoje são mentiras.", "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=EnXFHNGtC_k"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Singularidade de Navier-Stokes sem forçamento e a hipótese de Riemann generalizada", "onde": "Terence Tao · matemática", "url": "https://terrytao.wordpress.com/2026/11/20/unforced-euler-singularity-unforced-navier-stokes-singularity-and-the-generalized-riemann-hypothesis/"},
+       {"titulo": "Os papagaios estocásticos, ao que parece, provaram a hipótese de Riemann", "onde": "Scott Aaronson · comentário", "url": "https://scottaaronson.blog/?p=10344"},
+       {"titulo": "Computadores quânticos de átomos presos por laser podem corrigir erros com mais facilidade", "onde": "New York Times · ciência", "url": "https://www.nytimes.com/2026/11/20/science/quantum-computer-neutral-atoms.html?unlocked_article_code=1.R1E.PGHV.x5mP00wlvgC0"},
+       {"titulo": "Modelos de linguagem podem reescrever os próprios pesos", "onde": "arXiv · artigo científico", "url": "https://arxiv.org/abs/2611.21885"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Hipótese de Riemann", "categoria": "Matemática", "definicao": "Conjectura de 1859 sobre os zeros da função zeta. Se for verdadeira, explica como os números primos se espalham."},
+    {"termo": "Número primo", "categoria": "Matemática", "definicao": "Número maior que 1 que só se divide por 1 e por ele mesmo, como 2, 3, 5 e 7."},
+    {"termo": "Lean", "categoria": "Matemática", "definicao": "Linguagem de código aberto que escreve provas matemáticas como programa, para o computador conferir cada passo."},
+    {"termo": "Nasdaq 100", "categoria": "Mercado", "definicao": "Índice que acompanha as ações das maiores empresas não financeiras da bolsa Nasdaq, quase todas de tecnologia."},
+    {"termo": "PPA", "categoria": "Hardware", "definicao": "Sigla em inglês para consumo, desempenho e área. É a régua usada para comparar projetos de chip."},
+    {"termo": "Prompt", "categoria": "IA", "definicao": "O texto que a pessoa ou o aplicativo envia para a IA: a pergunta, a instrução, os dados."},
+    {"termo": "Destilação", "categoria": "IA", "definicao": "Técnica de treinar um modelo usando as respostas de outro, para copiar parte da capacidade dele."},
+    {"termo": "Pesos abertos", "categoria": "IA", "definicao": "Modelo de IA cujos números internos, os pesos, são publicados. Qualquer um pode baixar e rodar."}
+  ]
+}

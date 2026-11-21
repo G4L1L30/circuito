@@ -1,0 +1,14 @@
+{
+  "execucao_id": "20261121T061041-861f1f65",
+  "execucao": "2026-11-21T06:10:50-03:00",
+  "robo": "circuito_diario",
+  "fonte": "akita_blog",
+  "nome": "Fabio Akita (blog)",
+  "tipo": "rss",
+  "url": "https://akitaonrails.com/index.xml",
+  "status": "ok",
+  "itens_lidos": 10,
+  "itens_na_janela": 1,
+  "erro": null,
+  "duracao_ms": 984
+}

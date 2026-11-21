@@ -1,0 +1,20 @@
+{
+  "robo": "circuito_diario",
+  "execucao_id": "20261121T061041-861f1f65",
+  "execucao_inicio": "2026-11-21T06:10:41-03:00",
+  "execucao": "2026-11-21T06:14:29-03:00",
+  "processados": 28,
+  "sucesso": 28,
+  "falha": 0,
+  "etapa": "edição publicada",
+  "edição (data)": "2026-11-21",
+  "edição (número)": 24,
+  "tipo de edição": "normal",
+  "janela (início)": "2026-11-20T06:11:56-03:00",
+  "janela (fim)": "2026-11-21T06:10:41-03:00",
+  "notícias coletadas": 132,
+  "notas publicadas": 16,
+  "páginas": 12,
+  "fontes com falha": null,
+  "teste": false
+}
