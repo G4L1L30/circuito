@@ -1,0 +1,119 @@
+{
+  "capa": {
+    "manchete": "Chip de IA pede licença",
+    "subtitulo": "Os EUA apertam a exportação, e o Brasil entra na lista. Até chip velho travou.",
+    "elemento": {"numero": "14", "simbolo": "Si", "nome": "Silício", "detalhe": "28,085"},
+    "chamadas": [
+      {"rotulo": "OpenAI", "texto": "Um velocímetro para frear a IA"},
+      {"rotulo": "Privacidade", "texto": "Signal bloqueia prints por causa da IA"},
+      {"rotulo": "Placas", "texto": "Placa chinesa promete memória recorde"},
+      {"rotulo": "Cripto", "texto": "Bitcoin volta aos US$ 60 mil"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Chip, régua e freio",
+    "paragrafos": [
+      "Os EUA apertaram as regras dos chips de IA, e o Brasil entrou na lista de países que precisam de licença para recebê-los. Até chips de dez anos atrás travaram na TSMC. Do lado da IA, a OpenAI propôs uma régua para medir, e talvez frear, o avanço dos modelos. E o bitcoin voltou aos US$ 60 mil.",
+      "Boa semana."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "OpenAI", "assunto": "Inteligência artificial", "tarja": "Freio de mão",
+     "titulo": "A OpenAI quer um velocímetro para a IA",
+     "ilustracao": "robo",
+     "paragrafos": [
+       "Jakub Pachocki, cientista-chefe da OpenAI, propôs uma régua para medir o avanço da IA: a perplexidade. Ela mostra quanto o modelo acerta, em média, o próximo pedaço de texto. Quanto menor, melhor. Sam Altman chamou o texto do mais importante da OpenAI em um bom tempo.",
+       "Segundo Pachocki, o GPT-4 ficava perto de 0,91. Abaixo de 0,8, surgiram capacidades transformadoras em cibersegurança e matemática. A ideia: as empresas combinam um teto e só passam dele quando souberem vigiar melhor a IA."
+     ],
+     "quadro": {"titulo": "Quem puxou o freio", "texto": "Dario Amodei, da Anthropic, publicou um plano para \"ditar o ritmo da fronteira\", com limites comuns ao progresso. Altman e Musk pareceram apoiar, segundo o TechCrunch."},
+     "refs": [
+       {"rotulo": "OpenAI · texto de Pachocki", "url": "https://openai.com/index/perplexity-and-intelligence/"},
+       {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/"}
+     ]},
+
+    {"tipo": "materia", "secao": "Geopolítica dos chips", "assunto": "Hardware",
+     "titulo": "Chip de IA agora pede licença",
+     "olho": "Os EUA apertaram as regras de exportação de chips. O Brasil entrou na lista de países que precisam de licença, e até chips de dez anos atrás travaram na TSMC.",
+     "ilustracao": "chip",
+     "legenda": "Rede larga: a regra alcança até chips de celular, TV e carro.",
+     "paragrafos": [
+       "O BIS, órgão americano que controla exportações, publicou uma regra nova. O alvo: empresas chinesas de IA que alugam computação fora da China para usar chips avançados, como os Blackwell, da Nvidia. Mas a rede pegou mais gente. Brasil, Indonésia, Malásia, Singapura e Tailândia agora precisam de licença para receber chips de IA.",
+       "Segundo a regra, esses países costumam servir de escala para chips desviados à China. E tem mais: as fábricas devem tratar todo chip de 16 ou 14 nanômetros, tecnologia de uns dez anos, como chip avançado, salvo papelada que prove o contrário. Segundo o Nikkei Asia, a TSMC segurou remessas para clientes chineses e de outros países enquanto revisa os pedidos."
+     ],
+     "quadros": [
+       {"titulo": "O que é 16 nm?", "texto": "É a medida da geração de fabricação do chip: quanto menor o número, mais transistores cabem. Os 16 e 14 nm estão no mercado há uns dez anos e equipam celulares, TVs e carros."},
+       {"titulo": "Sudeste Asiático", "texto": "Segundo a Bloomberg, a regra ameaça o boom de data centers da região. Projetos podem ficar pela metade, e as neoclouds, nuvens que alugam placas de IA, terão de trocar os clientes chineses."},
+       {"titulo": "Por que agora", "texto": "O contrabando de chips virou crise com a saída de Jensen Huang da Nvidia. Fontes ouvidas pelo Tom's Hardware dizem que o motivo real foi o contrabando de 1,5 milhão de placas de IA."}
+     ],
+     "refs": [
+       {"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/policy/tsmc-reportedly-pauses-shipments-to-chinese-designers-after-u-s-export-rules-flag-decade-old-16nm-and-14nm-nodes-new-bis-controls-threaten-smartphone-tv-and-automotive-chips"},
+       {"rotulo": "Bloomberg", "url": "https://www.bloomberg.com/news/features/2026-11-22/trump-s-ai-chip-crackdown-on-china-after-nvidia-crisis-squeezes-southeast-asia"}
+     ]},
+
+    {"tipo": "perdeu", "titulo": "Se você perdeu no sábado",
+     "itens": [
+       {"rotulo": "Capa", "texto": "Levent Alpöge, matemático da Anthropic, disse ter provado a hipótese de Riemann com o Claude. A prova, em Lean, compila; falta gente entender o argumento.", "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem"},
+       {"rotulo": "Bolsa", "texto": "O Nasdaq 100 caiu 10,4% na semana, a pior em mais de seis anos, com medo de a onda de investimento em IA perder fôlego.", "url": "https://www.ft.com/content/9f3c6ed6-c08f-4710-9683-ee2f5eb25841?sharetype=gift"},
+       {"rotulo": "Segurança", "texto": "HD Moore espalhou quase 2 milhões de iscas em serviços de IA e achou três provedores de hospedagem invadidos.", "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/"},
+       {"rotulo": "Meta", "texto": "A empresa reavalia a meta de zerar as emissões líquidas até 2030 por causa da demanda dos data centers de IA.", "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Memória recorde, chip feito por IA", "ilustracao": "gpu", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Moore Threads", "texto": "A chinesa promete que a Lushan, sua próxima placa gamer, terá mais memória que qualquer placa de consumo. Pela conta do Tom's Hardware, 64 GB, o dobro da RTX 5090.", "url": "https://www.tomshardware.com/pc-components/gpus/moore-threads-next-lushan-gaming-gpu-could-pack-a-record-64gb-of-vram-doubles-the-rtx-5090s-32gb-lofty-claims-of-15x-gaming-and-50x-ray-tracing-over-mtt-s80"},
+       {"rotulo": "Frostbite", "texto": "A startup Architect Labs diz que agentes de IA projetaram do zero um processador novo. Na simulação, ele rende 4,59 vezes mais por watt que um núcleo comum.", "url": "https://www.tomshardware.com/tech-industry/semiconductors/ai-agents-design-an-entirely-new-cpu-architecture-from-scratch-startup-claims-frostbite-posts-4-59x-the-performance-per-watt-of-an-in-order-core-in-pre-silicon-tests"},
+       {"rotulo": "SpaceX", "texto": "Pegou US$ 43 bilhões emprestados para comprar placas da Nvidia, dadas como garantia. Credores temem que elas acabem em órbita, fora do alcance, segundo o Ars Technica.", "url": "https://www.tomshardware.com/tech-industry/data-centers/lenders-back-spacexs-usd43-billion-nvidia-gpu-deal-but-worry-the-collateral-could-end-up-in-orbit-making-it-impossible-to-reclaim-if-musk-defaults-five-year-hell-or-high-water-lease-may-lack-a-written-earth-only-guarantee"}
+     ]},
+
+    {"tipo": "notas", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Segurança",
+     "titulo": "Apagões, prints e um aviso", "ilustracao": "cofre", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Signal", "texto": "Passou a bloquear capturas de tela no Android e no iPhone. Meredith Whittaker, presidente do app, diz que agentes de IA dos sistemas leem a tela e ameaçam a privacidade.", "url": "https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/"},
+       {"rotulo": "Apagões", "texto": "Brad Smith, presidente da Microsoft, avisou que vêm mais panes nos próximos meses. A última semana teve queda no Outlook, no banco JPMorgan e no controle aéreo americano.", "url": "https://www.theverge.com/tech/1039851/major-tech-outages"},
+       {"rotulo": "Delta", "texto": "No domingo (22), todos os voos da Delta em Atlanta atrasaram por uma falha no sistema que calcula o peso e o equilíbrio dos aviões.", "url": "https://www.theverge.com/transportation/1039779/delta-flights-delayed-system-outage"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs", "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Anthropic", "texto": "A Notable Capital pôs cerca de 10% da parte americana do seu fundo na Anthropic, quando ela valia US$ 61,5 bilhões. Com a estreia na bolsa, o lucro no papel é de umas 15 vezes, segundo o TechCrunch.", "url": "https://techcrunch.com/2026/11/22/how-notable-capital-gic-and-baillie-gifford-bet-big-on-anthropic-before-its-ipo/"},
+       {"rotulo": "GPT x Claude", "texto": "Num teste do The New Stack, o GPT-6.2 Astra e o Claude Fable 5.2 quase empataram em tarefas de contabilidade, código e dados. Mas o Fable gastou bem mais tokens e custou mais de cinco vezes.", "url": "https://thenewstack.io/gpt-6-2-astra-vs-claude-fable-5-2/"},
+       {"rotulo": "Alexandr Wang", "texto": "Disse que a prova da hipótese de Riemann mostra que a IA vai superar os humanos em tudo, até em pesquisa de IA, e pediu atenção à segurança.", "url": "https://x.com/alexandr_wang"},
+       {"rotulo": "Meta", "texto": "Militantes do Partido do Congresso, de oposição na Índia, protestaram no escritório da Meta em Délhi. Pedem a volta de contas suspensas no Instagram.", "url": "https://www.theverge.com/tech/1039732/protesters-storm-meta-offices-in-india"},
+       {"rotulo": "Amazon", "texto": "O AECJ, grupo com mais de mil funcionários, aumenta a pressão para frear a expansão de data centers da empresa, segundo o Financial Times.", "url": "https://www.ft.com/content/d194e93b-8d3c-42eb-85dd-46d58c4f2a80"},
+       {"rotulo": "Wacom", "texto": "O fundo coreano MBK vai fechar o capital da japonesa das canetas digitais, num negócio de cerca de US$ 860 milhões, com a Samsung junto.", "url": "https://biz.chosun.com/en/en-international/2026/11/21/ARGP75AUBRFRJOU4M7PGDQTPOI/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin volta aos US$ 60 mil",
+     "notas": [
+       {"rotulo": "Mercado Pago", "texto": "Trocou a Paxos pela Ripio e mudou os endereços de bitcoin e de outras quatro moedas. Mandar para o endereço antigo pode causar perda.", "url": "https://livecoins.com.br/mercado-pago-troca-paxos-pela-ripio-muda-enderecos-de-bitcoin-e-alerta-para-risco-de-perda/"},
+       {"rotulo": "Kraken", "texto": "No sábado (21), o bitcoin bateu US$ 17 mil no par com o dólar canadense. A corretora manteve as ordens.", "url": "https://livecoins.com.br/flash-crash-derruba-bitcoin-para-us-17-000-na-kraken-em-par-contra-o-dolar-canadense/"},
+       {"rotulo": "Bitcoin Core", "texto": "Versão nova corrige falha achada por IA.", "url": "https://livecoins.com.br/desenvolvedores-lancam-nova-versao-do-bitcoin-core-para-corrigir-vulnerabilidade-encontrada-por-ia/"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "mindvsdrive", "onde": "TabNews", "texto": "Explicou por que um ID de pedido muda sozinho no navegador: o JavaScript só guarda inteiros exatos até 2^53 − 1. A saída é mandar o número como texto ou usar BigInt.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/mindvsdrive/o-id-do-pedido-mudou-sozinho-json-numeros-grandes-e-o-limite-de-253"}]},
+       {"nome": "CapivaraFit", "onde": "TabNews", "texto": "Fez um app Android que conta repetições pela câmera e contou o que aprendeu rodando detecção de pose em celular fraco, como trocar para um modelo mais leve.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/CapivaraFit/pitch-app-de-treino-com-contagem-de-repeticoes-pela-camera-e-o-que-aprendi-rodando-pose-detection-em-celular-fraco-troco-teste-fechado-do-google-play"}]},
+       {"nome": "ja2nativeport", "onde": "TabNews", "texto": "Portou um jogo de estratégia de 1999, o Jagged Alliance 2 com o mod 1.13, para Linux ARM64 nativo, sem Wine. É projeto de fã, não oficial.", "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/ja2nativeport/como-publiquei-um-jogo-de-estrategia-de-1999-como-binario-nativo-linux-arm64-ligacao-estatica-instalador-sha-256-e-40-retratos-novos"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "O que aconteceu com o Vale do Silício?", "onde": "O'Reilly Radar · ensaio", "url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/"},
+       {"titulo": "Masullo e a hipótese de Riemann", "onde": "John Carlos Baez · matemática", "url": "https://johncarlosbaez.wordpress.com/2026/11/22/masullo-on-the-riemann-hypothesis/"},
+       {"titulo": "Dario e Daniela Amodei, os irmãos por trás da Anthropic", "onde": "Wall Street Journal · perfil", "url": "https://www.wsj.com/tech/ai/anthropic-dario-daniela-amodei-siblings-ipo-be84ad11"},
+       {"titulo": "Assuma que ninguém está interessado no seu post", "onde": "Daniel Sada · blog", "url": "https://danielsada.tech/blog/assume-people-are-not-interested-in-your-blog-post/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "BIS", "categoria": "Política", "definicao": "Sigla em inglês do Escritório de Indústria e Segurança, órgão dos EUA que decide o que pode ser exportado e para quem."},
+    {"termo": "Nanômetro", "categoria": "Hardware", "definicao": "Um milionésimo de milímetro. No mundo dos chips, o número batiza cada geração de fabricação: quanto menor, mais avançada."},
+    {"termo": "Neocloud", "categoria": "Mercado", "definicao": "Empresa de nuvem mais nova, focada em alugar placas de vídeo para quem treina ou roda IA."},
+    {"termo": "Perplexidade", "categoria": "IA", "definicao": "Medida de quanto um modelo acerta, em média, o próximo pedaço de texto. Quanto menor, melhores as previsões."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedaço de texto, como uma palavra ou parte dela, que a IA lê e escreve. É a unidade usada para cobrar o uso."},
+    {"termo": "Desempenho por watt", "categoria": "Hardware", "definicao": "Quanto trabalho um chip faz para cada unidade de energia que consome. É a régua da eficiência."},
+    {"termo": "Flash crash", "categoria": "Cripto", "definicao": "Queda repentina e forte no preço de um ativo, descolada dos outros mercados, seguida de recuperação rápida."},
+    {"termo": "Detecção de pose", "categoria": "Programação", "definicao": "Técnica de visão computacional que acha as articulações do corpo numa imagem, como joelhos e cotovelos."}
+  ]
+}
