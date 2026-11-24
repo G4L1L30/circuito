@@ -1,0 +1,122 @@
+{
+  "capa": {
+    "manchete": "Jensen Huang está de volta",
+    "subtitulo": "Onze dias depois de sair, o fundador retoma a Nvidia com aval de Trump.",
+    "elemento": {"numero": "11", "simbolo": "JH", "nome": "Jensen Huang", "detalhe": "11 dias"},
+    "chamadas": [
+      {"rotulo": "Anthropic", "texto": "Agentes do Claude passam a aprovar código"},
+      {"rotulo": "Espionagem", "texto": "O grampo na sala da diretoria da OpenAI"},
+      {"rotulo": "Placas", "texto": "RTX 5090 de cambista sai mais barata"},
+      {"rotulo": "Cripto", "texto": "Mercado Bitcoin cria anuidade de R$ 46,80"}
+    ]
+  },
+  "editorial": {
+    "titulo": "A volta mais rápida do Vale",
+    "paragrafos": [
+      "Tem semana que parece temporada de série. Jensen Huang saiu da Nvidia, virou abaixo-assinado e, onze dias depois, voltou sob aplausos e com uma ligação da Casa Branca.",
+      "Na mesma segunda, a Anthropic deu ao Claude a caneta para aprovar código. Nesta edição: a volta do chefe, os agentes que carimbam mudanças, um grampo na OpenAI e uma RTX 5090 de cambista mais barata que a da loja."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Anthropic", "assunto": "Inteligência artificial", "tarja": "Lançamento",
+     "titulo": "O Claude agora também aprova o código",
+     "ilustracao": "robo",
+     "paragrafos": [
+       "A Anthropic lançou na segunda (23) o Claude Ship, um trio de agentes para a fase depois do código escrito. O Code Review revisa os pull requests, os pedidos para juntar código novo ao projeto. O PR Steward conserta testes quebrados e conflitos e explica como desfazer cada mudança.",
+       "A novidade é o Claude Approvals: ele aprova sozinho mudanças de rotina, seguindo uma política que a equipe escreve em linguagem comum. Vale para os planos Team e Enterprise, no GitHub."
+     ],
+     "quadro": {"titulo": "Com cautela", "texto": "Os dois agentes novos estão em teste. A Anthropic sugere ligar a aprovação primeiro só no modo observação, num único repositório e com teto de gasto mensal."},
+     "refs": [{"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/"}]},
+
+    {"tipo": "materia", "secao": "Nvidia", "assunto": "Placas de vídeo",
+     "titulo": "Jensen Huang volta ao comando da Nvidia",
+     "olho": "O conselho voltou atrás, com empurrão da Casa Branca. O fundador reassume, a ação dispara, e o Congresso já marcou as perguntas.",
+     "ilustracao": "gpu",
+     "legenda": "Na sede, Huang prometeu: “Vou ser um CEO melhor da segunda vez”.",
+     "paragrafos": [
+       "Onze dias depois de renunciar, Jensen Huang voltou a ser CEO da Nvidia. Na segunda (23), o conselho votou por unanimidade pela volta do fundador. Disse que ouviu altos escalões do governo americano e que Huang não traz risco à segurança nacional. A ação abriu em alta de 30%.",
+       "Donald Trump fez campanha aberta e contou à CNBC que falou com o conselho. Huang saiu depois de admitir casos extraconjugais, um deles com uma executiva da Megaspeed suspeita de espionar para a China. As investigações seguem. A Nvidia criou um comitê de segurança nacional e vai contratar um chefe de compliance, a área que vigia o cumprimento das regras."
+     ],
+     "quadros": [
+       {"titulo": "A agenda em Washington",
+        "tabela": {"colunas": ["Quando", "Onde ele depõe"],
+                   "linhas": [["Terça (1º)", "Três comitês da Câmara"], ["Quinta (3)", "Comitê Bancário do Senado"]]}},
+       {"titulo": "Megaspeed na lista negra", "texto": "A empresa de Singapura vai entrar na Entity List do Departamento de Comércio, segundo o Semafor. Empresas americanas só poderão vender a ela com licença especial."},
+       {"titulo": "Na sede, aplausos", "texto": "Centenas de funcionários receberam Huang gritando o nome dele. Mais de 200 mil pessoas, cerca de 10 mil da Nvidia, tinham assinado uma carta pela volta."}
+     ],
+     "refs": [
+       {"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/nvidia-reinstates-jensen-huang-as-ceo-following-unanimous-vote-by-company-board-11-day-exit-from-company-saw-stock-prices-fall-by-24-percent-after-affair-scandal"},
+       {"rotulo": "TechCrunch · Senado", "url": "https://techcrunch.com/2026/11/23/jensen-huang-scheduled-to-testify-next-week-in-senate-following-reinstatement-as-nvidia-ceo/"},
+       {"rotulo": "TechCrunch · Megaspeed", "url": "https://techcrunch.com/2026/11/23/megaspeed-the-company-at-the-center-of-the-jensen-huang-scandal-appears-headed-for-a-u-s-blacklist/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Cambista mais barato que a loja", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Servidores de IA", "texto": "Fabricantes sobem preços em até 45% meses depois de assinado o contrato, segundo o Financial Times. A culpa é da falta de memória RAM.", "url": "https://www.tomshardware.com/tech-industry/big-tech/ai-server-makers-hike-prices-up-to-45-percent-months-after-contracts-are-signed-as-ram-shortage-triples-memory-heavy-cpu-node-costs-financial-firms-still-pay-up-as-the-compute-is-valuable"},
+       {"rotulo": "RTX 5090", "texto": "Um cambista anunciou mais de 40 placas no Canadá. Mesmo assim, cobra menos que uma loja de lá.", "url": "https://www.tomshardware.com/pc-components/gpus/canadian-scalper-places-40-nvidia-rtx-5090s-on-facebook-marketplace-for-over-usd6-600-apiece-ironically-still-cheaper-than-memory-expresss-10-000-cad-retail-price-purportedly-selling-every-unit-quite-quickly"}
+     ],
+     "grafico": {"titulo": "RTX 5090 no Canadá, em dólares canadenses",
+                 "url": "https://www.tomshardware.com/pc-components/gpus/canadian-scalper-places-40-nvidia-rtx-5090s-on-facebook-marketplace-for-over-usd6-600-apiece-ironically-still-cheaper-than-memory-expresss-10-000-cad-retail-price-purportedly-selling-every-unit-quite-quickly",
+                 "barras": [
+                   {"rotulo": "Leilão", "valor": 8300, "texto": "8.300"},
+                   {"rotulo": "Cambista", "valor": 9500, "texto": "9.500", "destaque": true},
+                   {"rotulo": "Loja", "valor": 10000, "texto": "~10.000"}
+                 ],
+                 "nota": "Leilão da alfândega e loja Memory Express, segundo o Tom's Hardware."}},
+
+    {"tipo": "notas", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Segurança",
+     "titulo": "Grampo, escudo e processo", "ilustracao": "cofre", "estilo": "lista",
+     "notas": [
+       {"rotulo": "OpenAI", "texto": "O ex-engenheiro acusado de grampear uma sala da diretoria tinha dezenas de gravações de reuniões, muitas sobre possíveis segredos comerciais, dizem promotores americanos à Bloomberg.", "url": "https://www.bloomberg.com/news/articles/2026-11-23/openai-staffer-likely-captured-secrets-on-hidden-bug-us-says"},
+       {"rotulo": "Shirudo", "texto": "OpenAI e Cisco lançaram, em código aberto, “escudos” que bloqueiam uma falha no Linux sem reiniciar o sistema, enquanto a correção não chega.", "url": "https://openai.com/index/introducing-shirudo"},
+       {"rotulo": "Grok", "texto": "Virgínia e Oregon processam a SpaceX, dona da xAI. Dizem que o Grok ainda sexualiza fotos reais de mulheres e crianças.", "url": "https://arstechnica.com/tech-policy/2026/11/states-sue-spacex-to-stop-grok-from-generating-child-sex-images-revenge-porn/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs", "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Amazon", "texto": "Vai pagar US$ 7,5 bilhões pela tecnologia e pela equipe da israelense Decart, segundo a Bloomberg. O software dela faz modelos de IA renderem mais em cada chip. A Amazon se prepara para vender seus chips Trainium e brigar com a Nvidia.", "url": "https://techcrunch.com/2026/11/23/amazon-snaps-up-decarts-ai-optimization-tech-for-7-5b-as-it-prepares-to-sell-trainium-chips/"},
+       {"rotulo": "CrowdStrike", "texto": "Vai comprar a Zscaler por US$ 43,9 bilhões, pagos em ações. A Zscaler vende segurança zero trust, que pede autenticação a cada acesso. O negócio depende dos reguladores.", "url": "https://techcrunch.com/2026/11/23/crowdstrike-to-acquire-zscaler-for-44-billion/"},
+       {"rotulo": "OpenAI", "texto": "Levou uma versão do GPT-6.2 Sol “otimizada para a conversa do dia a dia” à aba Chat do ChatGPT, nos planos Plus, Pro, Business e Enterprise.", "url": "https://9to5mac.com/2026/11/23/chatgpt-expands-gpt-6-2-sol-as-openai-sets-retirement-date-for-two-models/"},
+       {"rotulo": "Meta", "texto": "Liberou o agente pessoal Muse para adultos no Reino Unido. É o primeiro agente de IA de uma Big Tech lançado no país, segundo o Politico.", "url": "https://www.politico.eu/article/meta-ai-agent-muse-launch-uk/"},
+       {"rotulo": "Z.ai", "texto": "O laboratório chinês lançou o GLM-5.4, seu primeiro transformer em loop: um grupo de camadas roda várias vezes, o que aprofunda a rede sem aumentar o modelo. Ainda não tem pesos abertos.", "url": "https://simonwillison.net/2026/Nov/23/glm-54/"},
+       {"rotulo": "Ladybird", "texto": "O navegador independente, com motor feito do zero, chegou à versão alfa no macOS e no Linux, depois de mais de quatro anos de trabalho.", "url": "https://www.theverge.com/tech/1040872/ladybird-indie-browser-engine-alpha-testing"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin respira, mas sem fôlego",
+     "notas": [
+       {"rotulo": "Mercado Bitcoin", "texto": "Cria anuidade de R$ 46,80 no lugar da taxa de inatividade. Sem saldo em reais, a corretora pode vender cripto do cliente para cobrar.", "url": "https://livecoins.com.br/mercado-bitcoin-anuncia-anuidade-de-r-4680-que-substitui-taxa-de-inatividade-e-detalha-regras-de-debito-em-saldo-de-clientes/"},
+       {"rotulo": "Binance", "texto": "Os hackers da corretora já passaram US$ 247 milhões por transações feitas para esconder a origem.", "url": "https://www.coindesk.com/business/2026/11/23/binance-hackers-push-usd247-million-through-transactions-designed-to-cloud-the-source"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda dizendo",
+     "vozes": [
+       {"nome": "smartstackhubpro", "onde": "TabNews", "texto": "Analisou 1.288 vagas remotas de 14 empresas internacionais. Só 16% aceitam quem mora no Brasil.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/smartstackhubpro/analisei-1-288-vagas-remotas-de-14-empresas-internacionais-so-16-por-cento-aceitam-quem-mora-no-brasil"}]},
+       {"nome": "tibia2ot", "onde": "TabNews", "texto": "Contou como colocou um cliente de MMORPG escrito em C++ para rodar no navegador, e até no iPhone, com WebAssembly.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/tibia2ot/como-colocamos-um-cliente-de-mmorpg-em-c-para-rodar-no-navegador-e-no-iphone-com-webassembly"}]},
+       {"nome": "Lucas Montano", "onde": "YouTube", "texto": "Quanto de memória RAM basta, e quando a VRAM, a memória da placa de vídeo, entra na conta.",
+        "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=ezB2o1sDcx0"}]},
+       {"nome": "Attekita Dev", "onde": "YouTube", "texto": "Pergunta se o dev PJ vai pagar mais imposto com a reforma tributária.",
+        "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=pV9PqaTADJs"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Como agentes e verificação formal acharam algoritmos quânticos mais rápidos", "onde": "Google DeepMind · técnico", "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"},
+       {"titulo": "Preço de vigilância: quando seus dados servem para cobrar mais caro", "onde": "Ars Technica · reportagem", "url": "https://arstechnica.com/tech-policy/2026/11/surveillance-pricing-uses-our-personal-data-to-make-us-pay-more/"},
+       {"titulo": "Ladybird, um navegador novo do zero, em 2026", "onde": "Simon Willison · blog", "url": "https://simonwillison.net/2026/Nov/23/ladybird/"},
+       {"titulo": "Import AI 482: kernels da Huawei, drones no ar e ciência com IA", "onde": "Import AI · newsletter", "url": "https://importai.substack.com/p/import-ai-482-huawei-kernel-benchmarks"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "Pull request", "categoria": "Programação", "definicao": "Pedido para juntar um trecho de código novo ao projeto principal. Antes de entrar, costuma passar por revisão."},
+    {"termo": "Entity List", "categoria": "Política", "definicao": "Lista negra do Departamento de Comércio dos EUA. Quem está nela só compra tecnologia americana com licença especial."},
+    {"termo": "Compliance", "categoria": "Mercado", "definicao": "Área da empresa que vigia se as leis e as regras internas estão sendo cumpridas."},
+    {"termo": "Zero trust", "categoria": "Segurança", "definicao": "Modelo de segurança que não confia em ninguém por padrão: cada acesso pede nova autenticação."},
+    {"termo": "Transformer em loop", "categoria": "IA", "definicao": "Modelo de IA em que um grupo de camadas roda várias vezes seguidas, para pensar mais sem crescer de tamanho."},
+    {"termo": "Pesos abertos", "categoria": "IA", "definicao": "Quando a empresa libera os números que formam o modelo, e qualquer um pode baixar e rodar no próprio computador."},
+    {"termo": "VRAM", "categoria": "Hardware", "definicao": "A memória da placa de vídeo. Define o tamanho dos jogos e dos modelos de IA que a placa aguenta."},
+    {"termo": "WebAssembly", "categoria": "Programação", "definicao": "Formato que deixa programas escritos em linguagens como C++ rodarem no navegador quase na velocidade nativa."}
+  ]
+}
