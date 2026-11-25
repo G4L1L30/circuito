@@ -1,4 +1,10 @@
 # Publica a pasta site/ no GitHub Pages sempre que uma edição nova chega na main.
+#
+# Por que as esperas e as tentativas: o pacote enviado às vezes demora a aparecer na lista do
+# GitHub (quase sempre até 6 s, já se viu 46 s), e a deploy-pages desiste na primeira busca com
+# "No artifacts named github-pages". Aconteceu em 24 e 25/11/2026. Repetimos só a publicação, sem
+# reenviar o pacote: um segundo envio na mesma execução dá outro erro ("Multiple artifacts").
+# Relato do problema: https://github.com/actions/deploy-pages/issues/451
 name: Publicar no GitHub Pages
 
 on:
@@ -21,12 +27,44 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.publicacao.outputs.page_url }}
+      url: ${{ steps.tentativa1.outputs.page_url || steps.tentativa2.outputs.page_url || steps.tentativa3.outputs.page_url || steps.tentativa4.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
-      - id: publicacao
+
+      - name: Esperar o pacote aparecer
+        run: sleep 10
+      - name: Publicar (tentativa 1)
+        id: tentativa1
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Esperar 30 s
+        if: steps.tentativa1.outcome == 'failure'
+        run: sleep 30
+      - name: Publicar (tentativa 2)
+        id: tentativa2
+        if: steps.tentativa1.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Esperar 60 s
+        if: steps.tentativa2.outcome == 'failure'
+        run: sleep 60
+      - name: Publicar (tentativa 3)
+        id: tentativa3
+        if: steps.tentativa2.outcome == 'failure'
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Esperar 120 s
+        if: steps.tentativa3.outcome == 'failure'
+        run: sleep 120
+      # sem continue-on-error: se a última falhar, a execução fica vermelha e avisa
+      - name: Publicar (tentativa 4)
+        id: tentativa4
+        if: steps.tentativa3.outcome == 'failure'
         uses: actions/deploy-pages@v4
