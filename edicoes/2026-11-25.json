@@ -1,0 +1,124 @@
+{
+  "capa": {
+    "manchete": "A IA vira cientista",
+    "subtitulo": "A OpenAI diz ter fechado um problema de 57 anos. E a Astra virou historiadora.",
+    "elemento": {"numero": "57", "simbolo": "ω", "nome": "Ômega", "detalhe": "9/4"},
+    "chamadas": [
+      {"rotulo": "Anthropic", "texto": "Ação cai abaixo do preço do IPO"},
+      {"rotulo": "Segurança", "texto": "Agentes de IA invadem servidor quase sozinhos"},
+      {"rotulo": "Memória", "texto": "Samsung e SK Hynix adotam tecnologia chinesa"},
+      {"rotulo": "Cripto", "texto": "ETFs de bitcoin rumo ao pior mês"}
+    ]
+  },
+  "editorial": {
+    "titulo": "A IA de jaleco",
+    "paragrafos": [
+      "Terça foi dia de IA de jaleco. A OpenAI publicou uma prova de 111 páginas para um problema de 57 anos, ajudou amadores a caçar planetas, e um historiador viu a Astra resolver um mistério de 1808 em 22 minutos.",
+      "Nesta edição: o que isso quer dizer, a ação da Anthropic no vermelho e agentes que invadem servidores praticamente sozinhos."
+    ]
+  },
+  "paginas": [
+    {"tipo": "reportagem", "secao": "Anthropic", "assunto": "Mercado", "tarja": "Bolsa",
+     "titulo": "A Anthropic cai abaixo do preço de estreia",
+     "ilustracao": "predio",
+     "paragrafos": [
+       "Menos de uma semana depois de estrear na Nasdaq, a Anthropic viu a ação cair abaixo do preço do IPO, a oferta inicial, de US$ 83. Na terça (24), o papel chegou a US$ 76 no meio do dia, quase 12% abaixo do fechamento de segunda.",
+       "Na estreia, a ação abriu a US$ 111,50. O mercado usa a Anthropic como termômetro do setor: se a queda continuar, startups de IA podem valer menos e adiar seus IPOs. A Nvidia também caiu mais de 7%."
+     ],
+     "quadro": {"titulo": "Medo dentro de casa", "texto": "Funcionários da OpenAI e da Anthropic temem que modelos ainda não lançados sejam poderosos demais, segundo o Axios. Acham que os chefes subestimam o risco."},
+     "refs": [
+       {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/24/anthropic-shares-fall-below-ipo-price-a-worrying-sign-for-ai-startups/"},
+       {"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/frontier-ai-employees-alarmed-that-unseen-open-ai-and-anthropic-models-are-too-powerful-to-release-report-claims-worry-spreads-that-executives-are-out-of-touch-with-severity-of-risks-will-choose-profit-over-safety"}
+     ]},
+
+    {"tipo": "materia", "secao": "OpenAI", "assunto": "Inteligência artificial",
+     "titulo": "A OpenAI leva a IA para a ciência",
+     "olho": "Uma prova de 111 páginas, candidatos a planeta e um mistério de 1808 resolvido em 22 minutos. Num só dia, os modelos da OpenAI fizeram papel de matemático, astrônomo e historiador.",
+     "ilustracao": "lupa",
+     "legenda": "A Astra levou 22 minutos para achar o autor de um caderno de desenhos de 1808.",
+     "paragrafos": [
+       "A OpenAI publicou na terça (24) uma prova de 111 páginas para um problema aberto há 57 anos: quanto custa multiplicar matrizes, as tabelas de números por trás de quase toda a computação. Segundo a empresa, o expoente ω vale exatamente 9/4. Por ora, é um preprint, ainda sem revisão de outros cientistas.",
+       "No mesmo dia, o historiador Mark Humphries contou que o GPT-6.2 Astra achou, em 22 minutos, o autor de um caderno anônimo de 1808 guardado em Yale. A OpenAI mostrou ainda dois astrônomos amadores que usaram Codex e Astra para achar possíveis exoplanetas em dados públicos da NASA, e modelos GPT-6 que desenham proteínas só com raciocínio e código."
+     ],
+     "quadros": [
+       {"titulo": "Um dia de ciência",
+        "tabela": {"colunas": ["Área", "O feito"],
+                   "linhas": [["Matemática", "ω = 9/4, em 111 páginas"],
+                              ["História", "Autor de caderno de 1808"],
+                              ["Astronomia", "Candidatos a exoplaneta"],
+                              ["Biologia", "Proteínas desenhadas pelo GPT-6"]]}},
+       {"titulo": "Que ω é esse?", "texto": "Multiplicar duas tabelas de n por n números leva perto de n elevado a ω passos. Pelo método da escola, ω é 3. Se a prova estiver certa, o mínimo possível é n elevado a 2,25."},
+       {"titulo": "E no laboratório?", "texto": "Em testes com a Onava, proteínas baseadas nos desenhos do GPT-6.2 mostraram sinais de se ligar a cinco alvos. Prever a estrutura completa de uma proteína ainda é ponto fraco, admite a OpenAI."}
+     ],
+     "refs": [
+       {"rotulo": "Preprint · OpenAI", "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf"},
+       {"rotulo": "Simon Willison · Astra", "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/"},
+       {"rotulo": "OpenAI · planetas", "url": "https://openai.com/index/searching-for-distant-planets-with-astra"},
+       {"rotulo": "OpenAI · proteínas", "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"}
+     ]},
+
+    {"tipo": "notas", "secao": "Placas & Memórias", "assunto": "Hardware", "tarja": "Hardware",
+     "titulo": "Huang pede desculpas, a RAM não", "ilustracao": "gpu", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Nvidia", "texto": "De volta, Jensen Huang pediu desculpas à equipe e negou que Trump o tenha reconduzido, segundo a Bloomberg. Depõe no Congresso na terça (1º).", "url": "https://www.theverge.com/tech/1041571/jensen-huang-all-hands-nvidia-apology"},
+       {"rotulo": "Memória flash", "texto": "Samsung e SK Hynix vão adotar partes do Xtacking, tecnologia da chinesa YMTC, segundo o Nikkei.", "url": "https://asia.nikkei.com/business/tech/semiconductors/china-s-ymtc-boosted-by-samsung-and-sk-hynix-adopting-its-memory-technology"},
+       {"rotulo": "HP", "texto": "Faturou US$ 16 bilhões no trimestre, alta de 9,3%. PCs com IA já são cerca de 60% dos envios, segundo a HP.", "url": "https://www.bloomberg.com/news/articles/2026-11-24/hp-gives-profit-forecast-signaling-better-handle-on-memory-costs"},
+       {"rotulo": "DDR5", "texto": "O kit de 32 GB de DDR5-6000 mais barato do mercado sai por US$ 439 na Black Friday.", "url": "https://www.tomshardware.com/pc-components/ddr5/the-cheapest-32gb-ddr5-6000-ram-kit-on-the-market-is-on-sale-for-only-usd439-teams-32gb-ddr5-6000-cl38-t-force-delta-rgb-ram-kit-is-usd110-off-with-promo-code-no-bundle-deals-needed"}
+     ]},
+
+    {"tipo": "notas", "secao": "Bastidores", "assunto": "Segurança", "tarja": "Segurança",
+     "titulo": "Agentes que invadem sozinhos", "ilustracao": "cofre", "estilo": "lista",
+     "notas": [
+       {"rotulo": "Cairn", "texto": "Hackers deram a agentes de IA só uma meta: obter acesso. Eles acharam e exploraram sozinhos uma falha inédita, ou zero-day, num servidor universitário na Ásia, segundo a Amazon.", "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"},
+       {"rotulo": "Huawei", "texto": "Um júri de Nova York condenou a Huawei por roubar segredos comerciais de empresas como T-Mobile, Cisco e Motorola. A pena sai em setembro de 2027.", "url": "https://www.theverge.com/tech/1041820/huawei-guilty-trade-secrets-trial"},
+       {"rotulo": "FinCEN", "texto": "O órgão do Tesouro americano que combate a lavagem de dinheiro investiga um acesso não autorizado a parte de seus sistemas.", "url": "https://www.theverge.com/policy/1041957/fincen-treasury-cybersecurity-incident"}
+     ]},
+
+    {"tipo": "notas", "secao": "Giro das Big Techs", "assunto": "Notas", "titulo": "Giro das Big Techs", "estilo": "colunas",
+     "notas": [
+       {"rotulo": "Meta", "texto": "O agente Muse entrou nas mensagens diretas do Instagram. Dá para pedir contexto sobre um post ou mandar organizar os salvos em pastas. Começa nos EUA, Canadá, México, Japão e Singapura.", "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"},
+       {"rotulo": "Google", "texto": "Lançou o Humanity's First Exam, teste com 544 perguntas simples, de texto e imagem. Ele mede se a IA acerta sempre, não só uma vez. Até 15 de dezembro, o público pode mandar, num concurso no Kaggle, perguntas que os modelos ainda erram.", "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam/"},
+       {"rotulo": "Tidal", "texto": "O streaming de música vai apagar em 9 de dezembro as 27 milhões de faixas feitas só por IA, 6,3% do catálogo. Segundo o Tidal, 96% delas não tiveram nenhuma reprodução em 90 dias. Música feita com ajuda de IA continua.", "url": "https://arstechnica.com/ai/2026/11/tidal-will-ban-fully-ai-generated-music-on-december-9/"},
+       {"rotulo": "Amazon", "texto": "Vai vender carros pela internet no Reino Unido a partir do começo de 2027, segundo a Bloomberg. Nos EUA, já oferece carros novos e usados de 35 marcas em mais de 150 cidades.", "url": "https://www.bloomberg.com/news/articles/2026-11-25/amazon-targets-uk-car-buyers-being-reeled-in-by-chinese-brands"},
+       {"rotulo": "Chrome", "texto": "Um usuário relatou que o navegador consome até 700 MB de RAM no Windows mesmo com o Gemini fechado. Uma configuração controla o acesso ao assistente pela bandeja do sistema.", "url": "https://tecnoblog.net/noticias/chrome-bebe-ate-700-mb-de-ram-mesmo-quando-gemini-esta-fechado/"}
+     ]},
+
+    {"tipo": "cripto", "titulo": "Bitcoin abaixo dos US$ 60 mil",
+     "notas": [
+       {"rotulo": "ETFs", "texto": "Os ETFs de bitcoin, fundos negociados em bolsa, já tiveram saídas recordes de US$ 4,71 bilhões em novembro. No mês, o bitcoin cai 22,5%.", "url": "https://livecoins.com.br/etfs-de-bitcoin-acumulam-us-47-bilhoes-em-saidas-em-novembro-e-caminham-para-o-pior-mes-da-historia/"},
+       {"rotulo": "Câmara", "texto": "A Câmara dos Deputados lança nesta quarta (25) um livro digital gratuito com 200 verbetes sobre blockchain, cripto e IA.", "url": "https://livecoins.com.br/camara-dos-deputados-lanca-livro-gratuito-que-explica-blockchain-criptoativos-e-inteligencia-artificial/"}
+     ]},
+
+    {"tipo": "comunidade", "titulo": "O que a turma anda escrevendo",
+     "vozes": [
+       {"nome": "teknolista", "onde": "TabNews", "texto": "Reuniu manifestos achados pela web contra o “AI slop”, o conteúdo ruim feito em massa por IA, como o No AI Slop e o HUMAN.md.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/teknolista/manifestos-que-encontrei-pela-web-no-ai-slop-human-md-faster-dev"}]},
+       {"nome": "toolpotion", "onde": "TabNews", "texto": "Explicou o MCP, o protocolo que conecta modelos de IA a outras ferramentas, com um cardápio de restaurante. E por que 100 integrações viram 25.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/toolpotion/mcp-explicado-com-um-cardapio-de-restaurante-e-por-que-100-integracoes-viram-25"}]},
+       {"nome": "nadadebt", "onde": "TabNews", "texto": "Contou o que aprendeu calculando dívidas num app de iPhone: números decimais, juros ao mês e a dívida que nunca acaba.",
+        "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/nadadebt/pitch-o-que-aprendi-calculando-dividas-no-iphone-decimal-por-cento-a-m-e-a-divida-que-nunca-acaba"}]},
+       {"nome": "Lucas Montano", "onde": "YouTube", "texto": "Põe frente a frente o harness, a estrutura que roda em volta de um agente de IA, e o modelo de linguagem que fica por baixo.",
+        "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=BuC4wthYlLU"}]}
+     ]},
+
+    {"tipo": "contracapa",
+     "leituras": [
+       {"titulo": "Três pontos de virada dos LLMs e dos agentes de código em doze meses", "onde": "Simon Willison · blog", "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/"},
+       {"titulo": "A pane histórica na nuvem da Microsoft e a “névoa de guerra” da engenharia", "onde": "Ars Technica · reportagem", "url": "https://arstechnica.com/gadgets/2026/11/microsofts-historic-cloud-outage-exposed-an-engineering-fog-of-war/"},
+       {"titulo": "Modelos isolados conseguem conversar entre si pelos servidores de inferência", "onde": "LessWrong · técnico", "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being"},
+       {"titulo": "PenGPT: um transformer que gera caligrafia e desenhos", "onde": "Sam Greydanus · técnico", "url": "https://greydanus.github.io/2026/11/12/pengpt/"}
+     ]}
+  ],
+  "glossario": [
+    {"termo": "IPO", "categoria": "Mercado", "definicao": "Oferta pública inicial: a estreia das ações de uma empresa na bolsa, com um preço definido antes do primeiro pregão."},
+    {"termo": "Preprint", "categoria": "Ciência", "definicao": "Versão de um estudo divulgada antes da revisão por outros cientistas. Pode mudar, ou cair, depois da checagem."},
+    {"termo": "Matriz", "categoria": "Matemática", "definicao": "Tabela de números em linhas e colunas. Multiplicar matrizes é uma das contas básicas da computação e da IA."},
+    {"termo": "Exoplaneta", "categoria": "Ciência", "definicao": "Planeta que gira em torno de outra estrela, fora do Sistema Solar."},
+    {"termo": "Zero-day", "categoria": "Segurança", "definicao": "Falha que nem o fabricante conhece. Quem defende tem zero dias para corrigir antes do ataque."},
+    {"termo": "Memória flash", "categoria": "Hardware", "definicao": "Memória que guarda dados mesmo sem energia. Está nos SSDs, nos pendrives e nos celulares."},
+    {"termo": "ETF", "categoria": "Cripto", "definicao": "Fundo negociado na bolsa como uma ação. Um ETF de bitcoin deixa investir na moeda sem comprá-la direto."},
+    {"termo": "AI slop", "categoria": "IA", "definicao": "Gíria para o conteúdo ruim, feito em massa por IA, que inunda redes, buscas e serviços de streaming."},
+    {"termo": "MCP", "categoria": "IA", "definicao": "Model Context Protocol: padrão aberto que conecta modelos de IA a ferramentas, arquivos e serviços externos."},
+    {"termo": "Harness", "categoria": "IA", "definicao": "O programa em volta do modelo de IA que dá ferramentas, memória e regras para ele trabalhar como agente."}
+  ]
+}
