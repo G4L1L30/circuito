@@ -1,0 +1,146 @@
+{
+  "capa": {
+    "manchete": "Amodei rebate os rivais",
+    "subtitulo": "O chefe da Anthropic chama de absurda a acusação de entregar o controle à IA.",
+    "elemento": {"numero": "80", "simbolo": "RSI", "nome": "Recursão", "detalhe": "80% código"},
+    "chamadas": [
+      {"rotulo": "Espaço", "texto": "Um milhão de satélites para a IA"},
+      {"rotulo": "Nvidia", "texto": "Servidores de IA param a caminho da Ásia"},
+      {"rotulo": "Senhas", "texto": "1Password perde nomes e e-mails de clientes"},
+      {"rotulo": "Cripto", "texto": "Bitcoin a US$ 60,7 mil, com medo extremo"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Quem segura o volante da IA",
+    "paragrafos": [
+      "Quarta foi dia de discutir quem manda. Dario Amodei, da Anthropic, respondeu aos rivais que o acusam de querer entregar o comando à IA. E traçou uma linha: a IA que melhora a si mesma.",
+      "Nesta edição: um milhão de satélites com chips de IA, a Nvidia segurando servidores na Ásia e duas invasões que começaram com uma senha roubada."
+    ]
+  },
+  "paginas": [
+    {
+      "tipo": "reportagem",
+      "secao": "Espaço",
+      "assunto": "Data centers",
+      "tarja": "Fora da Terra",
+      "titulo": "SpaceX ganha sinal verde para um milhão de satélites",
+      "ilustracao": "predio",
+      "paragrafos": [
+        "A FCC, agência que regula as telecomunicações nos EUA, autorizou na quarta (25) a SpaceX a lançar até 1 milhão de satélites com chips de IA. É o projeto Starmind: data centers em órbita, movidos a energia solar, que mandam dados à Terra por laser, via Starlink.",
+        "Se sair do papel, o número de satélites em órbita cresce cerca de 50 vezes. O prazo é longo: um satélite até 2033 e a constelação completa até 2040."
+      ],
+      "quadro": {
+        "titulo": "O que ficou de fora",
+        "texto": "Astrônomos reclamaram de lixo espacial e poluição. A FCC disse que parte disso foge à sua alçada. Mas negou, por ora, descartar satélites fora da atmosfera."
+      },
+      "refs": [
+        {"rotulo": "Ars Technica", "url": "https://arstechnica.com/space/2026/11/the-fcc-has-authorized-spacex-to-deploy-1-million-satellites/"},
+        {"rotulo": "The Verge", "url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers"}
+      ]
+    },
+    {
+      "tipo": "materia",
+      "secao": "Anthropic",
+      "assunto": "Inteligência artificial",
+      "titulo": "Amodei rebate: a IA não vai governar",
+      "olho": "O chefe da Anthropic chamou de “absurda” a acusação de querer entregar o controle à IA. E traçou uma linha: a IA que melhora a si mesma.",
+      "ilustracao": "robo",
+      "legenda": "Automatizar tarefas, sim. Entregar o comando, não, diz Amodei.",
+      "paragrafos": [
+        "Dario Amodei, chefe da Anthropic, usou um longo post no X na quarta (25) para rebater rivais. Eles sugerem que a empresa topa entregar o livre-arbítrio humano à IA. Amodei chamou a ideia de “absurda”: para ele, passar o governo para a IA é tão ruim quanto uma autocracia.",
+        "Ele separa automatizar tarefas, como dirigir um carro ou escrever um software inteiro, de abrir mão do controle. A linha fica no autoaperfeiçoamento recursivo, a IA que melhora a si mesma sem ajuda humana. “Talvez a gente queira limites”, escreveu. Só que a Anthropic já usa o Claude para acelerar o próximo Claude. Em junho, disse que ele escreveu mais de 80% do código da empresa."
+      ],
+      "quadros": [
+        {"titulo": "Do outro lado", "texto": "Sam Altman, da OpenAI, quer garantir que as pessoas tenham “agência sobre o futuro”. Alexandr Wang, da Meta, escreveu que a sociedade não deve aceitar uma “entrega” à IA."},
+        {"titulo": "A alfinetada", "texto": "Amodei acusou os rivais de um posicionamento “baseado em vibes”: falam em controle humano, mas lançam modelos cada vez mais capazes de automatizar tarefas, como todo mundo."},
+        {"titulo": "Ritmo dobrado", "texto": "Uma avaliação do METR, ONG de segurança de IA, concluiu que os modelos da Anthropic melhoram cerca de duas vezes mais rápido que o histórico, puxados pela pesquisa feita com IA."}
+      ],
+      "refs": [
+        {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/"}
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Placas & Memórias",
+      "assunto": "Hardware",
+      "tarja": "Hardware",
+      "titulo": "Nvidia na berlinda, memória nas alturas",
+      "ilustracao": "gpu",
+      "estilo": "lista",
+      "notas": [
+        {"rotulo": "Rota fechada", "texto": "A Nvidia mandou parceiros suspenderem servidores de IA para Malásia, Singapura, Tailândia e Indonésia, segundo o Financial Times, sob controle americano.", "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370?segmentId=7d4bcc2e-e664-92ba-62e3-5590579f1902"},
+        {"rotulo": "Donos chineses", "texto": "Chips de ponta da Nvidia foram vendidos a duas empresas californianas de donos chineses, que repassaram parte na Ásia, segundo a CBS News.", "url": "https://www.cbsnews.com/news/nvidia-china-ai-chips-computing-sales/"},
+        {"rotulo": "Nota de crédito", "texto": "A S&P pode rebaixar a Nvidia de AA para AA-, pela dependência de Jensen Huang e falta de sucessor.", "url": "https://techcrunch.com/2026/11/25/sp-considers-nvidia-credit-downgrade-over-governance-and-key-man-risks/"},
+        {"rotulo": "Memória", "texto": "Empresas montam “salas de guerra” para comprar memória. Alguns chips subiram 10 vezes em um ano, diz o Wall Street Journal.", "url": "https://www.wsj.com/tech/memory-chip-shortage-ai-electronics-prices-e58a065a"}
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Bastidores",
+      "assunto": "Segurança",
+      "tarja": "Segurança",
+      "titulo": "A senha roubada abre a porta",
+      "ilustracao": "cofre",
+      "estilo": "lista",
+      "notas": [
+        {"rotulo": "1Password", "texto": "Um hacker invadiu a conta do GitHub de um funcionário e levou nomes e e-mails de clientes. Senhas e cofres ficaram a salvo, segundo a empresa.", "url": "https://www.theverge.com/tech/1042409/1password-data-breach-leak"},
+        {"rotulo": "Todoist", "texto": "O app de tarefas diz que 6% dos clientes tiveram dados roubados, inclusive hashes de senha. A porta de entrada: credenciais roubadas.", "url": "https://techcrunch.com/2026/11/25/todoist-confirms-6-of-customers-details-were-stolen-in-data-breach/"},
+        {"rotulo": "Freezers", "texto": "A França culpa uma unidade hacker da Guarda Revolucionária do Irã por esquentar freezers de centenas de supermercados em outubro. O Irã nega.", "url": "https://arstechnica.com/security/2026/11/a-familiar-iranian-hacking-group-has-found-a-new-way-to-cause-chaos/"}
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Giro das Big Techs",
+      "assunto": "Notas",
+      "titulo": "Giro das Big Techs",
+      "estilo": "colunas",
+      "notas": [
+        {"rotulo": "OpenAI", "texto": "O ChatGPT começou a juntar as abas Chat e Work, com um medidor de uso único, para poucos assinantes Pro. Segundo a OpenAI, quem usa muito pode bater no limite antes. O modelo Instant segue ilimitado. A mudança chega a mais gente em dezembro.", "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"},
+        {"rotulo": "Character.AI", "texto": "Em falência, quer leiloar conversas de mais de 21 milhões de contas americanas, 2,1 milhões de menores. Procuradores de 42 estados tentam barrar. O leilão está marcado para a terça (1º).", "url": "https://techcrunch.com/2026/11/25/state-ags-fight-character-ais-plan-to-auction-off-users-private-chats/"},
+        {"rotulo": "Nova York", "texto": "Proibiu por cinco anos brinquedos com chatbot de IA, como bichos de pelúcia falantes. É o segundo estado, depois da Califórnia. A multa chega a US$ 15 mil por dia.", "url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/"},
+        {"rotulo": "WhatsApp", "texto": "Agora dá para agendar mensagens em conversas e grupos, de 10 minutos a 14 dias antes.", "url": "https://techcrunch.com/2026/11/25/whatsapp-now-lets-you-schedule-messages-in-group-and-individual-chats/"},
+        {"rotulo": "Kagi", "texto": "O buscador pago lançou o Kagi Mail, rival do Gmail, em beta. Custa US$ 9 por mês, sem anúncios, com recursos de IA desligados de fábrica.", "url": "https://arstechnica.com/gadgets/2026/11/google-search-alternative-kagi-launches-gmail-rival/"}
+      ]
+    },
+    {
+      "tipo": "cripto",
+      "titulo": "Bitcoin de olho nos juros americanos",
+      "notas": [
+        {"rotulo": "Fed", "texto": "O índice de inflação preferido do Fed, o banco central americano, saiu longe da meta. O mercado já conta com alta de juros em dezembro.", "url": "https://www.coindesk.com/daybook-us/2026/11/25/fed-s-preferred-inflation-gauge-lands-with-a-december-rate-increase-already-priced-in"},
+        {"rotulo": "Opções", "texto": "Contratos de opções de bitcoin que somam US$ 7 bilhões vencem na sexta (27).", "url": "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october"}
+      ]
+    },
+    {
+      "tipo": "comunidade",
+      "titulo": "O que a turma anda escrevendo",
+      "vozes": [
+        {"nome": "Fabio Akita", "onde": "blog", "texto": "Explicou por que não gosta de Jensen Huang, o chefe da Nvidia que muitos tratam como rockstar. Para ele, os fatos de novembro escancararam o jeito como Huang comanda a empresa.",
+         "links": [{"rotulo": "akitaonrails.com", "url": "https://www.akitaonrails.com/2026/11/25/por-que-eu-nao-gosto-do-jensen-huang/"}]},
+        {"nome": "kenimo49", "onde": "TabNews", "texto": "Levou três dias para entender por que seu agente de voz demorava: as etapas rodavam em fila. A saída é mandar as palavras do LLM para a voz sintética assim que saem.",
+         "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/kenimo49/demorei-3-dias-pra-entender-que-meu-voice-agent-perdia-300ms-esperando-o-llm-terminar"}]},
+        {"nome": "glauberportella", "onde": "TabNews", "texto": "Fez o Precost, plugin de código aberto que segura um prompt no Claude Code e no OpenCode até você aprovar o custo estimado.",
+         "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/glauberportella/pitch-precost-um-freio-de-custo-para-prompts-no-claude-code-e-no-opencode"}]}
+      ],
+      "quadro": {"titulo": "Ainda na matemática", "texto": "No blog, Akita também destrinchou a suposta prova da hipótese de Riemann feita com o Claude."}
+    },
+    {
+      "tipo": "contracapa",
+      "leituras": [
+        {"titulo": "A IA já faz as contas. E os físicos teóricos tentam entender o que vem depois", "onde": "Ars Technica · reportagem", "url": "https://arstechnica.com/ai/2026/11/ai-can-do-the-calculations-physicists-are-figuring-out-what-comes-next/"},
+        {"titulo": "Conferi o núcleo do Clojure com Lean e achei bugs não reportados", "onde": "conao3 · técnico", "url": "https://s.conao3.com/blog/2026/e4f733"},
+        {"titulo": "Uma coleção de guias de estilo de interface preservados", "onde": "Aresluna · arquivo", "url": "https://aresluna.org/ui-style-guides/"},
+        {"titulo": "sqlite3_rsync, a ferramenta que copia bancos SQLite à distância", "onde": "Simon Willison · blog", "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/"}
+      ]
+    }
+  ],
+  "glossario": [
+    {"termo": "Autoaperfeiçoamento", "categoria": "IA", "definicao": "Quando uma IA consegue melhorar a si mesma, ou criar a próxima versão, sem ajuda humana. Muitos especialistas veem aí o risco de perder o controle."},
+    {"termo": "FCC", "categoria": "Regulação", "definicao": "Comissão Federal de Comunicações dos EUA. Regula rádio, TV, telefonia e o uso de satélites."},
+    {"termo": "Data center", "categoria": "Infraestrutura", "definicao": "Prédio cheio de servidores que guardam dados e rodam programas, como os modelos de IA."},
+    {"termo": "Controle de exportação", "categoria": "Política", "definicao": "Regras de um governo que limitam a venda de certos produtos, como chips avançados, para outros países."},
+    {"termo": "Nota de crédito", "categoria": "Mercado", "definicao": "Avaliação de agências como a S&P sobre a chance de uma empresa pagar suas dívidas. Nota menor costuma deixar o empréstimo mais caro."},
+    {"termo": "Hash", "categoria": "Segurança", "definicao": "Versão embaralhada de uma senha. O site guarda o hash, e não a senha em si, para dificultar a vida de quem invade."},
+    {"termo": "Opções", "categoria": "Cripto", "definicao": "Contratos que dão o direito de comprar ou vender um ativo a um preço combinado até uma data."},
+    {"termo": "Chatbot", "categoria": "IA", "definicao": "Programa que conversa por texto ou voz, como o ChatGPT e o Claude."}
+  ]
+}
