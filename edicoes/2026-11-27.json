@@ -1,0 +1,134 @@
+{
+  "capa": {
+    "manchete": "iFood põe a IA no código",
+    "subtitulo": "Agentes da OpenAI já mexem em 15 mil repositórios, a US$ 0,04 por tarefa.",
+    "elemento": {"numero": "04", "simbolo": "Ag", "nome": "Agentes", "detalhe": "US$ 0,04"},
+    "chamadas": [
+      {"rotulo": "Nvidia", "texto": "Pentágono pensou em lei de guerra por Jensen"},
+      {"rotulo": "OpenAI", "texto": "Erro corrigido: limite do GPT-6.2 chega antes"},
+      {"rotulo": "Celulares", "texto": "Memória cara derruba vendas nos EUA"},
+      {"rotulo": "Cripto", "texto": "Bitcoin a US$ 61,7 mil, com medo extremo"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Black Friday, mas a IA não folga",
+    "paragrafos": [
+      "Sexta de Black Friday, e a IA segue no batente. No iFood, agentes da OpenAI já consertam código em 15 mil repositórios, a quatro centavos de dólar por tarefa.",
+      "Nesta edição: o plano do Pentágono para devolver Jensen Huang à Nvidia, a memória cara derrubando a venda de celulares e a Binance com os saques de volta."
+    ]
+  },
+  "paginas": [
+    {
+      "tipo": "reportagem",
+      "secao": "Nvidia",
+      "assunto": "Bastidores",
+      "tarja": "Lei de guerra",
+      "titulo": "O Pentágono pensou numa lei de guerra por Jensen",
+      "ilustracao": "predio",
+      "paragrafos": [
+        "Chefes militares americanos pensaram em usar uma lei da Guerra Fria para devolver Jensen Huang ao comando da Nvidia, segundo o Washington Post. Huang renunciou no dia 12, após admitir um caso com uma suspeita de espionagem para a China. Voltou ao cargo na segunda (23).",
+        "A lei, de 1950, deixa o presidente interferir em empresas privadas. A ideia seria forçar a Nvidia a desviar produção para projetos militares, o que pesaria no lucro e na ação. Trump admitiu ter ligado numa reunião do conselho para pressionar."
+      ],
+      "quadro": {
+        "titulo": "Espiã ou não?",
+        "texto": "Não há prova pública de que a China mandou Alice Huang se aproximar de Jensen, diz o TechCrunch. Ela teve contato com um agente chinês, segundo o New York Times."
+      },
+      "refs": [
+        {"rotulo": "Tom's Hardware", "url": "https://www.tomshardware.com/tech-industry/big-tech/us-defense-officials-considered-using-cold-war-law-to-force-nvidia-to-reinstate-jensen-huang-as-ceo-following-his-resignation-report-claims-1950-defense-production-act-was-floated-as-solution-to-president-trump"},
+        {"rotulo": "TechCrunch", "url": "https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/"}
+      ]
+    },
+    {
+      "tipo": "materia",
+      "secao": "OpenAI",
+      "assunto": "Inteligência artificial",
+      "titulo": "Os robôs que consertam o código do iFood",
+      "olho": "O iFood criou uma central de agentes de IA que trabalham sozinhos em milhares de sistemas. A correção de falhas de segurança mais que dobrou.",
+      "ilustracao": "robo",
+      "legenda": "Rotinas fixas no começo e no fim. No meio, a IA trabalha.",
+      "paragrafos": [
+        "O iFood montou uma plataforma interna de agentes de IA, programas que executam tarefas por conta própria. Eles já atuam em mais de 15 mil repositórios, as pastas onde mora o código de cada sistema. Segundo estudo de caso da OpenAI, divulgado na terça (24), cada tarefa custa em média US$ 0,04.",
+        "Batizada de Remote Agents Platform, ela usa o GPT-5.6 Luna, da OpenAI. Um time faz o pedido, o agente trabalha numa máquina isolada na nuvem e devolve a mudança pronta para revisão. Foram mais de 25 mil execuções. “Resolver isso para um repositório é fácil. O problema é resolver isso em escala”, diz Victor Coelho, engenheiro do iFood."
+      ],
+      "quadros": [
+        {"titulo": "Em números",
+         "tabela": {"colunas": ["Item", "Total"],
+                    "linhas": [["Repositórios", "15 mil+"], ["Execuções", "25 mil+"], ["Tokens", "27 bi+"], ["Custo por tarefa", "US$ 0,04"]]}},
+        {"titulo": "Por que o Luna", "texto": "O iFood comparou modelos do mesmo porte em três quesitos: raciocínio, velocidade e custo. O GPT-5.6 Luna venceu pelo equilíbrio. O plano é levar a plataforma a muitos outros usos na empresa."},
+        {"titulo": "Quem confere o robô", "texto": "Um recurso da OpenAI, o Structured Outputs, obriga a IA a responder num formato rígido. Assim, o sistema marca cada tarefa como sucesso ou falha sem ninguém precisar olhar."}
+      ],
+      "refs": [
+        {"rotulo": "Livecoins", "url": "https://livecoins.com.br/ifood-dobra-correcao-de-falhas-com-agentes-de-ia-da-dona-do-chatgpt-em-15-mil-repositorios-por-us-004/"}
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Placas & Memórias",
+      "assunto": "Hardware",
+      "tarja": "Hardware",
+      "titulo": "Memória cara, chip mais fino",
+      "ilustracao": "chip",
+      "estilo": "lista",
+      "notas": [
+        {"rotulo": "Celulares", "texto": "As vendas de celulares nos EUA caíram 9% no terceiro trimestre, segundo a Counterpoint. A memória cara pesou nos Android baratos. A fatia da Apple foi de 50% para 57%.", "url": "http://www.counterpointresearch.com/"},
+        {"rotulo": "TSMC A14", "texto": "O processo de 1,4 nm está pronto para receber projetos. Segundo a TSMC, rende 14% mais velocidade ou 23% menos consumo que o N2P. Produção em massa: fim de 2028.", "url": "https://www.tomshardware.com/tech-industry/semiconductors/tsmcs-a14-1-4nm-class-node-is-ready-for-chip-design-boost-cells-promise-14-percent-performance-uplift-or-23-percent-power-cut-over-n2p"},
+        {"rotulo": "Luz no chip", "texto": "A Avicena, que liga chips de IA com microLEDs no lugar de lasers, captou mais de US$ 100 milhões. SK Hynix, Samsung e AMD entraram.", "url": "https://thenextweb.com/news/avicena-100m-series-c-microled-optical-interconnects-ai"}
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Giro das Big Techs",
+      "assunto": "Notas",
+      "titulo": "Giro das Big Techs",
+      "estilo": "colunas",
+      "notas": [
+        {"rotulo": "OpenAI", "texto": "A empresa admitiu um erro de cobrança no lançamento do GPT-6.2 Astra e Sol: o uso saía com desconto indevido. Com a correção, quem usa o Astra vai bater no limite do plano até 40% mais rápido.", "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/weve-fixed-this-now-so-the-same-work-will-use-more-of-your-plans-usage-allowance-openai-admits-it-made-a-mistake-when-launching-gpt-6-2-and-now-paying-chatgpt-users-could-hit-their-usage-limits-up-to-40-percent-faster"},
+        {"rotulo": "SAP", "texto": "A alemã prepara o corte de pelo menos 10 mil vagas, 9% do quadro, para adaptar seu software à era da IA, segundo a Bloomberg.", "url": "https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring"},
+        {"rotulo": "Google", "texto": "A partir do ano que vem, muitos desenvolvedores independentes de apps Android terão de mostrar telefone e endereço em público. A regra atende a uma lei europeia, mas valerá no mundo todo.", "url": "https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu"},
+        {"rotulo": "ASML", "texto": "O governo da Holanda vai resistir ao Match Act, proposta americana para limitar as vendas da ASML à China. Diz que a regra ameaça a empresa.", "url": "https://www.bloomberg.com/news/articles/2026-11-26/netherlands-plans-to-fight-rollout-of-proposed-us-curbs-on-asml"},
+        {"rotulo": "X", "texto": "A rede de Elon Musk enfim ganhou controle parental: pais e responsáveis podem gerenciar o que os adolescentes veem.", "url": "https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/"},
+        {"rotulo": "WhatsApp", "texto": "O app vai vender pacotes de dados por eSIM, o chip virtual, para viagens internacionais. As opções variam conforme o país.", "url": "https://tecnoblog.net/noticias/whatsapp-anuncia-esim-com-pacotes-de-dados-para-viagens-internacionais/"}
+      ]
+    },
+    {
+      "tipo": "cripto",
+      "titulo": "Binance libera os saques de novo",
+      "notas": [
+        {"rotulo": "Binance", "texto": "Quatro semanas após o roubo recorde de US$ 6,3 bilhões, a corretora diz que os saques voltaram ao normal.", "url": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack"},
+        {"rotulo": "Reino Unido", "texto": "A FCA, regulador britânico, quer exigir autorização das plataformas DeFi, as finanças descentralizadas. O motivo citado: o caso Binance.", "url": "https://www.ft.com/content/ec820cb6-4983-4ece-8e7b-de116b57525d"}
+      ]
+    },
+    {
+      "tipo": "comunidade",
+      "titulo": "O que a turma anda fazendo",
+      "vozes": [
+        {"nome": "davxx", "onde": "TabNews", "texto": "Criou o Mundaily, jogo diário de geografia só com dados reais, montado sozinho e sem IA. O bug mais curioso: desenhar no sentido errado transformava o mapa todo em terra.",
+         "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/davxx/criei-um-jogo-diario-de-geografia-so-com-dados-reais-como-ele-se-monta-sozinho-e-o-bug-que-transformava-o-mapa-todo-em-terra"}]},
+        {"nome": "annaskokova", "onde": "TabNews", "texto": "Ensinou a compilar e publicar app de iOS no Windows, sem comprar um Mac. Avisa logo: ela e o marido fazem o JustMac.app, um dos serviços citados.",
+         "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/annaskokova/como-compilar-e-publicar-um-app-ios-no-windows-sem-comprar-um-mac"}]},
+        {"nome": "Attekita Dev", "onde": "YouTube", "texto": "Testou o Claude Code rodando com o Kimi 3.1 Pro, pela metade do preço por token.",
+         "links": [{"rotulo": "YouTube", "url": "https://www.youtube.com/watch?v=dUQqqA_IM_k"}]}
+      ],
+      "quadro": {"titulo": "No Código Fonte TV", "texto": "O canal explicou o que faz um FDE, o Forward Deployed Engineer."}
+    },
+    {
+      "tipo": "contracapa",
+      "leituras": [
+        {"titulo": "GTA VI, a Anthropic na bolsa e por que eficiência não é virtude", "onde": "TechCrunch · ensaio", "url": "https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/"},
+        {"titulo": "O fosfeto de índio, material dos lasers que ligam os chips de IA, virou gargalo", "onde": "Tom's Hardware · técnico", "url": "https://www.tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure"},
+        {"titulo": "Um manual inteiro do Vim, escrito ao longo de quatro anos", "onde": "The Mouseless Dev · manual", "url": "http://themouseless.dev/vim/"},
+        {"titulo": "A IA deixou divertido de novo hospedar os próprios serviços", "onde": "Jan Lukas · blog", "url": "https://janlukas.blog/posts/ai-self-hosting"}
+      ]
+    }
+  ],
+  "glossario": [
+    {"termo": "Agente de IA", "categoria": "IA", "definicao": "Programa de IA que executa tarefas por conta própria, em várias etapas, em vez de só responder perguntas."},
+    {"termo": "Repositório", "categoria": "Programação", "definicao": "Pasta onde fica o código de um sistema, com todo o histórico de mudanças."},
+    {"termo": "Token", "categoria": "IA", "definicao": "Pedacinho de texto que os modelos de IA leem e escrevem. As empresas cobram pelo número de tokens."},
+    {"termo": "Defense Production Act", "categoria": "Política", "definicao": "Lei americana de 1950 que deixa o presidente interferir em empresas privadas, em geral para abastecer as Forças Armadas."},
+    {"termo": "Nanômetro (nm)", "categoria": "Hardware", "definicao": "Um milionésimo de milímetro. Nos chips, o número dá nome à geração do processo de fabricação: menor costuma ser mais avançado."},
+    {"termo": "eSIM", "categoria": "Celular", "definicao": "Chip de operadora virtual, embutido no aparelho. Dá para ativar um plano sem colocar cartão físico."},
+    {"termo": "DeFi", "categoria": "Cripto", "definicao": "Finanças descentralizadas: serviços como empréstimos e trocas feitos por programas na blockchain, sem banco no meio."},
+    {"termo": "Controle parental", "categoria": "Internet", "definicao": "Ferramentas que deixam pais e responsáveis limitar o que crianças e adolescentes veem num app ou aparelho."}
+  ]
+}

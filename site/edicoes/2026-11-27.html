@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Circuito nº 029 · 27/11/2026</title>
+<meta name="description" content="iFood põe a IA no código. Agentes da OpenAI já mexem em 15 mil repositórios, a US$ 0,04 por tarefa.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Circuito">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://g4l1l30.github.io/circuito/edicoes/2026-11-27.html">
+<meta property="og:title" content="Circuito nº 029 · iFood põe a IA no código">
+<meta property="og:description" content="Agentes da OpenAI já mexem em 15 mil repositórios, a US$ 0,04 por tarefa.">
+<meta property="og:image" content="https://g4l1l30.github.io/circuito/og-circuito.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Circuito: revista diária de tecnologia em 5 minutos, com um computador antigo na capa">
+<meta name="twitter:card" content="summary_large_image"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Oswald:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=VT323&display=swap">
+<style>
+:root{
+  /* Layout: páginas em formatinho (13,5 × 20,5 cm) sobre a mesa; capa e contracapa sozinhas, miolo em pares abertos como revista.
+     A página é papel impresso e não muda com o tema; só a mesa escurece no modo escuro. Impressão em duas cores + preto, tinta desbotada. */
+  --desk:#cdc6b6;
+  --desk-ink:#4b453c;
+  --paper:#ebe3cd;
+  --paper-shade:#ddd2b5;
+  --ink:#25211d;
+  --ink-soft:#5f574b;
+  --red:#a24a33;
+  --blue:#3f5a68;
+  --mustard:#b38f3e;
+  --spine:rgba(37,33,29,.30);
+  --drop:rgba(37,33,29,.30);
+  --f-display:'Alfa Slab One','Rockwell','Roboto Slab',Georgia,serif;
+  --f-label:'Oswald','Arial Narrow','Helvetica Neue Condensed',Impact,sans-serif;
+  --f-body:'PT Serif',Georgia,'Times New Roman',serif;
+  --f-data:'VT323','Courier New',monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){ --desk:#1c1a17; --desk-ink:#b8b09f; --drop:rgba(0,0,0,.6); color-scheme:dark }
+}
+:root[data-theme="dark"]{ --desk:#1c1a17; --desk-ink:#b8b09f; --drop:rgba(0,0,0,.6); color-scheme:dark }
+
+*,*::before,*::after{ box-sizing:border-box }
+html{ padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); background:var(--desk) }
+body{ margin:0; background:var(--desk); color:var(--desk-ink); font:14px/1.4 var(--f-body) }
+img,svg{ max-width:100% }
+
+.mesa{
+  display:flex; flex-direction:column; align-items:center; gap:44px;
+  padding-block:28px 72px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+}
+.mesa-topo{
+  width:100%; max-width:960px;
+  display:flex; flex-wrap:wrap; justify-content:space-between; gap:6px 24px;
+  font:500 12px/1.4 var(--f-label); letter-spacing:.14em; text-transform:uppercase;
+  border-bottom:1px solid currentColor; padding-bottom:10px;
+}
+.mesa-topo strong{ font-weight:700 }
+.mesa-topo a{ color:inherit }
+.mesa-sobre{
+  width:100%; max-width:960px; margin:-30px 0 0;
+  font:italic 400 14px/1.45 var(--f-body); text-wrap:balance;
+}
+.faixa-teste{
+  width:100%; max-width:960px; text-align:center; padding:8px 12px;
+  font:700 12px/1.3 var(--f-label); letter-spacing:.2em; text-transform:uppercase;
+  border:2px dashed currentColor;
+}
+
+.spread{ display:grid; grid-template-columns:minmax(0,480px); justify-content:center; gap:44px; width:100% }
+@media (min-width:1010px){
+  .spread:not(.solo){ grid-template-columns:repeat(2, minmax(0,480px)); gap:0 }
+  /* as duas páginas abertas acompanham a mais alta, como numa revista de verdade */
+  .spread:not(.solo) .page{ align-self:stretch }
+  .spread:not(.solo) .page:first-child{ box-shadow:inset -26px 0 26px -22px var(--spine), -6px 16px 30px -14px var(--drop) }
+  .spread:not(.solo) .page:last-child{ box-shadow:inset 26px 0 26px -22px var(--spine), 6px 16px 30px -14px var(--drop) }
+}
+
+/* ---------- a página ---------- */
+.page{
+  position:relative; width:100%; aspect-ratio:135/205;
+  container-type:inline-size;
+  display:flex; flex-direction:column;
+  color:var(--ink);
+  background-color:var(--paper);
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .22 0 0 0 0 .17 0 0 0 0 .10 0 0 0 .10 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"),
+    radial-gradient(ellipse at 50% 45%, transparent 55%, rgba(120,92,45,.13) 100%);
+  box-shadow:0 16px 30px -14px var(--drop);
+}
+.pg{ flex:1; display:flex; flex-direction:column; gap:2.3cqw; padding:5.6cqw 6.2cqw 4.2cqw }
+
+.runner{
+  display:flex; justify-content:space-between; gap:2cqw;
+  font:600 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.16em; text-transform:uppercase;
+  border-bottom:.4cqw solid var(--ink); padding-bottom:1.3cqw;
+}
+.folio{
+  margin-top:auto; display:flex; justify-content:space-between; align-items:baseline;
+  font:500 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft);
+  border-top:.22cqw solid var(--ink); padding-top:1.3cqw;
+}
+.folio b{ font:400 3.4cqw/1 var(--f-display); color:var(--ink); letter-spacing:0 }
+
+.tarja{
+  align-self:flex-start;
+  font:600 max(9.5px,2.35cqw)/1 var(--f-label); letter-spacing:.17em; text-transform:uppercase;
+  background:var(--ink); color:var(--paper); padding:1cqw 1.8cqw .9cqw;
+}
+.tarja.verm{ background:var(--red) }
+.titulo{ margin:0; font:400 7.8cqw/1.02 var(--f-display); letter-spacing:-.005em; text-wrap:balance }
+.titulo.g{ font-size:9cqw }
+.olho{
+  margin:0; font:italic 400 max(12px,3.35cqw)/1.36 var(--f-body);
+  border-left:.9cqw solid var(--red); padding-left:2.4cqw;
+}
+.txt{ display:flex; flex-direction:column; gap:1.4cqw }
+.txt p, .cols p{
+  margin:0; font-size:max(12px,2.95cqw); line-height:1.44;
+  text-align:justify; hyphens:auto; -webkit-hyphens:auto;
+}
+.capitular::first-letter{
+  float:left; font-family:var(--f-display); font-size:3.5em; line-height:.82;
+  padding:.06em .09em 0 0; color:var(--red);
+}
+.cols{ columns:2; column-gap:4.4cqw; column-rule:.22cqw solid var(--ink-soft) }
+.cols p{ margin-bottom:1.6cqw; text-align:left; break-inside:avoid }
+
+.nota-cab{
+  display:inline-block; margin-right:.5em;
+  font:700 max(10px,2.45cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; color:var(--red);
+}
+.ref{ display:flex; flex-wrap:wrap; gap:.6cqw 3cqw }
+.ref a, a.ref-link{
+  font:500 max(9.5px,2.2cqw)/1.35 var(--f-label); letter-spacing:.08em; text-transform:uppercase;
+  color:var(--blue); text-decoration:none; border-bottom:.22cqw dotted var(--blue);
+}
+a.ref-link{ margin-right:2.4cqw }
+a:hover{ color:var(--red); border-bottom-color:var(--red) }
+a:focus-visible{ outline:2px solid var(--red); outline-offset:2px }
+
+.quadro{ position:relative; border:.45cqw solid var(--ink); background:var(--paper-shade); padding:2.5cqw 3cqw 2.7cqw }
+.quadro::after{
+  content:""; position:absolute; inset:1.5cqw -1.6cqw -1.6cqw 1.5cqw; z-index:-1;
+  background-image:radial-gradient(var(--ink) 32%, transparent 35%); background-size:1.25cqw 1.25cqw;
+}
+.quadro h3{ margin:0 0 1.2cqw; font:700 max(10px,2.55cqw)/1 var(--f-label); letter-spacing:.15em; text-transform:uppercase; color:var(--red) }
+.quadro p{ margin:0; font-size:max(11.5px,2.75cqw); line-height:1.42; hyphens:auto; -webkit-hyphens:auto }
+.quadro p + p{ margin-top:1cqw }
+
+.legenda{ margin:0; font:italic 400 max(10.5px,2.4cqw)/1.35 var(--f-body); color:var(--ink-soft) }
+.arte{ display:block; width:100%; height:auto; max-width:100% }
+
+/* SVG */
+.f-ink{fill:var(--ink)} .f-paper{fill:var(--paper)} .f-shade{fill:var(--paper-shade)}
+.f-red{fill:var(--red)} .f-blue{fill:var(--blue)} .f-mus{fill:var(--mustard)} .f-none{fill:none}
+.s-ink{stroke:var(--ink)} .s-red{stroke:var(--red)} .s-mus{stroke:var(--mustard)} .s-paper{stroke:var(--paper)} .s-blue{stroke:var(--blue)}
+.t-slab{font-family:var(--f-display)} .t-label{font-family:var(--f-label); font-weight:600} .t-data{font-family:var(--f-data)}
+
+/* ---------- capa ---------- */
+.capa .pg{ gap:2.4cqw }
+.capa-faixa{ display:flex; justify-content:space-between; font:600 max(9px,2.2cqw)/1 var(--f-label); letter-spacing:.16em; text-transform:uppercase }
+.logo{
+  margin:0; font:400 15.6cqw/.9 var(--f-display); letter-spacing:-.015em; text-align:center;
+  color:var(--ink); text-shadow:.75cqw .75cqw 0 var(--red);
+  border-block:.5cqw solid var(--ink); padding-block:2cqw 1.4cqw;
+}
+.slogan{ margin:-.6cqw 0 0; text-align:center; font:500 max(9.5px,2.4cqw)/1 var(--f-label); letter-spacing:.3em; text-transform:uppercase }
+.capa-miolo{ display:grid; grid-template-columns:31cqw minmax(0,1fr); gap:2.8cqw; align-items:center }
+.chamadas{ display:flex; flex-direction:column; gap:2.2cqw }
+.chamada{ border-top:.35cqw solid var(--ink); padding-top:1.3cqw }
+.chamada span{ display:block; font:700 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-bottom:.8cqw }
+.chamada p{ margin:0; font:700 max(11px,2.8cqw)/1.22 var(--f-body) }
+.arte-capa{ position:relative }
+.selo{
+  position:absolute; right:-1cqw; top:-1cqw; width:17cqw; aspect-ratio:1; border-radius:50%;
+  display:grid; place-content:center; text-align:center; transform:rotate(12deg);
+  background:var(--mustard); color:var(--ink); border:.5cqw solid var(--ink);
+  box-shadow:0 0 0 .8cqw var(--paper), 0 0 0 1.1cqw var(--ink);
+  font:700 2cqw/1.05 var(--f-label); letter-spacing:.08em; text-transform:uppercase;
+}
+.selo b{ display:block; font:400 3.4cqw/1 var(--f-display); letter-spacing:0 }
+.manchete{ text-align:center; display:flex; flex-direction:column; gap:1.2cqw }
+.manchete h2{ margin:0; font:700 11.4cqw/.92 var(--f-label); letter-spacing:.01em; text-transform:uppercase; text-wrap:balance }
+.manchete p{ margin:0; font:italic 400 max(12px,3.6cqw)/1.25 var(--f-body); text-wrap:balance }
+.capa-pe{ margin-top:auto; display:flex; justify-content:space-between; align-items:flex-end; gap:3cqw }
+.capa-pe p{ margin:0; font:500 max(9px,2.2cqw)/1.35 var(--f-label); letter-spacing:.1em; text-transform:uppercase }
+.barras{ display:flex; flex-direction:column; align-items:center; gap:.6cqw; background:var(--paper); padding:1.2cqw 1.6cqw .8cqw; border:.25cqw solid var(--ink) }
+.barras i{
+  display:block; width:22cqw; height:8cqw;
+  background:repeating-linear-gradient(90deg, var(--ink) 0 .45cqw, transparent .45cqw .8cqw, var(--ink) .8cqw 1.5cqw, transparent 1.5cqw 1.75cqw, var(--ink) 1.75cqw 1.95cqw, transparent 1.95cqw 2.5cqw, var(--ink) 2.5cqw 2.7cqw, transparent 2.7cqw 3.3cqw);
+}
+.barras span{ font:400 2.6cqw/1 var(--f-data); letter-spacing:.2em }
+
+/* ---------- miolo ---------- */
+.sumario{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:1.1cqw }
+.sumario li{ display:flex; align-items:baseline; gap:1.4cqw; font-size:max(11.5px,2.85cqw) }
+.sumario li::after{ content:""; order:2; flex:1; border-bottom:.3cqw dotted var(--ink-soft) }
+.sumario li span{ order:1 }
+.sumario li b{ order:3; font:400 3.6cqw/1 var(--f-display); color:var(--red); min-width:4cqw; text-align:right }
+.sumario em{ font-style:normal; font:600 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; color:var(--ink-soft); margin-right:.5em }
+.expediente{ margin:0; font:400 max(13px,3cqw)/1.1 var(--f-data); color:var(--ink-soft); text-transform:uppercase }
+
+.tabela{ width:100%; border-collapse:collapse; font:400 max(14px,3.7cqw)/1.15 var(--f-data); font-variant-numeric:tabular-nums }
+.tabela th{ font:600 max(9px,2.15cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase; text-align:right; padding:0 0 1cqw; border-bottom:.3cqw solid var(--ink) }
+.tabela th:first-child, .tabela td:first-child{ text-align:left }
+.tabela td{ text-align:right; padding:.7cqw 0; border-bottom:.22cqw dashed var(--ink-soft) }
+.tabela td.sobe{ color:var(--blue) }
+.tabela td.desce{ color:var(--red) }
+.tabela tr:last-child td{ border-bottom:0 }
+
+.lado{ display:grid; grid-template-columns:42cqw minmax(0,1fr); gap:3.4cqw; align-items:center }
+.lado.inv{ grid-template-columns:minmax(0,1fr) 38cqw }
+.lado > div{ display:flex; flex-direction:column; gap:2cqw; min-width:0 }
+.notas{ display:flex; flex-direction:column; gap:1.5cqw }
+.notas p{ margin:0; font-size:max(12px,2.95cqw); line-height:1.42; hyphens:auto; -webkit-hyphens:auto; text-align:justify }
+
+.empresa{
+  display:inline-block; margin-right:.45em; padding:.4cqw 1cqw .3cqw;
+  font:700 max(9.5px,2.2cqw)/1 var(--f-label); letter-spacing:.12em; text-transform:uppercase;
+  border:.3cqw solid var(--ink); background:var(--paper);
+}
+
+.vozes{ display:flex; flex-direction:column; gap:2.4cqw }
+.voz{ display:grid; grid-template-columns:11cqw minmax(0,1fr); gap:2.8cqw; align-items:start }
+.avatar{
+  width:11cqw; aspect-ratio:1; border-radius:50%; border:.4cqw solid var(--ink);
+  display:grid; place-items:center; font:400 3.8cqw/1 var(--f-display); color:var(--paper);
+  background-color:var(--blue);
+  background-image:radial-gradient(var(--ink) 30%, transparent 34%); background-size:1.3cqw 1.3cqw;
+  text-shadow:0 0 .6cqw var(--ink);
+}
+.avatar.c1{ background-color:var(--red) }
+.avatar.c2{ background-color:var(--mustard) }
+.voz h4{ margin:0 0 .6cqw; font:700 max(10px,2.5cqw)/1.1 var(--f-label); letter-spacing:.12em; text-transform:uppercase }
+.voz h4 small{ font-weight:500; color:var(--ink-soft); letter-spacing:.08em }
+.voz p{ margin:0 0 .8cqw; font-size:max(12px,2.9cqw); line-height:1.4 }
+
+.leituras{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2.2cqw }
+.leituras li{ display:grid; grid-template-columns:3cqw minmax(0,1fr); gap:2cqw }
+.leituras li::before{ content:""; width:2.2cqw; height:2.2cqw; margin-top:1cqw; background:var(--red) }
+.leituras a{ font:700 max(12px,3.05cqw)/1.25 var(--f-body); color:var(--ink); text-decoration:none; border-bottom:.25cqw dotted var(--ink-soft) }
+.leituras span{ display:block; margin-top:.5cqw; font:500 max(9px,2.15cqw)/1.3 var(--f-label); letter-spacing:.1em; text-transform:uppercase; color:var(--blue) }
+
+.perdeu{ list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:2.4cqw }
+.perdeu li{ border-top:.3cqw solid var(--ink); padding-top:1.6cqw }
+.perdeu li span{ display:block; font:700 max(9.5px,2.3cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-bottom:1cqw }
+.perdeu li p{ margin:0 0 .8cqw; font-size:max(12px,2.95cqw); line-height:1.42 }
+
+.glossario{ margin:0; display:flex; flex-direction:column; gap:2.2cqw }
+.glossario dt{ font:400 4.6cqw/1 var(--f-display); color:var(--ink) }
+.glossario dt small{ font:600 max(9px,2.1cqw)/1 var(--f-label); letter-spacing:.14em; text-transform:uppercase; color:var(--red); margin-left:1.2cqw }
+.glossario dd{ margin:.8cqw 0 0; font-size:max(12px,2.95cqw); line-height:1.42; border-left:.6cqw solid var(--mustard); padding-left:2.2cqw }
+
+.anuncio{ border:.6cqw double var(--ink); padding:2.8cqw; display:grid; grid-template-columns:minmax(0,1fr) 20cqw; gap:2.4cqw; align-items:center; background:var(--paper) }
+.anuncio h3{ margin:0 0 1cqw; font:700 5.4cqw/.95 var(--f-label); text-transform:uppercase; letter-spacing:.01em }
+.anuncio h3 em{ font-style:normal; color:var(--red) }
+.anuncio p{ margin:0; font-size:max(11.5px,2.75cqw); line-height:1.35 }
+.cupom{ grid-column:1 / -1; border:.35cqw dashed var(--ink); padding:2cqw 2.4cqw; font:400 max(13px,3.2cqw)/1.35 var(--f-data); position:relative }
+.cupom::before{ content:"✂"; position:absolute; top:-2.4cqw; left:3cqw; background:var(--paper); padding:0 1cqw; font-size:3.4cqw; line-height:1 }
+.anuncio.grande{ grid-template-columns:1fr; text-align:center; padding:4cqw }
+.anuncio.grande .arte{ width:46cqw; margin:0 auto }
+.anuncio.grande h3{ font-size:7.4cqw }
+.miudo{ margin:0; font:italic 400 max(10px,2.2cqw)/1.3 var(--f-body); color:var(--ink-soft) }
+
+/* ---------- arquivo de edições ---------- */
+.arquivo{ width:100%; max-width:720px; list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px }
+.arquivo li{ display:grid; grid-template-columns:auto minmax(0,1fr); gap:6px 18px; align-items:baseline; border-bottom:1px solid currentColor; padding-bottom:12px }
+.arquivo b{ font:400 22px/1 var(--f-display) }
+.arquivo a{ color:inherit; font:700 16px/1.3 var(--f-body) }
+.arquivo span{ grid-column:2; font:500 12px/1.3 var(--f-label); letter-spacing:.12em; text-transform:uppercase }
+
+</style>
+</head>
+<body>
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <pattern id="ht-ink" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="2" cy="2" r="1.05" class="f-ink"/></pattern>
+    <pattern id="ht-fino" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="2" cy="2" r=".62" class="f-ink"/></pattern>
+    <pattern id="ht-red" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(15)"><circle cx="2" cy="2" r="1.25" class="f-red"/></pattern>
+    <pattern id="ht-blue" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(75)"><circle cx="2.5" cy="2.5" r="1.45" class="f-blue"/></pattern>
+    <pattern id="hachura" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><rect width="1.3" height="4" class="f-ink"/></pattern>
+    <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse"><rect width="4" height="1" class="f-paper" opacity=".09"/></pattern>
+    <pattern id="teclas" width="12" height="9" patternUnits="userSpaceOnUse"><rect x="1.5" y="1.5" width="9" height="6" rx="1" class="f-ink" opacity=".8"/></pattern>
+    <pattern id="pinos" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="2" height="4" class="f-mus"/></pattern>
+    <pattern id="dentes" width="5" height="4" patternUnits="userSpaceOnUse"><rect x="3" width="1.4" height="4" class="f-ink" opacity=".55"/></pattern>
+    <pattern id="janelas" width="12" height="12" patternUnits="userSpaceOnUse"><rect x="2" y="2" width="7" height="7" class="f-ink" opacity=".85"/></pattern>
+  </defs>
+</svg>
+
+
+
+
+
+
+
+
+
+<main class="mesa">
+  <div class="mesa-topo">
+    <span><strong>Circuito</strong> · nº 029 · sexta-feira, 27 de novembro de 2026</span>
+    <span><a href="../arquivo.html">Edições anteriores</a></span>
+  </div>
+  <p class="mesa-sobre">Revista diária de tecnologia em 5 minutos · de segunda a sábado, às 7h · grátis. Cada nota tem o link para a matéria original.</p>
+  <section class="spread solo" aria-label="Capa">
+<article class="page capa" id="p1"><div class="pg">
+  <div class="capa-faixa"><span>Nº 029 · Ano I</span><span>Sexta, 27 de novembro de 2026</span></div>
+  <h1 class="logo">CIRCUITO</h1>
+  <p class="slogan">IA · Hardware · Big Techs · Cripto</p>
+  <div class="capa-miolo">
+    <div class="chamadas">
+<div class="chamada"><span>Nvidia</span><p>Pentágono pensou em lei de guerra por Jensen</p></div><div class="chamada"><span>OpenAI</span><p>Erro corrigido: limite do GPT-6.2 chega antes</p></div><div class="chamada"><span>Celulares</span><p>Memória cara derruba vendas nos EUA</p></div><div class="chamada"><span>Cripto</span><p>Bitcoin a US$ 61,7 mil, com medo extremo</p></div>    </div>
+    <div class="arte-capa">
+      <svg class="arte" viewBox="0 0 300 250" role="img" aria-label="Ilustração: computador antigo com o elemento do dia na tela, Agentes">
+  <circle cx="150" cy="116" r="114" fill="url(#ht-blue)"/>
+  <g class="s-ink" stroke-width="2.5" stroke-linecap="round">
+    <line x1="14" y1="36" x2="38" y2="50"/><line x1="286" y1="36" x2="262" y2="50"/>
+    <line x1="6" y1="116" x2="32" y2="116"/><line x1="294" y1="116" x2="268" y2="116"/>
+  </g>
+  <rect x="61" y="28" width="186" height="160" rx="16" class="f-red" opacity=".9"/>
+  <rect x="55" y="22" width="186" height="160" rx="16" class="f-paper s-ink" stroke-width="3"/>
+  <rect x="72" y="38" width="152" height="114" rx="12" class="f-ink"/>
+  <rect x="72" y="38" width="152" height="114" rx="12" fill="url(#scan)"/>
+  <rect x="111" y="50" width="74" height="88" class="f-none s-mus" stroke-width="2.5"/>
+  <text x="117" y="65" class="t-data f-mus" font-size="14">04</text>
+  <text x="148" y="108" text-anchor="middle" class="t-slab f-paper" font-size="40">Ag</text>
+  <text x="148" y="122" text-anchor="middle" class="t-label f-mus" font-size="8.5" letter-spacing="1.6">AGENTES</text>
+  <text x="148" y="133" text-anchor="middle" class="t-data f-paper" font-size="11">US$ 0,04</text>
+  <rect x="82" y="140" width="8" height="5" class="f-mus"/>
+  <rect x="172" y="161" width="52" height="6" rx="1" class="f-ink"/>
+  <circle cx="82" cy="165" r="3.6" class="f-red"/>
+  <text x="92" y="168" class="t-label f-ink" font-size="7" letter-spacing="1.2">CIRCUITO 2026</text>
+  <path d="M122 182 L174 182 L184 198 L112 198 Z" class="f-shade s-ink" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M48 206 L252 206 L266 242 L34 242 Z" class="f-paper s-ink" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M57 211 L243 211 L254 237 L46 237 Z" fill="url(#teclas)"/>
+  <path d="M0,-9 L2.2,-2.2 L9,0 L2.2,2.2 L0,9 L-2.2,2.2 L-9,0 L-2.2,-2.2Z" class="f-mus s-ink" stroke-width="1.2" transform="translate(262 20)"/>
+  <path d="M0,-7 L1.8,-1.8 L7,0 L1.8,1.8 L0,7 L-1.8,1.8 L-7,0 L-1.8,-1.8Z" class="f-red" transform="translate(30 186)"/>
+</svg>
+      <div class="selo" aria-hidden="true"><b>R$ 0</b>seg a sáb<br>às 7h</div>
+    </div>
+  </div>
+  <div class="manchete"><h2>iFood põe a IA no código</h2><p>Agentes da OpenAI já mexem em 15 mil repositórios, a US$ 0,04 por tarefa.</p></div>
+  <div class="capa-pe">
+    <p>Leitura de 6 minutos<br>Cada nota com o link para o estudo completo</p>
+    <div class="barras" aria-hidden="true"><i></i><span>2026·11·27</span></div>
+  </div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 2 e Página 3">
+<article class="page" id="p2"><div class="pg">
+  <div class="runner"><span>Circuito · Nº 029</span><span>Ao leitor</span></div>
+  <h2 class="titulo">Black Friday, mas a IA não folga</h2>
+  <div class="txt"><p class="capitular">Sexta de Black Friday, e a IA segue no batente. No iFood, agentes da OpenAI já consertam código em 15 mil repositórios, a quatro centavos de dólar por tarefa.</p><p>Nesta edição: o plano do Pentágono para devolver Jensen Huang à Nvidia, a memória cara derrubando a venda de celulares e a Binance com os saques de volta.</p></div>
+  <div class="quadro">
+    <h3>Nesta edição</h3>
+    <ol class="sumario">
+<li><span><em>Nvidia</em>O Pentágono pensou numa lei de guerra por Jensen</span><b>3</b></li><li><span><em>Capa</em>Os robôs que consertam o código do iFood</span><b>4</b></li><li><span><em>Placas &amp; Memórias</em>Memória cara, chip mais fino</span><b>6</b></li><li><span><em>Giro das Big Techs</em>Giro das Big Techs</span><b>7</b></li><li><span><em>Cripto</em>Cofre Digital</span><b>8</b></li><li><span><em>Vozes</em>Da Comunidade</span><b>9</b></li><li><span><em>Fim</em>Pra ler com calma</span><b>12</b></li>    </ol>
+  </div>
+  <p class="expediente">Fechamento 27/11/2026 06h11 (Brasília)<br>Cobre de 26/11 às 06h11 a 27/11 às 06h11<br>Fontes: Bloomberg, CoinDesk, Financial Times, Livecoins, TabNews, TechCrunch, Tecnoblog, The Verge, Tom&#39;s Hardware, YouTube e outras</p>
+  <div class="folio"><b>2</b><span>Ao leitor</span></div>
+</div></article>
+
+<article class="page" id="p3"><div class="pg">
+  <div class="runner"><span>Nvidia</span><span>Bastidores</span></div>
+<span class="tarja verm">Lei de guerra</span>  <h2 class="titulo">O Pentágono pensou numa lei de guerra por Jensen</h2>
+<svg class="arte" viewBox="0 -10 300 180" role="img" aria-label="Ilustração: sede de empresa de tecnologia com antena no topo">
+  <circle cx="150" cy="84" r="80" fill="url(#ht-blue)"/>
+  <rect x="0" y="160" width="300" height="10" fill="url(#ht-fino)"/>
+  <line x1="0" y1="160" x2="300" y2="160" class="s-ink" stroke-width="2.5"/>
+  <rect x="52" y="84" width="50" height="76" class="f-paper s-ink" stroke-width="2.5"/>
+  <rect x="58" y="92" width="38" height="56" fill="url(#janelas)" opacity=".8"/>
+  <rect x="196" y="64" width="56" height="96" class="f-paper s-ink" stroke-width="2.5"/>
+  <rect x="202" y="72" width="44" height="76" fill="url(#janelas)" opacity=".8"/>
+  <rect x="116" y="34" width="76" height="126" class="f-red" opacity=".9"/>
+  <rect x="110" y="28" width="76" height="132" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="118" y="38" width="60" height="96" fill="url(#janelas)"/>
+  <rect x="136" y="140" width="24" height="20" class="f-ink"/>
+  <line x1="148" y1="28" x2="148" y2="10" class="s-ink" stroke-width="3"/>
+  <circle cx="148" cy="8" r="3.5" class="f-red"/>
+  <path d="M138 4 Q148 -5 158 4" class="f-none s-red" stroke-width="2"/>
+</svg>
+  <div class="txt"><p class="capitular">Chefes militares americanos pensaram em usar uma lei da Guerra Fria para devolver Jensen Huang ao comando da Nvidia, segundo o Washington Post. Huang renunciou no dia 12, após admitir um caso com uma suspeita de espionagem para a China. Voltou ao cargo na segunda (23).</p><p>A lei, de 1950, deixa o presidente interferir em empresas privadas. A ideia seria forçar a Nvidia a desviar produção para projetos militares, o que pesaria no lucro e na ação. Trump admitiu ter ligado numa reunião do conselho para pressionar.</p></div>
+<div class="quadro">
+  <h3>Espiã ou não?</h3>
+<p>Não há prova pública de que a China mandou Alice Huang se aproximar de Jensen, diz o TechCrunch. Ela teve contato com um agente chinês, segundo o New York Times.</p></div>  <div class="ref"><a href="https://www.tomshardware.com/tech-industry/big-tech/us-defense-officials-considered-using-cold-war-law-to-force-nvidia-to-reinstate-jensen-huang-as-ceo-following-his-resignation-report-claims-1950-defense-production-act-was-floated-as-solution-to-president-trump">→ Tom&#39;s Hardware</a><a href="https://techcrunch.com/2026/11/26/is-alice-huang-a-spy-or-not/">→ TechCrunch</a></div>
+  <div class="folio"><span>Nvidia</span><b>3</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 4 e Página 5">
+<article class="page" id="p4"><div class="pg">
+  <div class="runner"><span>Matéria de capa</span><span>Inteligência artificial</span></div>
+  <svg class="arte" viewBox="0 0 300 172" role="img" aria-label="Ilustração: braço robótico segurando uma estrela">
+  <rect x="0" y="150" width="300" height="22" fill="url(#ht-fino)"/>
+  <line x1="0" y1="150" x2="300" y2="150" class="s-ink" stroke-width="2.5"/>
+  <rect x="196" y="112" width="38" height="38" class="f-shade s-ink" stroke-width="2.5"/>
+  <rect x="196" y="112" width="38" height="38" fill="url(#hachura)" opacity=".3"/>
+  <rect x="238" y="112" width="38" height="38" class="f-blue s-ink" stroke-width="2.5"/>
+  <rect x="217" y="72" width="38" height="38" class="f-paper s-ink" stroke-width="2.5"/>
+  <rect x="28" y="128" width="62" height="22" rx="3" class="f-ink"/>
+  <rect x="40" y="119" width="38" height="11" class="f-blue s-ink" stroke-width="2"/>
+  <line x1="59" y1="121" x2="71" y2="77" class="s-ink" stroke-width="13" stroke-linecap="round"/>
+  <line x1="59" y1="121" x2="71" y2="77" class="s-paper" stroke-width="6" stroke-linecap="round"/>
+  <line x1="71" y1="77" x2="112" y2="60" class="s-ink" stroke-width="11" stroke-linecap="round"/>
+  <line x1="71" y1="77" x2="112" y2="60" class="s-paper" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="59" cy="121" r="8" class="f-mus s-ink" stroke-width="2.5"/>
+  <circle cx="71" cy="77" r="7" class="f-mus s-ink" stroke-width="2.5"/>
+  <path d="M112 60 l8 -12 M112 60 l15 0" class="f-none s-ink" stroke-width="4" stroke-linecap="round"/>
+  <path d="M0,-16 L4,-4 L16,0 L4,4 L0,16 L-4,4 L-16,0 L-4,-4Z" class="f-mus s-ink" stroke-width="2" transform="translate(140 40)"/>
+  <g class="s-red" stroke-width="2.5" stroke-linecap="round">
+    <line x1="160" y1="22" x2="170" y2="14"/><line x1="164" y1="44" x2="176" y2="46"/><line x1="142" y1="14" x2="144" y2="2"/>
+  </g>
+</svg>
+
+<p class="legenda">Rotinas fixas no começo e no fim. No meio, a IA trabalha.</p>  <span class="tarja">Capa · OpenAI</span>
+  <h2 class="titulo g">Os robôs que consertam o código do iFood</h2>
+  <p class="olho">O iFood criou uma central de agentes de IA que trabalham sozinhos em milhares de sistemas. A correção de falhas de segurança mais que dobrou.</p>
+  <div class="txt"><p class="capitular">O iFood montou uma plataforma interna de agentes de IA, programas que executam tarefas por conta própria. Eles já atuam em mais de 15 mil repositórios, as pastas onde mora o código de cada sistema. Segundo estudo de caso da OpenAI, divulgado na terça (24), cada tarefa custa em média US$ 0,04.</p></div>
+  <div class="folio"><b>4</b><span>Matéria de capa</span></div>
+</div></article>
+
+<article class="page" id="p5"><div class="pg">
+  <div class="runner"><span>Os robôs que consertam o código do iFood</span><span>Continuação</span></div>
+  <div class="txt"><p>Batizada de Remote Agents Platform, ela usa o GPT-5.6 Luna, da OpenAI. Um time faz o pedido, o agente trabalha numa máquina isolada na nuvem e devolve a mudança pronta para revisão. Foram mais de 25 mil execuções. “Resolver isso para um repositório é fácil. O problema é resolver isso em escala”, diz Victor Coelho, engenheiro do iFood.</p></div>
+<div class="quadro">
+  <h3>Em números</h3>
+  <table class="tabela">
+    <thead><tr><th scope="col">Item</th><th scope="col">Total</th></tr></thead>
+    <tbody><tr><td>Repositórios</td><td>15 mil+</td></tr><tr><td>Execuções</td><td>25 mil+</td></tr><tr><td>Tokens</td><td>27 bi+</td></tr><tr><td>Custo por tarefa</td><td>US$ 0,04</td></tr></tbody>
+  </table>
+</div><div class="quadro">
+  <h3>Por que o Luna</h3>
+<p>O iFood comparou modelos do mesmo porte em três quesitos: raciocínio, velocidade e custo. O GPT-5.6 Luna venceu pelo equilíbrio. O plano é levar a plataforma a muitos outros usos na empresa.</p></div><div class="quadro">
+  <h3>Quem confere o robô</h3>
+<p>Um recurso da OpenAI, o Structured Outputs, obriga a IA a responder num formato rígido. Assim, o sistema marca cada tarefa como sucesso ou falha sem ninguém precisar olhar.</p></div>  <div class="ref"><a href="https://livecoins.com.br/ifood-dobra-correcao-de-falhas-com-agentes-de-ia-da-dona-do-chatgpt-em-15-mil-repositorios-por-us-004/">→ Livecoins</a></div>
+  <div class="folio"><span>Matéria de capa</span><b>5</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 6 e Página 7">
+<article class="page" id="p6"><div class="pg">
+  <div class="runner"><span>Placas &amp; Memórias</span><span>Hardware</span></div>
+  <div class="lado inv">
+    <div><span class="tarja">Hardware</span><h2 class="titulo">Memória cara, chip mais fino</h2></div>
+    <svg class="arte" viewBox="0 0 300 170" role="img" aria-label="Ilustração: processador visto de cima, com o quadradinho do silício da tabela periódica">
+  <circle cx="150" cy="85" r="82" fill="url(#ht-blue)"/>
+  <g class="f-none s-ink" stroke-width="2.5">
+    <path d="M81 55 H50 V35 H24"/><path d="M219 115 H250 V140 H276"/>
+    <path d="M81 115 H44 V138 H22"/><path d="M219 55 H258 V30 H280"/>
+  </g>
+  <g class="f-paper s-ink" stroke-width="2">
+    <circle cx="24" cy="35" r="4"/><circle cx="276" cy="140" r="4"/>
+    <circle cx="22" cy="138" r="4"/><circle cx="280" cy="30" r="4"/>
+  </g>
+  <g class="s-ink" stroke-width="4">
+    <path d="M105 30 V16 M120 30 V16 M135 30 V16 M150 30 V16 M165 30 V16 M180 30 V16 M195 30 V16"/>
+    <path d="M105 140 V154 M120 140 V154 M135 140 V154 M150 140 V154 M165 140 V154 M180 140 V154 M195 140 V154"/>
+    <path d="M95 40 H81 M95 55 H81 M95 70 H81 M95 85 H81 M95 100 H81 M95 115 H81 M95 130 H81"/>
+    <path d="M205 40 H219 M205 55 H219 M205 70 H219 M205 85 H219 M205 100 H219 M205 115 H219 M205 130 H219"/>
+  </g>
+  <rect x="100" y="35" width="110" height="110" rx="6" class="f-red" opacity=".9"/>
+  <rect x="95" y="30" width="110" height="110" rx="6" class="f-ink"/>
+  <rect x="117" y="52" width="66" height="66" class="f-mus s-paper" stroke-width="2"/>
+  <text x="122" y="65" class="t-data f-ink" font-size="12">14</text>
+  <text x="150" y="100" text-anchor="middle" class="t-slab f-ink" font-size="30">Si</text>
+  <text x="150" y="112" text-anchor="middle" class="t-label f-ink" font-size="6.5" letter-spacing="1.2">SILÍCIO</text>
+</svg>
+
+  </div>
+  <div class="notas"><p><span class="nota-cab">Celulares</span>As vendas de celulares nos EUA caíram 9% no terceiro trimestre, segundo a Counterpoint. A memória cara pesou nos Android baratos. A fatia da Apple foi de 50% para 57%.</p><p><span class="nota-cab">TSMC A14</span>O processo de 1,4 nm está pronto para receber projetos. Segundo a TSMC, rende 14% mais velocidade ou 23% menos consumo que o N2P. Produção em massa: fim de 2028.</p><p><span class="nota-cab">Luz no chip</span>A Avicena, que liga chips de IA com microLEDs no lugar de lasers, captou mais de US$ 100 milhões. SK Hynix, Samsung e AMD entraram.</p></div>
+  <div class="ref"><a href="http://www.counterpointresearch.com/">→ counterpointresearch.com</a><a href="https://www.tomshardware.com/tech-industry/semiconductors/tsmcs-a14-1-4nm-class-node-is-ready-for-chip-design-boost-cells-promise-14-percent-performance-uplift-or-23-percent-power-cut-over-n2p">→ Tom&#39;s Hardware</a><a href="https://thenextweb.com/news/avicena-100m-series-c-microled-optical-interconnects-ai">→ thenextweb.com</a></div>
+  <div class="folio"><b>6</b><span>Placas &amp; Memórias</span></div>
+</div></article>
+
+<article class="page" id="p7"><div class="pg">
+  <div class="runner"><span>Giro das Big Techs</span><span>Notas</span></div>
+  <h2 class="titulo">Giro das Big Techs</h2>
+  <div class="cols"><p><span class="empresa">OpenAI</span>A empresa admitiu um erro de cobrança no lançamento do GPT-6.2 Astra e Sol: o uso saía com desconto indevido. Com a correção, quem usa o Astra vai bater no limite do plano até 40% mais rápido.</p><p><span class="empresa">SAP</span>A alemã prepara o corte de pelo menos 10 mil vagas, 9% do quadro, para adaptar seu software à era da IA, segundo a Bloomberg.</p><p><span class="empresa">Google</span>A partir do ano que vem, muitos desenvolvedores independentes de apps Android terão de mostrar telefone e endereço em público. A regra atende a uma lei europeia, mas valerá no mundo todo.</p><p><span class="empresa">ASML</span>O governo da Holanda vai resistir ao Match Act, proposta americana para limitar as vendas da ASML à China. Diz que a regra ameaça a empresa.</p><p><span class="empresa">X</span>A rede de Elon Musk enfim ganhou controle parental: pais e responsáveis podem gerenciar o que os adolescentes veem.</p><p><span class="empresa">WhatsApp</span>O app vai vender pacotes de dados por eSIM, o chip virtual, para viagens internacionais. As opções variam conforme o país.</p></div>
+  <div class="ref"><a href="https://www.techradar.com/ai-platforms-assistants/chatgpt/weve-fixed-this-now-so-the-same-work-will-use-more-of-your-plans-usage-allowance-openai-admits-it-made-a-mistake-when-launching-gpt-6-2-and-now-paying-chatgpt-users-could-hit-their-usage-limits-up-to-40-percent-faster">→ techradar.com</a><a href="https://www.bloomberg.com/news/articles/2026-11-26/sap-weighs-cutting-at-least-10-000-positions-in-ai-restructuring">→ Bloomberg</a><a href="https://www.theverge.com/tech/1043228/android-play-store-google-developer-address-eu">→ The Verge</a><a href="https://techcrunch.com/2026/11/26/x-finally-gets-parental-controls-after-20-years/">→ TechCrunch</a><a href="https://tecnoblog.net/noticias/whatsapp-anuncia-esim-com-pacotes-de-dados-para-viagens-internacionais/">→ Tecnoblog</a></div>
+  <div class="folio"><span>Giro das Big Techs</span><b>7</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 8 e Página 9">
+<article class="page" id="p8"><div class="pg">
+  <div class="runner"><span>Cofre Digital</span><span>Cripto · o básico</span></div>
+  <span class="tarja verm">Cotações da madrugada</span>
+  <h2 class="titulo">Binance libera os saques de novo</h2>
+  <table class="tabela">
+    <thead><tr><th scope="col">Moeda</th><th scope="col">US$</th><th scope="col">R$</th><th scope="col">24 h</th></tr></thead>
+    <tbody><tr><td>BTC</td><td>61.730</td><td>348.922</td><td class="sobe">+1,57%</td></tr><tr><td>ETH</td><td>1.730,74</td><td>9.782,84</td><td class="sobe">+1,90%</td></tr><tr><td>SOL</td><td>73,38</td><td>414,79</td><td class="sobe">+3,32%</td></tr></tbody>
+  </table>
+  <p class="legenda">CoinGecko, 27/11 às 06h11 (Brasília). Variação em dólar.</p>
+  <div class="lado">
+    <svg class="arte" viewBox="0 0 200 122" role="img" aria-label="Medidor do índice de medo e ganância marcando 12, Medo extremo">
+  <path d="M20 100 A80 80 0 0 1 87.5 21" class="f-none s-blue" stroke-width="15"/>
+  <path d="M87.5 21 A80 80 0 0 1 112.5 21" class="f-none" stroke="var(--paper-shade)" stroke-width="15"/>
+  <path d="M112.5 21 A80 80 0 0 1 180 100" class="f-none s-red" stroke-width="15"/>
+  <path d="M20 100 A80 80 0 0 1 180 100" class="f-none s-ink" stroke-width="1.2"/>
+  <text x="12" y="116" text-anchor="middle" class="t-data f-ink" font-size="12">0</text>
+  <text x="100" y="9" text-anchor="middle" class="t-data f-ink" font-size="12">50</text>
+  <text x="188" y="116" text-anchor="middle" class="t-data f-ink" font-size="12">100</text>
+  <line x1="100" y1="100" x2="36.8" y2="75.0" class="s-ink" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="7" class="f-ink"/>
+  <circle cx="100" cy="100" r="2.5" class="f-mus"/>
+  <text x="140" y="94" text-anchor="middle" class="t-slab f-ink" font-size="20">12</text>
+</svg>
+    <div class="quadro">
+      <h3>Medo &amp; Ganância: 12</h3>
+      <p>Hoje marca “medo extremo”. Vai de 0 (pânico) a 100 (euforia) e mede o humor do mercado com volatilidade, volume e redes sociais.</p>
+    </div>
+  </div>
+  <div class="notas"><p><span class="nota-cab">Binance</span>Quatro semanas após o roubo recorde de US$ 6,3 bilhões, a corretora diz que os saques voltaram ao normal.</p><p><span class="nota-cab">Reino Unido</span>A FCA, regulador britânico, quer exigir autorização das plataformas DeFi, as finanças descentralizadas. O motivo citado: o caso Binance.</p></div>
+  <div class="ref"><a href="https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack">→ CoinDesk</a><a href="https://www.ft.com/content/ec820cb6-4983-4ece-8e7b-de116b57525d">→ Financial Times</a></div>
+  <p class="miudo">Isto não é recomendação de investimento.</p>
+  <div class="folio"><b>8</b><span>Cofre Digital</span></div>
+</div></article>
+
+<article class="page" id="p9"><div class="pg">
+  <div class="runner"><span>Da Comunidade</span><span>Blogs, YouTube e fóruns</span></div>
+  <h2 class="titulo">O que a turma anda fazendo</h2>
+  <div class="vozes">
+    <div class="voz">
+      <div class="avatar c0" aria-hidden="true">D</div>
+      <div>
+        <h4>davxx <small>· TabNews</small></h4>
+        <p>Criou o Mundaily, jogo diário de geografia só com dados reais, montado sozinho e sem IA. O bug mais curioso: desenhar no sentido errado transformava o mapa todo em terra.</p>
+<a class="ref-link" href="https://www.tabnews.com.br/davxx/criei-um-jogo-diario-de-geografia-so-com-dados-reais-como-ele-se-monta-sozinho-e-o-bug-que-transformava-o-mapa-todo-em-terra">→ TabNews</a>      </div>
+    </div>
+    <div class="voz">
+      <div class="avatar c1" aria-hidden="true">A</div>
+      <div>
+        <h4>annaskokova <small>· TabNews</small></h4>
+        <p>Ensinou a compilar e publicar app de iOS no Windows, sem comprar um Mac. Avisa logo: ela e o marido fazem o JustMac.app, um dos serviços citados.</p>
+<a class="ref-link" href="https://www.tabnews.com.br/annaskokova/como-compilar-e-publicar-um-app-ios-no-windows-sem-comprar-um-mac">→ TabNews</a>      </div>
+    </div>
+    <div class="voz">
+      <div class="avatar c2" aria-hidden="true">AD</div>
+      <div>
+        <h4>Attekita Dev <small>· YouTube</small></h4>
+        <p>Testou o Claude Code rodando com o Kimi 3.1 Pro, pela metade do preço por token.</p>
+<a class="ref-link" href="https://www.youtube.com/watch?v=dUQqqA_IM_k">→ YouTube</a>      </div>
+    </div>
+  </div>
+<div class="quadro">
+  <h3>No Código Fonte TV</h3>
+<p>O canal explicou o que faz um FDE, o Forward Deployed Engineer.</p></div>  <div class="folio"><span>Da Comunidade</span><b>9</b></div>
+</div></article>
+
+  </section>
+  <section class="spread" aria-label="Página 10 e Página 11">
+<article class="page" id="p10"><div class="pg">
+  <div class="runner"><span>Dicionário do Byte</span><span>Glossário</span></div>
+  <h2 class="titulo">Dicionário do Byte</h2>
+  <dl class="glossario">
+<div><dt>Agente de IA<small>IA</small></dt><dd>Programa de IA que executa tarefas por conta própria, em várias etapas, em vez de só responder perguntas.</dd></div><div><dt>Repositório<small>Programação</small></dt><dd>Pasta onde fica o código de um sistema, com todo o histórico de mudanças.</dd></div><div><dt>Token<small>IA</small></dt><dd>Pedacinho de texto que os modelos de IA leem e escrevem. As empresas cobram pelo número de tokens.</dd></div><div><dt>Defense Production Act<small>Política</small></dt><dd>Lei americana de 1950 que deixa o presidente interferir em empresas privadas, em geral para abastecer as Forças Armadas.</dd></div><div><dt>Nanômetro (nm)<small>Hardware</small></dt><dd>Um milionésimo de milímetro. Nos chips, o número dá nome à geração do processo de fabricação: menor costuma ser mais avançado.</dd></div>  </dl>
+  <div class="folio"><b>10</b><span>Glossário</span></div>
+</div></article>
+
+<article class="page" id="p11"><div class="pg">
+  <div class="runner"><span>Dicionário do Byte</span><span>Glossário</span></div>
+  <h2 class="titulo">Dicionário do Byte</h2>
+  <dl class="glossario">
+<div><dt>eSIM<small>Celular</small></dt><dd>Chip de operadora virtual, embutido no aparelho. Dá para ativar um plano sem colocar cartão físico.</dd></div><div><dt>DeFi<small>Cripto</small></dt><dd>Finanças descentralizadas: serviços como empréstimos e trocas feitos por programas na blockchain, sem banco no meio.</dd></div><div><dt>Controle parental<small>Internet</small></dt><dd>Ferramentas que deixam pais e responsáveis limitar o que crianças e adolescentes veem num app ou aparelho.</dd></div>  </dl>
+  <div class="folio"><span>Glossário</span><b>11</b></div>
+</div></article>
+
+  </section>
+  <section class="spread solo" aria-label="Página 12">
+<article class="page" id="p12"><div class="pg">
+  <div class="runner"><span>Pra ler com calma</span><span>Contracapa</span></div>
+  <h2 class="titulo">Pra ler com calma</h2>
+  <ul class="leituras">
+<li><div><a href="https://techcrunch.com/2026/11/26/as-anthropic-ipos-grand-theft-auto-vi-proves-why-efficiency-isnt-a-virtue/">GTA VI, a Anthropic na bolsa e por que eficiência não é virtude</a><span>TechCrunch · ensaio</span></div></li><li><div><a href="https://www.tomshardware.com/tech-industry/photonics/inside-the-indium-phosphide-squeeze-and-the-optical-boom-inp-remains-tightly-constrained-as-the-demand-from-ai-puts-the-entire-supply-chain-under-pressure">O fosfeto de índio, material dos lasers que ligam os chips de IA, virou gargalo</a><span>Tom&#39;s Hardware · técnico</span></div></li><li><div><a href="http://themouseless.dev/vim/">Um manual inteiro do Vim, escrito ao longo de quatro anos</a><span>The Mouseless Dev · manual</span></div></li><li><div><a href="https://janlukas.blog/posts/ai-self-hosting">A IA deixou divertido de novo hospedar os próprios serviços</a><span>Jan Lukas · blog</span></div></li>  </ul>
+<div class="anuncio">
+  <div>
+    <h3>Expansão de <em>memória</em> 640 KB!</h3>
+    <p>Seu micro mais rápido que nunca. Instalação em 5 minutos, sem soldar nada. Garantia de 90 dias.</p>
+  </div>
+<svg class="arte" viewBox="0 0 300 120" role="img" aria-label="Ilustração: pente de memória com oito chips">
+  <rect x="18" y="28" width="270" height="64" rx="3" class="f-red" opacity=".85"/>
+  <rect x="12" y="22" width="270" height="64" rx="3" class="f-shade s-ink" stroke-width="3"/>
+  <rect x="12" y="22" width="270" height="64" rx="3" fill="url(#ht-fino)" opacity=".45"/>
+  <g class="f-ink">
+    <rect x="24" y="31" width="24" height="30"/><rect x="56" y="31" width="24" height="30"/>
+    <rect x="88" y="31" width="24" height="30"/><rect x="120" y="31" width="24" height="30"/>
+    <rect x="156" y="31" width="24" height="30"/><rect x="188" y="31" width="24" height="30"/>
+    <rect x="220" y="31" width="24" height="30"/><rect x="252" y="31" width="22" height="30"/>
+  </g>
+  <rect x="24" y="66" width="64" height="13" class="f-paper s-ink" stroke-width="1.5"/>
+  <text x="56" y="76.5" text-anchor="middle" class="t-data f-ink" font-size="12">DDR · 16 GB</text>
+  <circle cx="12" cy="56" r="5" class="f-paper s-ink" stroke-width="2"/>
+  <circle cx="282" cy="56" r="5" class="f-paper s-ink" stroke-width="2"/>
+  <rect x="20" y="86" width="124" height="13" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="156" y="86" width="118" height="13" class="f-mus s-ink" stroke-width="2"/>
+  <rect x="22" y="88" width="120" height="9" fill="url(#dentes)"/>
+  <rect x="158" y="88" width="114" height="9" fill="url(#dentes)"/>
+</svg>
+  <div class="cupom">NOME: ______________________<br>MICRO: ________ ( ) 8 BITS ( ) 16 BITS<br>( ) QUERO O CATÁLOGO</div>
+</div>
+<p class="miudo">Anúncio de mentirinha, homenagem às revistas de informática dos anos 80.</p>  <div class="capa-pe">
+    <p>Amanhã nas bancas<br>Edição nº 030, às 7h</p>
+    <div class="barras" aria-hidden="true"><i></i><span>CIRCUITO·029</span></div>
+  </div>
+</div></article>
+  </section>
+</main>
+</body>
+</html>
