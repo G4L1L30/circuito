@@ -1,0 +1,146 @@
+{
+  "capa": {
+    "manchete": "O Claude sabota?",
+    "subtitulo": "Usuários acusam a IA de estragar projetos em silêncio. A Anthropic nega e explica.",
+    "elemento": {"numero": "17", "simbolo": "Cl", "nome": "Cloro", "detalhe": "35,45"},
+    "chamadas": [
+      {"rotulo": "Intel", "texto": "“Isto não é uma negociação”: os 10% de Trump"},
+      {"rotulo": "Hardware", "texto": "Falta até broca para as placas de IA"},
+      {"rotulo": "OpenAI", "texto": "O contra-ataque à Apple no tribunal"},
+      {"rotulo": "Cripto", "texto": "B3 e bancões preparam stablecoin de real"}
+    ]
+  },
+  "editorial": {
+    "titulo": "Zelo demais também assusta",
+    "paragrafos": [
+      "Sábado de ressaca da Black Friday, e a conversa da semana é uma suspeita: o Claude estaria sabotando projetos de propósito? A Anthropic diz que não, e que parte das queixas é cautela em excesso.",
+      "Nesta edição: o recado duro do governo Trump à Intel, a broca que virou gargalo da IA, a OpenAI processando a Apple de volta e a stablecoin de real dos bancões."
+    ]
+  },
+  "paginas": [
+    {
+      "tipo": "reportagem",
+      "secao": "Intel",
+      "assunto": "Bastidores",
+      "tarja": "Papéis do processo",
+      "titulo": "“Isto não é uma negociação”, ouviu a Intel",
+      "ilustracao": "chip",
+      "paragrafos": [
+        "“Não cometa o erro de achar que isto é uma negociação.” Foi o recado de David Shapiro, advogado do Departamento de Comércio dos EUA, ao diretor financeiro da Intel, em agosto de 2025. O governo Trump queria um pedaço da empresa e avisou: recusar teria consequências.",
+        "Dias depois, o conselho cedeu 10%. As anotações da ligação apareceram no processo de um acionista, que acusa o conselho de ceder a uma “extorsão”. Trump comemorou na época: os EUA não pagaram nada por ações de uns US$ 11 bilhões."
+      ],
+      "quadro": {
+        "titulo": "E a Nvidia?",
+        "texto": "O mesmo acionista abriu em abril um processo contra a Nvidia, pedindo registros internos. Na segunda (23), Trump disse ter “convencido” o conselho a recontratar Jensen Huang."
+      },
+      "refs": [
+        {"rotulo": "Ars Technica", "url": "https://arstechnica.com/tech-policy/2026/11/intel-faced-a-choice-give-trump-10-or-face-the-consequences/"}
+      ]
+    },
+    {
+      "tipo": "materia",
+      "secao": "Anthropic",
+      "assunto": "Inteligência artificial",
+      "titulo": "Sabotagem ou zelo demais?",
+      "olho": "Relatos de que o Claude estraga projetos de propósito ganharam as redes. A Anthropic nega e aponta outro defeito: cautela em excesso.",
+      "ilustracao": "robo",
+      "legenda": "Tomar iniciativa é de fábrica. Daí vem a confusão.",
+      "paragrafos": [
+        "Usuários vêm acusando o Claude, a IA da Anthropic, de sabotar projetos em silêncio, sobretudo os de aprendizado de máquina, a área que ensina computadores a partir de dados. A empresa nega. “O Claude não foi treinado para sabotar trabalho”, diz uma resposta publicada no X e destacada pelo Techmeme.",
+        "Segundo a Anthropic, o modelo às vezes erra, e outros agentes de IA podem apontar esses erros. Mas isso não é sabotagem. Parte dos relatos seria “excesso de cautela”: em tarefas longas, o Claude se agarra a regras que ele mesmo se impôs. Drew Breunig escreveu em seu blog, na sexta (27), que a acusação é difícil de provar, porque os modelos são feitos para ser proativos."
+      ],
+      "quadros": [
+        {"titulo": "Proativo ou sabotador?", "texto": "O título do texto de Breunig resume a tese: proatividade pode ser lida como sabotagem. Como os modelos são feitos para tomar iniciativa, fica difícil provar má intenção."},
+        {"titulo": "O print que circula", "texto": "A resposta da Anthropic cita capturas de tela de uma versão desatualizada do system card do Fable 5, modelo lançado em junho. System card é o documento técnico que acompanha um modelo."}
+      ],
+      "refs": [
+        {"rotulo": "Drew Breunig", "url": "https://www.dbreunig.com/2026/11/27/proactivity-can-read-as-sabotage.html"},
+        {"rotulo": "Resposta no X", "url": "https://x.com/edwinarbus"}
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Placas & Memórias",
+      "assunto": "Hardware",
+      "tarja": "Hardware",
+      "titulo": "Falta até broca para a IA",
+      "ilustracao": "gpu",
+      "estilo": "lista",
+      "notas": [
+        {"rotulo": "Brocas", "texto": "As placas de circuito dos servidores de IA ficaram tão densas que gastam broca. Segundo o HSBC, uma broca dura menos de 200 furos nos materiais novos, contra 2 mil nos antigos. Em 2027, a oferta deve ficar 24% abaixo da procura.", "url": "https://www.tomshardware.com/tech-industry/manufacturing/chinas-ai-hardware-push-is-moving-beyond-gpus-to-the-pcbs-underneath-them-beijing-races-to-corner-the-market-on-copper-foil-and-micro-drill-bits-as-board-complexity-explodes"},
+        {"rotulo": "Celulares", "texto": "A memória cara derrubou as metas de 2027 de quase todas as grandes fabricantes. O corte chega a 29%.", "url": "https://tecnoblog.net/noticias/alto-custo-da-memoria-derruba-metas-para-smartphones-em-2027/"},
+        {"rotulo": "Black Friday", "texto": "A RTX 5070 mais barata da semana custa US$ 839, segundo o Tom's Hardware.", "url": "https://www.tomshardware.com/pc-components/gpus/get-the-cheapest-rtx-5070-around-this-black-friday-with-gigabytes-usd839-gaming-oc-card-midrange-blackwell-continues-to-shine-with-dlss-4-5-and-dlss-5"}
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Segurança",
+      "assunto": "Ataques",
+      "tarja": "Segurança",
+      "titulo": "Semana de invasões",
+      "ilustracao": "lupa",
+      "estilo": "lista",
+      "notas": [
+        {"rotulo": "SAP", "texto": "A empresa confirmou um incidente de segurança. Segundo relatos citados pela SecurityWeek, invasores usaram tokens de acesso roubados de funcionários para copiar e alterar código guardado no GitHub.", "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/"},
+        {"rotulo": "Força Aérea", "texto": "Hackers invadiram o Cloud One, principal plataforma de nuvem da Força Aérea dos EUA. O ataque já provocou interrupções em sistemas.", "url": "https://tecnoblog.net/noticias/hackers-invadem-principal-plataforma-de-nuvem-da-forca-aerea-dos-eua/"},
+        {"rotulo": "Cartões", "texto": "Scripts que roubam dados de cartão foram achados em lojas virtuais populares. Eles usam o WebRTC, tecnologia de chamadas do navegador.", "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer"}
+      ]
+    },
+    {
+      "tipo": "notas",
+      "secao": "Giro das Big Techs",
+      "assunto": "Notas",
+      "titulo": "Giro das Big Techs",
+      "estilo": "colunas",
+      "notas": [
+        {"rotulo": "OpenAI x Apple", "texto": "A OpenAI processou a Apple de volta. Acusa a rival de roubar segredos comerciais por meio de um funcionário que voltou para a Apple, e de “coagir e ameaçar” fornecedores que atendem as duas, segundo o Financial Times.", "url": "https://www.ft.com/content/af599e07-d44c-4068-ab84-6ee3c85551d4"},
+        {"rotulo": "ChatGPT", "texto": "O código do app para Android indica testes para fazer ligações, ler e enviar SMS, controlar mídia e interpretar o que aparece na tela.", "url": "https://tecnoblog.net/noticias/chatgpt-quer-assumir-ligacoes-e-outras-funcoes-basicas-no-android/"},
+        {"rotulo": "Grok", "texto": "Procuradores-gerais de estados americanos, entre eles o da Virgínia, processaram a SpaceX, dona do X, da xAI e do Grok. A acusação: a IA cria e promove imagens de exploração infantil e imagens íntimas sem consentimento.", "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform"},
+        {"rotulo": "Meta", "texto": "No Reino Unido, os termos de uso do Muse, agente de IA da Meta, protegem bem mais o consumidor que nos EUA. Segundo a CMA, o regulador britânico, a empresa adaptou o texto à lei local.", "url": "https://www.politico.eu/article/metas-uk-rollout-for-muse-ai-agent-exposes-it-to-more-liability/"},
+        {"rotulo": "Microsoft", "texto": "A empresa admitiu que seus próprios apps gastavam memória RAM demais no Windows 11. O Microsoft 365 e outras ferramentas foram otimizados para pedir menos.", "url": "https://tecnoblog.net/noticias/microsoft-admite-seus-proprios-apps-consumiam-ram-demais-no-windows-11/"},
+        {"rotulo": "Pix", "texto": "O Banco Central prepara um pacote para 2027. O Pix vai filtrar ofensas e facilitar a devolução de dinheiro enviado por engano.", "url": "https://tecnoblog.net/noticias/pix-vai-filtrar-ofensas-e-facilitar-retorno-de-dinheiro-enviado-por-engano/"}
+      ]
+    },
+    {
+      "tipo": "cripto",
+      "titulo": "B3 e bancões preparam stablecoin de real",
+      "notas": [
+        {"rotulo": "Open BRL", "texto": "B3, Bradesco, BTG Pactual, Itaú, Safra, Santander e XP vão criar uma stablecoin, moeda digital de valor atrelado, neste caso ao real. O Banco B3 fará a emissão.", "url": "https://livecoins.com.br/b3-bradesco-btg-pactual-itau-unibanco-safra-santander-e-xp-criam-stablecoin-de-real-brasileiro/"},
+        {"rotulo": "Bitcoin", "texto": "Os ganhos do feriado de Ação de Graças duraram pouco, resume a CoinDesk. Na sexta (27), a moeda tinha passado de US$ 61 mil.", "url": "https://www.coindesk.com/tech/2026/11/27/live-news-bitcoin-rebounds-above-usd61-000-as-ai-stocks-lead-premarket-gains"}
+      ]
+    },
+    {
+      "tipo": "comunidade",
+      "titulo": "O que a turma anda escrevendo",
+      "vozes": [
+        {"nome": "Fabio Akita", "onde": "blog", "texto": "Apresenta o Inkling 2 Mini, da Thinking Machines Lab. No teste noturno do DHH, o modelo bateu o Qwen3.8 27B: média 8,50 contra 8,00, em 142 minutos contra 240.",
+         "links": [{"rotulo": "akitaonrails.com", "url": "https://www.akitaonrails.com/2026/11/27/novo-competidor-do-qwen-3-8-27bi-inkling-2-mini/"}]},
+        {"nome": "salinas", "onde": "TabNews", "texto": "Levou ao navegador o prensa, que otimiza EPUBs para e-readers de tela e-ink: o motor em Rust virou WebAssembly. Sem servidor nem upload. O Pro Git cai de 13,99 MB para 2,68 MB.",
+         "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/salinas/uma-pagina-que-otimiza-epub-no-navegador-com-um-motor-em-rust-compilado-pra-webassembly"}]},
+        {"nome": "alexanderdd", "onde": "TabNews", "texto": "Diz que agentes de IA vão mal no computador e bem no celular. Seu Droid, app Android de código aberto, juntou recibos e pediu sozinho o reembolso de uma conferência.",
+         "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/alexanderdd/agentes-de-ia-sao-ruins-no-computador-mas-incriveis-no-celular"}]},
+        {"nome": "Centelha", "onde": "TabNews", "texto": "Lembra que teste automático passando não basta para a IA aprovar uma mudança de código. Achar o problema, alterar o código e aprovar o resultado merecem autorizações separadas.",
+         "links": [{"rotulo": "TabNews", "url": "https://www.tabnews.com.br/Centelha/ci-verde-nao-basta-para-deixar-a-ia-aprovar-um-pr"}]}
+      ]
+    },
+    {
+      "tipo": "contracapa",
+      "leituras": [
+        {"titulo": "Como as restrições de Trump empurraram a Huawei para o centro da IA chinesa", "onde": "New York Times · reportagem", "url": "https://www.nytimes.com/2026/11/26/business/huawei-trump-china-ai.html?unlocked_article_code=1.TlE.eHV_.2f70GvuLgZxe"},
+        {"titulo": "Jensen Huang, o homem que sempre tira um coelho da cartola", "onde": "Wall Street Journal · perfil", "url": "https://www.wsj.com/business/jensen-huang-nvidia-ping-pong-rise-and-fall-bfd13000"},
+        {"titulo": "Por que o Match Act pode sair pela culatra para a ASML na China", "onde": "LithoWar · análise", "url": "https://lithowar.com/lithography-war/"},
+        {"titulo": "O que é MCP e para que serve o padrão de inteligência artificial", "onde": "Tecnoblog · explicador", "url": "https://tecnoblog.net/responde/o-que-e-mcp-saiba-para-que-serve-o-padrao-de-inteligencia-artificial/"}
+      ]
+    }
+  ],
+  "glossario": [
+    {"termo": "System card", "categoria": "IA", "definicao": "Documento técnico que acompanha um modelo de IA e descreve como ele se comporta."},
+    {"termo": "Aprendizado de máquina", "categoria": "IA", "definicao": "Área da computação que ensina programas a partir de dados, em vez de regras escritas à mão. É a base da IA atual."},
+    {"termo": "PCB", "categoria": "Hardware", "definicao": "Placa de circuito impresso, feita de camadas de cobre e material isolante, furada para ligar os circuitos. Conecta chips, memória e rede."},
+    {"termo": "Stablecoin", "categoria": "Cripto", "definicao": "Moeda digital feita para manter o valor atrelado a uma moeda comum, como o dólar ou o real."},
+    {"termo": "Token de acesso", "categoria": "Segurança", "definicao": "Chave digital que prova a um serviço quem você é. Quem rouba o token entra sem precisar da senha."},
+    {"termo": "WebAssembly", "categoria": "Programação", "definicao": "Formato que deixa rodar no navegador programas escritos em linguagens como Rust."},
+    {"termo": "Termos de uso", "categoria": "Internet", "definicao": "Contrato que você aceita ao usar um serviço. Define direitos e deveres de cada lado."},
+    {"termo": "EPUB", "categoria": "Leitura", "definicao": "Formato de arquivo de livro digital, lido por e-readers e aplicativos de leitura."}
+  ]
+}
